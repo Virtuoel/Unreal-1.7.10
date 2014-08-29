@@ -1,6 +1,7 @@
 package com.virtuoel.unreal;
 
 import com.virtuoel.unreal.proxy.IProxy;
+import com.virtuoel.unreal.reference.Reference;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -8,15 +9,14 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid="unreal",name="Unreal",version="1.7.10-1.0.0.0")
+@Mod(modid=Reference.MOD_ID,name=Reference.MOD_NAME,version=Reference.VERSION)
 
 public class Unreal
 {
-	@Mod.Instance("unreal")
+	@Mod.Instance(Reference.MOD_ID)
 	public static Unreal instance;
 	
-	@SidedProxy(clientSide = "com.virtuoel.unreal.proxy.ClientProxy", 
-				serverSide = "com.virtuoel.unreal.proxy.ServerProxy")
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static IProxy Proxy;
 
 	@Mod.EventHandler

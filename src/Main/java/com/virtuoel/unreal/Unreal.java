@@ -1,5 +1,6 @@
 package com.virtuoel.unreal;
 
+import com.virtuoel.unreal.configuration.ConfigurationHandler;
 import com.virtuoel.unreal.proxy.IProxy;
 import com.virtuoel.unreal.reference.Reference;
 
@@ -22,7 +23,7 @@ public class Unreal
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		
+		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 	}
 
 	@Mod.EventHandler

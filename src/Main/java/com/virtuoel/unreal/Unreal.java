@@ -1,6 +1,7 @@
 package com.virtuoel.unreal;
 
 import com.virtuoel.unreal.handler.ConfigurationHandler;
+import com.virtuoel.unreal.init.ModItems;
 import com.virtuoel.unreal.proxy.IProxy;
 import com.virtuoel.unreal.reference.Reference;
 import com.virtuoel.unreal.utility.LogHelper;
@@ -27,6 +28,10 @@ public class Unreal
 	{
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+		
+		ModItems.init();
+		LogHelper.info("Items Initilized.");
+		
 		LogHelper.info("Pre Initilization Completed.");
 	}
 

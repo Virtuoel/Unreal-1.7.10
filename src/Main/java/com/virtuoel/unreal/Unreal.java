@@ -6,10 +6,14 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid="unreal",name="Unreal",version="1.7.10-1.0")
+
 public class Unreal
 {
+	@Mod.Instance("Unreal")
+	public static Unreal instance;
+	
 	@Mod.EventHandler
-	public void PreInit(FMLPreInitializationEvent event)
+	public void preInit(FMLPreInitializationEvent event)
 	{
 		
 	}
@@ -21,8 +25,9 @@ public class Unreal
 	}
 	
 	@Mod.EventHandler
-	public void PostInit(FMLPostInitializationEvent event)
+	public void postInit(FMLPostInitializationEvent event)
 	{
 		
 	}
+	
 }

@@ -9,7 +9,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public class Unreal
 {
-	@Mod.Instance("Unreal")
+	@Mod.Instance("unreal")
 	public static Unreal instance;
 
 	@Mod.EventHandler

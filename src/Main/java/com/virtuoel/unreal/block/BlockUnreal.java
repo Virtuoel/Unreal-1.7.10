@@ -1,5 +1,6 @@
 package com.virtuoel.unreal.block;
 
+import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -16,7 +17,7 @@ public class BlockUnreal extends Block
 	public BlockUnreal(Material material)
 	{
 		super(material);
-		this.setCreativeTab(CreativeTabs.tabAllSearch);
+		this.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
 	
 	@Override

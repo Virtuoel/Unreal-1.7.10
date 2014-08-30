@@ -4,8 +4,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
-import com.virtuoel.unreal.block.BlockTitanium;
 import com.virtuoel.unreal.block.BlockUnreal;
+import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.reference.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -19,7 +19,7 @@ public class ModBlocks
 			.setBlockTextureName("blockTitanium")
 			.setHardness(5.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeMetal)
-			.setCreativeTab(CreativeTabs.tabAllSearch);
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final BlockUnreal blockTarydium = (BlockUnreal)
 			new BlockUnreal(Material.iron).setBlockName("blockTarydium")
@@ -27,7 +27,7 @@ public class ModBlocks
 			.setHardness(6.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeGlass)
 			.setLightLevel(1.0F)
-			.setCreativeTab(CreativeTabs.tabAllSearch);
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static void init()
 	{

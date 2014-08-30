@@ -2,7 +2,7 @@ package com.virtuoel.unreal.init;
 
 import net.minecraft.creativetab.CreativeTabs;
 
-import com.virtuoel.unreal.item.ItemIngotTitanium;
+import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.item.ItemUnreal;
 import com.virtuoel.unreal.reference.Reference;
 
@@ -14,11 +14,11 @@ public class ModItems
 	
 	public static final ItemUnreal ingotTitanium = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName("ingotTitanium")
-			.setMaxStackSize(64).setCreativeTab(CreativeTabs.tabAllSearch);
+			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gemTarydium = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName("gemTarydium")
-			.setMaxStackSize(64).setCreativeTab(CreativeTabs.tabAllSearch);
+			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static void init()
 	{

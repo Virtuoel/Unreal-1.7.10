@@ -1,7 +1,5 @@
 package com.virtuoel.unreal.init;
 
-import net.minecraft.creativetab.CreativeTabs;
-
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.item.ItemUnreal;
 import com.virtuoel.unreal.reference.Reference;
@@ -24,6 +22,6 @@ public class ModItems
 	{
 		GameRegistry.registerItem(ingotTitanium, "ingotTitanium");
 		GameRegistry.registerItem(gemTarydium, "gemTarydium");
-		
 	}
+	
 }

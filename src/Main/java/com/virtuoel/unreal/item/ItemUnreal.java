@@ -1,5 +1,6 @@
 package com.virtuoel.unreal.item;
 
+import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -15,6 +16,7 @@ public class ItemUnreal extends Item
 	{
 		super();
 		this.setMaxStackSize(64);
+		this.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
 
 	@Override

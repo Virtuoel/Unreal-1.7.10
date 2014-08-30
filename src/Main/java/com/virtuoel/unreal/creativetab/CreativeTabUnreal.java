@@ -11,21 +11,10 @@ import net.minecraft.item.Item;
 
 public class CreativeTabUnreal
 {
-	public static final CreativeTabs UNREAL_TAB = new CreativeTabs(Reference.MOD_ID)
+	public static final CreativeTabs UNREAL_TAB = new CreativeTabs(Reference.MOD_ID.toLowerCase())
 	{
-
 		@Override
-		@SideOnly(Side.CLIENT)
-		public Item getTabIconItem() {
-			return ModItems.gemTarydium;
-		}
-		
-		public String getTranslatedTabLabel()
-		{
-			return "Unreal";
-		}
-		
+		public Item getTabIconItem(){ return ModItems.gemTarydium; }
 	};
-	
 	
 }

@@ -1,5 +1,5 @@
-﻿item.unreal:ingotTitanium.name=Titanium Ingot
-item.unreal:gemTarydium.name=Tarydium Gem
-tile.unreal.blockTitanium.name=Titanium Block
-tile.unreal.blockTarydium.name=Tarydium Block
+item.unreal.ingotTitanium.name=Titanium Ingot
+item.unreal.gemTarydium.name=Tarydium Gem
+tile.blockTitanium.name=Titanium Block
+tile.blockTarydium.name=Tarydium Block
 itemGroup.unreal=Unreal

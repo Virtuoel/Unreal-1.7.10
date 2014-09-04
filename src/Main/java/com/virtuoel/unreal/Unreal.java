@@ -1,8 +1,11 @@
 package com.virtuoel.unreal;
 
+import net.minecraftforge.oredict.OreDictionary;
+
 import com.virtuoel.unreal.handler.ConfigurationHandler;
 import com.virtuoel.unreal.init.ModBlocks;
 import com.virtuoel.unreal.init.ModItems;
+import com.virtuoel.unreal.init.ModRecipes;
 import com.virtuoel.unreal.proxy.IProxy;
 import com.virtuoel.unreal.reference.Reference;
 import com.virtuoel.unreal.utility.LogHelper;
@@ -36,19 +39,32 @@ public class Unreal
 		ModBlocks.init();
 		LogHelper.info("Blocks Initilized.");
 		
+		ModRecipes.initOreDict();
+		LogHelper.info("Ore Dictionary Registration Completed.");
+		
 		LogHelper.info("Pre Initilization Completed.");
 	}
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event)
 	{
+		ModRecipes.init();
+		LogHelper.info("Recipes Initilized.");
+		
 		LogHelper.info("Initilization Completed.");
 	}
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
+		if(Reference.PRINT_DEBUG_OREDICT_VALUES)
+		{
+			for(String oreName : OreDictionary.getOreNames())
+			{
+				LogHelper.info(oreName);
+			}
+		}
+		
 		LogHelper.info("Post Initilization Completed.");
 	}
-
 }

@@ -1,5 +1,14 @@
+# Items
 item.unreal:ingotTitanium.name=Titanium Ingot
 item.unreal:gemTarydium.name=Tarydium Gem
+
+# Blocks
 tile.unreal:blockTitanium.name=Titanium Block
 tile.unreal:blockTarydium.name=Tarydium Block
+
+# Creative Tabs
 itemGroup.unreal=Unreal
+
+# Keys
+keys.unreal.category=Unreal
+keys.unreal.modeSwitch=Switch Weapon Mode

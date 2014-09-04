@@ -2,6 +2,7 @@ package com.virtuoel.unreal;
 
 import net.minecraftforge.oredict.OreDictionary;
 
+import com.virtuoel.unreal.client.handler.KeyInputEventHandler;
 import com.virtuoel.unreal.handler.ConfigurationHandler;
 import com.virtuoel.unreal.init.ModBlocks;
 import com.virtuoel.unreal.init.ModItems;
@@ -25,14 +26,17 @@ public class Unreal
 	public static Unreal instance;
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
-	public static IProxy Proxy;
+	public static IProxy proxy;
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-
+		
+		proxy.registerKeyBindings();
+		LogHelper.info("Key Binding Registration Completed.");
+		
 		ModItems.init();
 		LogHelper.info("Items Initilized.");
 		
@@ -48,6 +52,8 @@ public class Unreal
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event)
 	{
+		FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
+		
 		ModRecipes.init();
 		LogHelper.info("Recipes Initilized.");
 		

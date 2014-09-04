@@ -11,4 +11,5 @@ public class Reference
 
 	public static final boolean PRINT_DEBUG_CONFIG_VALUES = false;
 	public static final boolean PRINT_DEBUG_OREDICT_VALUES = false;
+	public static final boolean PRINT_DEBUG_KEYBIND_VALUES = false;
 }

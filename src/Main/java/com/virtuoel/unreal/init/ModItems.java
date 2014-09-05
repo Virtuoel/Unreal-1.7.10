@@ -14,326 +14,326 @@ public class ModItems
 {
 	//ore materials, metals, gems, alloys
 	public static final ItemUnreal ingotTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("ingotTitanium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.INGOT_TITANIUM)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal nuggetTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("nuggetTitanium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.NUGGET_TITANIUM)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustTitanium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_TITANIUM)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 
 	public static final ItemUnreal ingotRutile = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("ingotRutile")
+			new ItemUnreal().setUnlocalizedName(Names.Items.INGOT_RUTILE)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal nuggetRutile = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("nuggetRutile")
+			new ItemUnreal().setUnlocalizedName(Names.Items.NUGGET_RUTILE)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustRutile = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustRutile")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_RUTILE)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 
 	public static final ItemUnreal ingotMagnesium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("ingotMagnesium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.INGOT_MAGNESIUM)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal nuggetMagnesium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("nuggetMagnesium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.NUGGET_MAGNESIUM)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustMagnesium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustMagnesium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_MAGNESIUM)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gemTarydium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("gemTarydium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.GEM_TARYDIUM)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal shardTarydium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("shardTarydium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.SHARD_TARYDIUM)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gemCinnabar = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("gemCinnabar")
+			new ItemUnreal().setUnlocalizedName(Names.Items.GEM_CINNABAR)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustCinnabar = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustCinnabar")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_CINNABAR)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustAsbestos = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustAsbestos")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_ASBESTOS)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal nuggetIron = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("nuggetIron")
+			new ItemUnreal().setUnlocalizedName(Names.Items.NUGGET_IRON)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 
 	public static final ItemUnreal ingotTarydiumAlloyUnrefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("ingotTarydiumAlloyUnrefined")
+			new ItemUnreal().setUnlocalizedName(Names.Items.INGOT_TARYDIUM_ALLOY_UNREFINED)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal nuggetTarydiumAlloyUnrefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("nuggetTarydiumAlloyUnrefined")
+			new ItemUnreal().setUnlocalizedName(Names.Items.NUGGET_TARYDIUM_ALLOY_UNREFINED)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustTarydiumAlloyUnrefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustTarydiumAlloyUnrefined")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_TARYDIUM_ALLOY_UNREFINED)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 
 	public static final ItemUnreal ingotTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("ingotTarydiumAlloyRefined")
+			new ItemUnreal().setUnlocalizedName(Names.Items.INGOT_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal nuggetTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("nuggetTarydiumAlloyRefined")
+			new ItemUnreal().setUnlocalizedName(Names.Items.NUGGET_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustTarydiumAlloyRefined")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//components
 	public static final ItemUnreal caseIron = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("caseIron")
+			new ItemUnreal().setUnlocalizedName(Names.Items.CASE_IRON)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal caseTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("caseTitanium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.CASE_TITANIUM)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunBarrelIron = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("gunBarrelIron")
+			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_BARREL_IRON)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunBarrelIronLarge = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("gunBarrelIronLarge")
+			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_BARREL_IRON_LARGE)
 			.setMaxStackSize(8).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal weaponCasingBasic = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("weaponCaseBasic2")
+			new ItemUnreal().setUnlocalizedName(Names.Items.WEAPON_CASING_BASIC)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal weaponCasingAdv = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("weaponCaseBasic1")
+			new ItemUnreal().setUnlocalizedName(Names.Items.WEAPON_CASING_ADVANCED)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal tarydPowerBasic = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("powerCrystal8")
+			new ItemUnreal().setUnlocalizedName(Names.Items.TARYDIUM_POWER)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal chainLink = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("chainPart")
+			new ItemUnreal().setUnlocalizedName(Names.Items.CHAIN_LINK)
 			.setMaxStackSize(32).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal chainsawBlade = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("chainsawBlade")
+			new ItemUnreal().setUnlocalizedName(Names.Items.CHAINSAW_BLADE)
 			.setMaxStackSize(8).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal chainsawBladeHardened = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("chainsawBladeHardened")
+			new ItemUnreal().setUnlocalizedName(Names.Items.CHAINSAW_BLADE_HARDENED)
 			.setMaxStackSize(8).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal chainsawMotor = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("chainsawMotor")
+			new ItemUnreal().setUnlocalizedName(Names.Items.CHAINSAW_MOTOR)
 			.setMaxStackSize(4).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal SCUBATankEmpty = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("SCUBATankEmpty")
+			new ItemUnreal().setUnlocalizedName(Names.Items.SCUBA_TANK_EMPTY)
 			.setMaxStackSize(4).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal SCUBATankOxygen = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("SCUBATankFilled")
+			new ItemUnreal().setUnlocalizedName(Names.Items.SCUBA_TANK_OXYGEN)
 			.setMaxStackSize(4).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal flak = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("flak")
+			new ItemUnreal().setUnlocalizedName(Names.Items.FLAK)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal flakShellCold = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("flakShellCold")
+			new ItemUnreal().setUnlocalizedName(Names.Items.FLAK_SHELL_COLD)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal flakShellWarm = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("flakShellWarm")
+			new ItemUnreal().setUnlocalizedName(Names.Items.FLAK_SHELL_WARM)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal translocatorDisc = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("translocatorDisc")
+			new ItemUnreal().setUnlocalizedName(Names.Items.TRANSLOCATOR_DISC)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dispersionUpgrade = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dispersionUpgrade")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DISPERSION_UPGRADE)
 			.setMaxStackSize(4).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal warheadCone = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("warheadCone")
+			new ItemUnreal().setUnlocalizedName(Names.Items.WARHEAD_CONE)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal warheadBody = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("warheadBody")
+			new ItemUnreal().setUnlocalizedName(Names.Items.WARHEAD_BODY)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal warheadThruster = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("warheadThruster")
+			new ItemUnreal().setUnlocalizedName(Names.Items.WARHEAD_THRUSTER)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal rodTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("rodTarydiumAlloyRefined")
+	public static final ItemUnreal rodTarydiumAlloyUnrefined = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.ROD_TARYDIUM_ALLOY_UNREFINED)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal rodTarydiumAlloyUnrefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("rodTarydiumAlloyRefined")
+	public static final ItemUnreal rodTarydiumAlloyRefined = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.ROD_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//tools
 	public static final ItemUnreal bucketMercury = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("bucketMercury")
+			new ItemUnreal().setUnlocalizedName(Names.Items.BUCKET_MERCURY)
 			.setMaxStackSize(1).setContainerItem(Items.bucket)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal swordTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("axeTitanium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.SWORD_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal pickaxeTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("pickaxeTitanium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.PICK_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal axeTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("axeTitanium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.AXE_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal shovelTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("shovelTitanium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.SHOVEL_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal hoeTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("hoeTitanium")
+			new ItemUnreal().setUnlocalizedName(Names.Items.HOE_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal swordTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("axeTarydiumAlloyRefined")
+			new ItemUnreal().setUnlocalizedName(Names.Items.SWORD_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal pickaxeTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("pickaxeTarydiumAlloyRefined")
+			new ItemUnreal().setUnlocalizedName(Names.Items.PICK_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal axeTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("axeTarydiumAlloyRefined")
+			new ItemUnreal().setUnlocalizedName(Names.Items.AXE_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal shovelTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("shovelTarydiumAlloyRefined")
+			new ItemUnreal().setUnlocalizedName(Names.Items.SHOVEL_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal hoeTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("hoeTarydiumAlloyRefined")
+			new ItemUnreal().setUnlocalizedName(Names.Items.HOE_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//weapons
 	public static final ItemUnreal gunTranslocator = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("translocator")
+			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_TRANSLOCATOR)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunDispersionPistol = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dispersionPistol")
+			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_DISPERSION_PISTOL)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal meleeChainsaw = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("chainsaw")
+			new ItemUnreal().setUnlocalizedName(Names.Items.MELEE_CHAINSAW)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunStinger = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("stinger")
+			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_STINGER)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunFlak = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("flakCannon")
+			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_FLAK)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunEightball = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("eightballLauncher")
+			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_EIGHTBALL)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunRedeemer = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("redeemer")
+			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_REDEEMER)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//armor
 	public static final ItemUnreal armorSCUBAGear = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("SCUBAGear")
+			new ItemUnreal().setUnlocalizedName(Names.Items.SCUBA_GEAR)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal armorShieldBelt = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("shieldBelt")
+			new ItemUnreal().setUnlocalizedName(Names.Items.SHIELD_BELT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal armorToxinSuit = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("toxinSuit")
+			new ItemUnreal().setUnlocalizedName(Names.Items.TOXIN_SUIT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal armorAsbestosSuit = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("asbestosSuit")
+			new ItemUnreal().setUnlocalizedName(Names.Items.ASBESTOS_SUIT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal armorJumpBoots = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("jumpBoots")
+			new ItemUnreal().setUnlocalizedName(Names.Items.JUMP_BOOTS)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//ammo
 	public static final ItemUnreal ammoEightball = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("eightball")
+			new ItemUnreal().setUnlocalizedName(Names.Items.AMMO_EIGHTBALL)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal ammoFlakShell = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("flakShell")
+			new ItemUnreal().setUnlocalizedName(Names.Items.AMMO_FLAK_SHELL)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal ammoWarhead = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("redeemerMissile")
+			new ItemUnreal().setUnlocalizedName(Names.Items.AMMO_WARHEAD)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//vanilla item dusts
 	public static final ItemUnreal dustCoal = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustCoal")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_COAL)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustCharcoal = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustCharcoal")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_CHARCOAL)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustIron = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustIron")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_IRON)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustLapis = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustLapis")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_LAPIS)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustGold = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustIron")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_GOLD)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustNetherQuartz = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustNetherQuartz")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_NETHER_QUARTZ)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustDiamond = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustDiamond")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_DIAMOND)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustEmerald = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustEmerald")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_EMERALD)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustObsidian = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName("dustObsidian")
+			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_OBSIDIAN)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static void init()

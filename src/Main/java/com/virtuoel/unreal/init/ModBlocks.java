@@ -6,6 +6,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 import com.virtuoel.unreal.block.BlockUnreal;
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
+import com.virtuoel.unreal.reference.Names;
 import com.virtuoel.unreal.reference.Reference;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -15,15 +16,15 @@ public class ModBlocks
 {
 	
 	public static final BlockUnreal blockTitanium = (BlockUnreal)
-			new BlockUnreal(Material.iron).setBlockName("blockTitanium")
-			.setBlockTextureName("blockTitanium")
+			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_TITANIUM)
+			.setBlockTextureName(Names.Blocks.BLOCK_TITANIUM)
 			.setHardness(5.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeMetal)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final BlockUnreal blockTarydium = (BlockUnreal)
-			new BlockUnreal(Material.iron).setBlockName("blockTarydium")
-			.setBlockTextureName("blockTarydium")
+			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_TARYDIUM)
+			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM)
 			.setHardness(6.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeGlass)
 			.setLightLevel(1.0F)
@@ -31,8 +32,8 @@ public class ModBlocks
 	
 	public static void init()
 	{
-		GameRegistry.registerBlock(blockTitanium, "blockTitanium");
-		GameRegistry.registerBlock(blockTarydium, "blockTarydium");
+		GameRegistry.registerBlock(blockTitanium, Names.Blocks.BLOCK_TITANIUM);
+		GameRegistry.registerBlock(blockTarydium, Names.Blocks.BLOCK_TARYDIUM);
 		
 	}
 	

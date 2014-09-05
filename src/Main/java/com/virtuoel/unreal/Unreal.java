@@ -63,6 +63,7 @@ public class Unreal
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
+		
 		if(Reference.PRINT_DEBUG_OREDICT_VALUES)
 		{
 			for(String oreName : OreDictionary.getOreNames())

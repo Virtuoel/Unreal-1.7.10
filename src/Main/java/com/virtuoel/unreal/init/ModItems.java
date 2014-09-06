@@ -130,6 +130,10 @@ public class ModItems
 			new ItemUnreal().setUnlocalizedName(Names.Items.CHAIN_LINK)
 			.setMaxStackSize(32).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
+	public static final ItemUnreal ribbonMagnesium = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.RIBBON_MAGNESIUM)
+			.setMaxStackSize(48).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
 	public static final ItemUnreal chainsawBlade = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.CHAINSAW_BLADE)
 			.setMaxStackSize(8).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
@@ -370,6 +374,7 @@ public class ModItems
 		GameRegistry.registerItem(weaponCasingAdv, Names.Items.WEAPON_CASING_ADVANCED);
 		GameRegistry.registerItem(tarydPowerBasic, Names.Items.TARYDIUM_POWER);
 		GameRegistry.registerItem(chainLink, Names.Items.CHAIN_LINK);
+		GameRegistry.registerItem(ribbonMagnesium, Names.Items.RIBBON_MAGNESIUM);
 		GameRegistry.registerItem(chainsawBlade, Names.Items.CHAINSAW_BLADE);
 		GameRegistry.registerItem(chainsawBladeHardened, Names.Items.CHAINSAW_BLADE_HARDENED);
 		GameRegistry.registerItem(chainsawMotor, Names.Items.CHAINSAW_MOTOR);

@@ -46,6 +46,7 @@ public final class Names
 		public static final String WEAPON_CASING_ADVANCED = "weaponCasingAdv";
 		public static final String TARYDIUM_POWER = "tarydPowerBasic";
 		public static final String CHAIN_LINK = "chainLink";
+		public static final String RIBBON_MAGNESIUM = "ribbonMagnesium";
 		public static final String CHAINSAW_BLADE = "chainsawBlade";
 		public static final String CHAINSAW_BLADE_HARDENED = "chainsawBladeHardened";
 		public static final String CHAINSAW_MOTOR = "chainsawMotor";

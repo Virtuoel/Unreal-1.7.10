@@ -49,6 +49,7 @@ item.unreal:warheadThruster.name=Warhead Thruster
 item.unreal:rodTarydiumAlloyUnrefined.name=Unrefined Tarydium Alloy Rod
 item.unreal:rodTarydiumAlloyRefined.name=Refined Tarydium Alloy Rod
 # (Tools)
+item.unreal:debugTool.name=Unreal.debugTool();
 item.unreal:bucketMercury.name=Mercury Bucket
 item.unreal:voiceBox.name=Voice Box
 item.unreal:swordTitanium.name=Titanium Sword
@@ -93,6 +94,7 @@ item.unreal:dustObsidian.name=Obsidian Dust
 # Blocks
 tile.unreal:blockTitanium.name=Titanium Block
 tile.unreal:blockTarydium.name=Tarydium Block
+tile.unreal:oreTarydium.name=Tarydium Ore
 
 # Creative Tabs
 itemGroup.unreal=Unreal

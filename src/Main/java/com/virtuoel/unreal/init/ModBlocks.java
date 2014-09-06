@@ -23,17 +23,29 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final BlockUnreal blockTarydium = (BlockUnreal)
-			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_TARYDIUM)
+			new BlockUnreal(ModMaterials.tarydium).setBlockName(Names.Blocks.BLOCK_TARYDIUM)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM)
 			.setHardness(6.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeGlass)
 			.setLightLevel(1.0F)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
+	public static final BlockUnreal oreTarydium = (BlockUnreal)
+			new BlockUnreal(ModMaterials.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM)
+			.setBlockTextureName(Names.Blocks.ORE_TARYDIUM)
+			.setHardness(6.0F).setResistance(1000.0F)
+			.setStepSound(Block.soundTypeStone)
+			.setLightLevel(0.625F)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
 	public static void init()
 	{
+		blockTitanium.setHarvestLevel("pickaxe", 1);
 		GameRegistry.registerBlock(blockTitanium, Names.Blocks.BLOCK_TITANIUM);
+		blockTarydium.setHarvestLevel("pickaxe", 3);
 		GameRegistry.registerBlock(blockTarydium, Names.Blocks.BLOCK_TARYDIUM);
+		oreTarydium.setHarvestLevel("pickaxe", 3);
+		GameRegistry.registerBlock(oreTarydium, Names.Blocks.ORE_TARYDIUM);
 		
 	}
 	

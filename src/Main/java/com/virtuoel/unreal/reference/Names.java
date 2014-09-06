@@ -7,6 +7,7 @@ public final class Names
 	{
 		public static final String BLOCK_TITANIUM = "blockTitanium";
 		public static final String BLOCK_TARYDIUM = "blockTarydium";
+		public static final String ORE_TARYDIUM = "oreTarydium";
 	}
 
 	public static final class Items

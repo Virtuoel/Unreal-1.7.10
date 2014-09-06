@@ -75,35 +75,35 @@ public class ModItems
 	
 	public static final ItemUnreal ingotBedrockium = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.INGOT_BEDROCKIUM)
-			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(64).setCreativeTab(null);
 	
 	public static final ItemUnreal nuggetBedrockium = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.NUGGET_BEDROCKIUM)
-			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(64).setCreativeTab(null);
 
 	public static final ItemUnreal ingotTarydiumAlloyUnrefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.INGOT_TARYDIUM_ALLOY_UNREFINED)
-			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(64).setCreativeTab(null);
 	
 	public static final ItemUnreal nuggetTarydiumAlloyUnrefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.NUGGET_TARYDIUM_ALLOY_UNREFINED)
-			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(64).setCreativeTab(null);
 	
 	public static final ItemUnreal dustTarydiumAlloyUnrefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_TARYDIUM_ALLOY_UNREFINED)
-			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(64).setCreativeTab(null);
 
 	public static final ItemUnreal ingotTarydiumAlloyRefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.INGOT_TARYDIUM_ALLOY_REFINED)
-			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(64).setCreativeTab(null);
 	
 	public static final ItemUnreal nuggetTarydiumAlloyRefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.NUGGET_TARYDIUM_ALLOY_REFINED)
-			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(64).setCreativeTab(null);
 	
 	public static final ItemUnreal dustTarydiumAlloyRefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_TARYDIUM_ALLOY_REFINED)
-			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(64).setCreativeTab(null);
 	
 	//components
 	public static final ItemUnreal caseIron = (ItemUnreal)
@@ -196,11 +196,11 @@ public class ModItems
 	
 	public static final ItemUnreal rodTarydiumAlloyUnrefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.ROD_TARYDIUM_ALLOY_UNREFINED)
-			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(64).setCreativeTab(null);
 	
 	public static final ItemUnreal rodTarydiumAlloyRefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.ROD_TARYDIUM_ALLOY_REFINED)
-			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(64).setCreativeTab(null);
 	
 	//tools
 	public static final ItemUnreal bucketMercury = (ItemUnreal)
@@ -234,23 +234,23 @@ public class ModItems
 	
 	public static final ItemUnreal swordTarydiumAlloyRefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.SWORD_TARYDIUM_ALLOY_REFINED)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemUnreal pickaxeTarydiumAlloyRefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.PICK_TARYDIUM_ALLOY_REFINED)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemUnreal shovelTarydiumAlloyRefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.SHOVEL_TARYDIUM_ALLOY_REFINED)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemUnreal axeTarydiumAlloyRefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.AXE_TARYDIUM_ALLOY_REFINED)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemUnreal hoeTarydiumAlloyRefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.HOE_TARYDIUM_ALLOY_REFINED)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(1).setCreativeTab(null);
 	
 	//weapons
 	public static final ItemUnreal gunTranslocator = (ItemUnreal)

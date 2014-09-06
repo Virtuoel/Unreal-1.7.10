@@ -60,11 +60,12 @@ public final class Names
 		public static final String WARHEAD_CONE = "warheadCone";
 		public static final String WARHEAD_BODY = "warheadBody";
 		public static final String WARHEAD_THRUSTER = "warheadThruster";
-		public static final String ROD_TARYDIUM_ALLOY_UNREFINED = "rodTarydiumAlloyRefined";
-		public static final String ROD_TARYDIUM_ALLOY_REFINED = "rodTarydiumAlloyUnrefined";
+		public static final String ROD_TARYDIUM_ALLOY_UNREFINED = "rodTarydiumAlloyUnrefined";
+		public static final String ROD_TARYDIUM_ALLOY_REFINED = "rodTarydiumAlloyRefined";
 		
 		//tools
 		public static final String BUCKET_MERCURY = "bucketMercury";
+		public static final String VOICE_BOX = "voiceBox";
 		public static final String SWORD_TITANIUM = "swordTitanium";
 		public static final String PICK_TITANIUM = "pickaxeTitanium";
 		public static final String AXE_TITANIUM = "axeTitanium";
@@ -81,8 +82,8 @@ public final class Names
 		public static final String GUN_DISPERSION_PISTOL = "gunDispersionPistol";
 		public static final String MELEE_CHAINSAW = "meleeChainsaw";
 		public static final String GUN_STINGER = "gunStinger";
-		public static final String GUN_FLAK = "gunFlak";
-		public static final String GUN_EIGHTBALL = "gunEightball";
+		public static final String GUN_FLAK = "gunFlakCannon";
+		public static final String GUN_EIGHTBALL = "gunEightballLauncher";
 		public static final String GUN_REDEEMER = "gunRedeemer";
 		
 		//armor

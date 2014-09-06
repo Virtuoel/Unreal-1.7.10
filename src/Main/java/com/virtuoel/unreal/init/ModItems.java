@@ -72,6 +72,14 @@ public class ModItems
 	public static final ItemUnreal nuggetIron = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.NUGGET_IRON)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemUnreal ingotBedrockium = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.INGOT_BEDROCKIUM)
+			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemUnreal nuggetBedrockium = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.NUGGET_BEDROCKIUM)
+			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 
 	public static final ItemUnreal ingotTarydiumAlloyUnrefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.INGOT_TARYDIUM_ALLOY_UNREFINED)
@@ -200,6 +208,10 @@ public class ModItems
 			.setMaxStackSize(1).setContainerItem(Items.bucket)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
+	public static final ItemUnreal voiceBox = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.VOICE_BOX)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
 	public static final ItemUnreal swordTitanium = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.SWORD_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
@@ -208,12 +220,12 @@ public class ModItems
 			new ItemUnreal().setUnlocalizedName(Names.Items.PICK_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal axeTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.AXE_TITANIUM)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
 	public static final ItemUnreal shovelTitanium = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.SHOVEL_TITANIUM)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemUnreal axeTitanium = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.AXE_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal hoeTitanium = (ItemUnreal)
@@ -228,12 +240,12 @@ public class ModItems
 			new ItemUnreal().setUnlocalizedName(Names.Items.PICK_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal axeTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.AXE_TARYDIUM_ALLOY_REFINED)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
 	public static final ItemUnreal shovelTarydiumAlloyRefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.SHOVEL_TARYDIUM_ALLOY_REFINED)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemUnreal axeTarydiumAlloyRefined = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.AXE_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal hoeTarydiumAlloyRefined = (ItemUnreal)
@@ -358,6 +370,8 @@ public class ModItems
 		GameRegistry.registerItem(dustCinnabar, Names.Items.DUST_CINNABAR);
 		GameRegistry.registerItem(dustAsbestos, Names.Items.DUST_ASBESTOS);
 		GameRegistry.registerItem(nuggetIron, Names.Items.NUGGET_IRON);
+		GameRegistry.registerItem(ingotBedrockium, Names.Items.INGOT_BEDROCKIUM);
+		GameRegistry.registerItem(nuggetBedrockium, Names.Items.NUGGET_BEDROCKIUM);
 		GameRegistry.registerItem(ingotTarydiumAlloyUnrefined, Names.Items.INGOT_TARYDIUM_ALLOY_UNREFINED);
 		GameRegistry.registerItem(nuggetTarydiumAlloyUnrefined, Names.Items.NUGGET_TARYDIUM_ALLOY_UNREFINED);
 		GameRegistry.registerItem(dustTarydiumAlloyUnrefined, Names.Items.DUST_TARYDIUM_ALLOY_UNREFINED);
@@ -393,15 +407,16 @@ public class ModItems
 		
 		//tools
 		GameRegistry.registerItem(bucketMercury, Names.Items.BUCKET_MERCURY);
+		GameRegistry.registerItem(voiceBox, Names.Items.VOICE_BOX);
 		GameRegistry.registerItem(swordTitanium, Names.Items.SWORD_TITANIUM);
 		GameRegistry.registerItem(pickaxeTitanium, Names.Items.PICK_TITANIUM);
-		GameRegistry.registerItem(axeTitanium, Names.Items.AXE_TITANIUM);
 		GameRegistry.registerItem(shovelTitanium, Names.Items.SHOVEL_TITANIUM);
+		GameRegistry.registerItem(axeTitanium, Names.Items.AXE_TITANIUM);
 		GameRegistry.registerItem(hoeTitanium, Names.Items.HOE_TITANIUM);
 		GameRegistry.registerItem(swordTarydiumAlloyRefined, Names.Items.SWORD_TARYDIUM_ALLOY_REFINED);
 		GameRegistry.registerItem(pickaxeTarydiumAlloyRefined, Names.Items.PICK_TARYDIUM_ALLOY_REFINED);
-		GameRegistry.registerItem(axeTarydiumAlloyRefined, Names.Items.AXE_TARYDIUM_ALLOY_REFINED);
 		GameRegistry.registerItem(shovelTarydiumAlloyRefined, Names.Items.SHOVEL_TARYDIUM_ALLOY_REFINED);
+		GameRegistry.registerItem(axeTarydiumAlloyRefined, Names.Items.AXE_TARYDIUM_ALLOY_REFINED);
 		GameRegistry.registerItem(hoeTarydiumAlloyRefined, Names.Items.HOE_TARYDIUM_ALLOY_REFINED);
 		
 		//weapons

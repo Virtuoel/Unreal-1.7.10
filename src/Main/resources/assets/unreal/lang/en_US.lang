@@ -1,6 +1,94 @@
 # Items
+# (Ore materials, metals, gems, alloys)
 item.unreal:ingotTitanium.name=Titanium Ingot
-item.unreal:gemTarydium.name=Tarydium Gem
+item.unreal:nuggetTitanium.name=Titanium Nugget
+item.unreal:dustTitanium.name=Titanium Dust
+item.unreal:ingotRutile.name=Impure Titanium Ingot
+item.unreal:nuggetRutile.name=Impure Titanium Nugget
+item.unreal:dustRutile.name=Impure Titanium Dust
+item.unreal:ingotMagnesium.name=Magnesium Ingot
+item.unreal:nuggetMagnesium.name=Magnesium Nugget
+item.unreal:dustMagnesium.name=Magnesium Dust
+item.unreal:gemTarydium.name=Tarydium Crystal
+item.unreal:shardTarydium.name=Tarydium Shard
+item.unreal:gemCinnabar.name=Cinnabar
+item.unreal:dustCinnabar.name=Cinnabar Dust
+item.unreal:dustAsbestos.name=Asbestos Dust
+item.unreal:nuggetIron.name=Iron Nugget
+item.unreal:ingotBedrockium.name=Bedrockium Ingot
+item.unreal:nuggetBedrockium.name=Bedrockium Nugget
+item.unreal:ingotTarydiumAlloyUnrefined.name=Unrefined Tarydium Alloy Ingot
+item.unreal:nuggetTarydiumAlloyUnrefined.name=Unrefined Tarydium Alloy Nugget
+item.unreal:dustTarydiumAlloyUnrefined.name=Unrefined Tarydium Alloy Dust
+item.unreal:ingotTarydiumAlloyRefined.name=Refined Tarydium Alloy Ingot
+item.unreal:nuggetTarydiumAlloyRefined.name=Refined Tarydium Alloy Nugget
+item.unreal:dustTarydiumAlloyRefined.name=Refined Tarydium Alloy Dust
+# (Components)
+item.unreal:caseIron.name=Iron Casing
+item.unreal:caseTitanium.name=Titanium Casing
+item.unreal:gunBarrelIron.name=Ammo Barrel
+item.unreal:gunBarrelIronLarge.name=Bundled Ammo Barrel
+item.unreal:weaponCasingBasic.name=Basic Weapon Casing
+item.unreal:weaponCasingAdv.name=Advanced Weapon Casing
+item.unreal:tarydPowerBasic.name=Tarydium Energy Crystal
+item.unreal:chainLink.name=Chain Link
+item.unreal:ribbonMagnesium.name=
+item.unreal:chainsawBlade.name=Chainsaw Blade
+item.unreal:chainsawBladeHardened.name=Hardened Chainsaw Blade
+item.unreal:chainsawMotor.name=Chainsaw Motor
+item.unreal:SCUBATankEmpty.name=SCUBA Tank (Empty)
+item.unreal:SCUBATankOxygen.name=SCUBA Tank (Filled)
+item.unreal:flak.name=Flak
+item.unreal:flakShellCold.name=Cold Flak Shell
+item.unreal:flakShellWarm.name=Heated Flak Shell
+item.unreal:translocatorDisc.name=Translocator Disc
+item.unreal:dispersionUpgrade.name=Brilithium Power Core
+item.unreal:warheadCone.name=Warhead Cone
+item.unreal:warheadBody.name=Warhead Body
+item.unreal:warheadThruster.name=Warhead Thruster
+item.unreal:rodTarydiumAlloyUnrefined.name=Unrefined Tarydium Alloy Rod
+item.unreal:rodTarydiumAlloyRefined.name=Refined Tarydium Alloy Rod
+# (Tools)
+item.unreal:bucketMercury.name=Mercury Bucket
+item.unreal:voiceBox.name=Voice Box
+item.unreal:swordTitanium.name=Titanium Sword
+item.unreal:pickaxeTitanium.name=Titanium Pickaxe
+item.unreal:shovelTitanium.name=Titanium Shovel
+item.unreal:axeTitanium.name=Titanium Axe
+item.unreal:hoeTitanium.name=Titanium Hoe
+item.unreal:swordTarydiumAlloyRefined.name=Refined Tarydium Alloy Sword
+item.unreal:pickaxeTarydiumAlloyRefined.name=Refined Tarydium Alloy Pickaxe
+item.unreal:shovelTarydiumAlloyRefined.name=Refined Tarydium Alloy Shovel
+item.unreal:axeTarydiumAlloyRefined.name=Refined Tarydium Alloy Axe
+item.unreal:hoeTarydiumAlloyRefined.name=Refined Tarydium Alloy Hoe
+# (Weapons)
+item.unreal:gunTranslocator.name=Translocator.
+item.unreal:gunDispersionPistol.name=Dispersion Pistol
+item.unreal:meleeChainsaw.name=Chainsaw
+item.unreal:gunStinger.name=Stinger
+item.unreal:gunFlak.name=Flak Cannon
+item.unreal:gunEightball.name=Eightball Launcher
+item.unreal:gunRedeemer.name=Redeemer
+# (Armor)
+item.unreal:armorSCUBAGear.name=SCUBA Gear
+item.unreal:armorToxinSuit.name=Toxin Suit
+item.unreal:armorAsbestosSuit.name=Asbestos Suit
+item.unreal:armorShieldBelt.name=Shield Belt
+item.unreal:armorJumpBoots.name=Jump Boots
+# (Ammo)
+item.unreal:ammoEightball.name=Eightball Rocket
+item.unreal:ammoFlakShell.name=Flak Shell
+item.unreal:ammoWarhead.name=Redeemer Warhead
+# (Vanilla Item Dusts)
+item.unreal:dustCoal.name=Coal Dust
+item.unreal:dustCharcoal.name=Charcoal Dust
+item.unreal:dustIron.name=Iron Dust
+item.unreal:dustLapis.name=Lapis Lazuli Dust
+item.unreal:dustGold.name=Gold Dust
+item.unreal:dustNetherQuartz.name=Nether Quartz Dust
+item.unreal:dustDiamond.name=Diamond Dust
+item.unreal:dustEmerald.name=Emerald Dust
+item.unreal:dustObsidian.name=Obsidian Dust
 
 # Blocks
 tile.unreal:blockTitanium.name=Titanium Block

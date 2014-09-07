@@ -93,8 +93,15 @@ item.unreal:dustObsidian.name=Obsidian Dust
 
 # Blocks
 tile.unreal:blockTitanium.name=Titanium Block
+tile.unreal:blockRutile.name=Impure Titanium Block
+tile.unreal:oreRutile.name=Impure Titanium Ore
+tile.unreal:blockMagnesium.name=Magnesium Block
+tile.unreal:oreMagnesium.name=Magnesium Ore
 tile.unreal:blockTarydium.name=Tarydium Block
 tile.unreal:oreTarydium.name=Tarydium Ore
+tile.unreal:oreTarydiumNether.name=Tarydium Ore
+tile.unreal:oreTarydiumEnd.name=Tarydium Ore
+tile.unreal:oreTarydiumObsidian.name=Tarydium Ore
 
 # Creative Tabs
 itemGroup.unreal=Unreal

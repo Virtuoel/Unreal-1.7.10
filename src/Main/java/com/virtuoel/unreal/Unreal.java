@@ -43,6 +43,9 @@ public class Unreal
 		ModBlocks.init();
 		LogHelper.info("Blocks Initilized.");
 		
+		ModItems.initTools();
+		LogHelper.info("Tool Types Assigned.");
+		
 		ModRecipes.initOreDict();
 		LogHelper.info("Ore Dictionary Registration Completed.");
 		

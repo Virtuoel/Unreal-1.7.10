@@ -1,6 +1,7 @@
 package com.virtuoel.unreal.init;
 
 import net.minecraft.init.Items;
+import net.minecraftforge.common.MinecraftForge;
 
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.item.ItemUnreal;
@@ -203,6 +204,10 @@ public class ModItems
 			.setMaxStackSize(64).setCreativeTab(null);
 	
 	//tools
+	public static final ItemUnreal debugTool = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.DEBUG_TOOL)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
 	public static final ItemUnreal bucketMercury = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.BUCKET_MERCURY)
 			.setMaxStackSize(1).setContainerItem(Items.bucket)
@@ -452,4 +457,10 @@ public class ModItems
 		GameRegistry.registerItem(dustObsidian, Names.Items.DUST_OBSIDIAN);
 		
 	}
+	
+	public static void initTools()
+	{
+		
+	}
+	
 }

@@ -6,8 +6,15 @@ public final class Names
 	public static final class Blocks
 	{
 		public static final String BLOCK_TITANIUM = "blockTitanium";
+		public static final String BLOCK_RUTILE = "blockRutile";
+		public static final String ORE_RUTILE = "oreRutile";
+		public static final String BLOCK_MAGNESIUM = "blockMagnesium";
+		public static final String ORE_MAGNESIUM = "oreMagnesium";
 		public static final String BLOCK_TARYDIUM = "blockTarydium";
 		public static final String ORE_TARYDIUM = "oreTarydium";
+		public static final String ORE_TARYDIUM_NETHER = "oreTarydiumNether";
+		public static final String ORE_TARYDIUM_END = "oreTarydiumEnd";
+		public static final String ORE_TARYDIUM_OBSIDIAN = "oreTarydiumObsidian";
 	}
 
 	public static final class Items
@@ -65,6 +72,7 @@ public final class Names
 		public static final String ROD_TARYDIUM_ALLOY_REFINED = "rodTarydiumAlloyRefined";
 		
 		//tools
+		public static final String DEBUG_TOOL = "debugTool";
 		public static final String BUCKET_MERCURY = "bucketMercury";
 		public static final String VOICE_BOX = "voiceBox";
 		public static final String SWORD_TITANIUM = "swordTitanium";

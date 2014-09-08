@@ -37,17 +37,26 @@ public class Unreal
 		proxy.registerKeyBindings();
 		LogHelper.info("Key Binding Registration Completed.");
 		
-		ModItems.init();
-		LogHelper.info("Items Initilized.");
-		
-		ModBlocks.init();
-		LogHelper.info("Blocks Initilized.");
-		
-		ModItems.initTools();
-		LogHelper.info("Tool Types Assigned.");
-		
-		ModRecipes.initOreDict();
-		LogHelper.info("Ore Dictionary Registration Completed.");
+		if(!Reference.DEBUG_CLEAR_ITEMS){
+			ModItems.init();
+			LogHelper.info("Items Initilized.");
+			
+			ModBlocks.init();
+			LogHelper.info("Blocks Initilized.");
+			
+			ModItems.initTools();
+			LogHelper.info("Tool Types Assigned.");
+			
+			ModRecipes.initOreDict();
+			LogHelper.info("Ore Dictionary Registration Completed.");
+		}
+		else
+		{
+			LogHelper.info("Items Cleared.");
+			LogHelper.info("Blocks Cleared.");
+			LogHelper.info("Tool Type Assigment Skipped.");
+			LogHelper.info("Ore Dictionary Registration Skipped.");
+		}
 		
 		LogHelper.info("Pre Initilization Completed.");
 	}
@@ -57,8 +66,15 @@ public class Unreal
 	{
 		FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
 		
-		ModRecipes.init();
-		LogHelper.info("Recipes Initilized.");
+		if(!Reference.DEBUG_CLEAR_ITEMS)
+		{
+			ModRecipes.init();
+			LogHelper.info("Recipes Initilized.");
+		}
+		else
+		{
+			LogHelper.info("Recipes Cleared.");
+		}
 		
 		LogHelper.info("Initilization Completed.");
 	}

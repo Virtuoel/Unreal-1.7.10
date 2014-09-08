@@ -990,7 +990,7 @@ public class ModRecipes
 			"SSS",'S',ModBlocks.stonePolished,
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorSCUBAGear,1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.ribbonMagnesium,1), new Object[]{
 			"MMM",'M',"nuggetMagnesium",
 			}));
 		

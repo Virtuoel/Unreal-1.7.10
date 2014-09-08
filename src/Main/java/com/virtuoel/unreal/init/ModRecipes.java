@@ -1054,6 +1054,9 @@ public class ModRecipes
 		
 		GameRegistry.addSmelting(ModBlocks.ladderIron, 
 				new ItemStack(Items.iron_ingot,1), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.ribbonMagnesium, 
+				new ItemStack(ModItems.nuggetMagnesium,3), 0.1F);
 
 	}
 	

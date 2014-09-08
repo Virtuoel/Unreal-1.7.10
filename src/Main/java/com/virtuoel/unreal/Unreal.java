@@ -69,7 +69,10 @@ public class Unreal
 		if(!Reference.DEBUG_CLEAR_ITEMS)
 		{
 			ModRecipes.init();
-			LogHelper.info("Recipes Initilized.");
+			LogHelper.info("Crafting Recipes Initilized.");
+			
+			ModRecipes.initSmelting();
+			LogHelper.info("Smelting Recipes Initilized.");
 		}
 		else
 		{

@@ -25,7 +25,7 @@ public class ModRecipes
 				(Items.gold_ingot,1),
 				"III","III","III",'I',"nuggetGold"));
 		*/
-
+		
 		//TODO temporary debugTool recipes ---------------------------------------------------------------------------------------------------------------------------------
 		
 		//crafting
@@ -38,36 +38,18 @@ public class ModRecipes
 			}));
 		
 		//fueling
+		ItemStack coalLike = new ItemStack(Items.coal,1,OreDictionary.WILDCARD_VALUE);
+
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,3), new Object[]{
-			"virtuoel.unreal.debug","coal","coal",
+			"virtuoel.unreal.debug",coalLike,coalLike,
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,3), new Object[]{
-			"virtuoel.unreal.debug","charcoal","coal",
-			}));
-		
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,3), new Object[]{
-			"virtuoel.unreal.debug","charcoal","charcoal",
-			}));
-		
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,3), new Object[]{
-			"virtuoel.unreal.debug","coal","virtuoel.unreal.debug",
-			}));
-		
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,3), new Object[]{
-			"virtuoel.unreal.debug","charcoal","virtuoel.unreal.debug",
+			"virtuoel.unreal.debug","virtuoel.unreal.debug",coalLike,
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,4), new Object[]{
-			"virtuoel.unreal.debug","charcoal","charcoal","virtuoel.unreal.debug",
-			}));
-		
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,4), new Object[]{
-			"virtuoel.unreal.debug","coal","charcoal","virtuoel.unreal.debug",
-			}));
-		
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,4), new Object[]{
-			"virtuoel.unreal.debug","coal","coal","virtuoel.unreal.debug",
+			"virtuoel.unreal.debug","virtuoel.unreal.debug",coalLike,coalLike,
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,13), new Object[]{
@@ -714,7 +696,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.meleeChainsaw,1,1), new Object[]{
-			"BBT","CCT","BBM",'B',Blocks.iron_bars,'T',"blockTitanium",'C',ModItems.chainsawBladeHardened,'M',ModItems.chainsawMotor,
+			"BBT","CCT","OOM",'B',Blocks.iron_bars,'T',"blockTitanium",'C',ModItems.chainsawBladeHardened,'M',ModItems.chainsawMotor,'O',"dustObsidian",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.chainmail_helmet,1), new Object[]{
@@ -1003,8 +985,72 @@ public class ModRecipes
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.stone_slab,6,0), new Object[]{
 			"SSS",'S',ModBlocks.stonePolished,
 			}));
-
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorSCUBAGear,1), new Object[]{
+			"MMM",'M',"nuggetMagnesium",
+			}));
+		
+	}
+	
+	public static void initSmelting()
+	{
+		GameRegistry.addSmelting(ModBlocks.oreRutile, 
+				new ItemStack(ModItems.ingotRutile,1), 1.0F);
+		
+		GameRegistry.addSmelting(ModBlocks.cactusTarydium, 
+				new ItemStack(ModItems.shardTarydium,1), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.tarydPowerBasic, 
+				new ItemStack(ModItems.recordUnreal,1), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.flakShellCold, 
+				new ItemStack(ModItems.flakShellWarm,1), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.caseIron, 
+				new ItemStack(Items.iron_ingot,2), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.caseTitanium, 
+				new ItemStack(ModItems.ingotTitanium,2), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.dustMagnesium, 
+				new ItemStack(ModItems.ingotMagnesium,1), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.dustTitanium, 
+				new ItemStack(ModItems.ingotTitanium,1), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.dustRutile, 
+				new ItemStack(ModItems.ingotRutile,1), 0.1F);
+		
+		GameRegistry.addSmelting(ModBlocks.blockUUTC, 
+				new ItemStack(ModItems.nuggetTarydiumAlloyUnrefined,1), 1.0F);
+		
+		GameRegistry.addSmelting(ModItems.dustIron, 
+				new ItemStack(Items.iron_ingot,1), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.dustGold, 
+				new ItemStack(Items.gold_ingot,1), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.dustTarydiumAlloyUnrefined, 
+				new ItemStack(ModItems.ingotTarydiumAlloyUnrefined,1), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.dustTarydiumAlloyRefined, 
+				new ItemStack(ModItems.ingotTarydiumAlloyRefined,1), 0.1F);
+
+		GameRegistry.addSmelting(ModItems.gunBarrelIron, 
+				new ItemStack(ModItems.nuggetIron,14), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.gunBarrelIronLarge, 
+				new ItemStack(Items.iron_ingot,12), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.chainLink, 
+				new ItemStack(ModItems.nuggetIron,5), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.chainsawBlade, 
+				new ItemStack(Items.iron_ingot,6), 0.1F);
+		
+		GameRegistry.addSmelting(ModBlocks.ladderIron, 
+				new ItemStack(Items.iron_ingot,1), 0.1F);
+
 	}
 	
 	public static void initOreDict()
@@ -1053,7 +1099,7 @@ public class ModRecipes
 		OreDictionary.registerOre("ingotRutile", ModItems.ingotRutile);
 		OreDictionary.registerOre("dustRutile", ModItems.dustRutile);
 		OreDictionary.registerOre("nuggetRutile", ModItems.nuggetRutile);
-		OreDictionary.registerOre("blockRutile", ModBlocks.blockRutile);/*
+		OreDictionary.registerOre("blockRutile", ModBlocks.blockRutile);
 		OreDictionary.registerOre("netherrackCompressed1x", ModBlocks.netherrackCompressed1x);
 		OreDictionary.registerOre("netherrackCompressed2x", ModBlocks.netherrackCompressed2x);
 		OreDictionary.registerOre("netherrackCompressed3x", ModBlocks.netherrackCompressed3x);
@@ -1062,7 +1108,7 @@ public class ModRecipes
 		OreDictionary.registerOre("endStoneCompressed2x", ModBlocks.endStoneCompressed2x);
 		OreDictionary.registerOre("endStoneCompressed3x", ModBlocks.endStoneCompressed3x);
 		OreDictionary.registerOre("endStoneCompressed4x", ModBlocks.endStoneCompressed4x);
-		*/OreDictionary.registerOre("blockTarydiumAlloyRefined", ModBlocks.blockTarydiumAlloyRefined);
+		OreDictionary.registerOre("blockTarydiumAlloyRefined", ModBlocks.blockTarydiumAlloyRefined);
 		OreDictionary.registerOre("blockTarydiumAlloyUnrefined", ModBlocks.blockTarydiumAlloyUnrefined);
 		OreDictionary.registerOre("ingotTarydiumAlloyRefined", ModItems.ingotTarydiumAlloyRefined);
 		OreDictionary.registerOre("ingotTarydiumAlloyUnrefined", ModItems.ingotTarydiumAlloyUnrefined);

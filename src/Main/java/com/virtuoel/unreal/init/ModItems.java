@@ -58,8 +58,8 @@ public class ModItems
 			new ItemUnreal().setUnlocalizedName(Names.Items.SHARD_TARYDIUM)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal gemCinnabar = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.GEM_CINNABAR)
+	public static final ItemUnreal crystalCinnabar = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.CRYSTAL_CINNABAR)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustCinnabar = (ItemUnreal)
@@ -206,7 +206,7 @@ public class ModItems
 	//tools
 	public static final ItemUnreal debugTool = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.DEBUG_TOOL)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal bucketMercury = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.BUCKET_MERCURY)
@@ -256,6 +256,10 @@ public class ModItems
 	public static final ItemUnreal hoeTarydiumAlloyRefined = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.HOE_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(null);
+	
+	public static final ItemUnreal recordUnreal = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.RECORD_UNREAL)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//weapons
 	public static final ItemUnreal gunTranslocator = (ItemUnreal)
@@ -371,7 +375,7 @@ public class ModItems
 		GameRegistry.registerItem(dustMagnesium, Names.Items.DUST_MAGNESIUM);
 		GameRegistry.registerItem(gemTarydium, Names.Items.GEM_TARYDIUM);
 		GameRegistry.registerItem(shardTarydium, Names.Items.SHARD_TARYDIUM);
-		GameRegistry.registerItem(gemCinnabar, Names.Items.GEM_CINNABAR);
+		GameRegistry.registerItem(crystalCinnabar, Names.Items.CRYSTAL_CINNABAR);
 		GameRegistry.registerItem(dustCinnabar, Names.Items.DUST_CINNABAR);
 		GameRegistry.registerItem(dustAsbestos, Names.Items.DUST_ASBESTOS);
 		GameRegistry.registerItem(nuggetIron, Names.Items.NUGGET_IRON);
@@ -424,6 +428,7 @@ public class ModItems
 		GameRegistry.registerItem(shovelTarydiumAlloyRefined, Names.Items.SHOVEL_TARYDIUM_ALLOY_REFINED);
 		GameRegistry.registerItem(axeTarydiumAlloyRefined, Names.Items.AXE_TARYDIUM_ALLOY_REFINED);
 		GameRegistry.registerItem(hoeTarydiumAlloyRefined, Names.Items.HOE_TARYDIUM_ALLOY_REFINED);
+		GameRegistry.registerItem(recordUnreal, Names.Items.RECORD_UNREAL);
 		
 		//weapons
 		GameRegistry.registerItem(gunTranslocator, Names.Items.GUN_TRANSLOCATOR);

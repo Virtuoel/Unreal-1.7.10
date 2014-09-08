@@ -1,8 +1,10 @@
 package com.virtuoel.unreal.init;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFire;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 
 import com.virtuoel.unreal.block.BlockCactusTarydium;
 import com.virtuoel.unreal.block.BlockIronLadder;
@@ -165,6 +167,62 @@ public class ModBlocks
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
+	public static final Block netherrackCompressed1x = (BlockUnreal)
+			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_1X)
+			.setBlockTextureName(Names.Blocks.NETHERRACK_COMPRESSED_1X)
+			.setHardness(0.8F)
+			.setStepSound(Block.soundTypeStone)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final Block netherrackCompressed2x = (BlockUnreal)
+			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_2X)
+			.setBlockTextureName(Names.Blocks.NETHERRACK_COMPRESSED_2X)
+			.setHardness(1.2F)
+			.setStepSound(Block.soundTypeStone)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final Block netherrackCompressed3x = (BlockUnreal)
+			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_3X)
+			.setBlockTextureName(Names.Blocks.NETHERRACK_COMPRESSED_3X)
+			.setHardness(1.6F)
+			.setStepSound(Block.soundTypeStone)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final Block netherrackCompressed4x = (BlockUnreal)
+			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_4X)
+			.setBlockTextureName(Names.Blocks.NETHERRACK_COMPRESSED_4X)
+			.setHardness(2.0F)
+			.setStepSound(Block.soundTypeStone)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final Block endStoneCompressed1x = (BlockUnreal)
+			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.END_STONE_COMPRESSED_1X)
+			.setBlockTextureName(Names.Blocks.END_STONE_COMPRESSED_1X)
+			.setHardness(6.0F)
+			.setStepSound(Block.soundTypeStone)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final Block endStoneCompressed2x = (BlockUnreal)
+			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.END_STONE_COMPRESSED_2X)
+			.setBlockTextureName(Names.Blocks.END_STONE_COMPRESSED_2X)
+			.setHardness(9.0F)
+			.setStepSound(Block.soundTypeStone)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final Block endStoneCompressed3x = (BlockUnreal)
+			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.END_STONE_COMPRESSED_3X)
+			.setBlockTextureName(Names.Blocks.END_STONE_COMPRESSED_3X)
+			.setHardness(12.0F)
+			.setStepSound(Block.soundTypeStone)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final Block endStoneCompressed4x = (BlockUnreal)
+			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.END_STONE_COMPRESSED_4X)
+			.setBlockTextureName(Names.Blocks.END_STONE_COMPRESSED_4X)
+			.setHardness(15.0F)
+			.setStepSound(Block.soundTypeStone)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
 	public static final BlockUnreal blockCinnabar = (BlockUnreal)
 			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_CINNABAR)
 			.setBlockTextureName(Names.Blocks.BLOCK_CINNABAR)
@@ -323,6 +381,23 @@ public class ModBlocks
 		GameRegistry.registerBlock(slabStoneSmooth, Names.Blocks.SLAB_STONE_SMOOTH);
 		obsidianNether.setHarvestLevel("pickaxe", 0);
 		GameRegistry.registerBlock(obsidianNether, Names.Blocks.OBSIDIAN_NETHER);
+
+		netherrackCompressed1x.setHarvestLevel("pickaxe", 0);
+		GameRegistry.registerBlock(netherrackCompressed1x, Names.Blocks.NETHERRACK_COMPRESSED_1X);
+		netherrackCompressed2x.setHarvestLevel("pickaxe", 0);
+		GameRegistry.registerBlock(netherrackCompressed2x, Names.Blocks.NETHERRACK_COMPRESSED_2X);
+		netherrackCompressed3x.setHarvestLevel("pickaxe", 0);
+		GameRegistry.registerBlock(netherrackCompressed3x, Names.Blocks.NETHERRACK_COMPRESSED_3X);
+		netherrackCompressed4x.setHarvestLevel("pickaxe", 0);
+		GameRegistry.registerBlock(netherrackCompressed4x, Names.Blocks.NETHERRACK_COMPRESSED_4X);
+		endStoneCompressed1x.setHarvestLevel("pickaxe", 0);
+		GameRegistry.registerBlock(endStoneCompressed1x, Names.Blocks.END_STONE_COMPRESSED_1X);
+		endStoneCompressed2x.setHarvestLevel("pickaxe", 0);
+		GameRegistry.registerBlock(endStoneCompressed2x, Names.Blocks.END_STONE_COMPRESSED_2X);
+		endStoneCompressed3x.setHarvestLevel("pickaxe", 0);
+		GameRegistry.registerBlock(endStoneCompressed3x, Names.Blocks.END_STONE_COMPRESSED_3X);
+		endStoneCompressed4x.setHarvestLevel("pickaxe", 0);
+		GameRegistry.registerBlock(endStoneCompressed4x, Names.Blocks.END_STONE_COMPRESSED_4X);
 		
 		blockCinnabar.setHarvestLevel("pickaxe", 2);
 		GameRegistry.registerBlock(blockCinnabar, Names.Blocks.BLOCK_CINNABAR);
@@ -338,6 +413,7 @@ public class ModBlocks
 		GameRegistry.registerBlock(blockFlint, Names.Blocks.BLOCK_FLINT);
 		blockCharcoal.setHarvestLevel("pickaxe", 0);
 		GameRegistry.registerBlock(blockCharcoal, Names.Blocks.BLOCK_CHARCOAL);
+		Blocks.fire.setFireInfo(blockCharcoal, 5, 5);
 		
 		blockGunpowder.setHarvestLevel("pickaxe", 0);
 		blockGunpowder.setHarvestLevel("shovel", 0);
@@ -358,6 +434,7 @@ public class ModBlocks
 		GameRegistry.registerBlock(blockNetherWart, Names.Blocks.BLOCK_NETHER_WART);
 		blockCocoa.setHarvestLevel("axe", 0);
 		GameRegistry.registerBlock(blockCocoa, Names.Blocks.BLOCK_COCOA);
+		Blocks.fire.setFireInfo(blockCocoa, 5, 20);
 		
 	}
 }

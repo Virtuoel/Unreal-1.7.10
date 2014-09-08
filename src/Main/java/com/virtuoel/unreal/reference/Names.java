@@ -26,6 +26,14 @@ public final class Names
 		public static final String STONE_POLISHED = "stonePolished";
 		public static final String SLAB_STONE_SMOOTH = "slabStoneSmooth";
 		public static final String OBSIDIAN_NETHER = "obsidianNether";
+		public static final String NETHERRACK_COMPRESSED_1X = "netherrackCompressed1x";
+		public static final String NETHERRACK_COMPRESSED_2X = "netherrackCompressed2x";
+		public static final String NETHERRACK_COMPRESSED_3X = "netherrackCompressed3x";
+		public static final String NETHERRACK_COMPRESSED_4X = "netherrackCompressed4x";
+		public static final String END_STONE_COMPRESSED_1X = "endStoneCompressed1x";
+		public static final String END_STONE_COMPRESSED_2X = "endStoneCompressed2x";
+		public static final String END_STONE_COMPRESSED_3X = "endStoneCompressed3x";
+		public static final String END_STONE_COMPRESSED_4X = "endStoneCompressed4x";
 		public static final String BLOCK_CINNABAR = "blockCinnabar";
 		public static final String BLOCK_UUTC = "blockUUTC";
 		public static final String BLOCK_TARYDIUM_ALLOY_UNREFINED = "blockTarydiumAlloyUnrefined";
@@ -58,7 +66,7 @@ public final class Names
 		public static final String DUST_MAGNESIUM = "dustMagnesium";
 		public static final String GEM_TARYDIUM = "gemTarydium";
 		public static final String SHARD_TARYDIUM = "shardTarydium";
-		public static final String GEM_CINNABAR = "gemCinnabar";
+		public static final String CRYSTAL_CINNABAR = "crystalCinnabar";
 		public static final String DUST_CINNABAR = "dustCinnabar";
 		public static final String DUST_ASBESTOS = "dustAsbestos";
 		public static final String NUGGET_IRON = "nuggetIron";
@@ -112,6 +120,7 @@ public final class Names
 		public static final String AXE_TARYDIUM_ALLOY_REFINED = "axeTarydiumAlloyRefined";
 		public static final String SHOVEL_TARYDIUM_ALLOY_REFINED = "shovelTarydiumAlloyRefined";
 		public static final String HOE_TARYDIUM_ALLOY_REFINED = "hoeTarydiumAlloyRefined";
+		public static final String RECORD_UNREAL = "recordUnreal";
 		
 		//weapons
 		public static final String GUN_TRANSLOCATOR = "gunTranslocator";

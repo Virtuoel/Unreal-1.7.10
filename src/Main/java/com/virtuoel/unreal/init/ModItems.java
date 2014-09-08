@@ -1,7 +1,6 @@
 package com.virtuoel.unreal.init;
 
 import net.minecraft.init.Items;
-import net.minecraftforge.common.MinecraftForge;
 
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.item.ItemUnreal;

@@ -1,15 +1,13 @@
 package com.virtuoel.unreal.client.gui;
 
-import java.util.List;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraftforge.common.config.ConfigElement;
+import net.minecraftforge.common.config.Configuration;
 
 import com.virtuoel.unreal.handler.ConfigurationHandler;
 import com.virtuoel.unreal.reference.Reference;
 
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraftforge.common.config.ConfigElement;
-import net.minecraftforge.common.config.Configuration;
 import cpw.mods.fml.client.config.GuiConfig;
-import cpw.mods.fml.client.config.IConfigElement;
 
 public class ModGuiConfig extends GuiConfig
 {

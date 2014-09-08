@@ -1,15 +1,16 @@
 package com.virtuoel.unreal.item;
 
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.EnumAction;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.init.ModItems;
 import com.virtuoel.unreal.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.EnumAction;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
 public class ItemUnreal extends Item
 {

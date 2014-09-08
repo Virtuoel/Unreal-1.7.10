@@ -12,19 +12,22 @@ public class ModRecipes
 {
 	public static void init()
 	{
-		/*
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack
-				(Items.golden_apple,1,0),
-				"GGG","GAG","GGG",'G',"ingotGold",'A',Items.apple));
-		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack
-				(Items.golden_apple,1,1),
-				"GGG","GAG","GGG",'G',"blockGold",'A',Items.apple));
-		
+		//vanilla tweaks
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack
 				(Items.gold_ingot,1),
 				"III","III","III",'I',"nuggetGold"));
-		*/
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack
+				(Items.coal,9,0),
+				"I",'I',"blockCoal"));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack
+				(Items.redstone,9,0),
+				"I",'I',"blockRedstone"));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack
+				(Items.dye,9,4),
+				"I",'I',"blockLapis"));
 		
 		//TODO temporary debugTool recipes ---------------------------------------------------------------------------------------------------------------------------------
 		

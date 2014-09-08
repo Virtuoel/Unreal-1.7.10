@@ -1,10 +1,9 @@
 package com.virtuoel.unreal.block;
 
-import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
+
+import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 
 public class BlockTemplateDummy extends BlockUnreal
 {

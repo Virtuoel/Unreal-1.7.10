@@ -2,12 +2,12 @@ package com.virtuoel.unreal.handler;
 
 import java.io.File;
 
+import net.minecraftforge.common.config.Configuration;
+
 import com.virtuoel.unreal.reference.Reference;
 
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-
-import net.minecraftforge.common.config.Configuration;
 
 public class ConfigurationHandler
 {

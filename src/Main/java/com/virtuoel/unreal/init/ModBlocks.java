@@ -1,9 +1,7 @@
 package com.virtuoel.unreal.init;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockFire;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 
 import com.virtuoel.unreal.block.BlockCactusTarydium;

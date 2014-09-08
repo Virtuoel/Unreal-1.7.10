@@ -1,10 +1,11 @@
 package com.virtuoel.unreal.handler;
 
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+
 import com.virtuoel.unreal.init.ModBlocks;
 import com.virtuoel.unreal.init.ModItems;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.IFuelHandler;
 
 public class UnrealFuelHandler implements IFuelHandler

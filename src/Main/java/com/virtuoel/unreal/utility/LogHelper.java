@@ -1,7 +1,9 @@
 package com.virtuoel.unreal.utility;
 
 import org.apache.logging.log4j.Level;
+
 import com.virtuoel.unreal.reference.Reference;
+
 import cpw.mods.fml.common.FMLLog;
 
 public class LogHelper

@@ -15,6 +15,33 @@ public final class Names
 		public static final String ORE_TARYDIUM_NETHER = "oreTarydiumNether";
 		public static final String ORE_TARYDIUM_END = "oreTarydiumEnd";
 		public static final String ORE_TARYDIUM_OBSIDIAN = "oreTarydiumObsidian";
+		public static final String BLOCK_BEDROCKIUM = "blockBedrockium";
+		public static final String ORE_BEDROCKIUM = "oreBedrockium";
+		public static final String ORE_BEDROCKIUM_HIDDEN = "oreBedrockiumHidden";
+		public static final String BLOCK_ASBESTOS = "blockAsbestos";
+		public static final String ORE_ASBESTOS = "oreAsbestos";
+		public static final String CACTUS_TARYDIUM = "cactusTarydium";
+		public static final String LADDER_IRON = "ladderIron";
+		public static final String COBBLESTONE_PAVED = "cobblestonePaved";
+		public static final String STONE_POLISHED = "stonePolished";
+		public static final String SLAB_STONE_SMOOTH = "slabStoneSmooth";
+		public static final String OBSIDIAN_NETHER = "obsidianNether";
+		public static final String BLOCK_CINNABAR = "blockCinnabar";
+		public static final String BLOCK_UUTC = "blockUUTC";
+		public static final String BLOCK_TARYDIUM_ALLOY_UNREFINED = "blockTarydiumAlloyUnrefined";
+		public static final String BLOCK_TARYDIUM_ALLOY_REFINED = "blockTarydiumAlloyRefined";
+		public static final String BLOCK_ENDER_CRYSTAL = "blockEnderCrystal";
+		public static final String BLOCK_FLINT = "blockFlint";
+		public static final String BLOCK_CHARCOAL = "blockCharcoal";
+		public static final String BLOCK_GUNPOWDER = "blockGunpowder";
+		public static final String BLOCK_ENDER = "blockEnder";
+		public static final String BLOCK_LEATHER = "blockLeather";
+		public static final String BLOCK_SLIME = "blockSlime";
+		public static final String BLOCK_BLAZE = "blockBlaze";
+		public static final String BLOCK_GHAST_TEAR = "blockGhastTear";
+		public static final String BLOCK_NETHER_WART = "blockNetherWart";
+		public static final String BLOCK_COCOA = "blockCocoa";
+		
 	}
 
 	public static final class Items

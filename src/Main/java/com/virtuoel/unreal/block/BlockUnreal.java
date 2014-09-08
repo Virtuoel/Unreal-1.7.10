@@ -1,15 +1,14 @@
 package com.virtuoel.unreal.block;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
+
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockUnreal extends Block
 {
@@ -18,6 +17,12 @@ public class BlockUnreal extends Block
 	{
 		super(material);
 		this.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	}
+	
+	@SideOnly(Side.CLIENT)
+	public int getRenderBlockPass()
+	{
+		return 0;
 	}
 	
 	@Override

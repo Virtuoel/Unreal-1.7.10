@@ -274,11 +274,11 @@ public class ModItems
 			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_STINGER)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal gunFlak = (ItemUnreal)
+	public static final ItemUnreal gunFlakCannon = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_FLAK)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal gunEightball = (ItemUnreal)
+	public static final ItemUnreal gunEightballLauncher = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_EIGHTBALL)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
@@ -411,6 +411,7 @@ public class ModItems
 		GameRegistry.registerItem(rodTarydiumAlloyRefined, Names.Items.ROD_TARYDIUM_ALLOY_REFINED);
 		
 		//tools
+		GameRegistry.registerItem(debugTool, Names.Items.DEBUG_TOOL);
 		GameRegistry.registerItem(bucketMercury, Names.Items.BUCKET_MERCURY);
 		GameRegistry.registerItem(voiceBox, Names.Items.VOICE_BOX);
 		GameRegistry.registerItem(swordTitanium, Names.Items.SWORD_TITANIUM);
@@ -429,8 +430,8 @@ public class ModItems
 		GameRegistry.registerItem(gunDispersionPistol, Names.Items.GUN_DISPERSION_PISTOL);
 		GameRegistry.registerItem(meleeChainsaw, Names.Items.MELEE_CHAINSAW);
 		GameRegistry.registerItem(gunStinger, Names.Items.GUN_STINGER);
-		GameRegistry.registerItem(gunFlak, Names.Items.GUN_FLAK);
-		GameRegistry.registerItem(gunEightball, Names.Items.GUN_EIGHTBALL);
+		GameRegistry.registerItem(gunFlakCannon, Names.Items.GUN_FLAK);
+		GameRegistry.registerItem(gunEightballLauncher, Names.Items.GUN_EIGHTBALL);
 		GameRegistry.registerItem(gunRedeemer, Names.Items.GUN_REDEEMER);
 		
 		//armor

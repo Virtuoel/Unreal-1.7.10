@@ -92,16 +92,42 @@ item.unreal:dustEmerald.name=Emerald Dust
 item.unreal:dustObsidian.name=Obsidian Dust
 
 # Blocks
-tile.unreal:blockTitanium.name=Titanium Block
-tile.unreal:blockRutile.name=Impure Titanium Block
-tile.unreal:oreRutile.name=Impure Titanium Ore
-tile.unreal:blockMagnesium.name=Magnesium Block
+tile.unreal:blockTitanium.name=Block of Titanium
+tile.unreal:blockRutile.name=Block of Impure Titanium
+tile.unreal:oreRutile.name=Rutile Ore
+tile.unreal:blockMagnesium.name=Block of Magnesium
 tile.unreal:oreMagnesium.name=Magnesium Ore
-tile.unreal:blockTarydium.name=Tarydium Block
+tile.unreal:blockTarydium.name=Block of Tarydium
 tile.unreal:oreTarydium.name=Tarydium Ore
 tile.unreal:oreTarydiumNether.name=Tarydium Ore
 tile.unreal:oreTarydiumEnd.name=Tarydium Ore
 tile.unreal:oreTarydiumObsidian.name=Tarydium Ore
+tile.unreal:blockBedrockium.name=Block of Bedrockium
+tile.unreal:oreBedrockium.name=Bedrockium Ore
+tile.unreal:oreBedrockiumHidden.name=Bedrock
+tile.unreal:blockAsbestos.name=Block of Asbestos
+tile.unreal:oreAsbestos.name=Asbestos Ore
+tile.unreal:cactusTarydium.name=Tarydium Infused Cactus
+tile.unreal:ladderIron.name=Iron Ladder
+tile.unreal:cobblestonePaved.name=Paved Cobblestone
+tile.unreal:stonePolished.name=Polished Stone
+tile.unreal:slabStoneSmooth.name=Smooth Stone Slab
+tile.unreal:obsidianNether.name=Nether-Infused Obsidian
+tile.unreal:blockCinnabar.name=Block of Cinnabar
+tile.unreal:blockUUTC.name=Block of U.U.T.C.
+tile.unreal:blockTarydiumAlloyUnrefined.name=Block of Unrefined Tarydium Alloy
+tile.unreal:blockTarydiumAlloyRefined.name=Block of Refined Tarydium Alloy
+tile.unreal:blockEnderCrystal.name=Ender Crystal
+tile.unreal:blockFlint.name=Block of Flint
+tile.unreal:blockCharcoal.name=Block of Charcoal
+tile.unreal:blockGunpowder.name=Block of Gunpowder
+tile.unreal:blockEnder.name=Ender Pearl Block
+tile.unreal:blockLeather.name=Block of Leather
+tile.unreal:blockSlime.name=Slime Block
+tile.unreal:blockBlaze.name=Blaze Rod Block
+tile.unreal:blockGhastTear.name=Crystalline Tear Block
+tile.unreal:blockNetherWart.name=Compacted Nether Wart Block
+tile.unreal:blockCocoa.name=Cocoa Block
 
 # Creative Tabs
 itemGroup.unreal=Unreal

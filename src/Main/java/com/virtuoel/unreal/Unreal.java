@@ -4,6 +4,7 @@ import net.minecraftforge.oredict.OreDictionary;
 
 import com.virtuoel.unreal.client.handler.KeyInputEventHandler;
 import com.virtuoel.unreal.handler.ConfigurationHandler;
+import com.virtuoel.unreal.handler.UnrealFuelHandler;
 import com.virtuoel.unreal.init.ModBlocks;
 import com.virtuoel.unreal.init.ModItems;
 import com.virtuoel.unreal.init.ModRecipes;
@@ -17,6 +18,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid=Reference.MOD_ID,name=Reference.MOD_NAME,version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 
@@ -68,6 +70,9 @@ public class Unreal
 		
 		if(!Reference.DEBUG_CLEAR_ITEMS)
 		{
+			GameRegistry.registerFuelHandler(new UnrealFuelHandler());
+			LogHelper.info("Fuel Handler Registered.");
+			
 			ModRecipes.init();
 			LogHelper.info("Crafting Recipes Initilized.");
 			

@@ -39,7 +39,7 @@ public class ModRecipes
 		
 		//fueling
 		ItemStack coalLike = new ItemStack(Items.coal,1,OreDictionary.WILDCARD_VALUE);
-
+		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,3), new Object[]{
 			"virtuoel.unreal.debug",coalLike,coalLike,
 			}));
@@ -50,6 +50,10 @@ public class ModRecipes
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,4), new Object[]{
 			"virtuoel.unreal.debug","virtuoel.unreal.debug",coalLike,coalLike,
+			}));
+		
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,4), new Object[]{
+			"virtuoel.unreal.debug",coalLike,coalLike,coalLike,
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,13), new Object[]{

@@ -11,6 +11,7 @@ import com.virtuoel.unreal.init.ModRecipes;
 import com.virtuoel.unreal.proxy.IProxy;
 import com.virtuoel.unreal.reference.Reference;
 import com.virtuoel.unreal.utility.LogHelper;
+import com.virtuoel.unreal.world.UnrealWorldGenerator;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -70,6 +71,8 @@ public class Unreal
 		
 		if(!Reference.DEBUG_CLEAR_ITEMS)
 		{
+			GameRegistry.registerWorldGenerator(new UnrealWorldGenerator(), Reference.WORLD_GENERATOR_WEIGHT);
+			
 			GameRegistry.registerFuelHandler(new UnrealFuelHandler());
 			LogHelper.info("Fuel Handler Registered.");
 			

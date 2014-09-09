@@ -13,21 +13,37 @@ public class ModRecipes
 	public static void init()
 	{
 		//vanilla tweaks
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack
-				(Items.gold_ingot,1),
-				"III","III","III",'I',"nuggetGold"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.gold_ingot,1), new Object[]{
+				"III","III","III",'I',"nuggetGold",
+				}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack
-				(Items.coal,9,0),
-				"I",'I',"blockCoal"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.coal,9,0), new Object[]{
+				"I",'I',"blockCoal",
+				}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack
-				(Items.redstone,9,0),
-				"I",'I',"blockRedstone"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.redstone,9,0), new Object[]{
+				"I",'I',"blockRedstone",
+				}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack
-				(Items.dye,9,4),
-				"I",'I',"blockLapis"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.dye,9,4), new Object[]{
+				"I",'I',"blockLapis",
+				}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.enchanting_table,1,0), new Object[]{
+				" B ","DOD","OOO",'O',"obsidian",'B',Items.book,'D',"gemDiamond",
+				}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.ender_chest,1,0), new Object[]{
+				"OOO","OEO","OOO",'O',"obsidian",'E',Items.ender_eye,
+				}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.beacon,1,0), new Object[]{
+				"GGG","GSG","OOO",'O',"obsidian",'G',"blockGlassColorless",'S',Items.nether_star,
+				}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.beacon,1,0), new Object[]{
+				"GGG","GSG","OOO",'O',"obsidian",'G',"blockGlass",'S',Items.nether_star,
+				}));
 		
 		//TODO temporary debugTool recipes ---------------------------------------------------------------------------------------------------------------------------------
 		
@@ -93,7 +109,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.glowstone_dust,4), new Object[]{
-			Blocks.glowstone,"virtuoel.unreal.debug",
+			"glowstone","virtuoel.unreal.debug",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.mossy_cobblestone,1), new Object[]{
@@ -173,11 +189,15 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.dustObsidian,4), new Object[]{
-			Blocks.obsidian,"virtuoel.unreal.debug",
+			"obsidian","virtuoel.unreal.debug",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.dustObsidian,4), new Object[]{
-			ModBlocks.obsidianNether,"virtuoel.unreal.debug",
+			"netherobsidian","virtuoel.unreal.debug",
+			}));
+		
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.dustObsidian,4), new Object[]{
+			"enderobsidian","virtuoel.unreal.debug",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.string,4), new Object[]{
@@ -226,7 +246,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.oreTarydiumObsidian,1), new Object[]{
-			ModBlocks.obsidianNether,"virtuoel.unreal.debug",ModBlocks.obsidianNether,ModBlocks.obsidianNether,ModBlocks.oreTarydiumEnd,ModBlocks.obsidianNether,ModBlocks.obsidianNether,ModBlocks.obsidianNether,ModBlocks.obsidianNether,
+			"netherobsidian","virtuoel.unreal.debug","netherobsidian","netherobsidian",ModBlocks.oreTarydiumEnd,"netherobsidian","netherobsidian","netherobsidian","netherobsidian",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.rodTarydiumAlloyRefined,1), new Object[]{
@@ -282,7 +302,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.end_stone,5), new Object[]{
-			Blocks.obsidian,Blocks.obsidian,Blocks.obsidian,Blocks.obsidian,Blocks.obsidian,Items.ender_pearl,"virtuoel.unreal.debug",
+			"obsidian","obsidian","obsidian","obsidian","obsidian",Items.ender_pearl,"virtuoel.unreal.debug",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.obsidian,1), new Object[]{
@@ -675,7 +695,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunRedeemer,1,101), new Object[]{
-			"MOT","OYT","TTL",'O',Blocks.obsidian,'T',"blockTitanium",'Y',"blockTarydium",'M',ModItems.ammoWarhead,'L',new ItemStack(ModItems.gunEightballLauncher,1,OreDictionary.WILDCARD_VALUE),
+			"MOT","OYT","TTL",'O',"obsidian",'T',"blockTitanium",'Y',"blockTarydium",'M',ModItems.ammoWarhead,'L',new ItemStack(ModItems.gunEightballLauncher,1,OreDictionary.WILDCARD_VALUE),
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.ammoWarhead,1), new Object[]{
@@ -926,7 +946,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorToxinSuit,1), new Object[]{
-			"MGM","TKT","ARA",'M',Blocks.obsidian,'M',"fluidMilk",'G',Items.speckled_melon,'T',"blockTitanium",'K',new ItemStack(Items.chainmail_chestplate,1,OreDictionary.WILDCARD_VALUE),'A',"blockAsbestos",'R',"blockRutile",
+			"MGM","TKT","ARA",'M',"fluidMilk",'G',Items.speckled_melon,'T',"blockTitanium",'K',new ItemStack(Items.chainmail_chestplate,1,OreDictionary.WILDCARD_VALUE),'A',"blockAsbestos",'R',"blockRutile",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodTarydiumAlloyRefined,1), new Object[]{
@@ -990,7 +1010,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.obsidianNether,4), new Object[]{
-			"WOW","ONO","WOW",'O',Blocks.obsidian,'W',"netherrackCompressed1x",'N',Items.magma_cream,
+			"WOW","ONO","WOW",'O',"obsidian",'W',"netherrackCompressed1x",'N',Items.magma_cream,
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.stone_slab,6,0), new Object[]{
@@ -1070,6 +1090,8 @@ public class ModRecipes
 	public static void initOreDict()
 	{
 		OreDictionary.registerOre("netherrack", Blocks.netherrack);
+		OreDictionary.registerOre("obsidian", Blocks.obsidian);
+		OreDictionary.registerOre("glowstone", Blocks.glowstone);
 		OreDictionary.registerOre("dustGunpowder", Items.gunpowder);
 		OreDictionary.registerOre("rodBlaze", Items.blaze_rod);
 		OreDictionary.registerOre("blazeRod", Items.blaze_rod);
@@ -1163,6 +1185,7 @@ public class ModRecipes
 		OreDictionary.registerOre("nuggetBedrockium", ModItems.nuggetBedrockium);
 		OreDictionary.registerOre("blockBedrockium", ModBlocks.blockBedrockium);
 		OreDictionary.registerOre("blockCocoa", ModBlocks.blockCocoa);
+		OreDictionary.registerOre("netherobsidian", ModBlocks.obsidianNether);
 		
 		//buckets & fluids (temp)
 		OreDictionary.registerOre("fluidWater", Items.water_bucket);

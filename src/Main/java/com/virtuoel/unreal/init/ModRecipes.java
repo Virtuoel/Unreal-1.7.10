@@ -116,6 +116,10 @@ public class ModRecipes
 			"blockNetherQuartz","virtuoel.unreal.debug",
 			}));
 		
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.quartz,4), new Object[]{
+			"blockQuartz","virtuoel.unreal.debug",
+			}));
+		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.flint,1), new Object[]{
 			Blocks.gravel,"virtuoel.unreal.debug",
 			}));
@@ -324,6 +328,10 @@ public class ModRecipes
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.SCUBATankEmpty,1), new Object[]{
 			ModItems.SCUBATankOxygen,"virtuoel.unreal.debug",
+			}));
+		
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.blockTarydium,1), new Object[]{
+			ModBlocks.blockUUTC,"virtuoel.unreal.debug"
 			}));
 		//TODO debug recipe end ---------------------------------------------------------------------------------------------------------------------------------
 		
@@ -780,10 +788,6 @@ public class ModRecipes
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.redstone_ore,8), new Object[]{
 			"UUU","UDU","UUU",'U',ModBlocks.blockUUTC,'D',"dyeRed",
-			}));
-		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockTarydium,1), new Object[]{
-			"U",'U',ModBlocks.blockUUTC,
 			}));
 		
 		//compressed start ---------------------------------------------------------------------------------------------------------------------------------

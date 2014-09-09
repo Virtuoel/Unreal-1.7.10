@@ -6,6 +6,7 @@ import net.minecraft.init.Blocks;
 
 import com.virtuoel.unreal.block.BlockCactusTarydium;
 import com.virtuoel.unreal.block.BlockIronLadder;
+import com.virtuoel.unreal.block.BlockOreUnreal;
 import com.virtuoel.unreal.block.BlockSlime;
 import com.virtuoel.unreal.block.BlockUnreal;
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
@@ -33,7 +34,7 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final BlockUnreal oreRutile = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.ORE_RUTILE)
+			new BlockOreUnreal(Material.rock).setBlockName(Names.Blocks.ORE_RUTILE)
 			.setBlockTextureName(Names.Blocks.ORE_RUTILE)
 			.setHardness(3.0F).setResistance(5.0F)
 			.setStepSound(Block.soundTypeStone)
@@ -47,7 +48,7 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final BlockUnreal oreMagnesium = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.ORE_MAGNESIUM)
+			new BlockOreUnreal(Material.rock).setBlockName(Names.Blocks.ORE_MAGNESIUM)
 			.setBlockTextureName(Names.Blocks.ORE_MAGNESIUM)
 			.setHardness(3.0F).setResistance(5.0F)
 			.setStepSound(Block.soundTypeStone)
@@ -62,7 +63,7 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final BlockUnreal oreTarydium = (BlockUnreal)
-			new BlockUnreal(ModBlockMaterials.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM)
+			new BlockOreUnreal(ModBlockMaterials.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM)
 			.setBlockTextureName(Names.Blocks.ORE_TARYDIUM)
 			.setHardness(6.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeStone)
@@ -70,21 +71,21 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final BlockUnreal oreTarydiumNether = (BlockUnreal)
-			new BlockUnreal(ModBlockMaterials.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM_NETHER)
+			new BlockOreUnreal(ModBlockMaterials.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM_NETHER)
 			.setBlockTextureName(Names.Blocks.ORE_TARYDIUM_NETHER)
 			.setHardness(3.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final BlockUnreal oreTarydiumEnd = (BlockUnreal)
-			new BlockUnreal(ModBlockMaterials.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM_END)
+			new BlockOreUnreal(ModBlockMaterials.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM_END)
 			.setBlockTextureName(Names.Blocks.ORE_TARYDIUM_END)
 			.setHardness(12.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final BlockUnreal oreTarydiumObsidian = (BlockUnreal)
-			new BlockUnreal(ModBlockMaterials.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM_OBSIDIAN)
+			new BlockOreUnreal(ModBlockMaterials.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM_OBSIDIAN)
 			.setBlockTextureName(Names.Blocks.ORE_TARYDIUM_OBSIDIAN)
 			.setHardness(50.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeStone)
@@ -97,13 +98,13 @@ public class ModBlocks
 			.setCreativeTab(null);
 	
 	public static final BlockUnreal oreBedrockium = (BlockUnreal)
-			new BlockUnreal(ModBlockMaterials.bedrock).setBlockName(Names.Blocks.ORE_BEDROCKIUM)
+			new BlockOreUnreal(ModBlockMaterials.bedrock).setBlockName(Names.Blocks.ORE_BEDROCKIUM)
 			.setBlockTextureName(Names.Blocks.ORE_BEDROCKIUM).setHardness(1000.0F)
 			.setStepSound(Block.soundTypeMetal).setResistance(500000.0F)
 			.setCreativeTab(null);
 	
 	public static final BlockUnreal oreBedrockiumHidden = (BlockUnreal)
-			new BlockUnreal(ModBlockMaterials.bedrock).setBlockName(Names.Blocks.ORE_BEDROCKIUM_HIDDEN)
+			new BlockOreUnreal(ModBlockMaterials.bedrock).setBlockName(Names.Blocks.ORE_BEDROCKIUM_HIDDEN)
 			.setBlockTextureName(Names.Blocks.ORE_BEDROCKIUM_HIDDEN).setBlockUnbreakable()
 			.setStepSound(Block.soundTypeMetal).setResistance(8000000.0F)
 			.setCreativeTab(null);
@@ -116,7 +117,7 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final BlockUnreal oreAsbestos = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.ORE_ASBESTOS)
+			new BlockOreUnreal(Material.rock).setBlockName(Names.Blocks.ORE_ASBESTOS)
 			.setBlockTextureName(Names.Blocks.ORE_ASBESTOS)
 			.setHardness(3.0F).setResistance(5.0F)
 			.setStepSound(Block.soundTypeStone)

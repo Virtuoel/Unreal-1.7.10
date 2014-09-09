@@ -3,6 +3,7 @@ package com.virtuoel.unreal.world;
 import java.util.Random;
 
 import com.virtuoel.unreal.init.ModBlocks;
+import com.virtuoel.unreal.reference.Reference;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -13,8 +14,6 @@ import cpw.mods.fml.common.IWorldGenerator;
 
 public class UnrealWorldGenerator implements IWorldGenerator
 {
-	
-	private boolean debugFlag = false;
 
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
@@ -132,14 +131,14 @@ public class UnrealWorldGenerator implements IWorldGenerator
 				if (blockAtCoord == worldStoneReplace)
 				{
 					world.setBlock(Xcoord, Ycoord, Zcoord, debugBlock, oreData, 2);
-					if(debugFlag)world.setBlock(Xcoord, 130, Zcoord, debugBlock, 0, 2);
+					if(Reference.DEBUG_WORLD_GENERATOR)world.setBlock(Xcoord, 130, Zcoord, debugBlock, 0, 2);
 				}
 			}
 			else
 			{
 				new WorldGenMinable(oreBlock, amountOre)
 				.generate(world, random, Xcoord, Ycoord, Zcoord);
-				if(debugFlag)world.setBlock(Xcoord, 130, Zcoord, debugBlock, 0, 2);
+				if(Reference.DEBUG_WORLD_GENERATOR)world.setBlock(Xcoord, 130, Zcoord, debugBlock, 0, 2);
 			}
 		}
 	}

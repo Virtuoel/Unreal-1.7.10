@@ -13,7 +13,7 @@ public class Reference
 	public static final boolean PRINT_DEBUG_OREDICT_VALUES = false;
 	public static final boolean PRINT_DEBUG_KEYBIND_VALUES = false;
 	public static final boolean DEBUG_CLEAR_ITEMS = false;
-	public static final boolean DEBUG_WORLD_GENERATOR = false;
+	public static final boolean DEBUG_WORLD_GENERATOR = true;
 	
 	public static final int WORLD_GENERATOR_WEIGHT = 1;
 	

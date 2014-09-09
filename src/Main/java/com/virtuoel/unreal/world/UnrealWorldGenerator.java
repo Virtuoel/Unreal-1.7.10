@@ -30,7 +30,7 @@ public class UnrealWorldGenerator implements IWorldGenerator
 	{
 		doGenerateOre(world, random, BlockX, BlockZ, 
 				16, 24, //range
-				ModBlocks.oreRutile, 0, //id, data
+				ModBlocks.oreRutile, 0, //block, data
 				Blocks.stone, //replace
 				5, 1, //base #, rand #
 				7, //ore qty
@@ -40,7 +40,7 @@ public class UnrealWorldGenerator implements IWorldGenerator
 		
 		doGenerateOre(world, random, BlockX, BlockZ, 
 				32, 64, //range
-				ModBlocks.oreMagnesium, 0, //id, data
+				ModBlocks.oreMagnesium, 0, //block, data
 				Blocks.stone, //replace
 				7, 1, //base #, rand #
 				6, //ore qty
@@ -50,7 +50,7 @@ public class UnrealWorldGenerator implements IWorldGenerator
 		
 		doGenerateOre(world, random, BlockX, BlockZ, 
 				6, 50, //range
-				ModBlocks.oreTarydium, 0, //id, data
+				ModBlocks.oreTarydium, 0, //block, data
 				Blocks.stone, //replace
 				3, 6, //base #, rand #
 				1, //ore qty
@@ -60,7 +60,7 @@ public class UnrealWorldGenerator implements IWorldGenerator
 		
 		doGenerateOre(world, random, BlockX, BlockZ, 
 				2, 72, //range
-				ModBlocks.oreAsbestos, 0, //id, data
+				ModBlocks.oreAsbestos, 0, //block, data
 				Blocks.stone, //replace
 				6, 1, //base #, rand #
 				5, //ore qty
@@ -70,7 +70,7 @@ public class UnrealWorldGenerator implements IWorldGenerator
 		
 		doGenerateOre(world, random, BlockX, BlockZ, 
 				1, 4, //range
-				ModBlocks.oreBedrockiumHidden, 0, //id, data
+				ModBlocks.oreBedrockiumHidden, 0, //block, data
 				Blocks.bedrock, //replace
 				2, 2, //base #, rand #
 				1, //ore qty
@@ -83,12 +83,12 @@ public class UnrealWorldGenerator implements IWorldGenerator
 	{
 		doGenerateOre(world, random, BlockX, BlockZ, 
 				6, 126, //range
-				ModBlocks.oreTarydiumNether, 0, //id, data
+				ModBlocks.oreTarydiumNether, 0, //block, data
 				Blocks.netherrack, //replace
 				3, 6, //base #, rand #
 				1, //ore qty
 				true, //emerald-type generation
-				Blocks.redstone_block //debug orefinder block id
+				Blocks.redstone_block //debug orefinder block block
 				);
 		
 	}
@@ -97,22 +97,22 @@ public class UnrealWorldGenerator implements IWorldGenerator
 	{
 		doGenerateOre(world, random, BlockX, BlockZ, 
 				24, 120, //range
-				ModBlocks.oreTarydiumEnd, 0, //id, data
+				ModBlocks.oreTarydiumEnd, 0, //block, data
 				Blocks.netherrack, //replace
 				3, 6, //base #, rand #
 				1, //ore qty
 				true, //emerald-type generation
-				Blocks.diamond_block //debug orefinder block id
+				Blocks.diamond_block //debug orefinder block
 				);
 		
 		doGenerateOre(world, random, BlockX, BlockZ, 
 				24, 128, //range
-				ModBlocks.oreTarydiumObsidian, 0, //id, data
+				ModBlocks.oreTarydiumObsidian, 0, //block, data
 				Blocks.obsidian, //replace
 				3, 6, //base #, rand #
 				1, //ore qty
 				true, //emerald-type generation
-				Blocks.emerald_block //debug orefinder block id
+				Blocks.emerald_block //debug orefinder block
 				);
 		
 	}
@@ -130,7 +130,7 @@ public class UnrealWorldGenerator implements IWorldGenerator
 				Block blockAtCoord = world.getBlock(Xcoord, Ycoord, Zcoord);
 				if (blockAtCoord == worldStoneReplace)
 				{
-					world.setBlock(Xcoord, Ycoord, Zcoord, debugBlock, oreData, 2);
+					world.setBlock(Xcoord, Ycoord, Zcoord, oreBlock, oreData, 2);
 					if(Reference.DEBUG_WORLD_GENERATOR)world.setBlock(Xcoord, 130, Zcoord, debugBlock, 0, 2);
 				}
 			}

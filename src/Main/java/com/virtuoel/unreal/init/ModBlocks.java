@@ -5,6 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 
 import com.virtuoel.unreal.block.BlockCactusTarydium;
+import com.virtuoel.unreal.block.BlockEnderCrystal;
 import com.virtuoel.unreal.block.BlockIronLadder;
 import com.virtuoel.unreal.block.BlockOreUnreal;
 import com.virtuoel.unreal.block.BlockSlime;
@@ -253,7 +254,7 @@ public class ModBlocks
 			.setCreativeTab(null);
 	
 	public static final BlockUnreal blockEnderCrystal = (BlockUnreal)
-			new BlockUnreal(ModBlockMaterials.immobile).setBlockName(Names.Blocks.BLOCK_ENDER_CRYSTAL)
+			new BlockEnderCrystal(ModBlockMaterials.immobile).setBlockName(Names.Blocks.BLOCK_ENDER_CRYSTAL)
 			.setBlockTextureName(Names.Blocks.BLOCK_ENDER_CRYSTAL)
 			.setHardness(200.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeGlass)

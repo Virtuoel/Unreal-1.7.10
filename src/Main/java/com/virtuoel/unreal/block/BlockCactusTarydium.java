@@ -17,7 +17,7 @@ import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.common.util.ForgeDirection;
 
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
-import com.virtuoel.unreal.init.ModBlockMaterials;
+import com.virtuoel.unreal.reference.Materials;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -166,7 +166,7 @@ public class BlockCactusTarydium extends BlockUnreal implements IPlantable
         else
         {
             Block block = p_149718_1_.getBlock(p_149718_2_, p_149718_3_ - 1, p_149718_4_);
-            return block.getMaterial()==ModBlockMaterials.tarydium;
+            return block.getMaterial()==Materials.tarydium;
         }
     }
 

@@ -3,10 +3,10 @@ package com.virtuoel.unreal.block.material;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 
-public class ModMaterial extends Material
+public class MaterialUnreal extends Material
 {
 	
-	public ModMaterial(MapColor p_i2116_1_) {
+	public MaterialUnreal(MapColor p_i2116_1_) {
 		super(p_i2116_1_);
 	}
 	
@@ -16,7 +16,6 @@ public class ModMaterial extends Material
     private boolean requiresNoTool = true;
     private int mobilityFlag;
     private boolean isAdventureModeExempt;
-    private static final String __OBFID = "CL_00000542";
     
     @Override
     public boolean isLiquid()
@@ -42,19 +41,19 @@ public class ModMaterial extends Material
         return true;
     }
     
-    public ModMaterial setTranslucent()
+    public MaterialUnreal setTranslucent()
     {
         this.isTranslucent = true;
         return this;
     }
     
-    public ModMaterial setRequiresTool()
+    public MaterialUnreal setRequiresTool()
     {
         this.requiresNoTool = false;
         return this;
     }
     
-    public ModMaterial setBurning()
+    public MaterialUnreal setBurning()
     {
         this.canBurn = true;
         return this;
@@ -66,7 +65,7 @@ public class ModMaterial extends Material
         return this.canBurn;
     }
     
-    public ModMaterial setReplaceable()
+    public MaterialUnreal setReplaceable()
     {
         this.replaceable = true;
         return this;
@@ -96,19 +95,19 @@ public class ModMaterial extends Material
         return this.mobilityFlag;
     }
     
-    public ModMaterial setNoPushMobility()
+    public MaterialUnreal setNoPushMobility()
     {
         this.mobilityFlag = 1;
         return this;
     }
     
-    public ModMaterial setImmovableMobility()
+    public MaterialUnreal setImmovableMobility()
     {
         this.mobilityFlag = 2;
         return this;
     }
     
-    public ModMaterial setAdventureModeExempt()
+    public MaterialUnreal setAdventureModeExempt()
     {
         this.isAdventureModeExempt = true;
         return this;

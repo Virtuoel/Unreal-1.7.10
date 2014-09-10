@@ -16,5 +16,13 @@ public class Reference
 	public static final boolean DEBUG_WORLD_GENERATOR = false;
 	
 	public static final int WORLD_GENERATOR_WEIGHT = 1;
+	public static final int BLOCK_FACE_BOTTOM = 0;
+	public static final int BLOCK_FACE_TOP = 1;
+	public static final int BLOCK_FACE_NORTH = 2;
+	public static final int BLOCK_FACE_SOUTH = 3;
+	public static final int BLOCK_FACE_WEST = 4;
+	public static final int BLOCK_FACE_EAST = 5;
+	public static final String[] BLOCK_FACES = {"bottom", "top", "north", "south", "west", "east"};
+	
 	
 }

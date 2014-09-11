@@ -166,7 +166,7 @@ public class BlockCactusTarydium extends BlockUnreal implements IPlantable
         else
         {
             Block block = p_149718_1_.getBlock(p_149718_2_, p_149718_3_ - 1, p_149718_4_);
-            return block.getMaterial()==Materials.tarydium;
+            return block.getMaterial()==Materials.Blocks.tarydium;
         }
     }
 

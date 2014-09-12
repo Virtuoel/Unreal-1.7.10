@@ -45,6 +45,10 @@ public class ModRecipes
 				"GGG","GSG","OOO",'O',"obsidian",'G',"blockGlass",'S',Items.nether_star,
 				}));
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.redstone_lamp,1,0), new Object[]{
+				" R ","RGR"," R ",'R',"dustRedstone",'G',"glowstone",
+				}));
+		
 		//TODO temporary debugTool recipes ---------------------------------------------------------------------------------------------------------------------------------
 		
 		//crafting
@@ -238,11 +242,11 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.oreTarydiumNether,1), new Object[]{
-			ModBlocks.oreTarydium,"netherrackCompressed4x","virtuoel.unreal.debug",
+			ModBlocks.oreTarydium,"compressedNetherrack4x","virtuoel.unreal.debug",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.oreTarydiumEnd,1), new Object[]{
-			ModBlocks.oreTarydiumNether,"endStoneCompressed4x","virtuoel.unreal.debug",
+			ModBlocks.oreTarydiumNether,"compressedEndStone4x","virtuoel.unreal.debug",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModBlocks.oreTarydiumObsidian,1), new Object[]{
@@ -816,31 +820,31 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.netherrack,9), new Object[]{
-			"T",'T',"netherrackCompressed1x",
+			"T",'T',"compressedNetherrack1x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.netherrackCompressed2x,1), new Object[]{
-			"TTT","TTT","TTT",'T',"netherrackCompressed1x",
+			"TTT","TTT","TTT",'T',"compressedNetherrack1x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.netherrackCompressed1x,9), new Object[]{
-			"T",'T',"netherrackCompressed2x",
+			"T",'T',"compressedNetherrack2x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.netherrackCompressed3x,1), new Object[]{
-			"TTT","TTT","TTT",'T',"netherrackCompressed2x",
+			"TTT","TTT","TTT",'T',"compressedNetherrack2x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.netherrackCompressed2x,9), new Object[]{
-			"T",'T',"netherrackCompressed3x",
+			"T",'T',"compressedNetherrack3x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.netherrackCompressed4x,1), new Object[]{
-			"TTT","TTT","TTT",'T',"netherrackCompressed3x",
+			"TTT","TTT","TTT",'T',"compressedNetherrack3x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.netherrackCompressed3x,9), new Object[]{
-			"T",'T',"netherrackCompressed4x",
+			"T",'T',"compressedNetherrack4x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.endStoneCompressed1x,1), new Object[]{
@@ -848,31 +852,31 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.end_stone,9), new Object[]{
-			"T",'T',"endStoneCompressed1x",
+			"T",'T',"compressedEndStone1x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.endStoneCompressed2x,1), new Object[]{
-			"TTT","TTT","TTT",'T',"endStoneCompressed1x",
+			"TTT","TTT","TTT",'T',"compressedEndStone1x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.endStoneCompressed1x,9), new Object[]{
-			"T",'T',"endStoneCompressed2x",
+			"T",'T',"compressedEndStone2x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.endStoneCompressed3x,1), new Object[]{
-			"TTT","TTT","TTT",'T',"endStoneCompressed2x",
+			"TTT","TTT","TTT",'T',"compressedEndStone2x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.endStoneCompressed2x,9), new Object[]{
-			"T",'T',"endStoneCompressed3x",
+			"T",'T',"compressedEndStone3x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.endStoneCompressed4x,1), new Object[]{
-			"TTT","TTT","TTT",'T',"endStoneCompressed3x",
+			"TTT","TTT","TTT",'T',"compressedEndStone3x",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.endStoneCompressed3x,9), new Object[]{
-			"T",'T',"endStoneCompressed4x",
+			"T",'T',"compressedEndStone4x",
 			}));
 		//compressed end ---------------------------------------------------------------------------------------------------------------------------------
 		//slabs start -------------------------------------------------------------------------------------------------------------------------------------
@@ -950,31 +954,31 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodTarydiumAlloyRefined,1), new Object[]{
-			"STS","SES","STS",'T',"blockTitanium",'S',"dustTarydiumAlloyRefined",'E',"endStoneCompressed4x"
+			"STS","SES","STS",'T',"blockTitanium",'S',"dustTarydiumAlloyRefined",'E',"compressedEndStone4x"
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodTarydiumAlloyUnrefined,1), new Object[]{
-			"STS","SES","STS",'T',"blockTitanium",'S',"dustTarydiumAlloyUnrefined",'E',"endStoneCompressed4x"
+			"STS","SES","STS",'T',"blockTitanium",'S',"dustTarydiumAlloyUnrefined",'E',"compressedEndStone4x"
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.axeTarydiumAlloyRefined,1), new Object[]{
-			"TTE","TSE","ESE",'T',"blockTarydiumAlloyRefined",'S',"rodTarydiumAlloyRefined",'E',"endStoneCompressed4x"
+			"TTE","TSE","ESE",'T',"blockTarydiumAlloyRefined",'S',"rodTarydiumAlloyRefined",'E',"compressedEndStone4x"
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.hoeTarydiumAlloyRefined,1), new Object[]{
-			"TTE","ESE","ESE",'T',"blockTarydiumAlloyRefined",'S',"rodTarydiumAlloyRefined",'E',"endStoneCompressed4x"
+			"TTE","ESE","ESE",'T',"blockTarydiumAlloyRefined",'S',"rodTarydiumAlloyRefined",'E',"compressedEndStone4x"
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.pickaxeTarydiumAlloyRefined,1), new Object[]{
-			"TTT","ESE","ESE",'T',"blockTarydiumAlloyRefined",'S',"rodTarydiumAlloyRefined",'E',"endStoneCompressed4x"
+			"TTT","ESE","ESE",'T',"blockTarydiumAlloyRefined",'S',"rodTarydiumAlloyRefined",'E',"compressedEndStone4x"
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.shovelTarydiumAlloyRefined,1), new Object[]{
-			"ETE","ESE","ESE",'T',"blockTarydiumAlloyRefined",'S',"rodTarydiumAlloyRefined",'E',"endStoneCompressed4x"
+			"ETE","ESE","ESE",'T',"blockTarydiumAlloyRefined",'S',"rodTarydiumAlloyRefined",'E',"compressedEndStone4x"
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.swordTarydiumAlloyRefined,1), new Object[]{
-			"ETE","ETE","ESE",'T',"blockTarydiumAlloyRefined",'S',"rodTarydiumAlloyRefined",'E',"endStoneCompressed4x"
+			"ETE","ETE","ESE",'T',"blockTarydiumAlloyRefined",'S',"rodTarydiumAlloyRefined",'E',"compressedEndStone4x"
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.SCUBATankEmpty,1), new Object[]{
@@ -1010,7 +1014,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.obsidianNether,4), new Object[]{
-			"WOW","ONO","WOW",'O',"obsidian",'W',"netherrackCompressed1x",'N',Items.magma_cream,
+			"WOW","ONO","WOW",'O',"obsidian",'W',"compressedNetherrack1x",'N',Items.magma_cream,
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.stone_slab,6,0), new Object[]{
@@ -1136,14 +1140,14 @@ public class ModRecipes
 		OreDictionary.registerOre("dustRutile", ModItems.dustRutile);
 		OreDictionary.registerOre("nuggetRutile", ModItems.nuggetRutile);
 		OreDictionary.registerOre("blockRutile", ModBlocks.blockRutile);
-		OreDictionary.registerOre("netherrackCompressed1x", ModBlocks.netherrackCompressed1x);
-		OreDictionary.registerOre("netherrackCompressed2x", ModBlocks.netherrackCompressed2x);
-		OreDictionary.registerOre("netherrackCompressed3x", ModBlocks.netherrackCompressed3x);
-		OreDictionary.registerOre("netherrackCompressed4x", ModBlocks.netherrackCompressed4x);
-		OreDictionary.registerOre("endStoneCompressed1x", ModBlocks.endStoneCompressed1x);
-		OreDictionary.registerOre("endStoneCompressed2x", ModBlocks.endStoneCompressed2x);
-		OreDictionary.registerOre("endStoneCompressed3x", ModBlocks.endStoneCompressed3x);
-		OreDictionary.registerOre("endStoneCompressed4x", ModBlocks.endStoneCompressed4x);
+		OreDictionary.registerOre("compressedNetherrack1x", ModBlocks.netherrackCompressed1x);
+		OreDictionary.registerOre("compressedNetherrack2x", ModBlocks.netherrackCompressed2x);
+		OreDictionary.registerOre("compressedNetherrack3x", ModBlocks.netherrackCompressed3x);
+		OreDictionary.registerOre("compressedNetherrack4x", ModBlocks.netherrackCompressed4x);
+		OreDictionary.registerOre("compressedEndStone1x", ModBlocks.endStoneCompressed1x);
+		OreDictionary.registerOre("compressedEndStone2x", ModBlocks.endStoneCompressed2x);
+		OreDictionary.registerOre("compressedEndStone3x", ModBlocks.endStoneCompressed3x);
+		OreDictionary.registerOre("compressedEndStone4x", ModBlocks.endStoneCompressed4x);
 		OreDictionary.registerOre("blockTarydiumAlloyRefined", ModBlocks.blockTarydiumAlloyRefined);
 		OreDictionary.registerOre("blockTarydiumAlloyUnrefined", ModBlocks.blockTarydiumAlloyUnrefined);
 		OreDictionary.registerOre("ingotTarydiumAlloyRefined", ModItems.ingotTarydiumAlloyRefined);

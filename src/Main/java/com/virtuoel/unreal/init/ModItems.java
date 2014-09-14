@@ -228,7 +228,7 @@ public class ModItems
 	.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemToolUnreal pickaxeTitanium = (ItemToolUnreal)
-			new ItemPickaxeUnreal(Materials.Tools.TITANIUM, 1.0F).setUnlocalizedName(Names.Items.PICK_TITANIUM)
+			new ItemPickaxeUnreal(Materials.Tools.TITANIUM, 2.0F).setUnlocalizedName(Names.Items.PICK_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemToolUnreal shovelTitanium = (ItemToolUnreal)
@@ -236,7 +236,7 @@ public class ModItems
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemToolUnreal axeTitanium = (ItemToolUnreal)
-			new ItemAxeUnreal(Materials.Tools.TITANIUM, 1.0F).setUnlocalizedName(Names.Items.AXE_TITANIUM)
+			new ItemAxeUnreal(Materials.Tools.TITANIUM, 3.0F).setUnlocalizedName(Names.Items.AXE_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemHoeUnreal hoeTitanium = (ItemHoeUnreal)
@@ -248,7 +248,7 @@ public class ModItems
 			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemToolUnreal pickaxeTarydiumAlloyRefined = (ItemToolUnreal)
-			new ItemPickaxeUnreal(Materials.Tools.TARYDIUM_ALLOY_REFINED, 1.0F).setUnlocalizedName(Names.Items.PICK_TARYDIUM_ALLOY_REFINED)
+			new ItemPickaxeUnreal(Materials.Tools.TARYDIUM_ALLOY_REFINED, 2.0F).setUnlocalizedName(Names.Items.PICK_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemToolUnreal shovelTarydiumAlloyRefined = (ItemToolUnreal)
@@ -256,7 +256,7 @@ public class ModItems
 			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemToolUnreal axeTarydiumAlloyRefined = (ItemToolUnreal)
-			new ItemAxeUnreal(Materials.Tools.TARYDIUM_ALLOY_REFINED, 1.0F).setUnlocalizedName(Names.Items.AXE_TARYDIUM_ALLOY_REFINED)
+			new ItemAxeUnreal(Materials.Tools.TARYDIUM_ALLOY_REFINED, 3.0F).setUnlocalizedName(Names.Items.AXE_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemHoeUnreal hoeTarydiumAlloyRefined = (ItemHoeUnreal)

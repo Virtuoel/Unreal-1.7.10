@@ -21,11 +21,11 @@ public class Materials
 	public static final class Tools
 	{
 		public static Item.ToolMaterial TITANIUM = EnumHelper
-			.addToolMaterial("Titanium", 2, 460, 6.0F, 2, 8);
+			.addToolMaterial("Titanium", 2, 460, 6.0F, 2.0F, 8);
 		//4, 900, ?F ?, ?
 		
 		public static Item.ToolMaterial TARYDIUM_ALLOY_REFINED = EnumHelper
-			.addToolMaterial("Refined Tarydium Alloy", 6, 7200, 20.0F, 15, 1);
+			.addToolMaterial("Refined Tarydium Alloy", 6, 7200, 20.0F, 15.0F, 1);
 	}
 	
 	public static final class Armor

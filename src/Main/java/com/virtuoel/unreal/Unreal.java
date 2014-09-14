@@ -47,8 +47,8 @@ public class Unreal
 			ModBlocks.init();
 			LogHelper.info("Blocks Initilized.");
 			
-			ModItems.initTools();
-			LogHelper.info("Tool Types Assigned.");
+			//ModItems.initTools();
+			//LogHelper.info("Tool Types Assigned.");
 			
 			ModRecipes.initOreDict();
 			LogHelper.info("Ore Dictionary Registration Completed.");
@@ -57,7 +57,7 @@ public class Unreal
 		{
 			LogHelper.info("Items Cleared.");
 			LogHelper.info("Blocks Cleared.");
-			LogHelper.info("Tool Type Assigment Skipped.");
+			//LogHelper.info("Tool Type Assigment Skipped.");
 			LogHelper.info("Ore Dictionary Registration Skipped.");
 		}
 		

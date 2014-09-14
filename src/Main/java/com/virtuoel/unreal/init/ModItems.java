@@ -3,7 +3,13 @@ package com.virtuoel.unreal.init;
 import net.minecraft.init.Items;
 
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
+import com.virtuoel.unreal.item.ItemAxeUnreal;
+import com.virtuoel.unreal.item.ItemHoeUnreal;
+import com.virtuoel.unreal.item.ItemPickaxeUnreal;
+import com.virtuoel.unreal.item.ItemShovelUnreal;
+import com.virtuoel.unreal.item.ItemSwordUnreal;
 import com.virtuoel.unreal.item.ItemUnreal;
+import com.virtuoel.unreal.reference.Materials;
 import com.virtuoel.unreal.reference.Names;
 import com.virtuoel.unreal.reference.Reference;
 
@@ -217,43 +223,43 @@ public class ModItems
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal swordTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.SWORD_TITANIUM)
+			new ItemSwordUnreal(Materials.Tools.TITANIUM).setUnlocalizedName(Names.Items.SWORD_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal pickaxeTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.PICK_TITANIUM)
+			new ItemPickaxeUnreal(Materials.Tools.TITANIUM, 1.0F).setUnlocalizedName(Names.Items.PICK_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal shovelTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.SHOVEL_TITANIUM)
+			new ItemShovelUnreal(Materials.Tools.TITANIUM, 1.0F).setUnlocalizedName(Names.Items.SHOVEL_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal axeTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.AXE_TITANIUM)
+			new ItemAxeUnreal(Materials.Tools.TITANIUM, 1.0F).setUnlocalizedName(Names.Items.AXE_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal hoeTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.HOE_TITANIUM)
+			new ItemHoeUnreal(Materials.Tools.TITANIUM).setUnlocalizedName(Names.Items.HOE_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal swordTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.SWORD_TARYDIUM_ALLOY_REFINED)
+			new ItemSwordUnreal(Materials.Tools.TARYDIUM_ALLOY_REFINED).setUnlocalizedName(Names.Items.SWORD_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemUnreal pickaxeTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.PICK_TARYDIUM_ALLOY_REFINED)
+			new ItemPickaxeUnreal(Materials.Tools.TARYDIUM_ALLOY_REFINED, 1.0F).setUnlocalizedName(Names.Items.PICK_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemUnreal shovelTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.SHOVEL_TARYDIUM_ALLOY_REFINED)
+			new ItemShovelUnreal(Materials.Tools.TARYDIUM_ALLOY_REFINED, 1.0F).setUnlocalizedName(Names.Items.SHOVEL_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemUnreal axeTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.AXE_TARYDIUM_ALLOY_REFINED)
+			new ItemAxeUnreal(Materials.Tools.TARYDIUM_ALLOY_REFINED, 1.0F).setUnlocalizedName(Names.Items.AXE_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemUnreal hoeTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.HOE_TARYDIUM_ALLOY_REFINED)
+			new ItemHoeUnreal(Materials.Tools.TARYDIUM_ALLOY_REFINED).setUnlocalizedName(Names.Items.HOE_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1).setCreativeTab(null);
 	
 	public static final ItemUnreal recordUnreal = (ItemUnreal)

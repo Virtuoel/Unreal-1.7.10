@@ -1,29 +1,23 @@
 package com.virtuoel.unreal.item;
 
-import java.util.Set;
-
-import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemTool;
 
-import com.google.common.collect.Sets;
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemToolUnreal extends ItemTool
+public class ItemHoeUnreal extends ItemHoe
 {
 	
-	public ItemToolUnreal(float damageVsEntity, Item.ToolMaterial toolMaterial, Set blocksEffectiveAgainst)
+	public ItemHoeUnreal(Item.ToolMaterial toolMaterial)
 	{
-		super(damageVsEntity, toolMaterial, blocksEffectiveAgainst);
-		this.setNoRepair()
-		.setMaxStackSize(1)
+		super(toolMaterial);
+		this.setMaxStackSize(1)
 		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
 	

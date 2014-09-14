@@ -3,12 +3,15 @@ package com.virtuoel.unreal.item;
 import java.util.Set;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemTool;
 
+import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.reference.Reference;
@@ -16,14 +19,13 @@ import com.virtuoel.unreal.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemToolUnreal extends ItemTool
+public class ItemSwordUnreal extends ItemSword
 {
-	
-	public ItemToolUnreal(float damageVsEntity, Item.ToolMaterial toolMaterial, Set blocksEffectiveAgainst)
+
+	public ItemSwordUnreal(Item.ToolMaterial toolMaterial)
 	{
-		super(damageVsEntity, toolMaterial, blocksEffectiveAgainst);
-		this.setNoRepair()
-		.setMaxStackSize(1)
+		super(toolMaterial);
+		this.setMaxStackSize(1)
 		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
 	
@@ -50,5 +52,5 @@ public class ItemToolUnreal extends ItemTool
     {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
-	
+
 }

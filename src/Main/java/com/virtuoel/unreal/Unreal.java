@@ -10,6 +10,7 @@ import com.virtuoel.unreal.init.ModItems;
 import com.virtuoel.unreal.init.ModRecipes;
 import com.virtuoel.unreal.proxy.IProxy;
 import com.virtuoel.unreal.reference.Reference;
+import com.virtuoel.unreal.reference.Settings;
 import com.virtuoel.unreal.utility.LogHelper;
 import com.virtuoel.unreal.world.UnrealWorldGenerator;
 
@@ -93,6 +94,11 @@ public class Unreal
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
+		if(Reference.PRINT_DEBUG_CONFIG_VALUES)
+		{
+			LogHelper.info("Redeemer:");
+			LogHelper.info(Settings.Weapons.redeemerTerrainDamage);
+		}
 		
 		if(Reference.PRINT_DEBUG_OREDICT_VALUES)
 		{

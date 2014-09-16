@@ -21,7 +21,8 @@ public class ItemPickaxeUnreal extends ItemToolUnreal
 	{
 		super(damageVsEntity, toolMaterial, blocksEffectiveAgainst);
 		this.setMaxStackSize(1)
-		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB)
+		.setHarvestLevel("pickaxe", toolMaterial.getHarvestLevel());
 	}
 
 	@Override

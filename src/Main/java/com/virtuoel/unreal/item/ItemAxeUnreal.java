@@ -19,7 +19,8 @@ public class ItemAxeUnreal extends ItemToolUnreal
 	{
 		super(damageVsEntity, toolMaterial, blocksEffectiveAgainst);
 		this.setMaxStackSize(1)
-		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB)
+		.setHarvestLevel("axe", toolMaterial.getHarvestLevel());
 	}
 
 	@Override

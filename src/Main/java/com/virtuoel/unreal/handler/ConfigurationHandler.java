@@ -39,10 +39,10 @@ public class ConfigurationHandler
 		Settings.World.worldGeneratorWeight = configuration.getInt("worldGeneratorWeight", Configuration.CATEGORY_GENERAL, 1, 0, 1000, "Weight of world generator");
 		
 		Settings.Debug.printDebugConfigValues = configuration.getBoolean("printDebugConfigValues", Reference.CATEGORY_DEBUG, false, "True to print some configuration values");
-		Settings.Debug.printDebugOreDictionaryValues = configuration.getBoolean("printDebugConfigValues", Reference.CATEGORY_DEBUG, false, "True to print Ore Dictionary entries");
-		Settings.Debug.printDebugKeyBindingValues = configuration.getBoolean("printDebugConfigValues", Reference.CATEGORY_DEBUG, false, "True to print keybindings");
-		Settings.Debug.debugClearItems = configuration.getBoolean("printDebugConfigValues", Reference.CATEGORY_DEBUG, false, "True to remove all items and blocks from this mod");
-		Settings.Debug.debugWorldGenerator = configuration.getBoolean("printDebugConfigValues", Reference.CATEGORY_DEBUG, false, "True to have a debug overlay of ore locations in the sky");
+		Settings.Debug.printDebugOreDictionaryValues = configuration.getBoolean("printDebugOreDictionaryValues", Reference.CATEGORY_DEBUG, false, "True to print Ore Dictionary entries");
+		Settings.Debug.printDebugKeyBindingValues = configuration.getBoolean("printDebugKeyBindingValues", Reference.CATEGORY_DEBUG, false, "True to print keybindings");
+		Settings.Debug.debugClearItems = configuration.getBoolean("debugClearItems", Reference.CATEGORY_DEBUG, false, "True to remove all items and blocks from this mod");
+		Settings.Debug.debugWorldGenerator = configuration.getBoolean("debugWorldGenerator", Reference.CATEGORY_DEBUG, false, "True to have a debug overlay of ore locations in the sky");
 		
 		Settings.Weapons.stingerTerrainDamage = configuration.getBoolean("stingerTerrainDamage", Reference.CATEGORY_WEAPONS, true, "If Stinger destroys terrain");
 		Settings.Weapons.eightballTerrainDamage = configuration.getBoolean("eightballTerrainDamage", Reference.CATEGORY_WEAPONS, false, "If Eightball Launcher destroys terrain");

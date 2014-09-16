@@ -3,6 +3,7 @@ package com.virtuoel.unreal.client.handler;
 import com.virtuoel.unreal.client.settings.KeyBindings;
 import com.virtuoel.unreal.reference.Key;
 import com.virtuoel.unreal.reference.Reference;
+import com.virtuoel.unreal.reference.Settings;
 import com.virtuoel.unreal.utility.LogHelper;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -27,7 +28,7 @@ public class KeyInputEventHandler
 	@SubscribeEvent
 	public void handleKeyInputEvent(InputEvent.KeyInputEvent event)
 	{
-		if(Reference.PRINT_DEBUG_KEYBIND_VALUES)
+		if(Settings.Debug.printDebugKeyBindingValues)
 		{
 			LogHelper.info(getPressedKeyBinding());
 		}

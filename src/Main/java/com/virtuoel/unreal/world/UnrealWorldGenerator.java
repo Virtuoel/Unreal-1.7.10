@@ -4,6 +4,7 @@ import java.util.Random;
 
 import com.virtuoel.unreal.init.ModBlocks;
 import com.virtuoel.unreal.reference.Reference;
+import com.virtuoel.unreal.reference.Settings;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -131,14 +132,14 @@ public class UnrealWorldGenerator implements IWorldGenerator
 				if (blockAtCoord == worldStoneReplace)
 				{
 					world.setBlock(Xcoord, Ycoord, Zcoord, oreBlock, oreData, 2);
-					if(Reference.DEBUG_WORLD_GENERATOR)world.setBlock(Xcoord, 130, Zcoord, debugBlock, 0, 2);
+					if(Settings.Debug.debugWorldGenerator)world.setBlock(Xcoord, 130, Zcoord, debugBlock, 0, 2);
 				}
 			}
 			else
 			{
 				new WorldGenMinable(oreBlock, amountOre)
 				.generate(world, random, Xcoord, Ycoord, Zcoord);
-				if(Reference.DEBUG_WORLD_GENERATOR)world.setBlock(Xcoord, 130, Zcoord, debugBlock, 0, 2);
+				if(Settings.Debug.debugWorldGenerator)world.setBlock(Xcoord, 130, Zcoord, debugBlock, 0, 2);
 			}
 		}
 	}

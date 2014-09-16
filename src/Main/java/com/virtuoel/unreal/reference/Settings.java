@@ -16,6 +16,18 @@ public class Settings
 		public static int redeemerExplosionPower;
 	}
 	
+	public static class Debug
+	{
+		public static boolean printDebugConfigValues;
+		public static boolean printDebugOreDictionaryValues;
+		public static boolean printDebugKeyBindingValues;
+		public static boolean debugClearItems;
+		public static boolean debugWorldGenerator;
+	}
 	
+	public static class World
+	{
+		public static int worldGeneratorWeight;
+	}
 	
 }

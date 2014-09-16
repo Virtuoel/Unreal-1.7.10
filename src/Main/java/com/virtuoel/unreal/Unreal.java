@@ -31,7 +31,7 @@ public class Unreal
 	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static IProxy proxy;
-
+	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
@@ -41,15 +41,12 @@ public class Unreal
 		proxy.registerKeyBindings();
 		LogHelper.info("Key Binding Registration Completed.");
 		
-		if(!Reference.DEBUG_CLEAR_ITEMS){
+		if(!Settings.Debug.debugClearItems){
 			ModItems.init();
 			LogHelper.info("Items Initilized.");
 			
 			ModBlocks.init();
 			LogHelper.info("Blocks Initilized.");
-			
-			//ModItems.initTools();
-			//LogHelper.info("Tool Types Assigned.");
 			
 			ModRecipes.initOreDict();
 			LogHelper.info("Ore Dictionary Registration Completed.");
@@ -58,7 +55,6 @@ public class Unreal
 		{
 			LogHelper.info("Items Cleared.");
 			LogHelper.info("Blocks Cleared.");
-			//LogHelper.info("Tool Type Assigment Skipped.");
 			LogHelper.info("Ore Dictionary Registration Skipped.");
 		}
 		
@@ -70,9 +66,9 @@ public class Unreal
 	{
 		FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
 		
-		if(!Reference.DEBUG_CLEAR_ITEMS)
+		if(!Settings.Debug.debugClearItems)
 		{
-			GameRegistry.registerWorldGenerator(new UnrealWorldGenerator(), Reference.WORLD_GENERATOR_WEIGHT);
+			GameRegistry.registerWorldGenerator(new UnrealWorldGenerator(), Settings.World.worldGeneratorWeight);
 			
 			GameRegistry.registerFuelHandler(new UnrealFuelHandler());
 			LogHelper.info("Fuel Handler Registered.");
@@ -85,6 +81,7 @@ public class Unreal
 		}
 		else
 		{
+			LogHelper.info("World Generation Disabled.");
 			LogHelper.info("Recipes Cleared.");
 		}
 		
@@ -94,13 +91,14 @@ public class Unreal
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
-		if(Reference.PRINT_DEBUG_CONFIG_VALUES)
+		if(Settings.Debug.printDebugConfigValues)
 		{
-			LogHelper.info("Redeemer:");
-			LogHelper.info(Settings.Weapons.redeemerTerrainDamage);
+			LogHelper.info("Stinger Damage: "+Settings.Weapons.stingerTerrainDamage);
+			LogHelper.info("Eightball Damage: "+Settings.Weapons.eightballTerrainDamage);
+			LogHelper.info("Redeemer Damage: "+Settings.Weapons.redeemerTerrainDamage);
 		}
 		
-		if(Reference.PRINT_DEBUG_OREDICT_VALUES)
+		if(Settings.Debug.printDebugOreDictionaryValues)
 		{
 			for(String oreName : OreDictionary.getOreNames())
 			{

@@ -97,6 +97,7 @@ public class ItemWeaponBase extends ItemUnreal
 	public void getSubItems(Item par1item, CreativeTabs par2CreativeTabs, List par3List)
     {
         par3List.add(new ItemStack(par1item, 1, 1));
+        par3List.add(new ItemStack(par1item, 1, par1item.getMaxDamage()));
     }
 	
 	@Override

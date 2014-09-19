@@ -4,6 +4,7 @@ import net.minecraft.init.Items;
 
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.item.ItemAxeUnreal;
+import com.virtuoel.unreal.item.ItemDustUnreal;
 import com.virtuoel.unreal.item.ItemHoeUnreal;
 import com.virtuoel.unreal.item.ItemPickaxeUnreal;
 import com.virtuoel.unreal.item.ItemShovelUnreal;
@@ -29,7 +30,7 @@ public class ModItems
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustTitanium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_TITANIUM)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_TITANIUM)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 
 	public static final ItemUnreal ingotRutile = (ItemUnreal)
@@ -41,7 +42,7 @@ public class ModItems
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustRutile = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_RUTILE)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_RUTILE)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 
 	public static final ItemUnreal ingotMagnesium = (ItemUnreal)
@@ -53,7 +54,7 @@ public class ModItems
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustMagnesium = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_MAGNESIUM)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_MAGNESIUM)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gemTarydium = (ItemUnreal)
@@ -69,11 +70,11 @@ public class ModItems
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustCinnabar = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_CINNABAR)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_CINNABAR)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustAsbestos = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_ASBESTOS)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_ASBESTOS)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal nuggetIron = (ItemUnreal)
@@ -97,7 +98,7 @@ public class ModItems
 			.setMaxStackSize(64).setCreativeTab(null);
 	
 	public static final ItemUnreal dustTarydiumAlloyUnrefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_TARYDIUM_ALLOY_UNREFINED)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_TARYDIUM_ALLOY_UNREFINED)
 			.setMaxStackSize(64).setCreativeTab(null);
 
 	public static final ItemUnreal ingotTarydiumAlloyRefined = (ItemUnreal)
@@ -109,7 +110,7 @@ public class ModItems
 			.setMaxStackSize(64).setCreativeTab(null);
 	
 	public static final ItemUnreal dustTarydiumAlloyRefined = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_TARYDIUM_ALLOY_REFINED)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(64).setCreativeTab(null);
 	
 	//components

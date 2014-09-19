@@ -51,9 +51,13 @@ Syntax List
 
 Changelog:
 
+0.1.0.17
+---
+[Update][Progress] Base weapon class complete
+
 0.1.0.9
 ---
-[Progress]
+[Update][Progress] All blocks ported over
 
 0.1.0.0
 ---

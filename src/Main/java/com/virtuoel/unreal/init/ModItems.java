@@ -11,6 +11,7 @@ import com.virtuoel.unreal.item.ItemShovelUnreal;
 import com.virtuoel.unreal.item.ItemSwordUnreal;
 import com.virtuoel.unreal.item.ItemToolUnreal;
 import com.virtuoel.unreal.item.ItemUnreal;
+import com.virtuoel.unreal.item.ItemWeaponBase;
 import com.virtuoel.unreal.reference.Materials;
 import com.virtuoel.unreal.reference.Names;
 import com.virtuoel.unreal.reference.Reference;
@@ -268,35 +269,6 @@ public class ModItems
 			new ItemUnreal().setUnlocalizedName(Names.Items.RECORD_UNREAL)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	//weapons
-	public static final ItemUnreal gunTranslocator = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_TRANSLOCATOR)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
-	public static final ItemUnreal gunDispersionPistol = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_DISPERSION_PISTOL)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
-	public static final ItemUnreal meleeChainsaw = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.MELEE_CHAINSAW)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
-	public static final ItemUnreal gunStinger = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_STINGER)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
-	public static final ItemUnreal gunFlakCannon = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_FLAK)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
-	public static final ItemUnreal gunEightballLauncher = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_EIGHTBALL)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
-	public static final ItemUnreal gunRedeemer = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.GUN_REDEEMER)
-			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
 	//armor
 	public static final ItemUnreal armorSCUBAGear = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.SCUBA_GEAR)
@@ -367,6 +339,35 @@ public class ModItems
 	public static final ItemUnreal dustObsidian = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_OBSIDIAN)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	//weapons
+	public static final ItemUnreal gunTranslocator = (ItemUnreal)
+			new ItemWeaponBase(ModItems.translocatorDisc, 101).setUnlocalizedName(Names.Items.GUN_TRANSLOCATOR)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemUnreal gunDispersionPistol = (ItemUnreal)
+			new ItemWeaponBase(ModItems.dispersionUpgrade, 5001).setUnlocalizedName(Names.Items.GUN_DISPERSION_PISTOL)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemUnreal meleeChainsaw = (ItemUnreal)
+			new ItemWeaponBase(ModItems.chainLink, 101).setUnlocalizedName(Names.Items.MELEE_CHAINSAW)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemUnreal gunStinger = (ItemUnreal)
+			new ItemWeaponBase(ModItems.shardTarydium, 101).setUnlocalizedName(Names.Items.GUN_STINGER)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemUnreal gunFlakCannon = (ItemUnreal)
+			new ItemWeaponBase(ModItems.ammoFlakShell, 51).setUnlocalizedName(Names.Items.GUN_FLAK)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemUnreal gunEightballLauncher = (ItemUnreal)
+			new ItemWeaponBase(ModItems.ammoEightball, 49).setUnlocalizedName(Names.Items.GUN_EIGHTBALL)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemUnreal gunRedeemer = (ItemUnreal)
+			new ItemWeaponBase(ModItems.ammoWarhead, 101).setUnlocalizedName(Names.Items.GUN_REDEEMER)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static void init()
 	{

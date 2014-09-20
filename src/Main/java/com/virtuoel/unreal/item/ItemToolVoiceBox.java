@@ -65,20 +65,21 @@ public class ItemToolVoiceBox extends ItemUnreal
 				entityItem.worldObj.playSoundAtEntity(entityItem, "mob.irongolem.hit", 1.0F, 1.9F / (itemRand.nextFloat() * 0.4F + 0.8F));
 				break;
 			case 1:
-				entityItem.worldObj.playSoundAtEntity(entityItem, "random.breath", 2.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 0.8F));
+				//entityItem.worldObj.playSoundAtEntity(entityItem, "random.breath", 2.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 0.8F));
+				entityItem.worldObj.playSoundAtEntity(entityItem, "random.drink", 0.5F, 0.0F);//0.1F / (itemRand.nextFloat() * 0.4F + 0.8F));
 				break;
 			case 2:
-				entityItem.worldObj.playSoundAtEntity(entityItem, "mob.blaze.hit", 1.0F, 0.1F / (itemRand.nextFloat() * 0.4F + 0.8F));
+				entityItem.worldObj.playSoundAtEntity(entityItem, "mob.blaze.hit", 1.0F, 0.0F); //0.1F / (itemRand.nextFloat() * 0.4F + 0.8F));
 				break;
 			case 3:
 				entityItem.worldObj.playSoundAtEntity(entityItem, "tile.piston.out", 0.5F, 1.0F / (itemRand.nextFloat() * 0.4F + 0.8F));
-				entityItem.worldObj.playSoundAtEntity(entityItem, "fireworks.launch", 1.0F, 0.1F / (itemRand.nextFloat() * 0.4F + 0.8F));
+				entityItem.worldObj.playSoundAtEntity(entityItem, "fireworks.launch", 1.0F, 0.0F); //0.1F / (itemRand.nextFloat() * 0.4F + 0.8F));
 				break;
 			case 4:
 				entityItem.worldObj.playSoundAtEntity(entityItem, "random.explode", 0.5F, 1.0F / (itemRand.nextFloat() * 0.4F + 0.8F));
 				break;
 			case 5:
-				entityItem.worldObj.playSoundAtEntity(entityItem, "random.bow", 1.0F, 0.1F / (itemRand.nextFloat() * 0.4F + 0.8F));
+				entityItem.worldObj.playSoundAtEntity(entityItem, "random.bow", 1.0F, 0.0F); //0.1F / (itemRand.nextFloat() * 0.4F + 0.8F));
 				break;
 			default:
 				return false;

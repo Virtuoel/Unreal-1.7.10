@@ -24,8 +24,8 @@ public class ItemUnreal extends Item
 	@Override
 	public EnumAction getItemUseAction(ItemStack stack)
 	{
-		if(Item.getIdFromItem(stack.getItem())==Item.getIdFromItem(ModItems.weaponCasingBasic)||
-				Item.getIdFromItem(stack.getItem())==Item.getIdFromItem(ModItems.weaponCasingAdv))
+		if(stack.getItem()==ModItems.weaponCasingBasic||
+				stack.getItem()==ModItems.weaponCasingAdv)
 		{
 			return EnumAction.block;
 		}

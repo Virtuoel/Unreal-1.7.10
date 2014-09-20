@@ -134,11 +134,13 @@ public class ModItems
 	
 	public static final ItemUnreal weaponCasingBasic = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.WEAPON_CASING_BASIC)
-			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(16).setFull3D()
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal weaponCasingAdv = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.WEAPON_CASING_ADVANCED)
-			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+			.setMaxStackSize(16).setFull3D()
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal tarydPowerBasic = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.TARYDIUM_POWER)
@@ -226,9 +228,9 @@ public class ModItems
 			new ItemToolVoiceBox().setUnlocalizedName(Names.Items.VOICE_BOX)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemSwordUnreal swordTitanium = 
-			(ItemSwordUnreal) new ItemSwordUnreal(Materials.Tools.TITANIUM).setUnlocalizedName(Names.Items.SWORD_TITANIUM)
-	.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	public static final ItemSwordUnreal swordTitanium = (ItemSwordUnreal)
+			new ItemSwordUnreal(Materials.Tools.TITANIUM).setUnlocalizedName(Names.Items.SWORD_TITANIUM)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemToolUnreal pickaxeTitanium = (ItemToolUnreal)
 			new ItemPickaxeUnreal(Materials.Tools.TITANIUM, 2.0F).setUnlocalizedName(Names.Items.PICK_TITANIUM)

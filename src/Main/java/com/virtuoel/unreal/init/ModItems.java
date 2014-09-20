@@ -10,6 +10,7 @@ import com.virtuoel.unreal.item.ItemPickaxeUnreal;
 import com.virtuoel.unreal.item.ItemShovelUnreal;
 import com.virtuoel.unreal.item.ItemSwordUnreal;
 import com.virtuoel.unreal.item.ItemToolUnreal;
+import com.virtuoel.unreal.item.ItemToolVoiceBox;
 import com.virtuoel.unreal.item.ItemUnreal;
 import com.virtuoel.unreal.item.ItemWeaponBase;
 import com.virtuoel.unreal.reference.Materials;
@@ -222,7 +223,7 @@ public class ModItems
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal voiceBox = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.VOICE_BOX)
+			new ItemToolVoiceBox().setUnlocalizedName(Names.Items.VOICE_BOX)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemSwordUnreal swordTitanium = 
@@ -305,39 +306,39 @@ public class ModItems
 	
 	//vanilla item dusts
 	public static final ItemUnreal dustCoal = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_COAL)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_COAL)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustCharcoal = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_CHARCOAL)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_CHARCOAL)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustIron = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_IRON)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_IRON)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustLapis = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_LAPIS)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_LAPIS)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustGold = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_GOLD)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_GOLD)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustNetherQuartz = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_NETHER_QUARTZ)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_NETHER_QUARTZ)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustDiamond = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_DIAMOND)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_DIAMOND)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustEmerald = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_EMERALD)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_EMERALD)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal dustObsidian = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.DUST_OBSIDIAN)
+			new ItemDustUnreal().setUnlocalizedName(Names.Items.DUST_OBSIDIAN)
 			.setMaxStackSize(64).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//weapons

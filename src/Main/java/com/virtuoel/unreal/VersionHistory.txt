@@ -51,6 +51,10 @@ Syntax List
 
 Changelog:
 
+0.1.0.19
+---
+[Update][Progress] Ported Voice Box 
+
 0.1.0.17
 ---
 [Update][Progress] Base weapon class complete

@@ -2,7 +2,7 @@ Versions:
 
 Current: 1.0.0.9
 
-Features:(Currently NYI)
+Features:(Weapons Currently NYI)
 
 Weapons:
 Translocator
@@ -50,6 +50,10 @@ Syntax List
 [LAN]
 
 Changelog:
+
+0.1.0.22
+---
+[Update][Progress] All special armor now functional
 
 0.1.0.19
 ---

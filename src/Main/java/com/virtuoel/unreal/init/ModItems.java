@@ -4,7 +4,9 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemArmor;
 
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
+import com.virtuoel.unreal.item.ItemArmorAsbestosSuit;
 import com.virtuoel.unreal.item.ItemArmorSCUBAGear;
+import com.virtuoel.unreal.item.ItemArmorUnrealBase;
 import com.virtuoel.unreal.item.ItemAxeUnreal;
 import com.virtuoel.unreal.item.ItemDustUnreal;
 import com.virtuoel.unreal.item.ItemHoeUnreal;
@@ -275,28 +277,28 @@ public class ModItems
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//armor
-	public static final ItemArmorSCUBAGear armorSCUBAGear = (ItemArmorSCUBAGear)
-			new ItemArmorSCUBAGear(ItemArmor.ArmorMaterial.CHAIN, Reference.ARMOR_RENDER_IRON, Reference.ARMOR_TYPE_HELMET)
+	public static final ItemArmorUnrealBase armorSCUBAGear = (ItemArmorUnrealBase)
+			new ItemArmorSCUBAGear(ItemArmor.ArmorMaterial.GOLD, Reference.ARMOR_RENDER_IRON, Reference.ARMOR_TYPE_HELMET)
 			.setUnlocalizedName(Names.Items.SCUBA_GEAR)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal armorShieldBelt = (ItemUnreal)
-			new ItemUnreal()
+	public static final ItemArmorUnrealBase armorShieldBelt = (ItemArmorUnrealBase)
+			new ItemArmorUnrealBase(Materials.Armor.SHIELD, Reference.ARMOR_RENDER_GOLD, Reference.ARMOR_TYPE_LEGGINGS)
 			.setUnlocalizedName(Names.Items.SHIELD_BELT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal armorToxinSuit = (ItemUnreal)
-			new ItemUnreal()
+	public static final ItemArmorUnrealBase armorToxinSuit = (ItemArmorUnrealBase)
+			new ItemArmorUnrealBase(ItemArmor.ArmorMaterial.CHAIN, Reference.ARMOR_RENDER_IRON, Reference.ARMOR_TYPE_CHESTPLATE)
 			.setUnlocalizedName(Names.Items.TOXIN_SUIT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal armorAsbestosSuit = (ItemUnreal)
-			new ItemUnreal()
+	public static final ItemArmorUnrealBase armorAsbestosSuit = (ItemArmorUnrealBase)
+			new ItemArmorAsbestosSuit(ItemArmor.ArmorMaterial.CHAIN, Reference.ARMOR_RENDER_CHAIN, Reference.ARMOR_TYPE_CHESTPLATE)
 			.setUnlocalizedName(Names.Items.ASBESTOS_SUIT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal armorJumpBoots = (ItemUnreal)
-			new ItemUnreal()
+	public static final ItemArmorUnrealBase armorJumpBoots = (ItemArmorUnrealBase)
+			new ItemArmorUnrealBase(ItemArmor.ArmorMaterial.IRON, Reference.ARMOR_RENDER_IRON, Reference.ARMOR_TYPE_BOOTS)
 			.setUnlocalizedName(Names.Items.JUMP_BOOTS)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	

@@ -35,6 +35,8 @@ public class Unreal
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
+		LogHelper.info("Pre Initilization Started.");
+		
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 		
@@ -64,6 +66,8 @@ public class Unreal
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event)
 	{
+		LogHelper.info("Initilization Started.");
+		
 		FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
 		
 		if(!Settings.Debug.debugClearItems)
@@ -91,6 +95,8 @@ public class Unreal
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
+		LogHelper.info("Post Initilization Started.");
+		
 		if(Settings.Debug.printDebugConfigValues)
 		{
 			LogHelper.info("Stinger Damage: "+Settings.Weapons.stingerTerrainDamage);

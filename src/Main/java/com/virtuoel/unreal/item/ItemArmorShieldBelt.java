@@ -55,7 +55,7 @@ public class ItemArmorShieldBelt extends ItemArmorUnrealBase
 		super.onArmorTick(par1World, par2EntityPlayer, par3ItemStack);
 		if(par3ItemStack.getItem()==this)
 		{
-			PotionEffect potioneffect = new PotionEffect(8, 2, 3, true);
+			PotionEffect potioneffect = new PotionEffect(11, 2, 4, true);
 			par2EntityPlayer.addPotionEffect(potioneffect);
 		}
 	}

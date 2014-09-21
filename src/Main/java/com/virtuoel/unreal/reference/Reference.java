@@ -12,6 +12,17 @@ public class Reference
 	public static final String CATEGORY_DEBUG = "Debug";
 	public static final String CATEGORY_WEAPONS = "Weapons";
 	public static final String CATEGORY_WORLD = "World";
+
+	public static final int ARMOR_TYPE_HELMET = 0;
+	public static final int ARMOR_TYPE_CHESTPLATE = 1;
+	public static final int ARMOR_TYPE_LEGGINGS = 2;
+	public static final int ARMOR_TYPE_BOOTS = 3;
+	
+	public static final int ARMOR_RENDER_LEATHER = 0;
+	public static final int ARMOR_RENDER_CHAIN = 1;
+	public static final int ARMOR_RENDER_IRON = 2;
+	public static final int ARMOR_RENDER_DIAMOND = 3;
+	public static final int ARMOR_RENDER_GOLD = 4;
 	
 	public static final int BLOCK_FACE_BOTTOM = 0;
 	public static final int BLOCK_FACE_TOP = 1;

@@ -1,8 +1,10 @@
 package com.virtuoel.unreal.init;
 
 import net.minecraft.init.Items;
+import net.minecraft.item.ItemArmor;
 
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
+import com.virtuoel.unreal.item.ItemArmorSCUBAGear;
 import com.virtuoel.unreal.item.ItemAxeUnreal;
 import com.virtuoel.unreal.item.ItemDustUnreal;
 import com.virtuoel.unreal.item.ItemHoeUnreal;
@@ -10,7 +12,7 @@ import com.virtuoel.unreal.item.ItemPickaxeUnreal;
 import com.virtuoel.unreal.item.ItemShovelUnreal;
 import com.virtuoel.unreal.item.ItemSwordUnreal;
 import com.virtuoel.unreal.item.ItemToolUnreal;
-import com.virtuoel.unreal.item.ItemToolVoiceBox;
+import com.virtuoel.unreal.item.ItemVoiceBox;
 import com.virtuoel.unreal.item.ItemUnreal;
 import com.virtuoel.unreal.item.ItemWeaponBase;
 import com.virtuoel.unreal.reference.Materials;
@@ -225,7 +227,7 @@ public class ModItems
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal voiceBox = (ItemUnreal)
-			new ItemToolVoiceBox().setUnlocalizedName(Names.Items.VOICE_BOX)
+			new ItemVoiceBox().setUnlocalizedName(Names.Items.VOICE_BOX)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemSwordUnreal swordTitanium = (ItemSwordUnreal)
@@ -273,24 +275,29 @@ public class ModItems
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//armor
-	public static final ItemUnreal armorSCUBAGear = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.SCUBA_GEAR)
+	public static final ItemArmorSCUBAGear armorSCUBAGear = (ItemArmorSCUBAGear)
+			new ItemArmorSCUBAGear(ItemArmor.ArmorMaterial.CHAIN, Reference.ARMOR_RENDER_IRON, Reference.ARMOR_TYPE_HELMET)
+			.setUnlocalizedName(Names.Items.SCUBA_GEAR)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal armorShieldBelt = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.SHIELD_BELT)
+			new ItemUnreal()
+			.setUnlocalizedName(Names.Items.SHIELD_BELT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal armorToxinSuit = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.TOXIN_SUIT)
+			new ItemUnreal()
+			.setUnlocalizedName(Names.Items.TOXIN_SUIT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal armorAsbestosSuit = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.ASBESTOS_SUIT)
+			new ItemUnreal()
+			.setUnlocalizedName(Names.Items.ASBESTOS_SUIT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal armorJumpBoots = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.JUMP_BOOTS)
+			new ItemUnreal()
+			.setUnlocalizedName(Names.Items.JUMP_BOOTS)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//ammo

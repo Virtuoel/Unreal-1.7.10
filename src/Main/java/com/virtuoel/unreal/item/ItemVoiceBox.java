@@ -11,11 +11,11 @@ import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemToolVoiceBox extends ItemUnreal
+public class ItemVoiceBox extends ItemUnreal
 {
 	private int soundTick = 0;
 	
-	public ItemToolVoiceBox()
+	public ItemVoiceBox()
 	{
 		super();
 		this.setMaxStackSize(64)
@@ -56,7 +56,7 @@ public class ItemToolVoiceBox extends ItemUnreal
 	{
 		super.onEntityItemUpdate(entityItem);
 		//onUpdate(entityItem.getEntityItem(), entityItem.worldObj, entityItem, 0, true);
-		ItemToolVoiceBox boxItem = (ItemToolVoiceBox)entityItem.getEntityItem().getItem();
+		ItemVoiceBox boxItem = (ItemVoiceBox)entityItem.getEntityItem().getItem();
 		boxItem.setSoundTick(boxItem.getSoundTick()+1);
 		if(boxItem.getSoundTick()>=3){
 			boxItem.setSoundTick(0);

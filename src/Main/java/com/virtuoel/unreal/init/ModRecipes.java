@@ -946,7 +946,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorAsbestosSuit,1), new Object[]{
-			"DMD","GCG","OTO",'D',"dustAsbestos",'O',"blockAsbestos",'M',"fluidMercury",'C',new ItemStack(ModItems.armorToxinSuit,1,OreDictionary.WILDCARD_VALUE),'G',"blockMagnesium",'T',"blockTitanium",
+			"OMO","TCT","OGO",'O',"blockAsbestos",'M',"fluidMercury",'C',new ItemStack(ModItems.armorToxinSuit,1,OreDictionary.WILDCARD_VALUE),'G',"blockMagnesium",'T',"blockTitanium",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorToxinSuit,1), new Object[]{

@@ -99,7 +99,7 @@ public class UnrealWorldGenerator implements IWorldGenerator
 		doGenerateOre(world, random, BlockX, BlockZ, 
 				24, 120, //range
 				ModBlocks.oreTarydiumEnd, 0, //block, data
-				Blocks.netherrack, //replace
+				Blocks.end_stone, //replace
 				3, 6, //base #, rand #
 				1, //ore qty
 				true, //emerald-type generation

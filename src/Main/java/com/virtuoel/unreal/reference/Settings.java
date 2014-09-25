@@ -16,6 +16,11 @@ public class Settings
 		public static int redeemerExplosionPower;
 	}
 	
+	public static class Crafting
+	{
+		public static boolean ninePearlsPerEnderBlock;
+	}
+	
 	public static class Debug
 	{
 		public static boolean printDebugConfigValues;

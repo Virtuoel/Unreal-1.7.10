@@ -38,6 +38,8 @@ public class ConfigurationHandler
 	{
 		Settings.World.worldGeneratorWeight = configuration.getInt("worldGeneratorWeight", Configuration.CATEGORY_GENERAL, 1, 0, 1000, "Weight of world generator");
 		
+		Settings.Crafting.ninePearlsPerEnderBlock = configuration.getBoolean("ninePearlsPerEnderBlock", Reference.CATEGORY_CRAFTING, false, "True for 9 ender pearls per block, false for 4");
+		
 		Settings.Debug.printDebugConfigValues = configuration.getBoolean("printDebugConfigValues", Reference.CATEGORY_DEBUG, false, "True to print some configuration values");
 		Settings.Debug.printDebugOreDictionaryValues = configuration.getBoolean("printDebugOreDictionaryValues", Reference.CATEGORY_DEBUG, false, "True to print Ore Dictionary entries");
 		Settings.Debug.printDebugKeyBindingValues = configuration.getBoolean("printDebugKeyBindingValues", Reference.CATEGORY_DEBUG, false, "True to print keybindings");

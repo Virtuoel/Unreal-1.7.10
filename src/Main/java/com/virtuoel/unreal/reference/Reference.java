@@ -10,6 +10,7 @@ public class Reference
 	public static final String GUI_FACTORY_CLASS = "com.virtuoel.unreal.client.gui.GuiFactory";
 
 	public static final String CATEGORY_DEBUG = "Debug";
+	public static final String CATEGORY_CRAFTING = "Crafting";
 	public static final String CATEGORY_WEAPONS = "Weapons";
 	public static final String CATEGORY_WORLD = "World";
 

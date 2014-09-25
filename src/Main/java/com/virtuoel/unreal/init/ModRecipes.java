@@ -1,5 +1,7 @@
 package com.virtuoel.unreal.init;
 
+import com.virtuoel.unreal.reference.Settings;
+
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -455,13 +457,26 @@ public class ModRecipes
 			"T",'T',"blockTarydium",
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockEnder,1), new Object[]{
-			"CC","CC",'C',Items.ender_pearl,
-			}));
-		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.ender_pearl,4), new Object[]{
-			"C",'C',"blockEnder",
-			}));
+		if(Settings.Crafting.ninePearlsPerEnderBlock)
+		{
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockEnder,1), new Object[]{
+				"CCC","CCC","CCC",'C',Items.ender_pearl,
+				}));
+			
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.ender_pearl,9), new Object[]{
+				"C",'C',"blockEnder",
+				}));
+		}
+		else
+		{
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockEnder,1), new Object[]{
+				"CC","CC",'C',Items.ender_pearl,
+				}));
+			
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.ender_pearl,4), new Object[]{
+				"C",'C',"blockEnder",
+				}));
+		}
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockLeather,1), new Object[]{
 			"TTT","TTT","TTT",'T',Items.leather,
@@ -1156,6 +1171,8 @@ public class ModRecipes
 		OreDictionary.registerOre("nuggetTarydiumAlloyUnrefined", ModItems.nuggetTarydiumAlloyUnrefined);
 		OreDictionary.registerOre("blockFlint", ModBlocks.blockFlint);
 		OreDictionary.registerOre("blockGunpowder", ModBlocks.blockGunpowder);
+		OreDictionary.registerOre("blockEnder", ModBlocks.blockEnder);
+		OreDictionary.registerOre("blockEnderPearl", ModBlocks.blockEnder);
 		OreDictionary.registerOre("dustIron", ModItems.dustIron);
 		OreDictionary.registerOre("dustGold", ModItems.dustGold);
 		OreDictionary.registerOre("dustTarydiumAlloyUnrefined", ModItems.dustTarydiumAlloyUnrefined);

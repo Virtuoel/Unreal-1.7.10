@@ -51,6 +51,15 @@ Syntax List
 
 Changelog:
 
+0.1.0.24
+---
+[Addition] Config setting to allow either 4 or 9 Ender Pearls per Ender Pearl Block
+
+0.1.0.23
+---
+[Balance] Asbestos Suit recipe rebalanced
+[Bugfix][WorldGen] Fixed Ender Tarydium generating in the Nether
+
 0.1.0.22
 ---
 [Update][Progress] All special armor now functional

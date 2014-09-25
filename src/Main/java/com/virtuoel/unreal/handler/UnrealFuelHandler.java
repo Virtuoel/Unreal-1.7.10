@@ -1,5 +1,6 @@
 package com.virtuoel.unreal.handler;
 
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -25,6 +26,10 @@ public class UnrealFuelHandler implements IFuelHandler
 		else if(fuel.getItem()==ModItems.debugTool)
 		{
 			return 1600;
+		}
+		else if(fuel.getItem()==Items.blaze_powder)
+		{
+			return 200*2;
 		}
 		return 0;
 	}

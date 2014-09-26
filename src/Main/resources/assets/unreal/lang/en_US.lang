@@ -2,6 +2,8 @@
 tile.dirt.name=Dirt
 tile.sand.name=Sand
 tile.quartzBlock.name=Block of Quartz
+item.milk_bucket.name=Milk Bucket
+item.redstone.name=Redstone Dust
 # Items
 # (Ore materials, metals, gems, alloys)
 item.unreal:ingotTitanium.name=Titanium Ingot

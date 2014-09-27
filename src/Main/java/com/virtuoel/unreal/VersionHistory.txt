@@ -1,6 +1,6 @@
 Versions:
 
-Current: 1.0.0.9
+Current: 0.1.0.27
 
 Features:(Weapons Currently NYI)
 
@@ -53,6 +53,10 @@ Syntax List
 [LAN]
 
 Changelog:
+
+0.1.0.27
+---
+[Addition] Damage sources and death message localization
 
 0.1.0.26
 ---

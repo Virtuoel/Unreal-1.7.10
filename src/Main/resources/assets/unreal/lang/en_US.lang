@@ -2,8 +2,27 @@
 tile.dirt.name=Dirt
 tile.sand.name=Sand
 tile.quartzBlock.name=Block of Quartz
-item.milk_bucket.name=Milk Bucket
+item.milk.name=Milk Bucket
 item.redstone.name=Redstone Dust
+
+# Death Messages
+death.attack.unreal.translocator=%1$s was telefragged
+death.attack.unreal.translocator.player=%1$s was telefragged by %2$s
+death.attack.unreal.dispersionPistol=%1$s was killed by a Dispersion Pistol. What a loser!
+death.attack.unreal.dispersionPistol.player=%1$s was killed by %2$s's Dispersion Pistol. What a loser!
+death.attack.unreal.chainsaw=%1$s was ripped to shreads by a Chainsaw
+death.attack.unreal.chainsaw.player=%1$s was ripped to shreads by %2$s's Chainsaw
+death.attack.unreal.stinger=%1$s was shot by a Stinger
+death.attack.unreal.stinger.player=%1$s was shot by %2$s's Stinger
+death.attack.unreal.flakCannon=%1$s was mutilated by a Flak Cannon
+death.attack.unreal.flakCannon.player=%1$s was mutilated by %2$s's Flak Cannon
+death.attack.unreal.flak=%1$s was mutilated by some loose Flak
+death.attack.unreal.flak.player=%1$s was mutilated by %2$s's Flak Cannon
+death.attack.unreal.eightballLauncher=%1$s was blown up by an Eightball Rocket
+death.attack.unreal.eightballLauncher.player=%1$s was blown up by %2$s's Eightball Launcher
+death.attack.unreal.redeemer=%1$s was nuked
+death.attack.unreal.redeemer.player=%1$s was nuked by %2$s
+
 # Items
 # (Ore materials, metals, gems, alloys)
 item.unreal:ingotTitanium.name=Titanium Ingot

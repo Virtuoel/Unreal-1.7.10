@@ -44,12 +44,23 @@ Syntax List
 [Version]
 [Update]
 [Progress]
+[Compatibility]
+[Integration]
+[API]
 [WIP]
 [MP]
 [SP]
 [LAN]
 
 Changelog:
+
+0.1.0.26
+---
+[Addition][Compatibility][Integration][API] Started working on NEI integration
+
+0.1.0.25
+---
+[Update][Progress] Weapon projectile porting started
 
 0.1.0.24
 ---

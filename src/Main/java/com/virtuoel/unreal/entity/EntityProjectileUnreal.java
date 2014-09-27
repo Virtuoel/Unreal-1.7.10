@@ -25,6 +25,11 @@ public class EntityProjectileUnreal extends EntityThrowable
 		super(p_i1777_1_, p_i1777_2_);
 		// TODO Auto-generated constructor stub
 	}
+	
+	@Override
+	protected float getGravityVelocity() {
+		return 0.0F;
+	}
 
 	@Override
 	protected void onImpact(MovingObjectPosition p_70184_1_)
@@ -32,4 +37,5 @@ public class EntityProjectileUnreal extends EntityThrowable
 		// TODO Auto-generated method stub
 		
 	}
+	
 }

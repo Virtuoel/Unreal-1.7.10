@@ -2,6 +2,7 @@ package com.virtuoel.unreal.init;
 
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
 
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.item.ItemArmorAsbestosSuit;
@@ -357,31 +358,31 @@ public class ModItems
 	
 	//weapons
 	public static final ItemUnreal gunTranslocator = (ItemUnreal)
-			new ItemWeaponBase(ModItems.translocatorDisc, 101).setUnlocalizedName(Names.Items.GUN_TRANSLOCATOR)
+			new ItemWeaponBase(new ItemStack(ModItems.translocatorDisc, 0, 1), 101).setUnlocalizedName(Names.Items.GUN_TRANSLOCATOR)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunDispersionPistol = (ItemUnreal)
-			new ItemWeaponBase(ModItems.dispersionUpgrade, 5001).setUnlocalizedName(Names.Items.GUN_DISPERSION_PISTOL)
+			new ItemWeaponBase(new ItemStack(ModItems.dispersionUpgrade, 0, 1), 5001).setUnlocalizedName(Names.Items.GUN_DISPERSION_PISTOL)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal meleeChainsaw = (ItemUnreal)
-			new ItemWeaponBase(ModItems.chainLink, 101).setUnlocalizedName(Names.Items.MELEE_CHAINSAW)
+			new ItemWeaponBase(new ItemStack(ModItems.chainLink, 0, 1), 101).setUnlocalizedName(Names.Items.MELEE_CHAINSAW)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunStinger = (ItemUnreal)
-			new ItemWeaponBase(ModItems.shardTarydium, 101).setUnlocalizedName(Names.Items.GUN_STINGER)
+			new ItemWeaponBase(new ItemStack(ModItems.shardTarydium, 0, 1), 101).setUnlocalizedName(Names.Items.GUN_STINGER)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunFlakCannon = (ItemUnreal)
-			new ItemWeaponBase(ModItems.ammoFlakShell, 51).setUnlocalizedName(Names.Items.GUN_FLAK)
+			new ItemWeaponBase(new ItemStack(ModItems.ammoFlakShell, 0, 1), 51).setUnlocalizedName(Names.Items.GUN_FLAK)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunEightballLauncher = (ItemUnreal)
-			new ItemWeaponBase(ModItems.ammoEightball, 49).setUnlocalizedName(Names.Items.GUN_EIGHTBALL)
+			new ItemWeaponBase(new ItemStack(ModItems.ammoEightball, 0, 1), 49).setUnlocalizedName(Names.Items.GUN_EIGHTBALL)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal gunRedeemer = (ItemUnreal)
-			new ItemWeaponBase(ModItems.ammoWarhead, 101).setUnlocalizedName(Names.Items.GUN_REDEEMER)
+			new ItemWeaponBase(new ItemStack(ModItems.ammoWarhead, 0, 1), 101).setUnlocalizedName(Names.Items.GUN_REDEEMER)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static void init()

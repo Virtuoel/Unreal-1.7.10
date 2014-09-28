@@ -17,6 +17,7 @@ import net.minecraft.world.World;
 
 import com.google.common.collect.Multimap;
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
+import com.virtuoel.unreal.utility.NBTHelper;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -24,32 +25,60 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class ItemWeaponBase extends ItemUnreal
 {
 	
-	private Item ammo;
-	private boolean consumeMode;
+	private ItemStack ammo;
 	private int meleeDamageAmount = 0;
 	
-	public ItemWeaponBase(Item weaponAmmo, int damage)
+	public ItemWeaponBase(ItemStack weaponAmmo, int damage)
 	{
 		super();
-		this.ammo = weaponAmmo;
-		this.setMaxDamage(damage);
-		this.setNoRepair().setFull3D()
+		setAmmoItem(weaponAmmo)
+		.setMaxDamage(damage)
+		.setNoRepair().setFull3D()
 		.setMaxStackSize(1).setHasSubtypes(true)
 		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	}
+	
+	@Override
+    public void onCreated(ItemStack p_77622_1_, World p_77622_2_, EntityPlayer p_77622_3_)
+	{
+		setNBTDefaults(p_77622_1_);
 	}
 	
 	@Override
 	public void onUpdate(ItemStack p_77663_1_, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_)
 	{
 		super.onUpdate(p_77663_1_, p_77663_2_, p_77663_3_, p_77663_4_, p_77663_5_);
-		if(p_77663_1_.getItemDamage()>p_77663_1_.getMaxDamage()){
+		if(!p_77663_1_.hasTagCompound())
+		{
+			setNBTDefaults(p_77663_1_);
+		}
+		if(p_77663_1_.getItemDamage()>p_77663_1_.getMaxDamage())
+		{
 			p_77663_1_.setItemDamage(p_77663_1_.getMaxDamage());
 		}
 	}
 	
-	public void toggleConsume()
+	private void setNBTDefaults(ItemStack par1ItemStack)
 	{
-		this.consumeMode = !this.consumeMode;
+		NBTHelper.setBoolean(par1ItemStack, "consumeMode", false);
+		NBTHelper.setInteger(par1ItemStack, "ammoAmount", 10);
+		NBTHelper.setInteger(par1ItemStack, "ammoMax", 100);
+		NBTHelper.setInteger(par1ItemStack, "attackDelay", 40);
+		NBTHelper.setInteger(par1ItemStack, "attackingTime", 0);
+		NBTHelper.setBoolean(par1ItemStack, "atacking", false);
+	}
+	
+	private void toggleConsume(ItemStack par1ItemStack)
+	{
+		NBTHelper.setBoolean(par1ItemStack, "consumeMode", !NBTHelper.getBoolean(par1ItemStack, "consumeMode"));
+		//consumeMode = !consumeMode;
+	}
+	
+	private Item setAmmoItem(ItemStack ammoStack)
+	{
+		ammo=ItemStack.copyItemStack(ammoStack);
+		//ItemStack.loadItemStackFromNBT(p_77949_0_);
+		return this;
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -61,7 +90,7 @@ public class ItemWeaponBase extends ItemUnreal
 	{
 		par3List.add("Ammo: " + (par1ItemStack.getMaxDamage()-par1ItemStack.getItemDamage()) + "/" + (par1ItemStack.getMaxDamage()-1));
 	}
-	
+	/*
 	@Override
 	public Multimap getItemAttributeModifiers()
 	{
@@ -69,7 +98,7 @@ public class ItemWeaponBase extends ItemUnreal
 		multimap.put(SharedMonsterAttributes.attackDamage.getAttributeUnlocalizedName(), new AttributeModifier(field_111210_e, "Weapon modifier", (double)this.meleeDamageAmount, 1));
 		return multimap;
 	}
-	
+	*/
 	@SideOnly(Side.CLIENT)
 	/**
 	 * Return an item rarity from EnumRarity
@@ -110,7 +139,7 @@ public class ItemWeaponBase extends ItemUnreal
 	{
 		if(par3EntityPlayer.isSneaking())
 		{
-			this.toggleConsume();
+			toggleConsume(par1ItemStack);
 		}
 		return par1ItemStack;
 	}

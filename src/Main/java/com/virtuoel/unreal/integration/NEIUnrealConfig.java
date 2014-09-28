@@ -30,6 +30,10 @@ public class NEIUnrealConfig implements IConfigureNEI
 		API.hideItem(new ItemStack(ModItems.hoeTarydiumAlloyRefined));
 		API.hideItem(new ItemStack(ModItems.rodTarydiumAlloyUnrefined));
 		API.hideItem(new ItemStack(ModItems.rodTarydiumAlloyRefined));
+		API.hideItem(new ItemStack(ModItems.ingotTarydiumAlloyRefined));
+		API.hideItem(new ItemStack(ModItems.ingotTarydiumAlloyUnrefined));
+		API.hideItem(new ItemStack(ModItems.nuggetTarydiumAlloyRefined));
+		API.hideItem(new ItemStack(ModItems.nuggetTarydiumAlloyUnrefined));
 		API.hideItem(new ItemStack(ModItems.dustTarydiumAlloyRefined));
 		API.hideItem(new ItemStack(ModItems.dustTarydiumAlloyUnrefined));
 		API.hideItem(new ItemStack(ModItems.ingotBedrockium));

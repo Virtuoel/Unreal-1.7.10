@@ -17,6 +17,7 @@ import net.minecraft.world.World;
 
 import com.google.common.collect.Multimap;
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
+import com.virtuoel.unreal.reference.DamageSources;
 import com.virtuoel.unreal.utility.NBTHelper;
 
 import cpw.mods.fml.relauncher.Side;
@@ -41,7 +42,23 @@ public class ItemWeaponBase extends ItemUnreal
 	@Override
     public void onCreated(ItemStack p_77622_1_, World p_77622_2_, EntityPlayer p_77622_3_)
 	{
-		setNBTDefaults(p_77622_1_);
+		setNBTDefaults(p_77622_1_, 5);
+	}
+	
+	@Override
+	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
+	{
+		if(par3EntityPlayer.isSneaking())
+		{
+			toggleConsume(par1ItemStack);
+			
+		}
+		else
+		{
+			
+			par3EntityPlayer.attackEntityFrom(DamageSources.damageSourceTranslocator, 2);
+		}
+		return par1ItemStack;
 	}
 	
 	@Override
@@ -50,7 +67,7 @@ public class ItemWeaponBase extends ItemUnreal
 		super.onUpdate(p_77663_1_, p_77663_2_, p_77663_3_, p_77663_4_, p_77663_5_);
 		if(!p_77663_1_.hasTagCompound())
 		{
-			setNBTDefaults(p_77663_1_);
+			setNBTDefaults(p_77663_1_, 5);
 		}
 		if(p_77663_1_.getItemDamage()>p_77663_1_.getMaxDamage())
 		{
@@ -58,10 +75,33 @@ public class ItemWeaponBase extends ItemUnreal
 		}
 	}
 	
-	private void setNBTDefaults(ItemStack par1ItemStack)
+	@SideOnly(Side.CLIENT)
+	@Override
+	/**
+	 * allows items to add custom lines of information to the mouseover description
+	 */
+	public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
+	{
+		if(NBTHelper.getInt(par1ItemStack, "ammoMax")!=0)
+		{
+			par3List.add("Ammo: " + (NBTHelper.getInt(par1ItemStack, "ammoAmount")) + "/" + (NBTHelper.getInt(par1ItemStack, "ammoMax")));
+		}
+	}
+	
+	@Override
+	/**
+     * Callback for item usage. If the item does something special on right clicking, he will have one of those. Return
+     * True if something happen and false if it don't. This is for ITEMS, not BLOCKS
+     */
+    public boolean onItemUse(ItemStack p_77648_1_, EntityPlayer p_77648_2_, World p_77648_3_, int p_77648_4_, int p_77648_5_, int p_77648_6_, int p_77648_7_, float p_77648_8_, float p_77648_9_, float p_77648_10_)
+    {
+        return true;
+    }
+	
+	private void setNBTDefaults(ItemStack par1ItemStack, int ammoDefault)
 	{
 		NBTHelper.setBoolean(par1ItemStack, "consumeMode", false);
-		NBTHelper.setInteger(par1ItemStack, "ammoAmount", 10);
+		NBTHelper.setInteger(par1ItemStack, "ammoAmount", ammoDefault);
 		NBTHelper.setInteger(par1ItemStack, "ammoMax", 100);
 		NBTHelper.setInteger(par1ItemStack, "attackDelay", 40);
 		NBTHelper.setInteger(par1ItemStack, "attackingTime", 0);
@@ -80,16 +120,6 @@ public class ItemWeaponBase extends ItemUnreal
 		//ItemStack.loadItemStackFromNBT(p_77949_0_);
 		return this;
 	}
-	
-	@SideOnly(Side.CLIENT)
-	@Override
-	/**
-	 * allows items to add custom lines of information to the mouseover description
-	 */
-	public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
-	{
-		par3List.add("Ammo: " + (par1ItemStack.getMaxDamage()-par1ItemStack.getItemDamage()) + "/" + (par1ItemStack.getMaxDamage()-1));
-	}
 	/*
 	@Override
 	public Multimap getItemAttributeModifiers()
@@ -99,7 +129,9 @@ public class ItemWeaponBase extends ItemUnreal
 		return multimap;
 	}
 	*/
+	
 	@SideOnly(Side.CLIENT)
+	@Override
 	/**
 	 * Return an item rarity from EnumRarity
 	 */
@@ -132,16 +164,6 @@ public class ItemWeaponBase extends ItemUnreal
 	{
 		par3List.add(new ItemStack(par1item, 1, 1));
 		par3List.add(new ItemStack(par1item, 1, par1item.getMaxDamage()));
-	}
-	
-	@Override
-	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
-	{
-		if(par3EntityPlayer.isSneaking())
-		{
-			toggleConsume(par1ItemStack);
-		}
-		return par1ItemStack;
 	}
 	
 	@Override

@@ -32,6 +32,11 @@ public class EntityProjectileUnreal extends EntityThrowable
     public void onUpdate()
 	{
     	super.onUpdate();
+    	//TODO modify for other projectiles
+    	if (!worldObj.isRemote && !worldObj.blockExists((int) posX, (int) posY, (int) posZ))
+    	{
+			setDead();
+		}
     }
 	
 	@Override

@@ -114,6 +114,10 @@ public class ModRecipes
 			"ingotTitanium","virtuoel.unreal.debug",
 			}));
 		
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.dustTitanium,2), new Object[]{
+			"oreTitanium","virtuoel.unreal.debug",
+			}));
+		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.glowstone_dust,4), new Object[]{
 			"glowstone","virtuoel.unreal.debug",
 			}));
@@ -228,7 +232,11 @@ public class ModRecipes
 		
 		//refining
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.crystalCinnabar,1), new Object[]{
-			"virtuoel.unreal.debug","oreRedstone",
+			"virtuoel.unreal.debug","oreRedstone","oreRedstone","oreRedstone","oreRedstone",
+			}));
+		
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.crystalCinnabar,1), new Object[]{
+			"virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","oreCinnabar",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.bucketMercury,1), new Object[]{
@@ -638,7 +646,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunEightballLauncher,1,48), new Object[]{
-			"RTT","BKT","TTC",'B',ModItems.gunBarrelIronLarge,'C',ModItems.weaponCasingAdv,'T',"ingotTitanium",'R',"dustRedstone",'K',ModItems.ammoEightball,
+			"RTT","BKM","TTC",'B',ModItems.gunBarrelIronLarge,'C',ModItems.weaponCasingAdv,'T',"ingotTitanium",'R',"dustRedstone",'K',ModItems.ammoEightball,'M',"blockTitanium",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunStinger,1,100-9+1), new Object[]{

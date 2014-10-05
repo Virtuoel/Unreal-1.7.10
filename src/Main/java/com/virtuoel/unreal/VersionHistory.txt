@@ -1,6 +1,6 @@
 Versions:
 
-Current: 0.1.0.27
+Current: 0.1.0.29
 
 Features:(Weapons Currently NYI)
 
@@ -53,6 +53,17 @@ Syntax List
 [LAN]
 
 Changelog:
+
+0.1.0.29
+---
+[Balance] Eightball Launcher recipe rebalanced
+[Balance] Cinnabar debug grinding recipe rebalanced
+[Compatibility][Integration] Debug grinding recipe for Titanium Ore for compatability
+[Compatibility][Integration] Debug grinding recipe for Cinnabar Ore for compatability
+
+0.1.0.28
+---
+[Update][Progress] More work on weapons and projectiles
 
 0.1.0.27
 ---

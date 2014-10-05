@@ -32,6 +32,12 @@ public class EntityProjectileUnreal extends EntityThrowable
     public void onUpdate()
 	{
     	super.onUpdate();
+    	
+    	if(this.inGround)
+    	{
+    		;
+    	}
+    	
     	//TODO modify for other projectiles
     	if (!worldObj.isRemote && !worldObj.blockExists((int) posX, (int) posY, (int) posZ))
     	{

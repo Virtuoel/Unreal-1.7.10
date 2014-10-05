@@ -54,15 +54,6 @@ public class ItemWeaponBase extends ItemUnreal
 		}
 		else
 		{
-			//for Translocator entity teleport
-			for (int i = 0; i < par2World.getLoadedEntityList().size();i++)
-			{
-				if(((Entity)par2World.getLoadedEntityList().get(i)).getPersistentID().getLeastSignificantBits() == NBTHelper.getLong(par1ItemStack, "discUUIDLeast") && 
-				   ((Entity)par2World.getLoadedEntityList().get(i)).getPersistentID().getMostSignificantBits() == NBTHelper.getLong(par1ItemStack, "discUUIDMost"))
-				{
-					
-				}
-			}
 			par3EntityPlayer.attackEntityFrom(DamageSources.damageSourceTranslocator, 2);
 		}
 		return par1ItemStack;

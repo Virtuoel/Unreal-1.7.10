@@ -137,6 +137,14 @@ public final class Names
 		public static final String TOXIN_SUIT = "armorToxinSuit";
 		public static final String ASBESTOS_SUIT = "armorAsbestosSuit";
 		public static final String JUMP_BOOTS = "armorJumpBoots";
+		public static final String HELMET_TITANIUM = "armorHelmetTitanium";
+		public static final String CHESTPLATE_TITANIUM = "armorChestplateTitanium";
+		public static final String LEGGINGS_TITANIUM = "armorLeggingsTitanium";
+		public static final String BOOTS_TITANIUM = "armorBootsTitanium";
+		public static final String HELMET_SLIME = "armorHelmetSlime";
+		public static final String CHESTPLATE_SLIME = "armorChestplateSlime";
+		public static final String LEGGINGS_SLIME = "armorLeggingsSlime";
+		public static final String BOOTS_SLIME = "armorBootsSlime";
 		
 		//ammo
 		public static final String AMMO_EIGHTBALL = "ammoEightball";

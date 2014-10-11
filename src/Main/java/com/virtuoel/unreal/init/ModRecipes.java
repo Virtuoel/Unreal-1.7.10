@@ -1048,6 +1048,38 @@ public class ModRecipes
 			"MMM",'M',"nuggetMagnesium",
 			}));
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorHelmetTitanium,1), new Object[]{
+			"III","I I",'I',"ingotTitanium",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorChestplateTitanium,1), new Object[]{
+			"I I","III","III",'I',"ingotTitanium",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorLeggingsTitanium,1), new Object[]{
+			"III","I I","I I",'I',"ingotTitanium",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorBootsTitanium,1), new Object[]{
+			"I I","I I",'I',"ingotTitanium",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorHelmetSlime,1), new Object[]{
+			"III","I I",'I',"blockSlime",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorChestplateSlime,1), new Object[]{
+			"I I","III","III",'I',"blockSlime",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorLeggingsSlime,1), new Object[]{
+			"III","I I","I I",'I',"blockSlime",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorBootsSlime,1), new Object[]{
+			"I I","I I",'I',"blockSlime",
+			}));
+		
 	}
 	
 	public static void initSmelting()

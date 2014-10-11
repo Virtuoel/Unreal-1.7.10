@@ -282,28 +282,68 @@ public class ModItems
 	
 	//armor
 	public static final ItemArmorUnrealBase armorSCUBAGear = (ItemArmorUnrealBase)
-			new ItemArmorSCUBAGear(ItemArmor.ArmorMaterial.GOLD, Reference.ARMOR_RENDER_IRON, Reference.ARMOR_TYPE_HELMET)
+			new ItemArmorSCUBAGear(ItemArmor.ArmorMaterial.GOLD, Reference.Armor.Render.IRON, Reference.Armor.Type.HELMET)
 			.setUnlocalizedName(Names.Items.SCUBA_GEAR)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemArmorShieldBelt armorShieldBelt = (ItemArmorShieldBelt)
-			new ItemArmorShieldBelt(Materials.Armor.SHIELD, Reference.ARMOR_RENDER_GOLD, Reference.ARMOR_TYPE_LEGGINGS)
+			new ItemArmorShieldBelt(Materials.Armor.SHIELD, Reference.Armor.Render.GOLD, Reference.Armor.Type.LEGGINGS)
 			.setUnlocalizedName(Names.Items.SHIELD_BELT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemArmorToxinSuit armorToxinSuit = (ItemArmorToxinSuit)
-			new ItemArmorToxinSuit(ItemArmor.ArmorMaterial.CHAIN, Reference.ARMOR_RENDER_IRON, Reference.ARMOR_TYPE_CHESTPLATE)
+			new ItemArmorToxinSuit(ItemArmor.ArmorMaterial.CHAIN, Reference.Armor.Render.IRON, Reference.Armor.Type.CHESTPLATE)
 			.setUnlocalizedName(Names.Items.TOXIN_SUIT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemArmorUnrealBase armorAsbestosSuit = (ItemArmorUnrealBase)
-			new ItemArmorAsbestosSuit(ItemArmor.ArmorMaterial.CHAIN, Reference.ARMOR_RENDER_CHAIN, Reference.ARMOR_TYPE_CHESTPLATE)
+			new ItemArmorAsbestosSuit(ItemArmor.ArmorMaterial.CHAIN, Reference.Armor.Render.CHAIN, Reference.Armor.Type.CHESTPLATE)
 			.setUnlocalizedName(Names.Items.ASBESTOS_SUIT)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemArmorJumpBoots armorJumpBoots = (ItemArmorJumpBoots)
-			new ItemArmorJumpBoots(ItemArmor.ArmorMaterial.IRON, Reference.ARMOR_RENDER_IRON, Reference.ARMOR_TYPE_BOOTS)
+			new ItemArmorJumpBoots(ItemArmor.ArmorMaterial.IRON, Reference.Armor.Render.IRON, Reference.Armor.Type.BOOTS)
 			.setUnlocalizedName(Names.Items.JUMP_BOOTS)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemArmorUnrealBase armorHelmetTitanium = (ItemArmorUnrealBase)
+			new ItemArmorUnrealBase(Materials.Armor.TITANIUM, Reference.Armor.Render.IRON, Reference.Armor.Type.HELMET)
+			.setUnlocalizedName(Names.Items.CHESTPLATE_TITANIUM)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemArmorUnrealBase armorChestplateTitanium = (ItemArmorUnrealBase)
+			new ItemArmorUnrealBase(Materials.Armor.TITANIUM, Reference.Armor.Render.IRON, Reference.Armor.Type.CHESTPLATE)
+			.setUnlocalizedName(Names.Items.CHESTPLATE_TITANIUM)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemArmorUnrealBase armorLeggingsTitanium = (ItemArmorUnrealBase)
+			new ItemArmorUnrealBase(Materials.Armor.TITANIUM, Reference.Armor.Render.IRON, Reference.Armor.Type.LEGGINGS)
+			.setUnlocalizedName(Names.Items.LEGGINGS_TITANIUM)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemArmorUnrealBase armorBootsTitanium = (ItemArmorUnrealBase)
+			new ItemArmorUnrealBase(Materials.Armor.TITANIUM, Reference.Armor.Render.IRON, Reference.Armor.Type.BOOTS)
+			.setUnlocalizedName(Names.Items.BOOTS_TITANIUM)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemArmorUnrealBase armorHelmetSlime = (ItemArmorUnrealBase)
+			new ItemArmorUnrealBase(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.HELMET)
+			.setUnlocalizedName(Names.Items.CHESTPLATE_SLIME)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemArmorUnrealBase armorChestplateSlime = (ItemArmorUnrealBase)
+			new ItemArmorUnrealBase(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.CHESTPLATE)
+			.setUnlocalizedName(Names.Items.CHESTPLATE_SLIME)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemArmorUnrealBase armorLeggingsSlime = (ItemArmorUnrealBase)
+			new ItemArmorUnrealBase(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.LEGGINGS)
+			.setUnlocalizedName(Names.Items.LEGGINGS_SLIME)
+			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static final ItemArmorUnrealBase armorBootsSlime = (ItemArmorUnrealBase)
+			new ItemArmorUnrealBase(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.BOOTS)
+			.setUnlocalizedName(Names.Items.BOOTS_SLIME)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//ammo

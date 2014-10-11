@@ -2,6 +2,21 @@ package com.virtuoel.unreal.reference;
 
 public class Settings
 {
+
+	public static class Blocks
+	{
+		
+	}
+	
+	public static class Items
+	{
+		
+	}
+	
+	public static class Crafting
+	{
+		public static boolean ninePearlsPerEnderBlock;
+	}
 	
 	public static class Weapons
 	{
@@ -14,11 +29,6 @@ public class Settings
 		public static boolean redeemerTerrainDamage;
 		public static int redeemerContactDamage;
 		public static int redeemerExplosionPower;
-	}
-	
-	public static class Crafting
-	{
-		public static boolean ninePearlsPerEnderBlock;
 	}
 	
 	public static class Debug

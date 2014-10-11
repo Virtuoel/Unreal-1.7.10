@@ -1,6 +1,6 @@
 Versions:
 
-Current: 0.1.0.29
+Current: 0.1.0.31
 
 Features:(Weapons Currently NYI)
 
@@ -54,7 +54,10 @@ Syntax List
 
 Changelog:
 
-#Titanium and slime armor to add (put for 0.1.0.31)
+0.1.0.31
+---
+[Addition] Titanium Helmet, Chestplate, Leggings, and Boots
+[Addition] Slime Helmet, Chestplate, Leggings, and Boots
 
 0.1.0.30
 ---

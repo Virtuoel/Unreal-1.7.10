@@ -101,6 +101,14 @@ item.unreal:armorToxinSuit.name=Toxin Suit
 item.unreal:armorAsbestosSuit.name=Asbestos Suit
 item.unreal:armorShieldBelt.name=Shield Belt
 item.unreal:armorJumpBoots.name=Jump Boots
+item.unreal:armorHelmetTitanium.name=Titanium Helmet
+item.unreal:armorChestplateTitanium.name=Titanium Chestplate
+item.unreal:armorLeggingsTitanium.name=Titanium Leggings
+item.unreal:armorBootsTitanium.name=Titanium Boots
+item.unreal:armorHelmetSlime.name=Slime Helmet
+item.unreal:armorChestplateSlime.name=Slime Chestplate
+item.unreal:armorLeggingsSlime.name=Slime Leggings
+item.unreal:armorBootsSlime.name=Slime Boots
 # (Ammo)
 item.unreal:ammoEightball.name=Eightball Rocket
 item.unreal:ammoFlakShell.name=Flak Shell

@@ -22,6 +22,7 @@ public class Materials
 	{
 		public static Item.ToolMaterial TITANIUM = EnumHelper
 			.addToolMaterial("Titanium", 2, 460, 6.0F, 2.0F, 8);
+		
 		//4, 900, ?F ?, ?
 		
 		public static Item.ToolMaterial TARYDIUM_ALLOY_REFINED = EnumHelper
@@ -32,6 +33,12 @@ public class Materials
 	{
 		public static ItemArmor.ArmorMaterial SHIELD = EnumHelper
 				.addArmorMaterial("Energy Shield", 20, new int[] {512, 512, 512, 512}, 0);
+		
+		public static ItemArmor.ArmorMaterial SLIME = EnumHelper
+				.addArmorMaterial("Slime", 6, new int[] {1, 1, 1, 1}, 12);
+		
+		public static ItemArmor.ArmorMaterial TITANIUM = EnumHelper
+				.addArmorMaterial("Titanium", 18, new int[] {2, 4, 3, 1}, 9);
 	}
 	
 }

@@ -44,12 +44,18 @@ public class ItemWeaponTranslocator extends ItemWeaponBase
 	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
 	{
 		//for Translocator entity teleport
-		for (int i = 0; i < par2World.getLoadedEntityList().size();i++)
+		if(par2World.getLoadedEntityList().size()>0)
 		{
-			if(((Entity)par2World.getLoadedEntityList().get(i)).getPersistentID().getLeastSignificantBits() == NBTHelper.getLong(par1ItemStack, "discUUIDLeast") && 
-					((Entity)par2World.getLoadedEntityList().get(i)).getPersistentID().getMostSignificantBits() == NBTHelper.getLong(par1ItemStack, "discUUIDMost"))
+			for(Object i : par2World.getLoadedEntityList())
 			{
-
+				if(i != null && i instanceof Entity)
+				{
+					if(((Entity) i).getPersistentID().getLeastSignificantBits() == NBTHelper.getLong(par1ItemStack, "discUUIDLeast") && 
+							((Entity) i).getPersistentID().getMostSignificantBits() == NBTHelper.getLong(par1ItemStack, "discUUIDMost"))
+					{
+						//((EntityTranslocatorDisc) i).doTeleport(par3EntityPlayer);
+					}
+				}
 			}
 		}
 		return par1ItemStack;

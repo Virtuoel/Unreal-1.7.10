@@ -54,6 +54,13 @@ Syntax List
 
 Changelog:
 
+#Titanium and slime armor to add (put for 0.1.0.31)
+
+0.1.0.30
+---
+[Update][Progress] Work on Translocator
+[Compatibility][Integration][WIP] Working on deciding good EMC values for items
+
 0.1.0.29
 ---
 [Balance] Eightball Launcher recipe rebalanced

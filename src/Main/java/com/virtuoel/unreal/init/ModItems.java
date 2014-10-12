@@ -329,7 +329,7 @@ public class ModItems
 	
 	public static final ItemArmorSlime armorHelmetSlime = (ItemArmorSlime)
 			new ItemArmorSlime(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.HELMET)
-			.setUnlocalizedName(Names.Items.CHESTPLATE_SLIME)
+			.setUnlocalizedName(Names.Items.HELMET_SLIME)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemArmorSlime armorChestplateSlime = (ItemArmorSlime)

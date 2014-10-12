@@ -32,12 +32,12 @@ public class ItemArmorSlime extends ItemArmor
 				{
 					par3ItemStack.setItemDamage(par3ItemStack.getItemDamage()-1);
 				}
-				else
+			}
+			else
+			{
+				if(itemRand.nextInt(250)==0)
 				{
-					if(itemRand.nextInt(250)==0)
-					{
-						par3ItemStack.setItemDamage(par3ItemStack.getItemDamage()-1);
-					}
+					par3ItemStack.setItemDamage(par3ItemStack.getItemDamage()-1);
 				}
 			}
 		}

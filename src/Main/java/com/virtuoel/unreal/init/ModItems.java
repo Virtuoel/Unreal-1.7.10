@@ -9,6 +9,7 @@ import com.virtuoel.unreal.item.ItemArmorAsbestosSuit;
 import com.virtuoel.unreal.item.ItemArmorJumpBoots;
 import com.virtuoel.unreal.item.ItemArmorSCUBAGear;
 import com.virtuoel.unreal.item.ItemArmorShieldBelt;
+import com.virtuoel.unreal.item.ItemArmorSlime;
 import com.virtuoel.unreal.item.ItemArmorToxinSuit;
 import com.virtuoel.unreal.item.ItemArmorUnrealBase;
 import com.virtuoel.unreal.item.ItemAxeUnreal;
@@ -326,23 +327,23 @@ public class ModItems
 			.setUnlocalizedName(Names.Items.BOOTS_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemArmorUnrealBase armorHelmetSlime = (ItemArmorUnrealBase)
-			new ItemArmorUnrealBase(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.HELMET)
+	public static final ItemArmorSlime armorHelmetSlime = (ItemArmorSlime)
+			new ItemArmorSlime(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.HELMET)
 			.setUnlocalizedName(Names.Items.CHESTPLATE_SLIME)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemArmorUnrealBase armorChestplateSlime = (ItemArmorUnrealBase)
-			new ItemArmorUnrealBase(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.CHESTPLATE)
+	public static final ItemArmorSlime armorChestplateSlime = (ItemArmorSlime)
+			new ItemArmorSlime(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.CHESTPLATE)
 			.setUnlocalizedName(Names.Items.CHESTPLATE_SLIME)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemArmorUnrealBase armorLeggingsSlime = (ItemArmorUnrealBase)
-			new ItemArmorUnrealBase(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.LEGGINGS)
+	public static final ItemArmorSlime armorLeggingsSlime = (ItemArmorSlime)
+			new ItemArmorSlime(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.LEGGINGS)
 			.setUnlocalizedName(Names.Items.LEGGINGS_SLIME)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemArmorUnrealBase armorBootsSlime = (ItemArmorUnrealBase)
-			new ItemArmorUnrealBase(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.BOOTS)
+	public static final ItemArmorSlime armorBootsSlime = (ItemArmorSlime)
+			new ItemArmorSlime(Materials.Armor.SLIME, Reference.Armor.Render.LEATHER, Reference.Armor.Type.BOOTS)
 			.setUnlocalizedName(Names.Items.BOOTS_SLIME)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
@@ -509,6 +510,14 @@ public class ModItems
 		GameRegistry.registerItem(armorToxinSuit, Names.Items.TOXIN_SUIT);
 		GameRegistry.registerItem(armorAsbestosSuit, Names.Items.ASBESTOS_SUIT);
 		GameRegistry.registerItem(armorJumpBoots, Names.Items.JUMP_BOOTS);
+		GameRegistry.registerItem(armorHelmetTitanium, Names.Items.HELMET_TITANIUM);
+		GameRegistry.registerItem(armorChestplateTitanium, Names.Items.CHESTPLATE_TITANIUM);
+		GameRegistry.registerItem(armorLeggingsTitanium, Names.Items.LEGGINGS_TITANIUM);
+		GameRegistry.registerItem(armorBootsTitanium, Names.Items.BOOTS_TITANIUM);
+		GameRegistry.registerItem(armorHelmetSlime, Names.Items.HELMET_SLIME);
+		GameRegistry.registerItem(armorChestplateSlime, Names.Items.CHESTPLATE_SLIME);
+		GameRegistry.registerItem(armorLeggingsSlime, Names.Items.LEGGINGS_SLIME);
+		GameRegistry.registerItem(armorBootsSlime, Names.Items.BOOTS_SLIME);
 		
 		//ammo
 		GameRegistry.registerItem(ammoEightball, Names.Items.AMMO_EIGHTBALL);

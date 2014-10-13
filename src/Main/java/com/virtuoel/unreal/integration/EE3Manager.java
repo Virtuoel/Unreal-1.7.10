@@ -10,6 +10,10 @@ public class EE3Manager
 	//addEMCForItem(ModItems.ingotMagnesium, 256)
 	//addEMCForItem(ModItems.dustTitanium, 512)
 	//addEMCForItem(ModItems.ingotTitanium, 512)
+	//addEMCForItem(ModItems.dustCinnabar, 128)
+	//addEMCForItem(ModItems.gemCinnabar, 128)
+	//addEMCForItem(ModItems.gemCinnabar, 128)
+	//addEMCForItem(ModItems.bucketMercury, 1280)
 	//addEMCForItem(ModItems.debugTool, 1)
 	
 	

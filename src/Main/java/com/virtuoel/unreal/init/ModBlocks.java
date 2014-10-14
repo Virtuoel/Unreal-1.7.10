@@ -6,7 +6,7 @@ import net.minecraft.init.Blocks;
 
 import com.virtuoel.unreal.block.BlockCactusTarydium;
 import com.virtuoel.unreal.block.BlockEnderCrystal;
-import com.virtuoel.unreal.block.BlockFluidMercury;
+import com.virtuoel.unreal.block.BlockFluidUnreal;
 import com.virtuoel.unreal.block.BlockIronLadder;
 import com.virtuoel.unreal.block.BlockOreUnreal;
 import com.virtuoel.unreal.block.BlockSlime;
@@ -22,6 +22,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModBlocks
 {
 	
+	//blocks
 	public static final BlockUnreal blockTitanium = (BlockUnreal)
 			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_TITANIUM)
 			.setBlockTextureName(Names.Blocks.BLOCK_TITANIUM)
@@ -332,10 +333,9 @@ public class ModBlocks
 			.setStepSound(Block.soundTypeWood)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	//fluids
-	/*
-	public static final BlockFluidMercury fluidMercury = (BlockFluidMercury)
-			new BlockFluidMercury(ModFluids.fluidMercury, Material.water)
+	//fluid blocks
+	public static final BlockFluidUnreal fluidMercury = (BlockFluidUnreal)
+			new BlockFluidUnreal(ModFluids.fluidMercury, Material.water)
 			.setBlockName(Names.Fluids.FLUID_MERCURY)/*
 			.setBlockTextureName(Names.Fluids.FLUID_MERCURY)
 			.setHardness(-1.0F).setResistance(1000.0F)
@@ -345,6 +345,7 @@ public class ModBlocks
 	public static void init()
 	{
 		
+		//blocks
 		blockTitanium.setHarvestLevel("pickaxe", 2);
 		GameRegistry.registerBlock(blockTitanium, Names.Blocks.BLOCK_TITANIUM);
 		
@@ -452,8 +453,8 @@ public class ModBlocks
 	
 	public static void initFluids()
 	{
-		
-		//GameRegistry.registerBlock(fluidMercury, Names.Fluids.FLUID_MERCURY);
+		//fluid blocks
+		GameRegistry.registerBlock(fluidMercury, Names.Fluids.FLUID_MERCURY);
 		
 	}
 	

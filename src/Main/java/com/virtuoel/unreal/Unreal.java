@@ -1,6 +1,9 @@
 package com.virtuoel.unreal;
 
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 
@@ -49,26 +52,39 @@ public class Unreal
 		
 		if(!Settings.Debug.debugClearItems)
 		{
-			//MinecraftForge.EVENT_BUS.register(new UnrealBucketHandler());
+			
+			ModFluids.initFluids();
+			LogHelper.info("Fluids Initilized.");
 			
 			ModItems.init();
 			LogHelper.info("Items Initilized.");
-			/*
-			FluidRegistry.registerFluid(ModFluids.fluidMercury);
-			LogHelper.info("Fluids Initilized.");
-			*/
+			
 			ModBlocks.init();
 			LogHelper.info("Blocks Initilized.");
 			
+			ModBlocks.initFluids();
+			LogHelper.info("Fluid Blocks Initilized.");
+			
 			ModRecipes.initOreDict();
 			LogHelper.info("Ore Dictionary Registration Completed.");
+			
+			FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack("mercury", FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(ModItems.bucketMercury), new ItemStack(Items.bucket));
+			LogHelper.info("Fluid Container Items Registered.");
+			
+			UnrealBucketHandler.INSTANCE.buckets.put(ModBlocks.fluidMercury, ModItems.bucketMercury);
+			MinecraftForge.EVENT_BUS.register(UnrealBucketHandler.INSTANCE);
+			LogHelper.info("Bucket Handler Registered.");
+			
 		}
 		else
 		{
+			LogHelper.info("Fluids Cleared.");
 			LogHelper.info("Items Cleared.");
 			LogHelper.info("Blocks Cleared.");
-			LogHelper.info("Fluids Cleared.");
+			LogHelper.info("Fluid Registration Skipped.");
 			LogHelper.info("Ore Dictionary Registration Skipped.");
+			LogHelper.info("Fluid Container Item Registration Skipped.");
+			LogHelper.info("Bucket Handler Registration Skipped.");
 		}
 		
 		LogHelper.info("Pre Initilization Completed.");
@@ -80,14 +96,12 @@ public class Unreal
 		LogHelper.info("Initilization Started.");
 		
 		FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
+		LogHelper.info("Key Input Handler Registered.");
 		
 		if(!Settings.Debug.debugClearItems)
 		{
 			GameRegistry.registerWorldGenerator(new UnrealWorldGenerator(), Settings.World.worldGeneratorWeight);
-			/*
-			ModBlocks.initFluids();
-			LogHelper.info("Fluid Blocks Registered.");
-			*/
+			
 			GameRegistry.registerFuelHandler(new UnrealFuelHandler());
 			LogHelper.info("Fuel Handler Registered.");
 			
@@ -100,7 +114,6 @@ public class Unreal
 		else
 		{
 			LogHelper.info("World Generation Disabled.");
-			LogHelper.info("Fluid Registration Skipped.");
 			LogHelper.info("Recipes Cleared.");
 		}
 		

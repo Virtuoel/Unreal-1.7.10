@@ -1,20 +1,8 @@
 package com.virtuoel.unreal.init;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.init.Blocks;
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
 
-import com.virtuoel.unreal.block.BlockCactusTarydium;
-import com.virtuoel.unreal.block.BlockEnderCrystal;
-import com.virtuoel.unreal.block.BlockFluidMercury;
-import com.virtuoel.unreal.block.BlockIronLadder;
-import com.virtuoel.unreal.block.BlockOreUnreal;
-import com.virtuoel.unreal.block.BlockSlime;
-import com.virtuoel.unreal.block.BlockUnreal;
-import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
-import com.virtuoel.unreal.fluid.Mercury;
-import com.virtuoel.unreal.reference.Materials;
 import com.virtuoel.unreal.reference.Names;
 import com.virtuoel.unreal.reference.Reference;
 
@@ -24,7 +12,14 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModFluids
 {
 	
-	public static Fluid fluidMercury = new Mercury("Mercury")
-		.setDensity(1000).setViscosity(1000);
+	public static Fluid fluidMercury = new Fluid("Mercury")
+		.setDensity(1000).setViscosity(3000);
 	
+	public static void initFluids()
+	{
+		
+		FluidRegistry.registerFluid(fluidMercury);
+		fluidMercury.setUnlocalizedName(Names.Fluids.FLUID_MERCURY);
+		
+	}
 }

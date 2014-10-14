@@ -229,11 +229,16 @@ public class ModItems
 			new ItemUnreal().setUnlocalizedName(Names.Items.DEBUG_TOOL)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
+	public static final ItemUnreal bucketMercury = (ItemUnreal)
+			new ItemUnreal().setUnlocalizedName(Names.Items.BUCKET_MERCURY)
+			.setMaxStackSize(1).setContainerItem(Items.bucket)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	/*
 	public static final ItemBucketUnreal bucketMercury = (ItemBucketUnreal)
 			new ItemBucketUnreal(ModBlocks.fluidMercury).setUnlocalizedName(Names.Items.BUCKET_MERCURY)
 			.setMaxStackSize(1).setContainerItem(Items.bucket)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
+	*/
 	public static final ItemUnreal voiceBox = (ItemUnreal)
 			new ItemVoiceBox().setUnlocalizedName(Names.Items.VOICE_BOX)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);

@@ -34,7 +34,7 @@ public class UnrealBucketHandler
 
 		if (block!=null)
 		{
-			if(block.equals(ModBlocks.fluidMercury) && world.getBlockMetadata(pos.blockX, pos.blockY, pos.blockZ) == 0)
+			if(/*block.equals(ModBlocks.fluidMercury) && */world.getBlockMetadata(pos.blockX, pos.blockY, pos.blockZ) == 0)
 			{
 				world.setBlockToAir(pos.blockX, pos.blockY, pos.blockZ);
 				return new ItemStack(ModItems.bucketMercury);

@@ -49,16 +49,16 @@ public class Unreal
 		
 		if(!Settings.Debug.debugClearItems)
 		{
-			MinecraftForge.EVENT_BUS.register(new UnrealBucketHandler());
+			//MinecraftForge.EVENT_BUS.register(new UnrealBucketHandler());
 			
 			ModItems.init();
 			LogHelper.info("Items Initilized.");
-			
-			ModBlocks.init();
-			LogHelper.info("Blocks Initilized.");
-			
+			/*
 			FluidRegistry.registerFluid(ModFluids.fluidMercury);
 			LogHelper.info("Fluids Initilized.");
+			*/
+			ModBlocks.init();
+			LogHelper.info("Blocks Initilized.");
 			
 			ModRecipes.initOreDict();
 			LogHelper.info("Ore Dictionary Registration Completed.");
@@ -84,10 +84,10 @@ public class Unreal
 		if(!Settings.Debug.debugClearItems)
 		{
 			GameRegistry.registerWorldGenerator(new UnrealWorldGenerator(), Settings.World.worldGeneratorWeight);
-			
+			/*
 			ModBlocks.initFluids();
 			LogHelper.info("Fluid Blocks Registered.");
-			
+			*/
 			GameRegistry.registerFuelHandler(new UnrealFuelHandler());
 			LogHelper.info("Fuel Handler Registered.");
 			

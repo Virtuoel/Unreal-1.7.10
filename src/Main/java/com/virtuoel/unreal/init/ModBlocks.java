@@ -333,13 +333,14 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//fluids
+	/*
 	public static final BlockFluidMercury fluidMercury = (BlockFluidMercury)
 			new BlockFluidMercury(ModFluids.fluidMercury, Material.water)
-			.setBlockName(Names.Fluids.FLUID_MERCURY)
+			.setBlockName(Names.Fluids.FLUID_MERCURY)/*
 			.setBlockTextureName(Names.Fluids.FLUID_MERCURY)
 			.setHardness(-1.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeMetal)
-			.setCreativeTab(null);
+			.setCreativeTab(null)*/;
 	
 	public static void init()
 	{
@@ -452,7 +453,7 @@ public class ModBlocks
 	public static void initFluids()
 	{
 		
-		GameRegistry.registerBlock(fluidMercury, Names.Fluids.FLUID_MERCURY);
+		//GameRegistry.registerBlock(fluidMercury, Names.Fluids.FLUID_MERCURY);
 		
 	}
 	

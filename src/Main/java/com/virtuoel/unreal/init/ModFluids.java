@@ -24,6 +24,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModFluids
 {
 	
-	public static Fluid fluidMercury = new Mercury("Mercury");
+	public static Fluid fluidMercury = new Mercury("Mercury")
+		.setDensity(1000).setViscosity(1000);
 	
 }

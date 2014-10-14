@@ -13,6 +13,7 @@ import com.virtuoel.unreal.item.ItemArmorSlime;
 import com.virtuoel.unreal.item.ItemArmorToxinSuit;
 import com.virtuoel.unreal.item.ItemArmorUnrealBase;
 import com.virtuoel.unreal.item.ItemAxeUnreal;
+import com.virtuoel.unreal.item.ItemBucketUnreal;
 import com.virtuoel.unreal.item.ItemDustUnreal;
 import com.virtuoel.unreal.item.ItemHoeUnreal;
 import com.virtuoel.unreal.item.ItemPickaxeUnreal;
@@ -228,8 +229,8 @@ public class ModItems
 			new ItemUnreal().setUnlocalizedName(Names.Items.DEBUG_TOOL)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal bucketMercury = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.BUCKET_MERCURY)
+	public static final ItemBucketUnreal bucketMercury = (ItemBucketUnreal)
+			new ItemBucketUnreal(ModBlocks.fluidMercury).setUnlocalizedName(Names.Items.BUCKET_MERCURY)
 			.setMaxStackSize(1).setContainerItem(Items.bucket)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	

@@ -1,11 +1,15 @@
 package com.virtuoel.unreal;
 
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 
 import com.virtuoel.unreal.client.handler.KeyInputEventHandler;
 import com.virtuoel.unreal.handler.ConfigurationHandler;
+import com.virtuoel.unreal.handler.UnrealBucketHandler;
 import com.virtuoel.unreal.handler.UnrealFuelHandler;
 import com.virtuoel.unreal.init.ModBlocks;
+import com.virtuoel.unreal.init.ModFluids;
 import com.virtuoel.unreal.init.ModItems;
 import com.virtuoel.unreal.init.ModRecipes;
 import com.virtuoel.unreal.proxy.IProxy;
@@ -43,12 +47,18 @@ public class Unreal
 		proxy.registerKeyBindings();
 		LogHelper.info("Key Binding Registration Completed.");
 		
-		if(!Settings.Debug.debugClearItems){
+		if(!Settings.Debug.debugClearItems)
+		{
+			MinecraftForge.EVENT_BUS.register(new UnrealBucketHandler());
+			
 			ModItems.init();
 			LogHelper.info("Items Initilized.");
 			
 			ModBlocks.init();
 			LogHelper.info("Blocks Initilized.");
+			
+			FluidRegistry.registerFluid(ModFluids.fluidMercury);
+			LogHelper.info("Fluids Initilized.");
 			
 			ModRecipes.initOreDict();
 			LogHelper.info("Ore Dictionary Registration Completed.");
@@ -57,6 +67,7 @@ public class Unreal
 		{
 			LogHelper.info("Items Cleared.");
 			LogHelper.info("Blocks Cleared.");
+			LogHelper.info("Fluids Cleared.");
 			LogHelper.info("Ore Dictionary Registration Skipped.");
 		}
 		
@@ -74,6 +85,9 @@ public class Unreal
 		{
 			GameRegistry.registerWorldGenerator(new UnrealWorldGenerator(), Settings.World.worldGeneratorWeight);
 			
+			ModBlocks.initFluids();
+			LogHelper.info("Fluid Blocks Registered.");
+			
 			GameRegistry.registerFuelHandler(new UnrealFuelHandler());
 			LogHelper.info("Fuel Handler Registered.");
 			
@@ -86,6 +100,7 @@ public class Unreal
 		else
 		{
 			LogHelper.info("World Generation Disabled.");
+			LogHelper.info("Fluid Registration Skipped.");
 			LogHelper.info("Recipes Cleared.");
 		}
 		

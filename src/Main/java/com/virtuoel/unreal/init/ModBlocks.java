@@ -6,6 +6,7 @@ import net.minecraft.init.Blocks;
 
 import com.virtuoel.unreal.block.BlockCactusTarydium;
 import com.virtuoel.unreal.block.BlockEnderCrystal;
+import com.virtuoel.unreal.block.BlockFluidMercury;
 import com.virtuoel.unreal.block.BlockIronLadder;
 import com.virtuoel.unreal.block.BlockOreUnreal;
 import com.virtuoel.unreal.block.BlockSlime;
@@ -331,6 +332,15 @@ public class ModBlocks
 			.setStepSound(Block.soundTypeWood)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
+	//fluids
+	public static final BlockFluidMercury fluidMercury = (BlockFluidMercury)
+			new BlockFluidMercury(ModFluids.fluidMercury, Material.water)
+			.setBlockName(Names.Fluids.FLUID_MERCURY)
+			.setBlockTextureName(Names.Fluids.FLUID_MERCURY)
+			.setHardness(-1.0F).setResistance(1000.0F)
+			.setStepSound(Block.soundTypeMetal)
+			.setCreativeTab(null);
+	
 	public static void init()
 	{
 		
@@ -438,4 +448,14 @@ public class ModBlocks
 		Blocks.fire.setFireInfo(blockCocoa, 5, 20);
 		
 	}
+	
+	public static void initFluids()
+	{
+		
+		GameRegistry.registerBlock(fluidMercury, Names.Fluids.FLUID_MERCURY);
+		
+	}
+	
+	
+	
 }

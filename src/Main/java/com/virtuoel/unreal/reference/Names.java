@@ -51,6 +51,11 @@ public final class Names
 		public static final String BLOCK_COCOA = "blockCocoa";
 		
 	}
+	
+	public static final class Fluids
+	{
+		public static final String FLUID_MERCURY = "fluidBlockMercury";
+	}
 
 	public static final class Items
 	{

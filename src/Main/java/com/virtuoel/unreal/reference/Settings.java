@@ -33,7 +33,6 @@ public class Settings
 	
 	public static class Debug
 	{
-		public static boolean printDebugConfigValues;
 		public static boolean printDebugOreDictionaryValues;
 		public static boolean printDebugKeyBindingValues;
 		public static boolean debugClearItems;

@@ -98,6 +98,7 @@ public class Unreal
 		if(!Settings.Debug.debugClearItems)
 		{
 			GameRegistry.registerWorldGenerator(new UnrealWorldGenerator(), Settings.World.worldGeneratorWeight);
+			LogHelper.info("World Generator Registered.");
 			
 			GameRegistry.registerFuelHandler(new UnrealFuelHandler());
 			LogHelper.info("Fuel Handler Registered.");
@@ -121,13 +122,6 @@ public class Unreal
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		LogHelper.info("Post Initilization Started.");
-		
-		if(Settings.Debug.printDebugConfigValues)
-		{
-			LogHelper.info("Stinger Damage: "+Settings.Weapons.stingerTerrainDamage);
-			LogHelper.info("Eightball Damage: "+Settings.Weapons.eightballTerrainDamage);
-			LogHelper.info("Redeemer Damage: "+Settings.Weapons.redeemerTerrainDamage);
-		}
 		
 		if(Settings.Debug.printDebugOreDictionaryValues)
 		{

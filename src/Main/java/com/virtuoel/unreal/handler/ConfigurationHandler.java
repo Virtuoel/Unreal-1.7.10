@@ -42,7 +42,6 @@ public class ConfigurationHandler
 		Settings.Weapons.eightballTerrainDamage = configuration.getBoolean("eightballTerrainDamage", Reference.ConfigCategory.WEAPONS, false, "If Eightball Launcher destroys terrain");
 		Settings.Weapons.redeemerTerrainDamage = configuration.getBoolean("redeemerTerrainDamage", Reference.ConfigCategory.WEAPONS, false, "If Redeemer destroys terrain");
 		
-		Settings.Debug.printDebugConfigValues = configuration.getBoolean("printDebugConfigValues", Reference.ConfigCategory.DEBUG, false, "True to print some configuration values");
 		Settings.Debug.printDebugOreDictionaryValues = configuration.getBoolean("printDebugOreDictionaryValues", Reference.ConfigCategory.DEBUG, false, "True to print Ore Dictionary entries");
 		Settings.Debug.printDebugKeyBindingValues = configuration.getBoolean("printDebugKeyBindingValues", Reference.ConfigCategory.DEBUG, false, "True to print keybindings");
 		Settings.Debug.debugClearItems = configuration.getBoolean("debugClearItems", Reference.ConfigCategory.DEBUG, false, "True to remove all items and blocks from this mod");

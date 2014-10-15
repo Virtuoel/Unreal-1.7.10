@@ -1,5 +1,7 @@
 package com.virtuoel.unreal.item;
 
+import com.virtuoel.unreal.init.ModBlocks;
+import com.virtuoel.unreal.init.ModItems;
 import com.virtuoel.unreal.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -7,6 +9,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -18,6 +21,14 @@ public class ItemArmorSlime extends ItemArmorUnrealBase
 	
 	public ItemArmorSlime(ItemArmor.ArmorMaterial p_i45325_1_, int p_i45325_2_, int p_i45325_3_) {
 		super(p_i45325_1_, p_i45325_2_, p_i45325_3_);
+	}
+
+	/**
+	 * Return whether this item is repairable in an anvil.
+	 */
+	public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack)
+	{
+		return Item.getItemFromBlock(ModBlocks.blockSlime) == par2ItemStack.getItem();
 	}
 	
 	@Override

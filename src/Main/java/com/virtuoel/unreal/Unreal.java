@@ -16,7 +16,6 @@ import com.virtuoel.unreal.init.ModFluids;
 import com.virtuoel.unreal.init.ModItems;
 import com.virtuoel.unreal.init.ModRecipes;
 import com.virtuoel.unreal.proxy.IProxy;
-import com.virtuoel.unreal.reference.Names;
 import com.virtuoel.unreal.reference.Reference;
 import com.virtuoel.unreal.reference.Settings;
 import com.virtuoel.unreal.utility.LogHelper;
@@ -66,7 +65,7 @@ public class Unreal
 			ModRecipes.initOreDict();
 			LogHelper.info("Ore Dictionary Registration Completed.");
 			
-			FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack(Names.Fluids.FLUID_MERCURY, FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(ModItems.bucketMercury), new ItemStack(Items.bucket));
+			FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack("mercury", FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(ModItems.bucketMercury), new ItemStack(Items.bucket));
 			LogHelper.info("Fluid Container Items Registered.");
 			
 			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockMercury, ModItems.bucketMercury);

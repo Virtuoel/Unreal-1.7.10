@@ -229,16 +229,11 @@ public class ModItems
 			new ItemUnreal().setUnlocalizedName(Names.Items.DEBUG_TOOL)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final ItemUnreal bucketMercury = (ItemUnreal)
-			new ItemUnreal().setUnlocalizedName(Names.Items.BUCKET_MERCURY)
-			.setMaxStackSize(1).setContainerItem(Items.bucket)
-			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	/*
 	public static final ItemBucketUnreal bucketMercury = (ItemBucketUnreal)
-			new ItemBucketUnreal(ModBlocks.fluidMercury).setUnlocalizedName(Names.Items.BUCKET_MERCURY)
+			new ItemBucketUnreal(ModFluids.fluidBlockMercury).setUnlocalizedName(Names.Items.BUCKET_MERCURY)
 			.setMaxStackSize(1).setContainerItem(Items.bucket)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	*/
+	
 	public static final ItemUnreal voiceBox = (ItemUnreal)
 			new ItemVoiceBox().setUnlocalizedName(Names.Items.VOICE_BOX)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
@@ -315,7 +310,7 @@ public class ModItems
 	
 	public static final ItemArmorUnrealBase armorHelmetTitanium = (ItemArmorUnrealBase)
 			new ItemArmorUnrealBase(Materials.Armor.TITANIUM, Reference.Armor.Render.IRON, Reference.Armor.Type.HELMET)
-			.setUnlocalizedName(Names.Items.CHESTPLATE_TITANIUM)
+			.setUnlocalizedName(Names.Items.HELMET_TITANIUM)
 			.setMaxStackSize(1).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemArmorUnrealBase armorChestplateTitanium = (ItemArmorUnrealBase)

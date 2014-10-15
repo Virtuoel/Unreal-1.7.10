@@ -333,15 +333,6 @@ public class ModBlocks
 			.setStepSound(Block.soundTypeWood)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	//fluid blocks
-	public static final BlockFluidUnreal fluidMercury = (BlockFluidUnreal)
-			new BlockFluidUnreal(ModFluids.fluidMercury, Material.water)
-			.setBlockName(Names.Fluids.FLUID_MERCURY)/*
-			.setBlockTextureName(Names.Fluids.FLUID_MERCURY)
-			.setHardness(-1.0F).setResistance(1000.0F)
-			.setStepSound(Block.soundTypeMetal)
-			.setCreativeTab(null)*/;
-	
 	public static void init()
 	{
 		
@@ -450,14 +441,4 @@ public class ModBlocks
 		Blocks.fire.setFireInfo(blockCocoa, 5, 20);
 		
 	}
-	
-	public static void initFluids()
-	{
-		//fluid blocks
-		GameRegistry.registerBlock(fluidMercury, Names.Fluids.FLUID_MERCURY);
-		
-	}
-	
-	
-	
 }

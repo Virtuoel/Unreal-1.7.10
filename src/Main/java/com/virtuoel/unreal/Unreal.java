@@ -54,7 +54,7 @@ public class Unreal
 		{
 			
 			ModFluids.initFluids();
-			LogHelper.info("Fluids Initilized.");
+			LogHelper.info("Fluids and Fluid Blocks Initilized.");
 			
 			ModItems.init();
 			LogHelper.info("Items Initilized.");
@@ -62,16 +62,13 @@ public class Unreal
 			ModBlocks.init();
 			LogHelper.info("Blocks Initilized.");
 			
-			ModBlocks.initFluids();
-			LogHelper.info("Fluid Blocks Initilized.");
-			
 			ModRecipes.initOreDict();
 			LogHelper.info("Ore Dictionary Registration Completed.");
 			
 			FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack("mercury", FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(ModItems.bucketMercury), new ItemStack(Items.bucket));
 			LogHelper.info("Fluid Container Items Registered.");
 			
-			UnrealBucketHandler.INSTANCE.buckets.put(ModBlocks.fluidMercury, ModItems.bucketMercury);
+			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockMercury, ModItems.bucketMercury);
 			MinecraftForge.EVENT_BUS.register(UnrealBucketHandler.INSTANCE);
 			LogHelper.info("Bucket Handler Registered.");
 			

@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 
 public class EntityProjectileUnreal extends EntityThrowable
 {
-	
 	public EntityProjectileUnreal(World p_i1776_1_) {
 		super(p_i1776_1_);
 	}

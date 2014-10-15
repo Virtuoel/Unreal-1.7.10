@@ -1,6 +1,6 @@
 Versions:
 
-Current: 0.1.0.32
+Current: 0.1.0.33
 
 Features:(Weapons Currently NYI)
 
@@ -53,6 +53,11 @@ Syntax List
 [LAN]
 
 Changelog:
+
+0.1.0.33
+---
+[Addition] Mercury Fluid added
+[Change] Mercury Bucket's contents can be placed and picked up
 
 0.1.0.32
 ---

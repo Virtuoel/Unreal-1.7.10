@@ -14,7 +14,7 @@ public class Mercury extends Fluid
     {
         return 0xEFEDCB;
     }
-
+	
     @Override
     public String getLocalizedName()
     {

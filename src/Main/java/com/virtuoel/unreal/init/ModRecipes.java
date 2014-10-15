@@ -1,13 +1,14 @@
 package com.virtuoel.unreal.init;
 
-import com.virtuoel.unreal.reference.Settings;
-
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
+
+import com.virtuoel.unreal.reference.Settings;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModRecipes

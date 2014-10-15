@@ -11,7 +11,9 @@ public class CreativeTabUnreal
 	public static final CreativeTabs UNREAL_TAB = new CreativeTabs(Reference.MOD_ID.toLowerCase())
 	{
 		@Override
-		public Item getTabIconItem(){ return ModItems.tarydPowerBasic; }
+		public Item getTabIconItem()
+		{
+			return ModItems.tarydPowerBasic;
+		}
 	};
-	
 }

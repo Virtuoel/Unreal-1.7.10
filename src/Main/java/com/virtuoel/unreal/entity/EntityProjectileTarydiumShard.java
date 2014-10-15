@@ -7,8 +7,8 @@ import net.minecraft.world.World;
 
 public class EntityProjectileTarydiumShard extends EntityThrowable
 {
-	
-	public EntityProjectileTarydiumShard(World p_i1776_1_) {
+	public EntityProjectileTarydiumShard(World p_i1776_1_)
+	{
 		super(p_i1776_1_);
 	}
 	

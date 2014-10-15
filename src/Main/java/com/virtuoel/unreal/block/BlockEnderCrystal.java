@@ -2,7 +2,6 @@ package com.virtuoel.unreal.block;
 
 import java.util.List;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.boss.EntityDragon;
@@ -19,13 +18,13 @@ import com.virtuoel.unreal.init.ModBlocks;
 
 public class BlockEnderCrystal extends BlockUnrealMultiTexture
 {
-
+	
 	public BlockEnderCrystal(Material material)
 	{
 		super(material);
 		this.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
-
+	
 	public boolean onBlockActivated(World par1World, int par2, int par3, int par4, EntityPlayer par5EntityPlayer, int par6, float par7, float par8, float par9)
 	{
 		if (par1World.isRemote)
@@ -60,17 +59,17 @@ public class BlockEnderCrystal extends BlockUnrealMultiTexture
 	}
 	
 	public boolean canEntityDestroy(IBlockAccess world, int x, int y, int z, Entity entity)
-    {
-        if (entity instanceof EntityWither)
-        {
-            return true;
-        }
-        else if (entity instanceof EntityDragon)
-        {
-        	return false;
-        }
-        
-        return true;
-    }
+	{
+		if (entity instanceof EntityWither)
+		{
+			return true;
+		}
+		else if (entity instanceof EntityDragon)
+		{
+			return false;
+		}
+
+		return true;
+	}
 	
 }

@@ -4,7 +4,7 @@ public class Reference
 {
 	public static final String MOD_ID = "unreal";
 	public static final String MOD_NAME = "Unreal";
-	public static final String VERSION = "1.7.10-0.1.0.32";
+	public static final String VERSION = "1.7.10-0.1.0.33";
 	public static final String SERVER_PROXY_CLASS = "com.virtuoel.unreal.proxy.ServerProxy";
 	public static final String CLIENT_PROXY_CLASS = "com.virtuoel.unreal.proxy.ClientProxy";
 	public static final String GUI_FACTORY_CLASS = "com.virtuoel.unreal.client.gui.GuiFactory";
@@ -63,6 +63,12 @@ public class Reference
 			public static final int EAST = 5;
 			public static final String[] FACE_ARRAY = {"bottom", "top", "north", "south", "west", "east"};
 		}
+	}
+	
+	public static final class Fluids
+	{
+		public static final String FLUID_STILL = "Still";
+		public static final String FLUID_FLOWING = "Flowing";
 	}
 	
 }

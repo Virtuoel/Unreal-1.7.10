@@ -5,6 +5,7 @@ import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 
 import com.virtuoel.unreal.block.BlockFluidUnreal;
+import com.virtuoel.unreal.fluid.Mercury;
 import com.virtuoel.unreal.reference.Names;
 import com.virtuoel.unreal.reference.Reference;
 
@@ -14,7 +15,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModFluids
 {
 	
-	public static Fluid fluidMercury = new Fluid("Mercury")
+	public static Fluid fluidMercury = new Mercury("Mercury")
 		.setDensity(1000).setViscosity(3000);
 	
 	//fluid blocks
@@ -35,7 +36,6 @@ public class ModFluids
 				.setCreativeTab(null)*/;
 		
 		GameRegistry.registerBlock(fluidBlockMercury, Names.Fluids.FLUID_MERCURY);
-		
 		
 	}
 }

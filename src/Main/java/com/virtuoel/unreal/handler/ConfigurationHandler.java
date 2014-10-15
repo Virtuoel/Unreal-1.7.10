@@ -6,14 +6,12 @@ import net.minecraftforge.common.config.Configuration;
 
 import com.virtuoel.unreal.reference.Reference;
 import com.virtuoel.unreal.reference.Settings;
-import com.virtuoel.unreal.reference.Settings.Debug;
 
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
 public class ConfigurationHandler
 {
-	
 	public static Configuration configuration;
 	
 	public static void init(File configFile)
@@ -55,5 +53,4 @@ public class ConfigurationHandler
 			configuration.save();
 		}
 	}
-	
 }

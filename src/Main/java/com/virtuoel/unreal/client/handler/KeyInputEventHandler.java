@@ -2,7 +2,6 @@ package com.virtuoel.unreal.client.handler;
 
 import com.virtuoel.unreal.client.settings.KeyBindings;
 import com.virtuoel.unreal.reference.Key;
-import com.virtuoel.unreal.reference.Reference;
 import com.virtuoel.unreal.reference.Settings;
 import com.virtuoel.unreal.utility.LogHelper;
 
@@ -23,7 +22,6 @@ public class KeyInputEventHandler
 		}
 		return Key.UNKNOWN;
 	}
-	
 	
 	@SubscribeEvent
 	public void handleKeyInputEvent(InputEvent.KeyInputEvent event)

@@ -13,7 +13,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
-public class ItemArmorSlime extends ItemArmor
+public class ItemArmorSlime extends ItemArmorUnrealBase
 {
 	
 	public ItemArmorSlime(ItemArmor.ArmorMaterial p_i45325_1_, int p_i45325_2_, int p_i45325_3_) {

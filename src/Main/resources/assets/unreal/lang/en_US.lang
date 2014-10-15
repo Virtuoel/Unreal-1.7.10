@@ -170,6 +170,9 @@ tile.unreal:blockGhastTear.name=Crystalline Tear Block
 tile.unreal:blockNetherWart.name=Compacted Nether Wart Block
 tile.unreal:blockCocoa.name=Cocoa Block
 
+# Fluids
+fluid.fluidMercury.name=Mercury
+
 # Creative Tabs
 itemGroup.unreal=Unreal
 

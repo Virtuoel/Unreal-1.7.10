@@ -224,15 +224,16 @@ public class ModItems
 			new ItemUnreal().setUnlocalizedName(Names.Items.ROD_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(64).setCreativeTab(null);
 	
+	//fluid containers
+	public static ItemBucketUnreal bucketMercury/* = (ItemBucketUnreal)
+			new ItemBucketUnreal(ModFluids.fluidBlockMercury).setUnlocalizedName(Names.Items.BUCKET_MERCURY)
+			.setMaxStackSize(1).setContainerItem(Items.bucket)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB)*/;
+	
 	//tools
 	public static final ItemUnreal debugTool = (ItemUnreal)
 			new ItemUnreal().setUnlocalizedName(Names.Items.DEBUG_TOOL)
 			.setMaxStackSize(16).setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
-	public static final ItemBucketUnreal bucketMercury = (ItemBucketUnreal)
-			new ItemBucketUnreal(ModFluids.fluidBlockMercury).setUnlocalizedName(Names.Items.BUCKET_MERCURY)
-			.setMaxStackSize(1).setContainerItem(Items.bucket)
-			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static final ItemUnreal voiceBox = (ItemUnreal)
 			new ItemVoiceBox().setUnlocalizedName(Names.Items.VOICE_BOX)
@@ -480,9 +481,15 @@ public class ModItems
 		GameRegistry.registerItem(rodTarydiumAlloyUnrefined, Names.Items.ROD_TARYDIUM_ALLOY_UNREFINED);
 		GameRegistry.registerItem(rodTarydiumAlloyRefined, Names.Items.ROD_TARYDIUM_ALLOY_REFINED);
 		
+		//fluid containers
+		bucketMercury = (ItemBucketUnreal)
+		new ItemBucketUnreal(ModFluids.fluidBlockMercury).setUnlocalizedName(Names.Items.BUCKET_MERCURY)
+		.setMaxStackSize(1).setContainerItem(Items.bucket)
+		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+		GameRegistry.registerItem(bucketMercury, Names.Items.BUCKET_MERCURY);
+		
 		//tools
 		GameRegistry.registerItem(debugTool, Names.Items.DEBUG_TOOL);
-		GameRegistry.registerItem(bucketMercury, Names.Items.BUCKET_MERCURY);
 		GameRegistry.registerItem(voiceBox, Names.Items.VOICE_BOX);
 		GameRegistry.registerItem(swordTitanium, Names.Items.SWORD_TITANIUM);
 		GameRegistry.registerItem(pickaxeTitanium, Names.Items.PICK_TITANIUM);

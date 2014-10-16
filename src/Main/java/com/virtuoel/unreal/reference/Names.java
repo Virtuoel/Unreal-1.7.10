@@ -54,7 +54,8 @@ public final class Names
 	
 	public static final class Fluids
 	{
-		public static final String FLUID_MERCURY = "fluidMercury";
+		public static final String FLUID_MERCURY = "mercury";
+		public static final String FLUID_BLOCK_MERCURY = "fluidBlockMercury";
 	}
 
 	public static final class Items

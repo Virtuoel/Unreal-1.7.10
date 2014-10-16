@@ -15,7 +15,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModFluids
 {
 	
-	public static Fluid fluidMercury = new Mercury("Mercury")
+	public static Fluid fluidMercury = new Mercury(Names.Fluids.FLUID_MERCURY)
 		.setDensity(1000).setViscosity(3000);
 	
 	//fluid blocks
@@ -28,14 +28,14 @@ public class ModFluids
 		fluidMercury.setUnlocalizedName(Names.Fluids.FLUID_MERCURY);
 		
 		fluidBlockMercury = (BlockFluidUnreal)
-				new BlockFluidUnreal(ModFluids.fluidMercury, Material.water)
-				.setBlockName(Names.Fluids.FLUID_MERCURY)/*
+				new BlockFluidUnreal(fluidMercury, Material.water)
+				.setBlockName(Names.Fluids.FLUID_BLOCK_MERCURY)/*
 				.setBlockTextureName(Names.Fluids.FLUID_MERCURY)
 				.setHardness(-1.0F).setResistance(1000.0F)
 				.setStepSound(Block.soundTypeMetal)
 				.setCreativeTab(null)*/;
 		
-		GameRegistry.registerBlock(fluidBlockMercury, Names.Fluids.FLUID_MERCURY);
+		GameRegistry.registerBlock(fluidBlockMercury, Names.Fluids.FLUID_BLOCK_MERCURY);
 		
 	}
 }

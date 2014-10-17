@@ -22,312 +22,356 @@ public class ModBlocks
 {
 	
 	//blocks
-	public static final BlockUnreal blockTitanium = (BlockUnreal)
-			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_TITANIUM)
+	public static Block blockTitanium = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_TITANIUM)
 			.setBlockTextureName(Names.Blocks.BLOCK_TITANIUM)
 			.setHardness(5.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeMetal)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockRutile = (BlockUnreal)
-			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_RUTILE)
+	public static Block blockRutile = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_RUTILE)
 			.setBlockTextureName(Names.Blocks.BLOCK_RUTILE)
 			.setHardness(5.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeMetal)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal oreRutile = (BlockUnreal)
-			new BlockOreUnreal(Material.rock).setBlockName(Names.Blocks.ORE_RUTILE)
+	public static Block oreRutile = 
+			new BlockOreUnreal(Material.rock)
+			.setBlockName(Names.Blocks.ORE_RUTILE)
 			.setBlockTextureName(Names.Blocks.ORE_RUTILE)
 			.setHardness(3.0F).setResistance(5.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockMagnesium = (BlockUnreal)
-			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_MAGNESIUM)
+	public static Block blockMagnesium = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_MAGNESIUM)
 			.setBlockTextureName(Names.Blocks.BLOCK_MAGNESIUM)
 			.setHardness(5.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeMetal)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal oreMagnesium = (BlockUnreal)
-			new BlockOreUnreal(Material.rock).setBlockName(Names.Blocks.ORE_MAGNESIUM)
+	public static Block oreMagnesium = 
+			new BlockOreUnreal(Material.rock)
+			.setBlockName(Names.Blocks.ORE_MAGNESIUM)
 			.setBlockTextureName(Names.Blocks.ORE_MAGNESIUM)
 			.setHardness(3.0F).setResistance(5.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockTarydium = (BlockUnreal)
-			new BlockUnreal(Materials.Blocks.tarydium).setBlockName(Names.Blocks.BLOCK_TARYDIUM)
+	public static Block blockTarydium = 
+			new BlockUnreal(Materials.Blocks.tarydium)
+			.setBlockName(Names.Blocks.BLOCK_TARYDIUM)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM)
 			.setHardness(6.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeGlass)
 			.setLightLevel(1.0F)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal oreTarydium = (BlockUnreal)
-			new BlockOreUnreal(Materials.Blocks.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM)
+	public static Block oreTarydium = 
+			new BlockOreUnreal(Materials.Blocks.tarydium)
+			.setBlockName(Names.Blocks.ORE_TARYDIUM)
 			.setBlockTextureName(Names.Blocks.ORE_TARYDIUM)
 			.setHardness(6.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setLightLevel(0.625F)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal oreTarydiumNether = (BlockUnreal)
-			new BlockOreUnreal(Materials.Blocks.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM_NETHER)
+	public static Block oreTarydiumNether = new BlockOreUnreal(Materials.Blocks.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM_NETHER)
 			.setBlockTextureName(Names.Blocks.ORE_TARYDIUM_NETHER)
 			.setHardness(3.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal oreTarydiumEnd = (BlockUnreal)
+	public static Block oreTarydiumEnd = 
 			new BlockOreUnreal(Materials.Blocks.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM_END)
 			.setBlockTextureName(Names.Blocks.ORE_TARYDIUM_END)
 			.setHardness(12.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal oreTarydiumObsidian = (BlockUnreal)
-			new BlockOreUnreal(Materials.Blocks.tarydium).setBlockName(Names.Blocks.ORE_TARYDIUM_OBSIDIAN)
+	public static Block oreTarydiumObsidian = 
+			new BlockOreUnreal(Materials.Blocks.tarydium)
+			.setBlockName(Names.Blocks.ORE_TARYDIUM_OBSIDIAN)
 			.setBlockTextureName(Names.Blocks.ORE_TARYDIUM_OBSIDIAN)
 			.setHardness(50.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockBedrockium = (BlockUnreal)
-			new BlockUnreal(Materials.Blocks.bedrock).setBlockName(Names.Blocks.BLOCK_BEDROCKIUM)
-			.setBlockTextureName(Names.Blocks.BLOCK_BEDROCKIUM).setHardness(1000.0F)
-			.setStepSound(Block.soundTypeStone).setResistance(500000.0F)
+	public static Block blockBedrockium = 
+			new BlockUnreal(Materials.Blocks.bedrock)
+			.setBlockName(Names.Blocks.BLOCK_BEDROCKIUM)
+			.setBlockTextureName(Names.Blocks.BLOCK_BEDROCKIUM)
+			.setHardness(1000.0F).setResistance(500000.0F)
+			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(null);
 	
-	public static final BlockUnreal oreBedrockium = (BlockUnreal)
-			new BlockOreUnreal(Materials.Blocks.bedrock).setBlockName(Names.Blocks.ORE_BEDROCKIUM)
-			.setBlockTextureName(Names.Blocks.ORE_BEDROCKIUM).setHardness(1000.0F)
-			.setStepSound(Block.soundTypeMetal).setResistance(500000.0F)
+	public static Block oreBedrockium = 
+			new BlockOreUnreal(Materials.Blocks.bedrock)
+			.setBlockName(Names.Blocks.ORE_BEDROCKIUM)
+			.setBlockTextureName(Names.Blocks.ORE_BEDROCKIUM)
+			.setHardness(1000.0F).setResistance(500000.0F)
+			.setStepSound(Block.soundTypeMetal)
 			.setCreativeTab(null);
 	
-	public static final BlockUnreal oreBedrockiumHidden = (BlockUnreal)
-			new BlockOreUnreal(Materials.Blocks.bedrock).setBlockName(Names.Blocks.ORE_BEDROCKIUM_HIDDEN)
-			.setBlockTextureName(Names.Blocks.ORE_BEDROCKIUM_HIDDEN).setBlockUnbreakable()
-			.setStepSound(Block.soundTypeMetal).setResistance(8000000.0F)
+	public static Block oreBedrockiumHidden = 
+			new BlockOreUnreal(Materials.Blocks.bedrock)
+			.setBlockName(Names.Blocks.ORE_BEDROCKIUM_HIDDEN)
+			.setBlockTextureName(Names.Blocks.ORE_BEDROCKIUM_HIDDEN)
+			.setBlockUnbreakable().setResistance(8000000.0F)
+			.setStepSound(Block.soundTypeMetal)
 			.setCreativeTab(null);
 	
-	public static final BlockUnreal blockAsbestos = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.BLOCK_ASBESTOS)
+	public static Block blockAsbestos = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.BLOCK_ASBESTOS)
 			.setBlockTextureName(Names.Blocks.BLOCK_ASBESTOS)
 			.setHardness(3.0F).setResistance(5.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal oreAsbestos = (BlockUnreal)
-			new BlockOreUnreal(Material.rock).setBlockName(Names.Blocks.ORE_ASBESTOS)
+	public static Block oreAsbestos = 
+			new BlockOreUnreal(Material.rock)
+			.setBlockName(Names.Blocks.ORE_ASBESTOS)
 			.setBlockTextureName(Names.Blocks.ORE_ASBESTOS)
 			.setHardness(3.0F).setResistance(5.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal cactusTarydium = (BlockUnreal)
-			new BlockCactusTarydium(Materials.Blocks.tarydium).setBlockName(Names.Blocks.CACTUS_TARYDIUM)
+	public static Block cactusTarydium = 
+			new BlockCactusTarydium(Materials.Blocks.tarydium)
+			.setBlockName(Names.Blocks.CACTUS_TARYDIUM)
 			.setBlockTextureName(Names.Blocks.CACTUS_TARYDIUM)
 			.setHardness(3.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeCloth)
 			.setLightLevel(0.5F)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal ladderIron = (BlockUnreal)
-			new BlockIronLadder(Material.iron).setBlockName(Names.Blocks.LADDER_IRON)
+	public static Block ladderIron = 
+			new BlockIronLadder(Material.iron)
+			.setBlockName(Names.Blocks.LADDER_IRON)
 			.setBlockTextureName(Names.Blocks.LADDER_IRON)
 			.setHardness(5.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeLadder)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal cobblestonePaved = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.COBBLESTONE_PAVED)
+	public static Block cobblestonePaved = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.COBBLESTONE_PAVED)
 			.setBlockTextureName(Names.Blocks.COBBLESTONE_PAVED)
 			.setHardness(3.0F).setResistance(5.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal stonePolished = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.STONE_POLISHED)
+	public static Block stonePolished = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.STONE_POLISHED)
 			.setBlockTextureName(Names.Blocks.STONE_POLISHED)
 			.setHardness(2.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal slabStoneSmooth = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.SLAB_STONE_SMOOTH)
+	public static Block slabStoneSmooth = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.SLAB_STONE_SMOOTH)
 			.setBlockTextureName(Names.Blocks.SLAB_STONE_SMOOTH)
 			.setHardness(2.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal obsidianNether = (BlockUnreal)
-			new BlockUnreal(Materials.Blocks.immobile).setBlockName(Names.Blocks.OBSIDIAN_NETHER)
+	public static Block obsidianNether = 
+			new BlockUnreal(Materials.Blocks.immobile)
+			.setBlockName(Names.Blocks.OBSIDIAN_NETHER)
 			.setBlockTextureName(Names.Blocks.OBSIDIAN_NETHER)
 			.setHardness(50.0F).setResistance(2000.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final Block netherrackCompressed1x = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_1X)
+	public static Block netherrackCompressed1x = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_1X)
 			.setBlockTextureName(Names.Blocks.NETHERRACK_COMPRESSED_1X)
 			.setHardness(0.8F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final Block netherrackCompressed2x = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_2X)
+	public static Block netherrackCompressed2x = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_2X)
 			.setBlockTextureName(Names.Blocks.NETHERRACK_COMPRESSED_2X)
 			.setHardness(1.2F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final Block netherrackCompressed3x = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_3X)
+	public static Block netherrackCompressed3x = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_3X)
 			.setBlockTextureName(Names.Blocks.NETHERRACK_COMPRESSED_3X)
 			.setHardness(1.6F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final Block netherrackCompressed4x = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_4X)
+	public static Block netherrackCompressed4x = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.NETHERRACK_COMPRESSED_4X)
 			.setBlockTextureName(Names.Blocks.NETHERRACK_COMPRESSED_4X)
 			.setHardness(2.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final Block endStoneCompressed1x = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.END_STONE_COMPRESSED_1X)
+	public static Block endStoneCompressed1x = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.END_STONE_COMPRESSED_1X)
 			.setBlockTextureName(Names.Blocks.END_STONE_COMPRESSED_1X)
 			.setHardness(6.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final Block endStoneCompressed2x = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.END_STONE_COMPRESSED_2X)
+	public static Block endStoneCompressed2x = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.END_STONE_COMPRESSED_2X)
 			.setBlockTextureName(Names.Blocks.END_STONE_COMPRESSED_2X)
 			.setHardness(9.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final Block endStoneCompressed3x = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.END_STONE_COMPRESSED_3X)
+	public static Block endStoneCompressed3x = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.END_STONE_COMPRESSED_3X)
 			.setBlockTextureName(Names.Blocks.END_STONE_COMPRESSED_3X)
 			.setHardness(12.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final Block endStoneCompressed4x = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.END_STONE_COMPRESSED_4X)
+	public static Block endStoneCompressed4x = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.END_STONE_COMPRESSED_4X)
 			.setBlockTextureName(Names.Blocks.END_STONE_COMPRESSED_4X)
 			.setHardness(15.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockCinnabar = (BlockUnreal)
-			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_CINNABAR)
+	public static Block blockCinnabar = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_CINNABAR)
 			.setBlockTextureName(Names.Blocks.BLOCK_CINNABAR)
 			.setHardness(5.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeMetal)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockUUTC = (BlockUnreal)
-			new BlockUnreal(Materials.Blocks.tarydium).setBlockName(Names.Blocks.BLOCK_UUTC)
+	public static Block blockUUTC = 
+			new BlockUnreal(Materials.Blocks.tarydium)
+			.setBlockName(Names.Blocks.BLOCK_UUTC)
 			.setBlockTextureName(Names.Blocks.BLOCK_UUTC)
 			.setHardness(50.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeMetal)
 			.setLightLevel(1.0F)
 			.setCreativeTab(null);
 	
-	public static final BlockUnreal blockTarydiumAlloyUnrefined = (BlockUnreal)
-			new BlockUnreal(Materials.Blocks.tarydium).setBlockName(Names.Blocks.BLOCK_TARYDIUM_ALLOY_UNREFINED)
+	public static Block blockTarydiumAlloyUnrefined = 
+			new BlockUnreal(Materials.Blocks.tarydium)
+			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_ALLOY_UNREFINED)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_ALLOY_UNREFINED)
 			.setHardness(100.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeMetal)
 			.setLightLevel(0.5F)
 			.setCreativeTab(null);
 	
-	public static final BlockUnreal blockTarydiumAlloyRefined = (BlockUnreal)
-			new BlockUnreal(Materials.Blocks.tarydium).setBlockName(Names.Blocks.BLOCK_TARYDIUM_ALLOY_REFINED)
+	public static Block blockTarydiumAlloyRefined = 
+			new BlockUnreal(Materials.Blocks.tarydium)
+			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_ALLOY_REFINED)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_ALLOY_REFINED)
 			.setHardness(200.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeMetal)
 			.setCreativeTab(null);
 	
-	public static final BlockUnreal blockEnderCrystal = (BlockUnreal)
-			new BlockEnderCrystal(Materials.Blocks.immobile).setBlockName(Names.Blocks.BLOCK_ENDER_CRYSTAL)
+	public static Block blockEnderCrystal = 
+			new BlockEnderCrystal(Materials.Blocks.immobile)
+			.setBlockName(Names.Blocks.BLOCK_ENDER_CRYSTAL)
 			.setBlockTextureName(Names.Blocks.BLOCK_ENDER_CRYSTAL)
 			.setHardness(200.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeGlass)
 			.setLightLevel(1.0F)
 			.setCreativeTab(null);
 	
-	public static final BlockUnreal blockFlint = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.BLOCK_FLINT)
+	public static Block blockFlint = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.BLOCK_FLINT)
 			.setBlockTextureName(Names.Blocks.BLOCK_FLINT)
 			.setHardness(3.0F).setResistance(5.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockCharcoal = (BlockUnreal)
-			new BlockUnreal(Material.rock).setBlockName(Names.Blocks.BLOCK_CHARCOAL)
+	public static Block blockCharcoal = 
+			new BlockUnreal(Material.rock)
+			.setBlockName(Names.Blocks.BLOCK_CHARCOAL)
 			.setBlockTextureName(Names.Blocks.BLOCK_CHARCOAL)
 			.setHardness(3.0F).setResistance(5.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockGunpowder = (BlockUnreal)
-			new BlockUnreal(Material.sand).setBlockName(Names.Blocks.BLOCK_GUNPOWDER)
+	public static Block blockGunpowder = 
+			new BlockUnreal(Material.sand)
+			.setBlockName(Names.Blocks.BLOCK_GUNPOWDER)
 			.setBlockTextureName(Names.Blocks.BLOCK_GUNPOWDER)
 			.setHardness(1.2F).setResistance(2.0F)
 			.setStepSound(Block.soundTypeSand)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockEnder = (BlockUnreal)
-			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_ENDER)
+	public static Block blockEnder = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_ENDER)
 			.setBlockTextureName(Names.Blocks.BLOCK_ENDER)
 			.setHardness(3.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeGlass)
 			.setLightLevel(1.0F)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockLeather = (BlockUnreal)
-			new BlockUnreal(Material.cloth).setBlockName(Names.Blocks.BLOCK_LEATHER)
+	public static Block blockLeather = 
+			new BlockUnreal(Material.cloth)
+			.setBlockName(Names.Blocks.BLOCK_LEATHER)
 			.setBlockTextureName(Names.Blocks.BLOCK_LEATHER)
 			.setHardness(0.8F).setResistance(4.0F)
 			.setStepSound(Block.soundTypeCloth)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockSlime = (BlockUnreal)
-			new BlockSlime(Material.grass).setBlockName(Names.Blocks.BLOCK_SLIME)
+	public static Block blockSlime = 
+			new BlockSlime(Material.grass)
+			.setBlockName(Names.Blocks.BLOCK_SLIME)
 			.setBlockTextureName(Names.Blocks.BLOCK_SLIME)
 			.setHardness(0.8F).setResistance(4.0F)
 			.setStepSound(Block.soundTypeGravel)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockBlaze = (BlockUnreal)
-			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_BLAZE)
+	public static Block blockBlaze = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_BLAZE)
 			.setBlockTextureName(Names.Blocks.BLOCK_BLAZE)
 			.setHardness(5.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockGhastTear = (BlockUnreal)
-			new BlockUnreal(Material.iron).setBlockName(Names.Blocks.BLOCK_GHAST_TEAR)
+	public static Block blockGhastTear = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_GHAST_TEAR)
 			.setBlockTextureName(Names.Blocks.BLOCK_GHAST_TEAR)
 			.setHardness(5.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeGlass)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockNetherWart = (BlockUnreal)
-			new BlockUnreal(Material.clay).setBlockName(Names.Blocks.BLOCK_NETHER_WART)
+	public static Block blockNetherWart = 
+			new BlockUnreal(Material.clay)
+			.setBlockName(Names.Blocks.BLOCK_NETHER_WART)
 			.setHardness(0.8F).setResistance(4.0F)
 			.setStepSound(Block.soundTypeGravel)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
-	public static final BlockUnreal blockCocoa = (BlockUnreal)
-			new BlockUnreal(Material.wood).setBlockName(Names.Blocks.BLOCK_COCOA)
+	public static Block blockCocoa = 
+			new BlockUnreal(Material.wood)
+			.setBlockName(Names.Blocks.BLOCK_COCOA)
 			.setHardness(1.0F).setResistance(5.0F)
 			.setStepSound(Block.soundTypeWood)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);

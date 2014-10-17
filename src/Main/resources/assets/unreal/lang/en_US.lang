@@ -171,7 +171,9 @@ tile.unreal:blockNetherWart.name=Compacted Nether Wart Block
 tile.unreal:blockCocoa.name=Cocoa Block
 
 # Fluids
-fluid.fluidMercury.name=Mercury
+fluid.mercury=Mercury
+fluid.mercury.name=Mercury
+tile.unreal:fluidBlockMercury.name=Mercury
 
 # Creative Tabs
 itemGroup.unreal=Unreal

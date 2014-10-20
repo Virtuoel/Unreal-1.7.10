@@ -475,6 +475,10 @@ public class ModRecipes
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.ender_pearl,9), new Object[]{
 				"C",'C',"blockEnder",
 				}));
+			
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.ender_pearl,9), new Object[]{
+				"C",'C',"blockEnderPearl",
+				}));
 		}
 		else
 		{
@@ -484,6 +488,10 @@ public class ModRecipes
 			
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.ender_pearl,4), new Object[]{
 				"C",'C',"blockEnder",
+				}));
+			
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.ender_pearl,4), new Object[]{
+				"C",'C',"blockEnderPearl",
 				}));
 		}
 		
@@ -658,8 +666,16 @@ public class ModRecipes
 			"TRT","NPN","TDT",'T',"blockTitanium",'D',"blockDiamond",'P',"blockEnder",'R',Blocks.redstone_torch,'N',Items.comparator,
 			}));
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.translocatorDisc,1), new Object[]{
+			"TRT","NPN","TDT",'T',"blockTitanium",'D',"blockDiamond",'P',"blockEnderPearl",'R',Blocks.redstone_torch,'N',Items.comparator,
+			}));
+		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunTranslocator,1,1), new Object[]{
 			"DBE","SCR","TTT",'T',"blockTitanium",'D',ModItems.translocatorDisc,'C',ModItems.weaponCasingAdv,'B',ModItems.gunBarrelIron,'S',Blocks.daylight_detector,'R',"blockRedstone",'E',"blockEnder",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunTranslocator,1,1), new Object[]{
+			"DBE","SCR","TTT",'T',"blockTitanium",'D',ModItems.translocatorDisc,'C',ModItems.weaponCasingAdv,'B',ModItems.gunBarrelIron,'S',Blocks.daylight_detector,'R',"blockRedstone",'E',"blockEnderPearl",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.weaponCasingAdv,1), new Object[]{
@@ -722,6 +738,22 @@ public class ModRecipes
 			"STS","TBT","STS",'T',"dustDiamond",'S',"blockEnder",'B',"blockTarydium",
 			}));
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockUUTC,1), new Object[]{
+			"STS","TBT","STS",'S',"nuggetBedrockium",'T',"blockEnderPearl",'B',"blockTarydium",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockUUTC,1), new Object[]{
+			"STS","TBT","STS",'T',"nuggetBedrockium",'S',"blockEnderPearl",'B',"blockTarydium",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockUUTC,1), new Object[]{
+			"STS","TBT","STS",'S',"dustDiamond",'T',"blockEnderPearl",'B',"blockTarydium",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockUUTC,1), new Object[]{
+			"STS","TBT","STS",'T',"dustDiamond",'S',"blockEnderPearl",'B',"blockTarydium",
+			}));
+		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunRedeemer,1,101), new Object[]{
 			"MOT","OYT","TTL",'O',"obsidian",'T',"blockTitanium",'Y',"blockTarydium",'M',ModItems.ammoWarhead,'L',new ItemStack(ModItems.gunEightballLauncher,1,OreDictionary.WILDCARD_VALUE),
 			}));
@@ -734,12 +766,20 @@ public class ModRecipes
 			"NIB","BTE","NIB",'N',"nuggetIron",'I',"ingotIron",'B',"blockIron",'T',Items.tnt_minecart,'E',"blockEnder",
 			}));
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.warheadCone,1), new Object[]{
+			"NIB","BTE","NIB",'N',"nuggetIron",'I',"ingotIron",'B',"blockIron",'T',Items.tnt_minecart,'E',"blockEnderPearl",
+			}));
+		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.warheadBody,1), new Object[]{
 			"BIB","TCT","BIB",'I',"ingotIron",'B',"blockIron",'T',Items.tnt_minecart,'C',ModItems.tarydPowerBasic,
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.warheadThruster,1), new Object[]{
 			"IBB","ERT","IBB",'I',"blockIron",'B',ModItems.ammoEightball,'E',"blockEnder",'R',"blockRedstone",'T',Items.tnt_minecart,
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.warheadThruster,1), new Object[]{
+			"IBB","ERT","IBB",'I',"blockIron",'B',ModItems.ammoEightball,'E',"blockEnderPearl",'R',"blockRedstone",'T',Items.tnt_minecart,
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.chainLink,4), new Object[]{
@@ -786,8 +826,16 @@ public class ModRecipes
 			"CEC","BTB","CEC",'T',"blockTitanium",'E',"blockEnder",'B',ModItems.gunBarrelIronLarge,'C',ModItems.tarydPowerBasic,
 			}));
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.dispersionUpgrade,1), new Object[]{
+			"CEC","BTB","CEC",'T',"blockTitanium",'E',"blockEnderPearl",'B',ModItems.gunBarrelIronLarge,'C',ModItems.tarydPowerBasic,
+			}));
+		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunDispersionPistol,1,1), new Object[]{
 			"ETC","BAU","EGC",'T',"ingotTitanium",'E',"blockEnder",'B',ModItems.gunBarrelIronLarge,'A',ModItems.gunBarrelIron,'C',ModItems.tarydPowerBasic,'U',ModItems.dispersionUpgrade,'G',ModItems.weaponCasingBasic,
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunDispersionPistol,1,1), new Object[]{
+			"ETC","BAU","EGC",'T',"ingotTitanium",'E',"blockEnderPearl",'B',ModItems.gunBarrelIronLarge,'A',ModItems.gunBarrelIron,'C',ModItems.tarydPowerBasic,'U',ModItems.dispersionUpgrade,'G',ModItems.weaponCasingBasic,
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.dustTitanium,1), new Object[]{
@@ -1175,7 +1223,6 @@ public class ModRecipes
 		OreDictionary.registerOre("gemTarydium", ModItems.gemTarydium);
 		OreDictionary.registerOre("blockTarydium", ModBlocks.blockTarydium);
 		OreDictionary.registerOre("nuggetIron", ModItems.nuggetIron);
-		OreDictionary.registerOre("blockEnder", ModBlocks.blockEnder);
 		OreDictionary.registerOre("blockLeather", ModBlocks.blockLeather);
 		OreDictionary.registerOre("oreTarydium", ModBlocks.oreTarydiumEnd);
 		OreDictionary.registerOre("oreTarydium", ModBlocks.oreTarydiumNether);

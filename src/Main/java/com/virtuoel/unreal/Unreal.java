@@ -77,8 +77,8 @@ public class Unreal
 		else
 		{
 			LogHelper.info("Fluids Cleared.");
-			LogHelper.info("Items Cleared.");
 			LogHelper.info("Blocks Cleared.");
+			LogHelper.info("Items Cleared.");
 			LogHelper.info("Fluid Registration Skipped.");
 			LogHelper.info("Ore Dictionary Registration Skipped.");
 			LogHelper.info("Fluid Container Item Registration Skipped.");

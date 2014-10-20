@@ -35,6 +35,8 @@ public class ModFluids
 				.setStepSound(Block.soundTypeMetal)
 				.setCreativeTab(null)*/;
 		
+		fluidMercury.setIcons(fluidBlockMercury.getIcon(Reference.Blocks.Faces.TOP, 0), fluidBlockMercury.getIcon(Reference.Blocks.Faces.NORTH, 0));
+		
 		GameRegistry.registerBlock(fluidBlockMercury, Names.Fluids.FLUID_BLOCK_MERCURY);
 		
 	}

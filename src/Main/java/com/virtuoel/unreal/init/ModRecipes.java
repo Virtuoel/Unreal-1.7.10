@@ -1140,7 +1140,7 @@ public class ModRecipes
 				new ItemStack(ModItems.shardTarydium,1), 0.1F);
 		
 		GameRegistry.addSmelting(ModItems.tarydPowerBasic, 
-				new ItemStack(ModItems.recordUnreal,1), 0.1F);
+				new ItemStack(ModItems.recordLongFlight,1), 0.1F);
 		
 		GameRegistry.addSmelting(ModItems.flakShellCold, 
 				new ItemStack(ModItems.flakShellWarm,1), 0.1F);
@@ -1278,7 +1278,7 @@ public class ModRecipes
 		OreDictionary.registerOre("dustDiamond", ModItems.dustDiamond);
 		OreDictionary.registerOre("dustEmerald", ModItems.dustEmerald);
 		OreDictionary.registerOre("dustNetherQuartz", ModItems.dustNetherQuartz);
-		OreDictionary.registerOre("record", ModItems.recordUnreal);
+		OreDictionary.registerOre("record", ModItems.recordLongFlight);
 		OreDictionary.registerOre("blockSlime", ModBlocks.blockSlime);
 		OreDictionary.registerOre("blockNetherWart", ModBlocks.blockNetherWart);
 		OreDictionary.registerOre("oreAsbestos", ModBlocks.oreAsbestos);

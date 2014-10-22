@@ -18,6 +18,7 @@ import com.virtuoel.unreal.item.ItemBucketUnreal;
 import com.virtuoel.unreal.item.ItemDustUnreal;
 import com.virtuoel.unreal.item.ItemHoeUnreal;
 import com.virtuoel.unreal.item.ItemPickaxeUnreal;
+import com.virtuoel.unreal.item.ItemRecordUnreal;
 import com.virtuoel.unreal.item.ItemShovelUnreal;
 import com.virtuoel.unreal.item.ItemSwordUnreal;
 import com.virtuoel.unreal.item.ItemUnreal;
@@ -318,6 +319,7 @@ public class ModItems
 	
 	//fluid containers
 	public static Item bucketMercury;
+	public static Item bucketTarydiumSludge;
 	
 	//tools
 	public static Item debugTool = 
@@ -329,6 +331,12 @@ public class ModItems
 	public static Item voiceBox = 
 			new ItemVoiceBox()
 			.setUnlocalizedName(Names.Items.VOICE_BOX)
+			.setMaxStackSize(1)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static Item recordLongFlight = 
+			new ItemRecordUnreal(Names.Items.RECORD_LONG_FLIGHT_MUSIC)
+			.setUnlocalizedName(Names.Items.RECORD_LONG_FLIGHT)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
@@ -391,12 +399,6 @@ public class ModItems
 			.setUnlocalizedName(Names.Items.HOE_TARYDIUM_ALLOY_REFINED)
 			.setMaxStackSize(1)
 			.setCreativeTab(null);
-	
-	public static Item recordUnreal = 
-			new ItemUnreal()
-			.setUnlocalizedName(Names.Items.RECORD_UNREAL)
-			.setMaxStackSize(1)
-			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//armor
 	public static Item armorSCUBAGear = 
@@ -655,10 +657,17 @@ public class ModItems
 		
 		GameRegistry.registerItem(bucketMercury, Names.Items.BUCKET_MERCURY);
 		
+		bucketTarydiumSludge = new ItemBucketUnreal(ModFluids.fluidBlockTarydiumSludge)
+		.setUnlocalizedName(Names.Items.BUCKET_TARYDIUM_SLUDGE)
+		.setMaxStackSize(1).setContainerItem(Items.bucket)
+		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+		
+		GameRegistry.registerItem(bucketTarydiumSludge, Names.Items.BUCKET_TARYDIUM_SLUDGE);
 		
 		//tools
 		GameRegistry.registerItem(debugTool, Names.Items.DEBUG_TOOL);
 		GameRegistry.registerItem(voiceBox, Names.Items.VOICE_BOX);
+		GameRegistry.registerItem(recordLongFlight, Names.Items.RECORD_LONG_FLIGHT);
 		GameRegistry.registerItem(swordTitanium, Names.Items.SWORD_TITANIUM);
 		GameRegistry.registerItem(pickaxeTitanium, Names.Items.PICK_TITANIUM);
 		GameRegistry.registerItem(shovelTitanium, Names.Items.SHOVEL_TITANIUM);
@@ -669,16 +678,6 @@ public class ModItems
 		GameRegistry.registerItem(shovelTarydiumAlloyRefined, Names.Items.SHOVEL_TARYDIUM_ALLOY_REFINED);
 		GameRegistry.registerItem(axeTarydiumAlloyRefined, Names.Items.AXE_TARYDIUM_ALLOY_REFINED);
 		GameRegistry.registerItem(hoeTarydiumAlloyRefined, Names.Items.HOE_TARYDIUM_ALLOY_REFINED);
-		GameRegistry.registerItem(recordUnreal, Names.Items.RECORD_UNREAL);
-		
-		//weapons
-		GameRegistry.registerItem(gunTranslocator, Names.Items.GUN_TRANSLOCATOR);
-		GameRegistry.registerItem(gunDispersionPistol, Names.Items.GUN_DISPERSION_PISTOL);
-		GameRegistry.registerItem(meleeChainsaw, Names.Items.MELEE_CHAINSAW);
-		GameRegistry.registerItem(gunStinger, Names.Items.GUN_STINGER);
-		GameRegistry.registerItem(gunFlakCannon, Names.Items.GUN_FLAK);
-		GameRegistry.registerItem(gunEightballLauncher, Names.Items.GUN_EIGHTBALL);
-		GameRegistry.registerItem(gunRedeemer, Names.Items.GUN_REDEEMER);
 		
 		//armor
 		GameRegistry.registerItem(armorSCUBAGear, Names.Items.SCUBA_GEAR);
@@ -699,6 +698,15 @@ public class ModItems
 		GameRegistry.registerItem(ammoEightball, Names.Items.AMMO_EIGHTBALL);
 		GameRegistry.registerItem(ammoFlakShell, Names.Items.AMMO_FLAK_SHELL);
 		GameRegistry.registerItem(ammoWarhead, Names.Items.AMMO_WARHEAD);
+		
+		//weapons
+		GameRegistry.registerItem(gunTranslocator, Names.Items.GUN_TRANSLOCATOR);
+		GameRegistry.registerItem(gunDispersionPistol, Names.Items.GUN_DISPERSION_PISTOL);
+		GameRegistry.registerItem(meleeChainsaw, Names.Items.MELEE_CHAINSAW);
+		GameRegistry.registerItem(gunStinger, Names.Items.GUN_STINGER);
+		GameRegistry.registerItem(gunFlakCannon, Names.Items.GUN_FLAK);
+		GameRegistry.registerItem(gunEightballLauncher, Names.Items.GUN_EIGHTBALL);
+		GameRegistry.registerItem(gunRedeemer, Names.Items.GUN_REDEEMER);
 		
 		//vanilla item dusts
 		GameRegistry.registerItem(dustCoal, Names.Items.DUST_COAL);

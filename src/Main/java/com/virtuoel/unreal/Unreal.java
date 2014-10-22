@@ -65,11 +65,13 @@ public class Unreal
 			
 			ModRecipes.initOreDict();
 			LogHelper.info("Ore Dictionary Registration Completed.");
-			
+
 			FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack(Names.Fluids.FLUID_MERCURY, FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(ModItems.bucketMercury), new ItemStack(Items.bucket));
+			FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack(Names.Fluids.FLUID_TARYDIUM_SLUDGE, FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(ModItems.bucketTarydiumSludge), new ItemStack(Items.bucket));
 			LogHelper.info("Fluid Container Items Registered.");
-			
+
 			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockMercury, ModItems.bucketMercury);
+			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockTarydiumSludge, ModItems.bucketTarydiumSludge);
 			MinecraftForge.EVENT_BUS.register(UnrealBucketHandler.INSTANCE);
 			LogHelper.info("Bucket Handler Registered.");
 			

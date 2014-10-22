@@ -76,7 +76,9 @@ item.unreal:rodTarydiumAlloyRefined.name=Refined Tarydium Alloy Rod
 # (Tools)
 item.unreal:debugTool.name=Unreal.debugTool();
 item.unreal:bucketMercury.name=Mercury Bucket
+item.unreal:bucketTarydiumSludge.name=Tarydium Sludge Bucket
 item.unreal:voiceBox.name=Voice Box
+item.unreal:recordLongFlight.name=Music Disc
 item.unreal:swordTitanium.name=Titanium Sword
 item.unreal:pickaxeTitanium.name=Titanium Pickaxe
 item.unreal:shovelTitanium.name=Titanium Shovel
@@ -123,6 +125,9 @@ item.unreal:dustNetherQuartz.name=Nether Quartz Dust
 item.unreal:dustDiamond.name=Diamond Dust
 item.unreal:dustEmerald.name=Emerald Dust
 item.unreal:dustObsidian.name=Obsidian Dust
+
+# Item Descriptions
+item.record.flightCastle.desc=Unreal - Long Flight
 
 # Blocks
 tile.unreal:blockTitanium.name=Block of Titanium

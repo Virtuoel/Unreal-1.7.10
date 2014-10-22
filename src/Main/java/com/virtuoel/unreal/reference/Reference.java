@@ -9,6 +9,26 @@ public class Reference
 	public static final String CLIENT_PROXY_CLASS = "com.virtuoel.unreal.proxy.ClientProxy";
 	public static final String GUI_FACTORY_CLASS = "com.virtuoel.unreal.client.gui.GuiFactory";
 	
+	public static final class Files
+	{
+		public static final class Extensions
+		{
+			public static final String OGG = ".ogg";
+			public static final String DAT = ".dat";
+			public static final String JAR = ".jar";
+			public static final String ZIP = ".zip";
+		}
+		
+		public static class Paths
+		{
+			public static final String LANG = "lang/";
+			public static final String MODELS = "models/";
+			public static final String SOUNDS = "sounds/";
+			public static final String STREAMING = "streaming/";
+			public static final String TEXTURES = "textures/";
+		}
+	}
+	
 	public static final class ConfigCategory
 	{
 		public static final String BLOCKS = "Blocks";
@@ -69,6 +89,11 @@ public class Reference
 	{
 		public static final String FLUID_STILL = "Still";
 		public static final String FLUID_FLOWING = "Flowing";
+	}
+	
+	public static final class Items
+	{
+		
 	}
 	
 }

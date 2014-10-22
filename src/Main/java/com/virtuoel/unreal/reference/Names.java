@@ -56,8 +56,8 @@ public final class Names
 	{
 		public static final String FLUID_MERCURY = "mercury";
 		public static final String FLUID_BLOCK_MERCURY = "fluidBlockMercury";
-		public static final String FLUID_TARYDIUM = "tarydium";
-		public static final String FLUID_BLOCK_TARYDIUM = "fluidBlockTarydium";
+		public static final String FLUID_TARYDIUM_SLUDGE = "tarydiumSludge";
+		public static final String FLUID_BLOCK_TARYDIUM_SLUDGE = "fluidBlockTarydiumSludge";
 	}
 
 	public static final class Items
@@ -117,6 +117,7 @@ public final class Names
 		//tools
 		public static final String DEBUG_TOOL = "debugTool";
 		public static final String BUCKET_MERCURY = "bucketMercury";
+		public static final String BUCKET_TARYDIUM_SLUDGE = "bucketTarydiumSludge";
 		public static final String VOICE_BOX = "voiceBox";
 		public static final String SWORD_TITANIUM = "swordTitanium";
 		public static final String PICK_TITANIUM = "pickaxeTitanium";
@@ -128,7 +129,10 @@ public final class Names
 		public static final String AXE_TARYDIUM_ALLOY_REFINED = "axeTarydiumAlloyRefined";
 		public static final String SHOVEL_TARYDIUM_ALLOY_REFINED = "shovelTarydiumAlloyRefined";
 		public static final String HOE_TARYDIUM_ALLOY_REFINED = "hoeTarydiumAlloyRefined";
-		public static final String RECORD_UNREAL = "recordUnreal";
+		
+		//records
+		public static final String RECORD_LONG_FLIGHT = "recordLongFlight";
+		public static final String RECORD_LONG_FLIGHT_MUSIC = "flightCastle";
 		
 		//weapons
 		public static final String GUN_TRANSLOCATOR = "gunTranslocator";

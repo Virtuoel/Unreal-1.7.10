@@ -2,9 +2,9 @@ package com.virtuoel.unreal.fluid;
 
 import net.minecraftforge.fluids.Fluid;
 
-public class Mercury extends Fluid
+public class Tarydium extends Fluid
 {
-	public Mercury(String fluidName)
+	public Tarydium(String fluidName)
 	{
 		super(fluidName);
 	}
@@ -12,6 +12,6 @@ public class Mercury extends Fluid
 	@Override
     public int getColor()
     {
-        return 0x888888;
+        return 0x11EE11;
     }
 }

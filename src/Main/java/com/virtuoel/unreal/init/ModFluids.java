@@ -5,6 +5,7 @@ import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 
 import com.virtuoel.unreal.block.BlockFluidUnreal;
+import com.virtuoel.unreal.fluid.Health;
 import com.virtuoel.unreal.fluid.Mercury;
 import com.virtuoel.unreal.fluid.Tarydium;
 import com.virtuoel.unreal.reference.Names;
@@ -20,11 +21,15 @@ public class ModFluids
 		.setDensity(1500).setViscosity(2500);
 	
 	public static Fluid fluidTarydiumSludge = new Tarydium(Names.Fluids.FLUID_TARYDIUM_SLUDGE)
-	.setDensity(2000).setViscosity(3250);
+		.setDensity(2000).setViscosity(3250).setLuminosity(8);
+	
+	public static Fluid fluidHealth = new Health(Names.Fluids.FLUID_HEALTH)
+		.setDensity(1000).setViscosity(1500).setLuminosity(15);
 	
 	//fluid blocks
 	public static BlockFluidUnreal fluidBlockMercury;
 	public static BlockFluidUnreal fluidBlockTarydiumSludge;
+	public static BlockFluidUnreal fluidBlockHealth;
 	
 	public static void initFluids()
 	{
@@ -43,7 +48,7 @@ public class ModFluids
 		fluidMercury.setIcons(fluidBlockMercury.getIcon(Reference.Blocks.Faces.TOP, 0), fluidBlockMercury.getIcon(Reference.Blocks.Faces.NORTH, 0));
 		
 		GameRegistry.registerBlock(fluidBlockMercury, Names.Fluids.FLUID_BLOCK_MERCURY);
-		
+
 		
 		FluidRegistry.registerFluid(fluidTarydiumSludge);
 		fluidTarydiumSludge.setUnlocalizedName(Names.Fluids.FLUID_TARYDIUM_SLUDGE);
@@ -55,6 +60,18 @@ public class ModFluids
 		fluidTarydiumSludge.setIcons(fluidBlockTarydiumSludge.getIcon(Reference.Blocks.Faces.TOP, 0), fluidBlockTarydiumSludge.getIcon(Reference.Blocks.Faces.NORTH, 0));
 		
 		GameRegistry.registerBlock(fluidBlockTarydiumSludge, Names.Fluids.FLUID_BLOCK_TARYDIUM_SLUDGE);
+
+		
+		FluidRegistry.registerFluid(fluidHealth);
+		fluidHealth.setUnlocalizedName(Names.Fluids.FLUID_HEALTH);
+		
+		fluidBlockHealth = (BlockFluidUnreal)
+				new BlockFluidUnreal(fluidHealth, Material.water)
+				.setBlockName(Names.Fluids.FLUID_BLOCK_HEALTH);
+		
+		fluidHealth.setIcons(fluidBlockHealth.getIcon(Reference.Blocks.Faces.TOP, 0), fluidBlockHealth.getIcon(Reference.Blocks.Faces.NORTH, 0));
+		
+		GameRegistry.registerBlock(fluidBlockHealth, Names.Fluids.FLUID_BLOCK_HEALTH);
 		
 	}
 }

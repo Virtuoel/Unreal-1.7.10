@@ -77,6 +77,7 @@ item.unreal:rodTarydiumAlloyRefined.name=Refined Tarydium Alloy Rod
 item.unreal:debugTool.name=Unreal.debugTool();
 item.unreal:bucketMercury.name=Mercury Bucket
 item.unreal:bucketTarydiumSludge.name=Tarydium Sludge Bucket
+item.unreal:bucketHealth.name=Health Bucket
 item.unreal:voiceBox.name=Voice Box
 item.unreal:recordLongFlight.name=Music Disc
 item.unreal:swordTitanium.name=Titanium Sword
@@ -179,6 +180,12 @@ tile.unreal:blockCocoa.name=Cocoa Block
 fluid.mercury=Mercury
 fluid.mercury.name=Mercury
 tile.unreal:fluidBlockMercury.name=Mercury
+fluid.tarydiumSludge=Tarydium Sludge
+fluid.tarydiumSludge.name=Tarydium Sludge
+tile.unreal:fluidBlockTarydiumSludge.name=Tarydium Sludge
+fluid.health=Health
+fluid.health.name=Health
+tile.unreal:fluidBlockHealth.name=Health
 
 # Creative Tabs
 itemGroup.unreal=Unreal

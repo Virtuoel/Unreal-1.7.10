@@ -36,41 +36,26 @@ public class ModFluids
 		
 		FluidRegistry.registerFluid(fluidMercury);
 		fluidMercury.setUnlocalizedName(Names.Fluids.FLUID_MERCURY);
-		
 		fluidBlockMercury = (BlockFluidUnreal)
 				new BlockFluidUnreal(fluidMercury, Material.water)
-				.setBlockName(Names.Fluids.FLUID_BLOCK_MERCURY)/*
-				.setBlockTextureName(Names.Fluids.FLUID_MERCURY)
-				.setHardness(-1.0F).setResistance(1000.0F)
-				.setStepSound(Block.soundTypeMetal)
-				.setCreativeTab(null)*/;
-		
+				.setBlockName(Names.Fluids.FLUID_BLOCK_MERCURY);
 		fluidMercury.setIcons(fluidBlockMercury.getIcon(Reference.Blocks.Faces.TOP, 0), fluidBlockMercury.getIcon(Reference.Blocks.Faces.NORTH, 0));
-		
 		GameRegistry.registerBlock(fluidBlockMercury, Names.Fluids.FLUID_BLOCK_MERCURY);
-
 		
 		FluidRegistry.registerFluid(fluidTarydiumSludge);
 		fluidTarydiumSludge.setUnlocalizedName(Names.Fluids.FLUID_TARYDIUM_SLUDGE);
-		
 		fluidBlockTarydiumSludge = (BlockFluidUnreal)
 				new BlockFluidUnreal(fluidTarydiumSludge, Material.water)
 				.setBlockName(Names.Fluids.FLUID_BLOCK_TARYDIUM_SLUDGE);
-		
 		fluidTarydiumSludge.setIcons(fluidBlockTarydiumSludge.getIcon(Reference.Blocks.Faces.TOP, 0), fluidBlockTarydiumSludge.getIcon(Reference.Blocks.Faces.NORTH, 0));
-		
 		GameRegistry.registerBlock(fluidBlockTarydiumSludge, Names.Fluids.FLUID_BLOCK_TARYDIUM_SLUDGE);
-
 		
 		FluidRegistry.registerFluid(fluidHealth);
 		fluidHealth.setUnlocalizedName(Names.Fluids.FLUID_HEALTH);
-		
 		fluidBlockHealth = (BlockFluidUnreal)
 				new BlockFluidUnreal(fluidHealth, Material.water)
 				.setBlockName(Names.Fluids.FLUID_BLOCK_HEALTH);
-		
 		fluidHealth.setIcons(fluidBlockHealth.getIcon(Reference.Blocks.Faces.TOP, 0), fluidBlockHealth.getIcon(Reference.Blocks.Faces.NORTH, 0));
-		
 		GameRegistry.registerBlock(fluidBlockHealth, Names.Fluids.FLUID_BLOCK_HEALTH);
 		
 	}

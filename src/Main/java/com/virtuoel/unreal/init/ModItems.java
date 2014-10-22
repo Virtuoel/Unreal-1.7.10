@@ -320,6 +320,7 @@ public class ModItems
 	//fluid containers
 	public static Item bucketMercury;
 	public static Item bucketTarydiumSludge;
+	public static Item bucketHealth;
 	
 	//tools
 	public static Item debugTool = 
@@ -654,20 +655,23 @@ public class ModItems
 		.setUnlocalizedName(Names.Items.BUCKET_MERCURY)
 		.setMaxStackSize(1).setContainerItem(Items.bucket)
 		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-		
 		GameRegistry.registerItem(bucketMercury, Names.Items.BUCKET_MERCURY);
 		
 		bucketTarydiumSludge = new ItemBucketUnreal(ModFluids.fluidBlockTarydiumSludge)
 		.setUnlocalizedName(Names.Items.BUCKET_TARYDIUM_SLUDGE)
 		.setMaxStackSize(1).setContainerItem(Items.bucket)
 		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-		
 		GameRegistry.registerItem(bucketTarydiumSludge, Names.Items.BUCKET_TARYDIUM_SLUDGE);
+		
+		bucketHealth = new ItemBucketUnreal(ModFluids.fluidBlockHealth)
+		.setUnlocalizedName(Names.Items.BUCKET_HEALTH)
+		.setMaxStackSize(1).setContainerItem(Items.bucket)
+		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+		GameRegistry.registerItem(bucketHealth, Names.Items.BUCKET_HEALTH);
 		
 		//tools
 		GameRegistry.registerItem(debugTool, Names.Items.DEBUG_TOOL);
 		GameRegistry.registerItem(voiceBox, Names.Items.VOICE_BOX);
-		GameRegistry.registerItem(recordLongFlight, Names.Items.RECORD_LONG_FLIGHT);
 		GameRegistry.registerItem(swordTitanium, Names.Items.SWORD_TITANIUM);
 		GameRegistry.registerItem(pickaxeTitanium, Names.Items.PICK_TITANIUM);
 		GameRegistry.registerItem(shovelTitanium, Names.Items.SHOVEL_TITANIUM);
@@ -678,6 +682,9 @@ public class ModItems
 		GameRegistry.registerItem(shovelTarydiumAlloyRefined, Names.Items.SHOVEL_TARYDIUM_ALLOY_REFINED);
 		GameRegistry.registerItem(axeTarydiumAlloyRefined, Names.Items.AXE_TARYDIUM_ALLOY_REFINED);
 		GameRegistry.registerItem(hoeTarydiumAlloyRefined, Names.Items.HOE_TARYDIUM_ALLOY_REFINED);
+		
+		//records
+		GameRegistry.registerItem(recordLongFlight, Names.Items.RECORD_LONG_FLIGHT);
 		
 		//armor
 		GameRegistry.registerItem(armorSCUBAGear, Names.Items.SCUBA_GEAR);

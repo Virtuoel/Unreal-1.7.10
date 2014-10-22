@@ -73,13 +73,13 @@ item.unreal:warheadBody.name=Warhead Body
 item.unreal:warheadThruster.name=Warhead Thruster
 item.unreal:rodTarydiumAlloyUnrefined.name=Unrefined Tarydium Alloy Rod
 item.unreal:rodTarydiumAlloyRefined.name=Refined Tarydium Alloy Rod
-# (Tools)
-item.unreal:debugTool.name=Unreal.debugTool();
+# (Fluid Containers)
 item.unreal:bucketMercury.name=Mercury Bucket
 item.unreal:bucketTarydiumSludge.name=Tarydium Sludge Bucket
 item.unreal:bucketHealth.name=Health Bucket
+# (Tools)
+item.unreal:debugTool.name=Unreal.debugTool();
 item.unreal:voiceBox.name=Voice Box
-item.unreal:recordLongFlight.name=Music Disc
 item.unreal:swordTitanium.name=Titanium Sword
 item.unreal:pickaxeTitanium.name=Titanium Pickaxe
 item.unreal:shovelTitanium.name=Titanium Shovel
@@ -90,14 +90,8 @@ item.unreal:pickaxeTarydiumAlloyRefined.name=Refined Tarydium Alloy Pickaxe
 item.unreal:shovelTarydiumAlloyRefined.name=Refined Tarydium Alloy Shovel
 item.unreal:axeTarydiumAlloyRefined.name=Refined Tarydium Alloy Axe
 item.unreal:hoeTarydiumAlloyRefined.name=Refined Tarydium Alloy Hoe
-# (Weapons)
-item.unreal:gunTranslocator.name=Translocator
-item.unreal:gunDispersionPistol.name=Dispersion Pistol
-item.unreal:meleeChainsaw.name=Chainsaw
-item.unreal:gunStinger.name=Stinger
-item.unreal:gunFlakCannon.name=Flak Cannon
-item.unreal:gunEightballLauncher.name=Eightball Launcher
-item.unreal:gunRedeemer.name=Redeemer
+# (Records)
+item.unreal:recordLongFlight.name=Music Disc
 # (Armor)
 item.unreal:armorSCUBAGear.name=SCUBA Gear
 item.unreal:armorToxinSuit.name=Toxin Suit
@@ -116,6 +110,14 @@ item.unreal:armorBootsSlime.name=Slime Boots
 item.unreal:ammoEightball.name=Eightball Rocket
 item.unreal:ammoFlakShell.name=Flak Shell
 item.unreal:ammoWarhead.name=Redeemer Warhead
+# (Weapons)
+item.unreal:gunTranslocator.name=Translocator
+item.unreal:gunDispersionPistol.name=Dispersion Pistol
+item.unreal:meleeChainsaw.name=Chainsaw
+item.unreal:gunStinger.name=Stinger
+item.unreal:gunFlakCannon.name=Flak Cannon
+item.unreal:gunEightballLauncher.name=Eightball Launcher
+item.unreal:gunRedeemer.name=Redeemer
 # (Vanilla Item Dusts)
 item.unreal:dustCoal.name=Coal Dust
 item.unreal:dustCharcoal.name=Charcoal Dust

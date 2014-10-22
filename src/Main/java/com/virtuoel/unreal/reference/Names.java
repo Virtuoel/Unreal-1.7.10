@@ -116,10 +116,13 @@ public final class Names
 		public static final String ROD_TARYDIUM_ALLOY_UNREFINED = "rodTarydiumAlloyUnrefined";
 		public static final String ROD_TARYDIUM_ALLOY_REFINED = "rodTarydiumAlloyRefined";
 		
-		//tools
-		public static final String DEBUG_TOOL = "debugTool";
+		//fluid containers
 		public static final String BUCKET_MERCURY = "bucketMercury";
 		public static final String BUCKET_TARYDIUM_SLUDGE = "bucketTarydiumSludge";
+		public static final String BUCKET_HEALTH = "bucketHealth";
+		
+		//tools
+		public static final String DEBUG_TOOL = "debugTool";
 		public static final String VOICE_BOX = "voiceBox";
 		public static final String SWORD_TITANIUM = "swordTitanium";
 		public static final String PICK_TITANIUM = "pickaxeTitanium";
@@ -135,15 +138,6 @@ public final class Names
 		//records
 		public static final String RECORD_LONG_FLIGHT = "recordLongFlight";
 		public static final String RECORD_LONG_FLIGHT_MUSIC = "flightCastle";
-		
-		//weapons
-		public static final String GUN_TRANSLOCATOR = "gunTranslocator";
-		public static final String GUN_DISPERSION_PISTOL = "gunDispersionPistol";
-		public static final String MELEE_CHAINSAW = "meleeChainsaw";
-		public static final String GUN_STINGER = "gunStinger";
-		public static final String GUN_FLAK = "gunFlakCannon";
-		public static final String GUN_EIGHTBALL = "gunEightballLauncher";
-		public static final String GUN_REDEEMER = "gunRedeemer";
 		
 		//armor
 		public static final String SCUBA_GEAR = "armorSCUBAGear";
@@ -164,6 +158,15 @@ public final class Names
 		public static final String AMMO_EIGHTBALL = "ammoEightball";
 		public static final String AMMO_FLAK_SHELL = "ammoFlakShell";
 		public static final String AMMO_WARHEAD = "ammoWarhead";
+		
+		//weapons
+		public static final String GUN_TRANSLOCATOR = "gunTranslocator";
+		public static final String GUN_DISPERSION_PISTOL = "gunDispersionPistol";
+		public static final String MELEE_CHAINSAW = "meleeChainsaw";
+		public static final String GUN_STINGER = "gunStinger";
+		public static final String GUN_FLAK = "gunFlakCannon";
+		public static final String GUN_EIGHTBALL = "gunEightballLauncher";
+		public static final String GUN_REDEEMER = "gunRedeemer";
 		
 		//vanilla item dusts
 		public static final String DUST_COAL = "dustCoal";

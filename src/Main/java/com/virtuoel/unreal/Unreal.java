@@ -73,6 +73,7 @@ public class Unreal
 			
 			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockMercury, ModItems.bucketMercury);
 			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockTarydiumSludge, ModItems.bucketTarydiumSludge);
+			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockHealth, ModItems.bucketHealth);
 			MinecraftForge.EVENT_BUS.register(UnrealBucketHandler.INSTANCE);
 			LogHelper.info("Bucket Handler Registered.");
 			

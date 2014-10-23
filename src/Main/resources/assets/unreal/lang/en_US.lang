@@ -130,7 +130,7 @@ item.unreal:dustEmerald.name=Emerald Dust
 item.unreal:dustObsidian.name=Obsidian Dust
 
 # Item Descriptions
-item.record.flightCastle.desc=Unreal - Long Flight
+item.record.longFlight.desc=Unreal - Long Flight
 
 # Blocks
 tile.unreal:blockTitanium.name=Block of Titanium
@@ -182,8 +182,8 @@ tile.unreal:blockCocoa.name=Cocoa Block
 fluid.mercury=Mercury
 fluid.mercury.name=Mercury
 tile.unreal:fluidBlockMercury.name=Mercury
-fluid.tarydiumSludge=Tarydium Sludge
-fluid.tarydiumSludge.name=Tarydium Sludge
+fluid.tarydiumsludge=Tarydium Sludge
+fluid.tarydiumsludge.name=Tarydium Sludge
 tile.unreal:fluidBlockTarydiumSludge.name=Tarydium Sludge
 fluid.health=Health
 fluid.health.name=Health

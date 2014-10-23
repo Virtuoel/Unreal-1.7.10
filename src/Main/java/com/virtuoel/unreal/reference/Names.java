@@ -56,7 +56,7 @@ public final class Names
 	{
 		public static final String FLUID_MERCURY = "mercury";
 		public static final String FLUID_BLOCK_MERCURY = "fluidBlockMercury";
-		public static final String FLUID_TARYDIUM_SLUDGE = "tarydiumSludge";
+		public static final String FLUID_TARYDIUM_SLUDGE = "tarydiumsludge";
 		public static final String FLUID_BLOCK_TARYDIUM_SLUDGE = "fluidBlockTarydiumSludge";
 		public static final String FLUID_HEALTH = "health";
 		public static final String FLUID_BLOCK_HEALTH = "fluidBlockHealth";
@@ -137,7 +137,7 @@ public final class Names
 		
 		//records
 		public static final String RECORD_LONG_FLIGHT = "recordLongFlight";
-		public static final String RECORD_LONG_FLIGHT_MUSIC = "flightCastle";
+		public static final String RECORD_LONG_FLIGHT_MUSIC = "longFlight";
 		
 		//armor
 		public static final String SCUBA_GEAR = "armorSCUBAGear";

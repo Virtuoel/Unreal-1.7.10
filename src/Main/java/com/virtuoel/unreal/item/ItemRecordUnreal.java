@@ -37,7 +37,7 @@ public class ItemRecordUnreal extends ItemRecord
      */
     public ResourceLocation getRecordResource(String name)
     {
-        return new ResourceLocation(Reference.MOD_ID, Reference.Files.Paths.STREAMING + name + Reference.Files.Extensions.OGG);
+        return new ResourceLocation(Reference.MOD_ID, name);
     }
 	
 	@Override

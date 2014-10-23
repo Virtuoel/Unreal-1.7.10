@@ -1,0 +1,11 @@
+{
+	"records.longFlight": {
+		"category": "record",
+		"sounds": [
+			{
+				"name": "records/FlightCastle",
+				"stream": true
+			}
+		]
+	}
+}

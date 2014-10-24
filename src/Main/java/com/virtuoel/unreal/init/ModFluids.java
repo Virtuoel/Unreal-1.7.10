@@ -33,6 +33,16 @@ public class ModFluids
 	
 	public static void initFluids()
 	{
+		/*
+		FluidRegistry.registerFluid(fluidMercury);
+		Fluid fMercury = FluidRegistry.getFluid(fluidMercury.getName());
+		fluidBlockMercury = (BlockFluidUnreal)
+				new BlockFluidUnreal(fMercury, Material.water)
+				.setBlockName(Names.Fluids.FLUID_BLOCK_MERCURY);
+		GameRegistry.registerBlock(fluidBlockMercury, Names.Fluids.FLUID_BLOCK_MERCURY);
+		fMercury.setIcons(fluidBlockMercury.getIcon(Reference.Blocks.Faces.TOP, 0), fluidBlockMercury.getIcon(Reference.Blocks.Faces.NORTH, 0));
+		fMercury.setBlock(fluidBlockMercury);
+		*/
 		
 		FluidRegistry.registerFluid(fluidMercury);
 		fluidMercury.setUnlocalizedName(Names.Fluids.FLUID_MERCURY);

@@ -55,6 +55,15 @@ Syntax List
 
 Changelog:
 
+0.1.0.36
+---
+[Addition] Health Bucket and Fluid
+
+0.1.0.35
+---
+[Addition] Tarydium Sludge Bucket and Fluid
+[Update][Progress] Long Flight record ported
+
 0.1.0.34
 ---
 [Bugfix] Many fluid-related fixes

@@ -58,6 +58,7 @@ Changelog:
 0.1.0.37
 ---
 [Addition] Nanoblack Bucket and Fluid
+[Update][Progress] Bedrockium Ore functionality ported
 
 0.1.0.36
 ---

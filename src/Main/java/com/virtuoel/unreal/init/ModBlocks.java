@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 
+import com.virtuoel.unreal.block.BlockBedrockium;
 import com.virtuoel.unreal.block.BlockCactusTarydium;
 import com.virtuoel.unreal.block.BlockEnderCrystal;
 import com.virtuoel.unreal.block.BlockIronLadder;
@@ -102,7 +103,7 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Block blockBedrockium = 
-			new BlockUnreal(Materials.Blocks.bedrock)
+			new BlockBedrockium(Materials.Blocks.bedrock)
 			.setBlockName(Names.Blocks.BLOCK_BEDROCKIUM)
 			.setBlockTextureName(Names.Blocks.BLOCK_BEDROCKIUM)
 			.setHardness(1000.0F).setResistance(500000.0F)
@@ -110,7 +111,7 @@ public class ModBlocks
 			.setCreativeTab(null);
 	
 	public static Block oreBedrockium = 
-			new BlockOreUnreal(Materials.Blocks.bedrock)
+			new BlockBedrockium(Materials.Blocks.bedrock)
 			.setBlockName(Names.Blocks.ORE_BEDROCKIUM)
 			.setBlockTextureName(Names.Blocks.ORE_BEDROCKIUM)
 			.setHardness(1000.0F).setResistance(500000.0F)
@@ -118,7 +119,7 @@ public class ModBlocks
 			.setCreativeTab(null);
 	
 	public static Block oreBedrockiumHidden = 
-			new BlockOreUnreal(Materials.Blocks.bedrock)
+			new BlockBedrockium(Materials.Blocks.bedrock)
 			.setBlockName(Names.Blocks.ORE_BEDROCKIUM_HIDDEN)
 			.setBlockTextureName(Names.Blocks.ORE_BEDROCKIUM_HIDDEN)
 			.setBlockUnbreakable().setResistance(8000000.0F)

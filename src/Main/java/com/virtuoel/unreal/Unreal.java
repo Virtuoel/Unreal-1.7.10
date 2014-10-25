@@ -69,11 +69,13 @@ public class Unreal
 			FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack(Names.Fluids.FLUID_MERCURY, FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(ModItems.bucketMercury), new ItemStack(Items.bucket));
 			FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack(Names.Fluids.FLUID_TARYDIUM_SLUDGE, FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(ModItems.bucketTarydiumSludge), new ItemStack(Items.bucket));
 			FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack(Names.Fluids.FLUID_HEALTH, FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(ModItems.bucketHealth), new ItemStack(Items.bucket));
+			FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack(Names.Fluids.FLUID_BLOCK_NANOBLACK, FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(ModItems.bucketNanoblack), new ItemStack(Items.bucket));
 			LogHelper.info("Fluid Container Items Registered.");
 			
 			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockMercury, ModItems.bucketMercury);
 			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockTarydiumSludge, ModItems.bucketTarydiumSludge);
 			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockHealth, ModItems.bucketHealth);
+			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockNanoblack, ModItems.bucketNanoblack);
 			MinecraftForge.EVENT_BUS.register(UnrealBucketHandler.INSTANCE);
 			LogHelper.info("Bucket Handler Registered.");
 			

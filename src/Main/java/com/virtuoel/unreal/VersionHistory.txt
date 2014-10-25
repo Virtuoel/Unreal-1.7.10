@@ -1,6 +1,6 @@
 Versions:
 
-Current: 0.1.0.34
+Current: 0.1.0.37
 
 Features:(Weapons Currently NYI)
 
@@ -54,6 +54,10 @@ Syntax List
 [LAN]
 
 Changelog:
+
+0.1.0.37
+---
+[Addition] Nanoblack Bucket and Fluid
 
 0.1.0.36
 ---

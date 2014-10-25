@@ -60,6 +60,8 @@ public final class Names
 		public static final String FLUID_BLOCK_TARYDIUM_SLUDGE = "fluidBlockTarydiumSludge";
 		public static final String FLUID_HEALTH = "health";
 		public static final String FLUID_BLOCK_HEALTH = "fluidBlockHealth";
+		public static final String FLUID_NANOBLACK = "nanoblack";
+		public static final String FLUID_BLOCK_NANOBLACK = "fluidBlockNanoblack";
 	}
 
 	public static final class Items
@@ -120,6 +122,7 @@ public final class Names
 		public static final String BUCKET_MERCURY = "bucketMercury";
 		public static final String BUCKET_TARYDIUM_SLUDGE = "bucketTarydiumSludge";
 		public static final String BUCKET_HEALTH = "bucketHealth";
+		public static final String BUCKET_NANOBLACK = "bucketNanoblack";
 		
 		//tools
 		public static final String DEBUG_TOOL = "debugTool";

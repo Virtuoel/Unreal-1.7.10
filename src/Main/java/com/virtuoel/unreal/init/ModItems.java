@@ -321,6 +321,7 @@ public class ModItems
 	public static Item bucketMercury;
 	public static Item bucketTarydiumSludge;
 	public static Item bucketHealth;
+	public static Item bucketNanoblack;
 	
 	//tools
 	public static Item debugTool = 
@@ -668,6 +669,12 @@ public class ModItems
 		.setMaxStackSize(1).setContainerItem(Items.bucket)
 		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 		GameRegistry.registerItem(bucketHealth, Names.Items.BUCKET_HEALTH);
+		
+		bucketNanoblack = new ItemBucketUnreal(ModFluids.fluidBlockNanoblack)
+		.setUnlocalizedName(Names.Items.BUCKET_NANOBLACK)
+		.setMaxStackSize(1).setContainerItem(Items.bucket)
+		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+		GameRegistry.registerItem(bucketNanoblack, Names.Items.BUCKET_NANOBLACK);
 		
 		//tools
 		GameRegistry.registerItem(debugTool, Names.Items.DEBUG_TOOL);

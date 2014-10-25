@@ -7,6 +7,7 @@ import net.minecraftforge.fluids.FluidRegistry;
 import com.virtuoel.unreal.block.BlockFluidUnreal;
 import com.virtuoel.unreal.fluid.Health;
 import com.virtuoel.unreal.fluid.Mercury;
+import com.virtuoel.unreal.fluid.Nanoblack;
 import com.virtuoel.unreal.fluid.Tarydium;
 import com.virtuoel.unreal.reference.Names;
 import com.virtuoel.unreal.reference.Reference;
@@ -21,15 +22,19 @@ public class ModFluids
 		.setDensity(1500).setViscosity(2500);
 	
 	public static Fluid fluidTarydiumSludge = new Tarydium(Names.Fluids.FLUID_TARYDIUM_SLUDGE)
-		.setDensity(2000).setViscosity(3250).setLuminosity(8);
+		.setDensity(2000).setViscosity(3250).setLuminosity(7);
 	
 	public static Fluid fluidHealth = new Health(Names.Fluids.FLUID_HEALTH)
 		.setDensity(1000).setViscosity(1500).setLuminosity(15);
+	
+	public static Fluid fluidNanoblack = new Nanoblack(Names.Fluids.FLUID_NANOBLACK)
+		.setDensity(3000).setViscosity(4000).setLuminosity(3);
 	
 	//fluid blocks
 	public static BlockFluidUnreal fluidBlockMercury;
 	public static BlockFluidUnreal fluidBlockTarydiumSludge;
 	public static BlockFluidUnreal fluidBlockHealth;
+	public static BlockFluidUnreal fluidBlockNanoblack;
 	
 	public static void initFluids()
 	{
@@ -67,6 +72,15 @@ public class ModFluids
 				.setBlockName(Names.Fluids.FLUID_BLOCK_HEALTH);
 		fluidHealth.setIcons(fluidBlockHealth.getIcon(Reference.Blocks.Faces.TOP, 0), fluidBlockHealth.getIcon(Reference.Blocks.Faces.NORTH, 0));
 		GameRegistry.registerBlock(fluidBlockHealth, Names.Fluids.FLUID_BLOCK_HEALTH);
+		
+		FluidRegistry.registerFluid(fluidNanoblack);
+		fluidNanoblack.setUnlocalizedName(Names.Fluids.FLUID_NANOBLACK);
+		fluidBlockNanoblack = (BlockFluidUnreal)
+				new BlockFluidUnreal(fluidNanoblack, Material.water)
+				.setBlockName(Names.Fluids.FLUID_BLOCK_NANOBLACK);
+		fluidNanoblack.setIcons(fluidBlockNanoblack.getIcon(Reference.Blocks.Faces.TOP, 0), fluidBlockNanoblack.getIcon(Reference.Blocks.Faces.NORTH, 0));
+		GameRegistry.registerBlock(fluidBlockNanoblack, Names.Fluids.FLUID_BLOCK_NANOBLACK);
+		
 		
 	}
 }

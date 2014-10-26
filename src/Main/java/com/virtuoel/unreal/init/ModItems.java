@@ -330,9 +330,21 @@ public class ModItems
 			.setMaxStackSize(16)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
+	public static Item forceField = 
+			new /*ItemForceField()*/ItemUnreal()
+			.setUnlocalizedName(Names.Items.FORCE_FIELD)
+			.setMaxStackSize(1)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
 	public static Item voiceBox = 
 			new ItemVoiceBox()
 			.setUnlocalizedName(Names.Items.VOICE_BOX)
+			.setMaxStackSize(1)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static Item universalTranslator = 
+			new ItemUnreal()
+			.setUnlocalizedName(Names.Items.UNIVERSAL_TRANSLATOR)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
@@ -678,7 +690,9 @@ public class ModItems
 		
 		//tools
 		GameRegistry.registerItem(debugTool, Names.Items.DEBUG_TOOL);
+		GameRegistry.registerItem(forceField, Names.Items.FORCE_FIELD);
 		GameRegistry.registerItem(voiceBox, Names.Items.VOICE_BOX);
+		GameRegistry.registerItem(universalTranslator, Names.Items.UNIVERSAL_TRANSLATOR);
 		GameRegistry.registerItem(swordTitanium, Names.Items.SWORD_TITANIUM);
 		GameRegistry.registerItem(pickaxeTitanium, Names.Items.PICK_TITANIUM);
 		GameRegistry.registerItem(shovelTitanium, Names.Items.SHOVEL_TITANIUM);

@@ -80,7 +80,9 @@ item.unreal:bucketHealth.name=Health Bucket
 item.unreal:bucketNanoblack.name=Nanoblack Bucket
 # (Tools)
 item.unreal:debugTool.name=Unreal.debugTool();
+item.unreal:forceField.name=Force Field
 item.unreal:voiceBox.name=Voice Box
+item.unreal:universalTranslator.name=Universal Translator
 item.unreal:swordTitanium.name=Titanium Sword
 item.unreal:pickaxeTitanium.name=Titanium Pickaxe
 item.unreal:shovelTitanium.name=Titanium Shovel
@@ -178,6 +180,7 @@ tile.unreal:blockBlaze.name=Blaze Rod Block
 tile.unreal:blockGhastTear.name=Crystalline Tear Block
 tile.unreal:blockNetherWart.name=Compacted Nether Wart Block
 tile.unreal:blockCocoa.name=Cocoa Block
+tile.unreal:blockForceField.name=Force Field
 
 # Fluids
 fluid.mercury=Mercury

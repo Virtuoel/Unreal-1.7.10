@@ -49,6 +49,7 @@ public final class Names
 		public static final String BLOCK_GHAST_TEAR = "blockGhastTear";
 		public static final String BLOCK_NETHER_WART = "blockNetherWart";
 		public static final String BLOCK_COCOA = "blockCocoa";
+		public static final String BLOCK_FORCE_FIELD = "blockForceField";
 		
 	}
 	
@@ -127,6 +128,8 @@ public final class Names
 		//tools
 		public static final String DEBUG_TOOL = "debugTool";
 		public static final String VOICE_BOX = "voiceBox";
+		public static final String FORCE_FIELD = "forceField";
+		public static final String UNIVERSAL_TRANSLATOR = "universalTranslator";
 		public static final String SWORD_TITANIUM = "swordTitanium";
 		public static final String PICK_TITANIUM = "pickaxeTitanium";
 		public static final String AXE_TITANIUM = "axeTitanium";

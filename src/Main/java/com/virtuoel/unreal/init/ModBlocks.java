@@ -377,6 +377,13 @@ public class ModBlocks
 			.setStepSound(Block.soundTypeWood)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
+	public static Block blockForceField = 
+			new BlockUnreal(Materials.Blocks.immobile)
+			.setBlockName(Names.Blocks.BLOCK_FORCE_FIELD)
+			.setBlockUnbreakable().setResistance(500000.0F)
+			.setStepSound(Block.soundTypeMetal)
+			.setCreativeTab(null);
+	
 	public static void init()
 	{
 		
@@ -483,6 +490,8 @@ public class ModBlocks
 		blockCocoa.setHarvestLevel("axe", 0);
 		GameRegistry.registerBlock(blockCocoa, Names.Blocks.BLOCK_COCOA);
 		Blocks.fire.setFireInfo(blockCocoa, 5, 20);
+		
+		GameRegistry.registerBlock(blockForceField, Names.Blocks.BLOCK_FORCE_FIELD);
 		
 	}
 }

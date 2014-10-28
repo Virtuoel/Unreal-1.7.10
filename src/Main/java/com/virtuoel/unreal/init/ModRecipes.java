@@ -1137,7 +1137,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.universalTranslator,1), new Object[]{
-			"TGT","BPB","TRT",'I',"ingotTitanium",'T',"blockTitanium",'B',ModItems.dispersionUpgrade,'G',"blockGlassPurple",'P',ModItems.tarydPowerBasic,
+			"TGT","BPB","TRT",'I',"ingotTitanium",'T',"blockTitanium",'B',ModItems.dispersionUpgrade,'G',"blockGlassGreen",'P',ModItems.tarydPowerBasic,'R',"blockRedstone"
 			}));
 		
 	}

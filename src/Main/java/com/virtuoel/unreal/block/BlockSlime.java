@@ -7,12 +7,12 @@ import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class BlockSlime extends BlockUnreal
+public class BlockSlime extends BlockUnrealTransparent
 {
 	
 	public BlockSlime(Material material)
 	{
-		super(material);
+		super(material, false);
 		this.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
 	
@@ -21,12 +21,6 @@ public class BlockSlime extends BlockUnreal
 	public int getRenderBlockPass()
 	{
 		return 1;
-	}
-	
-	@Override
-	public boolean isOpaqueCube()
-	{
-		return false;
 	}
 	
 }

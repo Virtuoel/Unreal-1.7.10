@@ -1132,6 +1132,14 @@ public class ModRecipes
 			"I I","I I",'I',"blockSlime",
 			}));
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.forceField,1), new Object[]{
+			"ITB","GPT","ITB",'I',"ingotTitanium",'T',"blockTitanium",'B',ModItems.dispersionUpgrade,'G',"blockGlassPurple",'P',ModItems.tarydPowerBasic,
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.universalTranslator,1), new Object[]{
+			"TGT","BPB","TRT",'I',"ingotTitanium",'T',"blockTitanium",'B',ModItems.dispersionUpgrade,'G',"blockGlassPurple",'P',ModItems.tarydPowerBasic,
+			}));
+		
 	}
 	
 	public static void initSmelting()

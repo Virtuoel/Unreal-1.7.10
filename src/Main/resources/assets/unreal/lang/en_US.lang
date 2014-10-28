@@ -5,6 +5,9 @@ tile.quartzBlock.name=Block of Quartz
 item.milk.name=Milk Bucket
 item.redstone.name=Redstone Dust
 
+# Other
+nei.load=Load
+
 # Death Messages
 death.attack.unreal.translocator=%1$s was telefragged
 death.attack.unreal.translocator.player=%1$s was telefragged by %2$s

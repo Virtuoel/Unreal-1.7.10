@@ -7,6 +7,7 @@ import net.minecraft.init.Blocks;
 import com.virtuoel.unreal.block.BlockBedrockium;
 import com.virtuoel.unreal.block.BlockCactusTarydium;
 import com.virtuoel.unreal.block.BlockEnderCrystal;
+import com.virtuoel.unreal.block.BlockForceField;
 import com.virtuoel.unreal.block.BlockIronLadder;
 import com.virtuoel.unreal.block.BlockOreUnreal;
 import com.virtuoel.unreal.block.BlockSlime;
@@ -174,7 +175,7 @@ public class ModBlocks
 			.setHardness(2.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
+	/*
 	public static Block slabStoneSmooth = 
 			new BlockUnreal(Material.rock)
 			.setBlockName(Names.Blocks.SLAB_STONE_SMOOTH)
@@ -182,7 +183,7 @@ public class ModBlocks
 			.setHardness(2.0F).setResistance(10.0F)
 			.setStepSound(Block.soundTypeStone)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
-	
+	*/
 	public static Block obsidianNether = 
 			new BlockUnreal(Materials.Blocks.immobile)
 			.setBlockName(Names.Blocks.OBSIDIAN_NETHER)
@@ -378,10 +379,10 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Block blockForceField = 
-			new BlockUnreal(Materials.Blocks.immobile)
+			new BlockForceField(Materials.Blocks.immobile)
 			.setBlockName(Names.Blocks.BLOCK_FORCE_FIELD)
 			.setBlockUnbreakable().setResistance(500000.0F)
-			.setStepSound(Block.soundTypeMetal)
+			.setStepSound(Block.soundTypeGlass)
 			.setCreativeTab(null);
 	
 	public static void init()
@@ -432,11 +433,11 @@ public class ModBlocks
 		GameRegistry.registerBlock(cobblestonePaved, Names.Blocks.COBBLESTONE_PAVED);
 		stonePolished.setHarvestLevel("pickaxe", 0);
 		GameRegistry.registerBlock(stonePolished, Names.Blocks.STONE_POLISHED);
-		slabStoneSmooth.setHarvestLevel("pickaxe", 0);
-		GameRegistry.registerBlock(slabStoneSmooth, Names.Blocks.SLAB_STONE_SMOOTH);
+		//slabStoneSmooth.setHarvestLevel("pickaxe", 0);
+		//GameRegistry.registerBlock(slabStoneSmooth, Names.Blocks.SLAB_STONE_SMOOTH);
 		obsidianNether.setHarvestLevel("pickaxe", 0);
 		GameRegistry.registerBlock(obsidianNether, Names.Blocks.OBSIDIAN_NETHER);
-
+		
 		netherrackCompressed1x.setHarvestLevel("pickaxe", 0);
 		GameRegistry.registerBlock(netherrackCompressed1x, Names.Blocks.NETHERRACK_COMPRESSED_1X);
 		netherrackCompressed2x.setHarvestLevel("pickaxe", 0);

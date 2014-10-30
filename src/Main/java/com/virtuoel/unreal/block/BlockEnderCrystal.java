@@ -24,22 +24,20 @@ public class BlockEnderCrystal extends BlockUnrealMultiTexture
 		super(material);
 		this.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
-	
+
+	@Override
 	public boolean onBlockActivated(World par1World, int par2, int par3, int par4, EntityPlayer par5EntityPlayer, int par6, float par7, float par8, float par9)
 	{
-		if (par1World.isRemote)
-		{
-			return true;
-		}
-		else
+		if (!par1World.isRemote)
 		{
 			List list = par1World.getEntitiesWithinAABB(EntityEnderCrystal.class, AxisAlignedBB.getBoundingBox((double)par2 + this.minX, (double)par3-2 + this.minY, (double)par4 + this.minZ, (double)par2 + this.maxX, (double)par3 + this.maxY, (double)par4 + this.maxZ));
 			boolean flag1 = list.isEmpty();
 			if ((par1World.getBlock(par2, par3-2, par4) == ModBlocks.oreBedrockiumHidden ||
 					par1World.getBlock(par2, par3-2, par4) == ModBlocks.oreBedrockium ||
 					par1World.getBlock(par2, par3-2, par4) == ModBlocks.blockBedrockium ||
-					par1World.getBlock(par2, par3-2, par4) == Blocks.bedrock) &&
-					(par1World.getBlock(par2, par3-1, par4) == Blocks.air ||
+					par1World.getBlock(par2, par3-2, par4) == Blocks.bedrock ||
+					par1World.getBlock(par2, par3-2, par4).getUnlocalizedName().toLowerCase().contains("bedrock")) &&
+					(par1World.getBlock(par2, par3-1, par4).isAir(par1World, par2, par3, par4) ||
 					par1World.getBlock(par2, par3-1, par4) == Blocks.fire) &&
 					flag1)
 			{
@@ -56,8 +54,10 @@ public class BlockEnderCrystal extends BlockUnrealMultiTexture
 				return super.onBlockActivated(par1World, par2, par3, par4, par5EntityPlayer, par6, par7, par8, par9);
 			}
 		}
+		return true;
 	}
-	
+
+	@Override
 	public boolean canEntityDestroy(IBlockAccess world, int x, int y, int z, Entity entity)
 	{
 		if (entity instanceof EntityWither)
@@ -68,7 +68,6 @@ public class BlockEnderCrystal extends BlockUnrealMultiTexture
 		{
 			return false;
 		}
-
 		return true;
 	}
 	

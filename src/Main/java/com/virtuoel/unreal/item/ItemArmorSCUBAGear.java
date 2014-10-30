@@ -38,11 +38,11 @@ public class ItemArmorSCUBAGear extends ItemArmorUnrealBase
 		return false;
 	}
 
-	@SideOnly(Side.CLIENT)
-
 	/**
 	 * Return an item rarity from EnumRarity
 	 */
+	@Override
+	@SideOnly(Side.CLIENT)
 	public EnumRarity getRarity(ItemStack par1ItemStack)
 	{
 		return EnumRarity.uncommon;
@@ -51,6 +51,7 @@ public class ItemArmorSCUBAGear extends ItemArmorUnrealBase
 	/**
 	 * Return whether this item is repairable in an anvil.
 	 */
+	@Override
 	public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack)
 	{
 		return ModItems.SCUBATankOxygen == par2ItemStack.getItem() ? true : false;

@@ -1,6 +1,6 @@
 Versions:
 
-Current: 0.1.0.38
+Current: 0.1.0.39
 
 Features:(Weapons Currently NYI)
 
@@ -29,7 +29,7 @@ Magnesium Ore
 Tarydium Ore
 Asbestos Ore
 
-Inspirations: Extra Utilities, Mariculture, IC2, and Tinker's Construct
+Inspired by mods: Extra Utilities, Mariculture, IC2, Tinker's Construct, and more!
 
 Syntax List
 -----------
@@ -54,6 +54,13 @@ Syntax List
 [LAN]
 
 Changelog:
+
+0.1.0.39
+---
+[Addition] Recipes for Force Field and Universal Translator
+[Addition] Force field decays over time
+[Change][Internal] Internal fixes and tweaks, texture cleanup
+[Balance] Titanium armor rebalanced
 
 0.1.0.38
 ---

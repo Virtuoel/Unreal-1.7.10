@@ -30,11 +30,11 @@ public class ItemArmorJumpBoots extends ItemArmorUnrealBase
 		return false;
 	}
 
-	@SideOnly(Side.CLIENT)
-
 	/**
 	 * Return an item rarity from EnumRarity
 	 */
+	@Override
+	@SideOnly(Side.CLIENT)
 	public EnumRarity getRarity(ItemStack par1ItemStack)
 	{
 		return EnumRarity.rare;
@@ -43,6 +43,7 @@ public class ItemArmorJumpBoots extends ItemArmorUnrealBase
 	/**
 	 * Return whether this item is repairable in an anvil.
 	 */
+	@Override
 	public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack)
 	{
 		return ModItems.ingotTitanium == par2ItemStack.getItem() ? true : false;
@@ -52,8 +53,10 @@ public class ItemArmorJumpBoots extends ItemArmorUnrealBase
 	public void onArmorTick(World par1World, EntityPlayer par2EntityPlayer, ItemStack par3ItemStack)
 	{
 		super.onArmorTick(par1World, par2EntityPlayer, par3ItemStack);
-		if(!par2EntityPlayer.isSneaking()){
-			if(par3ItemStack.getItem()==this){
+		if(!par2EntityPlayer.isSneaking())
+		{
+			if(par3ItemStack.getItem()==this)
+			{
 				PotionEffect potioneffect = new PotionEffect(8, 2, 3, true);
 				par2EntityPlayer.addPotionEffect(potioneffect);
 				par2EntityPlayer.fallDistance = 0.0F;

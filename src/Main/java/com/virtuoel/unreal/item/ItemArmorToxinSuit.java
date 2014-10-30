@@ -33,11 +33,12 @@ public class ItemArmorToxinSuit extends ItemArmorUnrealBase
 		return false;
 	}
 
-	@SideOnly(Side.CLIENT)
 
 	/**
 	 * Return an item rarity from EnumRarity
 	 */
+	@Override
+	@SideOnly(Side.CLIENT)
 	public EnumRarity getRarity(ItemStack par1ItemStack)
 	{
 		return EnumRarity.uncommon;
@@ -46,6 +47,7 @@ public class ItemArmorToxinSuit extends ItemArmorUnrealBase
 	/**
 	 * Return whether this item is repairable in an anvil.
 	 */
+	@Override
 	public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack)
 	{
 		return ModItems.ingotTitanium == par2ItemStack.getItem() ? true : false;
@@ -79,7 +81,6 @@ public class ItemArmorToxinSuit extends ItemArmorUnrealBase
 				//par3ItemStack.setItemDamage(par3ItemStack.getItemDamage()+5);
 			}
 		}
-
 	}
 
 }

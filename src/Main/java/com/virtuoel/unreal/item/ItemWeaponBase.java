@@ -73,11 +73,11 @@ public class ItemWeaponBase extends ItemUnreal
 		}
 	}
 
-	@SideOnly(Side.CLIENT)
-	@Override
 	/**
 	 * allows items to add custom lines of information to the mouseover description
 	 */
+	@Override
+	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
 	{
 		if(NBTHelper.getInt(par1ItemStack, "ammoMax")!=0)
@@ -128,17 +128,16 @@ public class ItemWeaponBase extends ItemUnreal
 	}
 	 */
 
-	@SideOnly(Side.CLIENT)
-	@Override
 	/**
 	 * Return an item rarity from EnumRarity
 	 */
+	@Override
+	@SideOnly(Side.CLIENT)
 	public EnumRarity getRarity(ItemStack par1ItemStack)
 	{
 		return EnumRarity.rare;
 	}
 
-	@Override
 	/**
 	 * Metadata-sensitive version of getStrVsBlock
 	 * @param itemstack The Item Stack
@@ -146,6 +145,7 @@ public class ItemWeaponBase extends ItemUnreal
 	 * @param metadata The items current metadata
 	 * @return The damage strength
 	 */
+	@Override
 	public float getDigSpeed(ItemStack itemstack, Block block, int metadata)
 	{
 		return func_150893_a(itemstack, block);

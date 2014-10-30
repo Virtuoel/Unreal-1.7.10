@@ -32,6 +32,7 @@ public class BlockIronLadder extends BlockUnreal
 	 * Returns a bounding box from the pool of bounding boxes (this means this box can change after the pool has been
 	 * cleared to be reused)
 	 */
+	@Override
 	public AxisAlignedBB getCollisionBoundingBoxFromPool(World p_149668_1_, int p_149668_2_, int p_149668_3_, int p_149668_4_)
 	{
 		this.setBlockBoundsBasedOnState(p_149668_1_, p_149668_2_, p_149668_3_, p_149668_4_);
@@ -41,6 +42,7 @@ public class BlockIronLadder extends BlockUnreal
 	/**
 	 * Updates the blocks bounds based on its current state. Args: world, x, y, z
 	 */
+	@Override
 	public void setBlockBoundsBasedOnState(IBlockAccess p_149719_1_, int p_149719_2_, int p_149719_3_, int p_149719_4_)
 	{
 		this.func_149797_b(p_149719_1_.getBlockMetadata(p_149719_2_, p_149719_3_, p_149719_4_));
@@ -50,12 +52,13 @@ public class BlockIronLadder extends BlockUnreal
 	 * Returns the bounding box of the wired rectangular prism to render.
 	 */
 	@SideOnly(Side.CLIENT)
+	@Override
 	public AxisAlignedBB getSelectedBoundingBoxFromPool(World p_149633_1_, int p_149633_2_, int p_149633_3_, int p_149633_4_)
 	{
 		this.setBlockBoundsBasedOnState(p_149633_1_, p_149633_2_, p_149633_3_, p_149633_4_);
 		return super.getSelectedBoundingBoxFromPool(p_149633_1_, p_149633_2_, p_149633_3_, p_149633_4_);
 	}
-	
+
 	public void func_149797_b(int p_149797_1_)
 	{
 		float f = 0.125F;
@@ -85,6 +88,7 @@ public class BlockIronLadder extends BlockUnreal
 	 * Is this block (a) opaque and (b) a full 1m cube?  This determines whether or not to render the shared face of two
 	 * adjacent blocks and also whether the player can attach torches, redstone wire, etc to this block.
 	 */
+	@Override
 	public boolean isOpaqueCube()
 	{
 		return false;
@@ -93,6 +97,7 @@ public class BlockIronLadder extends BlockUnreal
 	/**
 	 * If this block doesn't render as an ordinary block it will return False (examples: signs, buttons, stairs, etc)
 	 */
+	@Override
 	public boolean renderAsNormalBlock()
 	{
 		return false;
@@ -101,6 +106,7 @@ public class BlockIronLadder extends BlockUnreal
 	/**
 	 * The type of render function that is called for this block
 	 */
+	@Override
 	public int getRenderType()
 	{
 		return 8;
@@ -109,6 +115,7 @@ public class BlockIronLadder extends BlockUnreal
 	/**
 	 * Checks to see if its valid to put this block at the specified coordinates. Args: world, x, y, z
 	 */
+	@Override
 	public boolean canPlaceBlockAt(World p_149742_1_, int p_149742_2_, int p_149742_3_, int p_149742_4_)
 	{
 		return p_149742_1_.isSideSolid(p_149742_2_ - 1, p_149742_3_, p_149742_4_, EAST ) ||
@@ -121,6 +128,7 @@ public class BlockIronLadder extends BlockUnreal
 	/**
 	 * Called when a block is placed using its ItemBlock. Args: World, X, Y, Z, side, hitX, hitY, hitZ, block metadata
 	 */
+	@Override
 	public int onBlockPlaced(World p_149660_1_, int p_149660_2_, int p_149660_3_, int p_149660_4_, int p_149660_5_, float p_149660_6_, float p_149660_7_, float p_149660_8_, int p_149660_9_)
 	{
 		int j1 = p_149660_9_;
@@ -157,6 +165,7 @@ public class BlockIronLadder extends BlockUnreal
 	 * Lets the block know when one of its neighbor changes. Doesn't know which neighbor changed (coordinates passed are
 	 * their own) Args: x, y, z, neighbor Block
 	 */
+	@Override
 	public void onNeighborBlockChange(World p_149695_1_, int p_149695_2_, int p_149695_3_, int p_149695_4_, Block p_149695_5_)
 	{
 		int l = p_149695_1_.getBlockMetadata(p_149695_2_, p_149695_3_, p_149695_4_);
@@ -199,6 +208,7 @@ public class BlockIronLadder extends BlockUnreal
 	/**
 	 * Returns the quantity of items to drop on block destruction.
 	 */
+	@Override
 	public int quantityDropped(Random p_149745_1_)
 	{
 		return 1;

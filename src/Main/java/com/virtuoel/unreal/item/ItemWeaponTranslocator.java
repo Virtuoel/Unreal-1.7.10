@@ -25,21 +25,21 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemWeaponTranslocator extends ItemWeaponBase
 {
-
+	
 	private ItemStack ammo;
 	private int meleeDamageAmount = 0;
-
+	
 	public ItemWeaponTranslocator(ItemStack weaponAmmo, int damage)
 	{
 		super(weaponAmmo, damage);
 	}
-
+	
 	@Override
 	public void onCreated(ItemStack p_77622_1_, World p_77622_2_, EntityPlayer p_77622_3_)
 	{
 		setNBTDefaults(p_77622_1_, 5);
 	}
-
+	
 	@Override
 	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
 	{
@@ -60,18 +60,18 @@ public class ItemWeaponTranslocator extends ItemWeaponBase
 		}
 		return par1ItemStack;
 	}
-
+	
 	@Override
 	public void onUpdate(ItemStack p_77663_1_, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_)
 	{
 		super.onUpdate(p_77663_1_, p_77663_2_, p_77663_3_, p_77663_4_, p_77663_5_);
 	}
-
-	@SideOnly(Side.CLIENT)
-	@Override
+	
 	/**
 	 * allows items to add custom lines of information to the mouseover description
 	 */
+	@Override
+	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
 	{
 		if(NBTHelper.getInt(par1ItemStack, "discUUIDLeast")!=0&&NBTHelper.getInt(par1ItemStack, "discUUIDMost")!=0)
@@ -102,7 +102,7 @@ public class ItemWeaponTranslocator extends ItemWeaponBase
         	par3List.add("Z: -");
 		}
 	}
-
+	
 	private void setNBTDefaults(ItemStack par1ItemStack, int ammoDefault)
 	{
 		NBTHelper.setBoolean(par1ItemStack, "consumeMode", false);
@@ -133,28 +133,28 @@ public class ItemWeaponTranslocator extends ItemWeaponBase
 			if(((Entity)par2World.getLoadedEntityList().get(i)).getPersistentID().getLeastSignificantBits() == NBTHelper.getLong(par1ItemStack, "discUUIDLeast") && 
 					((Entity)par2World.getLoadedEntityList().get(i)).getPersistentID().getMostSignificantBits() == NBTHelper.getLong(par1ItemStack, "discUUIDMost"))
 			{
-
+				
 			}
 		}
 		return null;
 		
 	}
-
-	@SideOnly(Side.CLIENT)
-	@Override
+	
 	/**
 	 * Return an item rarity from EnumRarity
 	 */
+	@Override
+	@SideOnly(Side.CLIENT)
 	public EnumRarity getRarity(ItemStack par1ItemStack)
 	{
 		return EnumRarity.epic;
 	}
-
+	
 	@Override
 	public void getSubItems(Item par1item, CreativeTabs par2CreativeTabs, List par3List)
 	{
 		par3List.add(new ItemStack(par1item, 1, 1));
 		par3List.add(new ItemStack(par1item, 1, par1item.getMaxDamage()));
 	}
-
+	
 }

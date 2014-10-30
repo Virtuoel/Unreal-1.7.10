@@ -36,10 +36,11 @@ public class ItemArmorAsbestosSuit extends ItemArmorUnrealBase
 		return false;
 	}
 
-	@SideOnly(Side.CLIENT)
 	/**
 	 * Return an item rarity from EnumRarity
 	 */
+	@Override
+	@SideOnly(Side.CLIENT)
 	public EnumRarity getRarity(ItemStack par1ItemStack)
 	{
 		return EnumRarity.uncommon;
@@ -48,6 +49,7 @@ public class ItemArmorAsbestosSuit extends ItemArmorUnrealBase
 	/**
 	 * Return whether this item is repairable in an anvil.
 	 */
+	@Override
 	public boolean getIsRepairable(ItemStack par1ItemStack, ItemStack par2ItemStack)
 	{
 		return ModItems.bucketMercury == par2ItemStack.getItem() ? true :
@@ -62,7 +64,8 @@ public class ItemArmorAsbestosSuit extends ItemArmorUnrealBase
 		{
 			PotionEffect potioneffect = new PotionEffect(12, 2, 0, true);
 			par2EntityPlayer.addPotionEffect(potioneffect);
-			if(par2EntityPlayer.getActivePotionEffect(Potion.fireResistance).getDuration()<4){
+			if(par2EntityPlayer.getActivePotionEffect(Potion.fireResistance).getDuration()<4)
+			{
 				if(par2EntityPlayer.isInsideOfMaterial(Material.lava)||par2EntityPlayer.isInsideOfMaterial(Material.fire)||par2EntityPlayer.isBurning())
 				{
 					if(itemRand.nextInt(100)==0)

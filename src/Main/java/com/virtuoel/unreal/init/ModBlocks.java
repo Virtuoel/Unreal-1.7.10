@@ -383,6 +383,7 @@ public class ModBlocks
 			.setBlockName(Names.Blocks.BLOCK_FORCE_FIELD)
 			.setBlockUnbreakable().setResistance(500000.0F)
 			.setStepSound(Block.soundTypeGlass)
+			.setLightLevel(0.5F)
 			.setCreativeTab(null);
 	
 	public static void init()

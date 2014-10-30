@@ -76,6 +76,8 @@ item.unreal:warheadBody.name=Warhead Body
 item.unreal:warheadThruster.name=Warhead Thruster
 item.unreal:rodTarydiumAlloyUnrefined.name=Unrefined Tarydium Alloy Rod
 item.unreal:rodTarydiumAlloyRefined.name=Refined Tarydium Alloy Rod
+item.unreal:rodIron.name=Iron Rod
+item.unreal:rodTitanium.name=Titanium Rod
 # (Fluid Containers)
 item.unreal:bucketMercury.name=Mercury Bucket
 item.unreal:bucketTarydiumSludge.name=Tarydium Sludge Bucket

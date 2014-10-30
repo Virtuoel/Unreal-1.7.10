@@ -3,9 +3,6 @@ package com.virtuoel.unreal.init;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fluids.FluidContainerRegistry;
-import net.minecraftforge.fluids.FluidRegistry;
-import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
@@ -348,14 +345,10 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.dragon_egg,2), new Object[]{
-			ModBlocks.blockEnderCrystal,"virtuoel.unreal.debug",ModBlocks.blockEnderCrystal,ModBlocks.blockEnderCrystal,Blocks.dragon_egg,ModBlocks.blockEnderCrystal,ModBlocks.blockEnderCrystal,"blockBedrockium",ModBlocks.blockEnderCrystal,
+			ModBlocks.blockEnderCrystal,"virtuoel.unreal.debug",ModBlocks.blockEnderCrystal,ModBlocks.blockEnderCrystal,Blocks.dragon_egg,ModBlocks.blockEnderCrystal,"virtuoel.unreal.debug","blockBedrockium","virtuoel.unreal.debug",
 			}));
 		
 		//unrefining
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,1), new Object[]{
-			"virtuoel.unreal.debug","virtuoel.unreal.debug","fluidMercury",
-			}));
-		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.nuggetTarydiumAlloyUnrefined,1), new Object[]{
 			"nuggetTarydiumAlloyRefined","virtuoel.unreal.debug",
 			}));
@@ -602,23 +595,23 @@ public class ModRecipes
 			}));
 		//end blocks ---------------------------------------------------------------------------------------------------------------------------------
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.axeTitanium,1), new Object[]{
-			"TT ","TS "," S ",'T',"ingotTitanium",'S',Items.stick,
+			"TT ","TS "," S ",'T',"ingotTitanium",'S',"rodIron",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.hoeTitanium,1), new Object[]{
-			"TT"," S"," S",'T',"ingotTitanium",'S',Items.stick,
+			"TT"," S"," S",'T',"ingotTitanium",'S',"rodIron",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.pickaxeTitanium,1), new Object[]{
-			"TTT"," S "," S ",'T',"ingotTitanium",'S',Items.stick,
+			"TTT"," S "," S ",'T',"ingotTitanium",'S',"rodIron",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.shovelTitanium,1), new Object[]{
-			"T","S","S",'T',"ingotTitanium",'S',Items.stick,
+			"T","S","S",'T',"ingotTitanium",'S',"rodIron",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.swordTitanium,1), new Object[]{
-			"T","T","S",'T',"ingotTitanium",'S',Items.stick,
+			"T","T","S",'T',"ingotTitanium",'S',"rodIron",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.cactusTarydium,1), new Object[]{
@@ -1028,11 +1021,11 @@ public class ModRecipes
 			"MGM","TKT","ARA",'M',"fluidMilk",'G',Items.speckled_melon,'T',"blockTitanium",'K',new ItemStack(Items.chainmail_chestplate,1,OreDictionary.WILDCARD_VALUE),'A',"blockAsbestos",'R',"blockRutile",
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodTarydiumAlloyRefined,1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodTarydiumAlloyRefined,4), new Object[]{
 			"STS","SES","STS",'T',"blockTitanium",'S',"dustTarydiumAlloyRefined",'E',"compressedEndStone4x"
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodTarydiumAlloyUnrefined,1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodTarydiumAlloyUnrefined,4), new Object[]{
 			"STS","SES","STS",'T',"blockTitanium",'S',"dustTarydiumAlloyUnrefined",'E',"compressedEndStone4x"
 			}));
 		
@@ -1140,12 +1133,26 @@ public class ModRecipes
 			"TGT","BPB","TRT",'I',"ingotTitanium",'T',"blockTitanium",'B',ModItems.dispersionUpgrade,'G',"blockGlassGreen",'P',ModItems.tarydPowerBasic,'R',"blockRedstone"
 			}));
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodIron,4), new Object[]{
+			"IFI","ICI","IFI",'I',"dustIron",'F',"blockFlint",'C',"blockCoal",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodTitanium,4), new Object[]{
+			"IFI","ICI","IFI",'I',"dustTitanium",'F',"blockIron",'C',"obsidian",
+			}));
+		
 	}
 	
 	public static void initSmelting()
 	{
 		GameRegistry.addSmelting(ModBlocks.oreRutile, 
 				new ItemStack(ModItems.ingotRutile,1), 1.0F);
+		
+		GameRegistry.addSmelting(ModBlocks.oreAsbestos, 
+				new ItemStack(ModItems.dustAsbestos,1), 1.0F);
+		
+		GameRegistry.addSmelting(ModBlocks.oreMagnesium, 
+				new ItemStack(ModItems.ingotMagnesium,3), 0.3F);
 		
 		GameRegistry.addSmelting(ModBlocks.cactusTarydium, 
 				new ItemStack(ModItems.shardTarydium,1), 0.1F);
@@ -1203,7 +1210,13 @@ public class ModRecipes
 		
 		GameRegistry.addSmelting(ModItems.ribbonMagnesium, 
 				new ItemStack(ModItems.nuggetMagnesium,3), 0.1F);
-
+		
+		GameRegistry.addSmelting(ModItems.rodIron, 
+				new ItemStack(Items.iron_ingot,1), 0.1F);
+		
+		GameRegistry.addSmelting(ModItems.rodTitanium, 
+				new ItemStack(ModItems.ingotTitanium,1), 0.1F);
+		
 	}
 	
 	public static void initOreDict()
@@ -1278,6 +1291,8 @@ public class ModRecipes
 		OreDictionary.registerOre("dustTarydiumAlloyRefined", ModItems.dustTarydiumAlloyRefined);
 		OreDictionary.registerOre("rodTarydiumAlloyUnrefined", ModItems.rodTarydiumAlloyUnrefined);
 		OreDictionary.registerOre("rodTarydiumAlloyRefined", ModItems.rodTarydiumAlloyRefined);
+		OreDictionary.registerOre("rodIron", ModItems.rodIron);
+		OreDictionary.registerOre("rodTitanium", ModItems.rodTitanium);
 		OreDictionary.registerOre("blockBlaze", ModBlocks.blockBlaze);
 		OreDictionary.registerOre("blockTear", ModBlocks.blockGhastTear);
 		OreDictionary.registerOre("blockBlazeRod", ModBlocks.blockBlaze);
@@ -1305,6 +1320,7 @@ public class ModRecipes
 		OreDictionary.registerOre("nuggetBedrockium", ModItems.nuggetBedrockium);
 		OreDictionary.registerOre("blockBedrockium", ModBlocks.blockBedrockium);
 		OreDictionary.registerOre("blockCocoa", ModBlocks.blockCocoa);
+		OreDictionary.registerOre("obsidian", ModBlocks.obsidianNether);
 		OreDictionary.registerOre("netherobsidian", ModBlocks.obsidianNether);
 		
 		//buckets & fluids (temp)

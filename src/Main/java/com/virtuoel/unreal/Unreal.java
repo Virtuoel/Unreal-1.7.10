@@ -130,6 +130,9 @@ public class Unreal
 	{
 		LogHelper.info("Post Initilization Started.");
 		
+		//integration temp
+		
+		
 		if(Settings.Debug.printDebugOreDictionaryValues)
 		{
 			for(String oreName : OreDictionary.getOreNames())

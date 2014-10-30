@@ -35,8 +35,8 @@ public class BlockEnderCrystal extends BlockUnrealMultiTexture
 			if ((par1World.getBlock(par2, par3-2, par4) == ModBlocks.oreBedrockiumHidden ||
 					par1World.getBlock(par2, par3-2, par4) == ModBlocks.oreBedrockium ||
 					par1World.getBlock(par2, par3-2, par4) == ModBlocks.blockBedrockium ||
-					par1World.getBlock(par2, par3-2, par4) == Blocks.bedrock ||
-					par1World.getBlock(par2, par3-2, par4).getUnlocalizedName().toLowerCase().contains("bedrock")) &&
+					par1World.getBlock(par2, par3-2, par4) == Blocks.bedrock /*||
+					par1World.getBlock(par2, par3-2, par4).getUnlocalizedName().toLowerCase().contains("bedrock")*/) &&
 					(par1World.getBlock(par2, par3-1, par4).isAir(par1World, par2, par3, par4) ||
 					par1World.getBlock(par2, par3-1, par4) == Blocks.fire) &&
 					flag1)

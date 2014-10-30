@@ -230,13 +230,13 @@ public class ModItems
 	public static Item chainsawBlade = 
 			new ItemUnreal()
 			.setUnlocalizedName(Names.Items.CHAINSAW_BLADE)
-			.setMaxStackSize(8)
+			.setMaxStackSize(8).setFull3D()
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item chainsawBladeHardened = 
 			new ItemUnreal()
 			.setUnlocalizedName(Names.Items.CHAINSAW_BLADE_HARDENED)
-			.setMaxStackSize(8)
+			.setMaxStackSize(8).setFull3D()
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item chainsawMotor = 
@@ -308,14 +308,26 @@ public class ModItems
 	public static Item rodTarydiumAlloyUnrefined = 
 			new ItemUnreal()
 			.setUnlocalizedName(Names.Items.ROD_TARYDIUM_ALLOY_UNREFINED)
-			.setMaxStackSize(64)
+			.setMaxStackSize(64).setFull3D()
 			.setCreativeTab(null);
 	
 	public static Item rodTarydiumAlloyRefined = 
 			new ItemUnreal()
 			.setUnlocalizedName(Names.Items.ROD_TARYDIUM_ALLOY_REFINED)
-			.setMaxStackSize(64)
+			.setMaxStackSize(64).setFull3D()
 			.setCreativeTab(null);
+	
+	public static Item rodIron = 
+			new ItemUnreal()
+			.setUnlocalizedName(Names.Items.ROD_IRON)
+			.setMaxStackSize(64).setFull3D()
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static Item rodTitanium = 
+			new ItemUnreal()
+			.setUnlocalizedName(Names.Items.ROD_TITANIUM)
+			.setMaxStackSize(64).setFull3D()
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	//fluid containers
 	public static Item bucketMercury;

@@ -118,6 +118,8 @@ public final class Names
 		public static final String WARHEAD_THRUSTER = "warheadThruster";
 		public static final String ROD_TARYDIUM_ALLOY_UNREFINED = "rodTarydiumAlloyUnrefined";
 		public static final String ROD_TARYDIUM_ALLOY_REFINED = "rodTarydiumAlloyRefined";
+		public static final String ROD_IRON = "rodIron";
+		public static final String ROD_TITANIUM = "rodTitanium";
 		
 		//fluid containers
 		public static final String BUCKET_MERCURY = "bucketMercury";

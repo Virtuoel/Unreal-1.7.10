@@ -265,7 +265,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.rodTarydiumAlloyRefined,1), new Object[]{
-			"fluidMercury","virtuoel.unreal.debug","fluidMercury","fluidMercury","rodTarydiumAlloyUnrefined","fluidMercury","fluidMercury","fluidMercury",
+			"fluidMercury","virtuoel.unreal.debug","fluidMercury","rodTarydiumAlloyUnrefined",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.SCUBATankOxygen,1), new Object[]{
@@ -1139,6 +1139,10 @@ public class ModRecipes
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodTitanium,4), new Object[]{
 			"IFI","ICI","IFI",'I',"dustTitanium",'F',"blockIron",'C',"obsidian",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.nuggetBedrockium,1), new Object[]{
+			"CDC","DGD","CDC",'C',"compressedCobblestone2x",'D',"compressedCobblestone3x",'G',"gemDiamond"
 			}));
 		
 	}

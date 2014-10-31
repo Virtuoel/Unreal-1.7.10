@@ -674,6 +674,8 @@ public class ModItems
 		GameRegistry.registerItem(warheadThruster, Names.Items.WARHEAD_THRUSTER);
 		GameRegistry.registerItem(rodTarydiumAlloyUnrefined, Names.Items.ROD_TARYDIUM_ALLOY_UNREFINED);
 		GameRegistry.registerItem(rodTarydiumAlloyRefined, Names.Items.ROD_TARYDIUM_ALLOY_REFINED);
+		GameRegistry.registerItem(rodIron, Names.Items.ROD_IRON);
+		GameRegistry.registerItem(rodTitanium, Names.Items.ROD_TITANIUM);
 		
 		//fluid containers
 		bucketMercury = new ItemBucketUnreal(ModFluids.fluidBlockMercury)

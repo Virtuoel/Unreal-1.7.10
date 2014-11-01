@@ -1,7 +1,11 @@
 package com.virtuoel.unreal.item;
 
+import java.util.List;
+
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;
+import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -31,6 +35,54 @@ public class ItemUnreal extends Item
 		}
 		return EnumAction.none;
 	}
+	
+	/**
+	 * allows items to add custom lines of information to the mouseover description
+	 */
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void addInformation(ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_)
+	{
+		p_77624_3_.add(
+				p_77624_1_.getItem()==ModItems.shardTarydium ? "Stinger Ammo" : 
+				p_77624_1_.getItem()==ModItems.ammoEightball ? "Eightball Launcher Ammo" :
+				p_77624_1_.getItem()==ModItems.ammoWarhead   ? "Redeemer Ammo" :
+				p_77624_1_.getItem()==ModItems.ammoFlakShell ? "Flak Cannon Ammo" :
+				"");
+		
+	}
+	
+	/**
+     * Return an item rarity from EnumRarity
+     */
+	@Override
+    public EnumRarity getRarity(ItemStack p_77613_1_)
+    {
+		if(this==ModItems.shardTarydium||
+				this==ModItems.gemTarydium||
+				this==ModItems.weaponCasingBasic||
+				this==ModItems.tarydPowerBasic||
+				this==ModItems.chainsawBlade)
+		{
+			return EnumRarity.uncommon;
+		}
+		else if(this==ModItems.weaponCasingAdv||
+				this==ModItems.chainsawBladeHardened||
+				this==ModItems.dispersionUpgrade||
+				this==ModItems.warheadBody||
+				this==ModItems.warheadCone||
+				this==ModItems.warheadThruster)
+		{
+			return EnumRarity.rare;
+		}
+		else if(this==ModItems.ammoWarhead||
+				this==ModItems.chainsawMotor||
+				this==ModItems.translocatorDisc)
+		{
+			return EnumRarity.epic;
+		}
+        return p_77613_1_.isItemEnchanted() ? EnumRarity.rare : EnumRarity.common;
+    }
 	
 	@Override
 	public String getUnlocalizedName()

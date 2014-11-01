@@ -36,6 +36,16 @@ public class ItemUnreal extends Item
 		return EnumAction.none;
 	}
 	
+	@Override
+	public int getMaxItemUseDuration(ItemStack par1ItemStack)
+    {
+		if(this.getItemUseAction(par1ItemStack) == EnumAction.block)
+		{
+			return 72000;
+		}
+		return 0;
+    }
+	
 	/**
 	 * allows items to add custom lines of information to the mouseover description
 	 */
@@ -43,12 +53,27 @@ public class ItemUnreal extends Item
 	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_)
 	{
-		p_77624_3_.add(
-				p_77624_1_.getItem()==ModItems.shardTarydium ? "Stinger Ammo" : 
-				p_77624_1_.getItem()==ModItems.ammoEightball ? "Eightball Launcher Ammo" :
-				p_77624_1_.getItem()==ModItems.ammoWarhead   ? "Redeemer Ammo" :
-				p_77624_1_.getItem()==ModItems.ammoFlakShell ? "Flak Cannon Ammo" :
-				"");
+		String info = "";
+		if(p_77624_1_.getItem()==ModItems.shardTarydium)
+		{
+			info = "Stinger Ammo";
+		}
+		else if(p_77624_1_.getItem()==ModItems.ammoEightball)
+		{
+			info = "Eightball Launcher Ammo";
+		}
+		else if(p_77624_1_.getItem()==ModItems.ammoWarhead)
+		{
+			info = "Redeemer Ammo";
+		}
+		else if(p_77624_1_.getItem()==ModItems.ammoFlakShell)
+		{
+			info = "Flak Cannon Ammo";
+		}
+		if(!info.isEmpty())
+		{
+			p_77624_3_.add(info);
+		}
 		
 	}
 	

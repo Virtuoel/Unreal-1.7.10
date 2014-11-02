@@ -17,6 +17,7 @@ import net.minecraft.world.World;
 public class ItemBlockPlacerDamagable extends ItemBlockPlacer
 {
 	private int damagePerPlace = 0;
+	private int damageOnCraft = 1;
 	
 	public ItemBlockPlacerDamagable()
 	{
@@ -26,9 +27,20 @@ public class ItemBlockPlacerDamagable extends ItemBlockPlacer
 		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
 	
-	public Item setDamagePerPlace(int dmg)
+	public ItemBlockPlacerDamagable setDamageOnCraft(int dmg)
 	{
-		this.damagePerPlace = dmg;
+		this.damageOnCraft = dmg <= 0 ? 0 : dmg;
+		return this;
+	}
+	
+	public int getDamageOnCraft()
+	{
+		return damageOnCraft;
+	}
+	
+	public ItemBlockPlacerDamagable setDamagePerPlace(int dmg)
+	{
+		this.damagePerPlace = dmg <= 0 ? 0 : dmg;
 		return this;
 	}
 	
@@ -40,8 +52,15 @@ public class ItemBlockPlacerDamagable extends ItemBlockPlacer
 	@Override
 	public void getSubItems(Item par1item, CreativeTabs par2CreativeTabs, List par3List)
 	{
-		par3List.add(new ItemStack(par1item, 1, 1));
-		par3List.add(new ItemStack(par1item, 1, par1item.getMaxDamage()));
+		if(((ItemBlockPlacerDamagable)par1item).getDamageOnCraft() != 0)
+		{
+			par3List.add(new ItemStack(par1item, 1, 1));
+			par3List.add(new ItemStack(par1item, 1, par1item.getMaxDamage()));
+		}
+		if(((ItemBlockPlacerDamagable)par1item).getDamageOnCraft() != 1 && ((ItemBlockPlacerDamagable)par1item).getDamageOnCraft() != par1item.getMaxDamage())
+		{
+			par3List.add(new ItemStack(par1item, 1, ((ItemBlockPlacerDamagable)par1item).getDamageOnCraft()));
+		}
 	}
 	
 	/**
@@ -51,7 +70,7 @@ public class ItemBlockPlacerDamagable extends ItemBlockPlacer
 	@Override
 	public boolean onItemUse(ItemStack p_77648_1_, EntityPlayer p_77648_2_, World p_77648_3_, int p_77648_4_, int p_77648_5_, int p_77648_6_, int p_77648_7_, float p_77648_8_, float p_77648_9_, float p_77648_10_)
 	{
-		if(p_77648_1_.getMaxDamage() - (p_77648_1_.getItemDamage() + 1) < this.getDamagePerPlace())
+		if(p_77648_1_.getMaxDamage() - (p_77648_1_.getItemDamage()) < this.getDamagePerPlace())
 		{
 			return false;
 		}

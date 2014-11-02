@@ -23,15 +23,15 @@ public class ItemBlockPlacer extends ItemUnreal
 		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
 	
-	public Item setPlaceBlock(Block par1Block)
+	public ItemBlockPlacer setPlaceBlock(Block par1Block)
 	{
 		this.placeBlock = par1Block;
 		return this;
 	}
 	
-	public Item setPlaceMeta(int meta)
+	public ItemBlockPlacer setPlaceMeta(int meta)
 	{
-		this.placeMeta = meta;
+		this.placeMeta = meta <= 0 ? 0 : meta;
 		return this;
 	}
 	

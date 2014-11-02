@@ -23,6 +23,7 @@ import com.virtuoel.unreal.item.ItemRecordUnreal;
 import com.virtuoel.unreal.item.ItemShovelUnreal;
 import com.virtuoel.unreal.item.ItemSwordUnreal;
 import com.virtuoel.unreal.item.ItemUnreal;
+import com.virtuoel.unreal.item.ItemUnrealDamagable;
 import com.virtuoel.unreal.item.ItemVoiceBox;
 import com.virtuoel.unreal.item.ItemWeaponBase;
 import com.virtuoel.unreal.reference.Materials;
@@ -211,7 +212,7 @@ public class ModItems
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item tarydPowerBasic = 
-			new ItemUnreal()
+			new ItemUnrealDamagable().setDamageOnCraft(1)
 			.setUnlocalizedName(Names.Items.TARYDIUM_POWER)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
@@ -345,6 +346,9 @@ public class ModItems
 	
 	public static Item forceField = 
 			new ItemBlockPlacerDamagable()
+			.setDamagePerPlace(100)
+			.setPlaceBlock(ModBlocks.blockForceField).setPlaceMeta(0)
+			.setMaxDamage((1*100)+1)
 			.setUnlocalizedName(Names.Items.FORCE_FIELD)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
@@ -583,42 +587,49 @@ public class ModItems
 	//weapons
 	public static Item gunTranslocator = 
 			new ItemWeaponBase(new ItemStack(ModItems.translocatorDisc, 0, 1), 101)
+			.setDamageOnCraft(1)
 			.setUnlocalizedName(Names.Items.GUN_TRANSLOCATOR)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item gunDispersionPistol = 
 			new ItemWeaponBase(new ItemStack(ModItems.dispersionUpgrade, 0, 1), 5001)
+			.setDamageOnCraft(1)
 			.setUnlocalizedName(Names.Items.GUN_DISPERSION_PISTOL)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item meleeChainsaw = 
 			new ItemWeaponBase(new ItemStack(ModItems.chainLink, 0, 1), 101)
+			.setDamageOnCraft(1)
 			.setUnlocalizedName(Names.Items.MELEE_CHAINSAW)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item gunStinger = 
 			new ItemWeaponBase(new ItemStack(ModItems.shardTarydium, 0, 1), 101)
+			.setDamageOnCraft(100-9+1)
 			.setUnlocalizedName(Names.Items.GUN_STINGER)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item gunFlakCannon = 
 			new ItemWeaponBase(new ItemStack(ModItems.ammoFlakShell, 0, 1), 51)
+			.setDamageOnCraft(50-5+1)
 			.setUnlocalizedName(Names.Items.GUN_FLAK)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item gunEightballLauncher = 
 			new ItemWeaponBase(new ItemStack(ModItems.ammoEightball, 0, 1), 49)
+			.setDamageOnCraft(48)
 			.setUnlocalizedName(Names.Items.GUN_EIGHTBALL)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item gunRedeemer = 
 			new ItemWeaponBase(new ItemStack(ModItems.ammoWarhead, 0, 1), 101)
+			.setDamageOnCraft(1)
 			.setUnlocalizedName(Names.Items.GUN_REDEEMER)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
@@ -705,13 +716,7 @@ public class ModItems
 		
 		//tools
 		GameRegistry.registerItem(debugTool, Names.Items.DEBUG_TOOL);
-		
-		((ItemBlockPlacerDamagable)forceField).setMaxDamage(100+1);
-		((ItemBlockPlacerDamagable)forceField).setDamagePerPlace(100);
-		((ItemBlockPlacerDamagable)forceField).setPlaceBlock(ModBlocks.blockForceField);
-		((ItemBlockPlacerDamagable)forceField).setPlaceMeta(0);
 		GameRegistry.registerItem(forceField, Names.Items.FORCE_FIELD);
-		
 		GameRegistry.registerItem(voiceBox, Names.Items.VOICE_BOX);
 		GameRegistry.registerItem(universalTranslator, Names.Items.UNIVERSAL_TRANSLATOR);
 		GameRegistry.registerItem(swordTitanium, Names.Items.SWORD_TITANIUM);

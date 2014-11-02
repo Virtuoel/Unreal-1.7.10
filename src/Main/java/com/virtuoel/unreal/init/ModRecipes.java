@@ -7,6 +7,8 @@ import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
+import com.virtuoel.unreal.item.ItemUnrealDamagable;
+import com.virtuoel.unreal.item.ItemWeaponBase;
 import com.virtuoel.unreal.reference.Settings;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -626,7 +628,7 @@ public class ModRecipes
 			"STS","T T","STS",'T',"ingotTitanium",'S',"nuggetTitanium",
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tarydPowerBasic,1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tarydPowerBasic,1,((ItemUnrealDamagable)ModItems.tarydPowerBasic).getDamageOnCraft()), new Object[]{
 			"NTN","NCN","NTN",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,
 			}));
 		
@@ -650,11 +652,11 @@ public class ModRecipes
 			"III","N N","III",'N',"nuggetIron",'I',"ingotIron",
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunEightballLauncher,1,48), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunEightballLauncher,1,((ItemWeaponBase)ModItems.gunEightballLauncher).getDamageOnCraft()), new Object[]{
 			"RTT","BKM","TTC",'B',ModItems.gunBarrelIronLarge,'C',ModItems.weaponCasingAdv,'T',"ingotTitanium",'R',"dustRedstone",'K',ModItems.ammoEightball,'M',"blockTitanium",
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunStinger,1,100-9+1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunStinger,1,((ItemWeaponBase)ModItems.gunStinger).getDamageOnCraft()), new Object[]{
 			"BTT","BRT","TCT",'B',ModItems.gunBarrelIron,'C',ModItems.weaponCasingBasic,'T',"ingotTitanium",'R',ModItems.gemTarydium,
 			}));
 		
@@ -666,11 +668,11 @@ public class ModRecipes
 			"TRT","NPN","TDT",'T',"blockTitanium",'D',"blockDiamond",'P',"blockEnderPearl",'R',Blocks.redstone_torch,'N',Items.comparator,
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunTranslocator,1,1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunTranslocator,1,((ItemWeaponBase)ModItems.gunTranslocator).getDamageOnCraft()), new Object[]{
 			"DBE","SCR","TTT",'T',"blockTitanium",'D',ModItems.translocatorDisc,'C',ModItems.weaponCasingAdv,'B',ModItems.gunBarrelIron,'S',Blocks.daylight_detector,'R',"blockRedstone",'E',"blockEnder",
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunTranslocator,1,1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunTranslocator,1,((ItemWeaponBase)ModItems.gunTranslocator).getDamageOnCraft()), new Object[]{
 			"DBE","SCR","TTT",'T',"blockTitanium",'D',ModItems.translocatorDisc,'C',ModItems.weaponCasingAdv,'B',ModItems.gunBarrelIron,'S',Blocks.daylight_detector,'R',"blockRedstone",'E',"blockEnderPearl",
 			}));
 		
@@ -682,7 +684,7 @@ public class ModRecipes
 			"TRT","TCT","PBP",'T',"ingotTitanium",'C',ModItems.tarydPowerBasic,'B',Items.iron_boots,'R',"blockRedstone",'P',Blocks.piston,
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunFlakCannon,1,50-5+1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunFlakCannon,1,((ItemWeaponBase)ModItems.gunFlakCannon).getDamageOnCraft()), new Object[]{
 			"SBG","IBT","ICY",'I',"ingotTitanium",'C',ModItems.weaponCasingBasic,'B',ModItems.gunBarrelIron,'S',ModItems.ammoFlakShell,'Y',"dyeOrange",'G',"dustGunpowder",'T',"blockTitanium"
 			}));
 		
@@ -750,7 +752,7 @@ public class ModRecipes
 			"STS","TBT","STS",'T',"dustDiamond",'S',"blockEnderPearl",'B',"blockTarydium",
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunRedeemer,1,101), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunRedeemer,1,((ItemWeaponBase)ModItems.gunRedeemer).getDamageOnCraft()), new Object[]{
 			"MOT","OYT","TTL",'O',"obsidian",'T',"blockTitanium",'Y',"blockTarydium",'M',ModItems.ammoWarhead,'L',new ItemStack(ModItems.gunEightballLauncher,1,OreDictionary.WILDCARD_VALUE),
 			}));
 		
@@ -794,7 +796,7 @@ public class ModRecipes
 			"BTC","WPI","BAF",'B',Blocks.iron_bars,'T',"blockTitanium",'C',ModItems.tarydPowerBasic,'W',Blocks.heavy_weighted_pressure_plate,'P',Blocks.piston,'I',"blockIron",'A',ModItems.weaponCasingAdv,'F',new ItemStack(ModItems.gunFlakCannon,1,OreDictionary.WILDCARD_VALUE),
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.meleeChainsaw,1,1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.meleeChainsaw,1,((ItemWeaponBase)ModItems.meleeChainsaw).getDamageOnCraft()), new Object[]{
 			"BBT","CCT","OOM",'B',Blocks.iron_bars,'T',"blockTitanium",'C',ModItems.chainsawBladeHardened,'M',ModItems.chainsawMotor,'O',"dustObsidian",
 			}));
 		
@@ -826,11 +828,11 @@ public class ModRecipes
 			"CEC","BTB","CEC",'T',"blockTitanium",'E',"blockEnderPearl",'B',ModItems.gunBarrelIronLarge,'C',ModItems.tarydPowerBasic,
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunDispersionPistol,1,1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunDispersionPistol,1,((ItemWeaponBase)ModItems.gunDispersionPistol).getDamageOnCraft()), new Object[]{
 			"ETC","BAU","EGC",'T',"ingotTitanium",'E',"blockEnder",'B',ModItems.gunBarrelIronLarge,'A',ModItems.gunBarrelIron,'C',ModItems.tarydPowerBasic,'U',ModItems.dispersionUpgrade,'G',ModItems.weaponCasingBasic,
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunDispersionPistol,1,1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gunDispersionPistol,1,((ItemWeaponBase)ModItems.gunDispersionPistol).getDamageOnCraft()), new Object[]{
 			"ETC","BAU","EGC",'T',"ingotTitanium",'E',"blockEnderPearl",'B',ModItems.gunBarrelIronLarge,'A',ModItems.gunBarrelIron,'C',ModItems.tarydPowerBasic,'U',ModItems.dispersionUpgrade,'G',ModItems.weaponCasingBasic,
 			}));
 		
@@ -1125,7 +1127,7 @@ public class ModRecipes
 			"I I","I I",'I',"blockSlime",
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.forceField,1,1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.forceField,1,((ItemUnrealDamagable)ModItems.forceField).getDamageOnCraft()), new Object[]{
 			"RTP","GBT","RTP",'R',"rodTitanium",'T',"blockTitanium",'B',ModItems.dispersionUpgrade,'G',"blockGlassPurple",'P',ModItems.tarydPowerBasic,
 			}));
 		

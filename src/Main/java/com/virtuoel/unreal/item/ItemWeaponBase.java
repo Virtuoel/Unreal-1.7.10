@@ -24,10 +24,10 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemWeaponBase extends ItemUnreal
 {
-
 	private ItemStack ammo;
 	private int meleeDamageAmount = 0;
-
+	private int damageOnCraft = 1;
+	
 	public ItemWeaponBase(ItemStack weaponAmmo, int damage)
 	{
 		super();
@@ -37,20 +37,30 @@ public class ItemWeaponBase extends ItemUnreal
 		.setMaxStackSize(1).setHasSubtypes(true)
 		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
-
+	
+	public Item setDamageOnCraft(int dmg)
+	{
+		this.damageOnCraft = dmg;
+		return this;
+	}
+	
+	public int getDamageOnCraft()
+	{
+		return damageOnCraft;
+	}
+	
 	@Override
 	public void onCreated(ItemStack p_77622_1_, World p_77622_2_, EntityPlayer p_77622_3_)
 	{
 		setNBTDefaults(p_77622_1_, 5);
 	}
-
+	
 	@Override
 	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
 	{
 		if(par3EntityPlayer.isSneaking())
 		{
 			toggleConsume(par1ItemStack);
-
 		}
 		else
 		{
@@ -58,7 +68,7 @@ public class ItemWeaponBase extends ItemUnreal
 		}
 		return par1ItemStack;
 	}
-
+	
 	@Override
 	public void onUpdate(ItemStack p_77663_1_, World p_77663_2_, Entity p_77663_3_, int p_77663_4_, boolean p_77663_5_)
 	{
@@ -72,7 +82,7 @@ public class ItemWeaponBase extends ItemUnreal
 			p_77663_1_.setItemDamage(p_77663_1_.getMaxDamage());
 		}
 	}
-
+	
 	/**
 	 * allows items to add custom lines of information to the mouseover description
 	 */
@@ -105,13 +115,13 @@ public class ItemWeaponBase extends ItemUnreal
 		NBTHelper.setInteger(par1ItemStack, "attackingTime", 0);
 		NBTHelper.setBoolean(par1ItemStack, "atacking", false);
 	}
-
+	
 	private void toggleConsume(ItemStack par1ItemStack)
 	{
 		NBTHelper.setBoolean(par1ItemStack, "consumeMode", !NBTHelper.getBoolean(par1ItemStack, "consumeMode"));
 		//consumeMode = !consumeMode;
 	}
-
+	
 	private Item setAmmoItem(ItemStack ammoStack)
 	{
 		ammo=ItemStack.copyItemStack(ammoStack);
@@ -127,7 +137,7 @@ public class ItemWeaponBase extends ItemUnreal
 		return multimap;
 	}
 	 */
-
+	
 	/**
 	 * Return an item rarity from EnumRarity
 	 */
@@ -137,7 +147,7 @@ public class ItemWeaponBase extends ItemUnreal
 	{
 		return EnumRarity.rare;
 	}
-
+	
 	/**
 	 * Metadata-sensitive version of getStrVsBlock
 	 * @param itemstack The Item Stack
@@ -150,36 +160,43 @@ public class ItemWeaponBase extends ItemUnreal
 	{
 		return func_150893_a(itemstack, block);
 	}
-
+	
 	@Override
 	public float func_150893_a(ItemStack p_150893_1_, Block p_150893_2_)
 	{
 		return -1.0F;
 	}
-
+	
 	@Override
 	public void getSubItems(Item par1item, CreativeTabs par2CreativeTabs, List par3List)
 	{
-		par3List.add(new ItemStack(par1item, 1, 1));
-		par3List.add(new ItemStack(par1item, 1, par1item.getMaxDamage()));
+		if(((ItemWeaponBase)par1item).getDamageOnCraft() != 0)
+		{
+			par3List.add(new ItemStack(par1item, 1, 1));
+			par3List.add(new ItemStack(par1item, 1, par1item.getMaxDamage()));
+		}
+		if(((ItemWeaponBase)par1item).getDamageOnCraft() != 1 && ((ItemWeaponBase)par1item).getDamageOnCraft() != par1item.getMaxDamage())
+		{
+			par3List.add(new ItemStack(par1item, 1, ((ItemWeaponBase)par1item).getDamageOnCraft()));
+		}
 	}
-
+	
 	@Override
 	public boolean onBlockStartBreak(ItemStack itemstack, int X, int Y, int Z, EntityPlayer player)
 	{
 		return true;
 	}
-
+	
 	@Override
 	public boolean onEntitySwing(EntityLivingBase entityLiving, ItemStack stack)
 	{
 		return true;
 	}
-
+	
 	@Override
 	public int getMaxItemUseDuration(ItemStack par1ItemStack)
 	{
 		return 0;
 	}
-
+	
 }

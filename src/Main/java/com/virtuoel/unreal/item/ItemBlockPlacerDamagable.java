@@ -1,8 +1,11 @@
 package com.virtuoel.unreal.item;
 
+import java.util.List;
+
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
@@ -29,9 +32,16 @@ public class ItemBlockPlacerDamagable extends ItemBlockPlacer
 		return this;
 	}
 	
-	public int getDamagePerPlace(int dmg)
+	public int getDamagePerPlace()
 	{
 		return damagePerPlace;
+	}
+	
+	@Override
+	public void getSubItems(Item par1item, CreativeTabs par2CreativeTabs, List par3List)
+	{
+		par3List.add(new ItemStack(par1item, 1, 1));
+		par3List.add(new ItemStack(par1item, 1, par1item.getMaxDamage()));
 	}
 	
 	/**
@@ -41,7 +51,7 @@ public class ItemBlockPlacerDamagable extends ItemBlockPlacer
 	@Override
 	public boolean onItemUse(ItemStack p_77648_1_, EntityPlayer p_77648_2_, World p_77648_3_, int p_77648_4_, int p_77648_5_, int p_77648_6_, int p_77648_7_, float p_77648_8_, float p_77648_9_, float p_77648_10_)
 	{
-		if(p_77648_1_.getMaxDamage() - (p_77648_1_.getItemDamage() + 1) > this.damagePerPlace)
+		if(p_77648_1_.getMaxDamage() - (p_77648_1_.getItemDamage() + 1) < this.getDamagePerPlace())
 		{
 			return false;
 		}
@@ -109,7 +119,7 @@ public class ItemBlockPlacerDamagable extends ItemBlockPlacer
 					
 					p_77648_3_.playSoundEffect((double)((float)p_77648_4_ + 0.5F), (double)((float)p_77648_5_ + 0.5F), (double)((float)p_77648_6_ + 0.5F), this.getPlaceBlock().stepSound.func_150496_b(), (this.getPlaceBlock().stepSound.getVolume() + 1.0F) / 2.0F, this.getPlaceBlock().stepSound.getPitch() * 0.8F);
 					//--p_77648_1_.stackSize;
-					p_77648_1_.damageItem(this.damagePerPlace, p_77648_2_);
+					p_77648_1_.damageItem(this.getDamagePerPlace(), p_77648_2_);
 				}
 			}
 			return true;

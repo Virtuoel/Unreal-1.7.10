@@ -1,6 +1,6 @@
 Versions:
 
-Current: 0.1.0.40
+Current: 0.1.0.41
 
 Features:(Weapons Currently NYI)
 
@@ -54,6 +54,12 @@ Syntax List
 [LAN]
 
 Changelog:
+
+0.1.0.41
+---
+[Addition] Force Field functional
+[Addition] Force Field and Translator textures
+[Balance] Recipe rebalancing
 
 0.1.0.40
 ---

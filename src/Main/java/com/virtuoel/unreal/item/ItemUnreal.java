@@ -70,6 +70,10 @@ public class ItemUnreal extends Item
 		{
 			info = "Flak Cannon Ammo";
 		}
+		else if(p_77624_1_.getItem()==ModItems.dispersionUpgrade)
+		{
+			info = "Dispersion Pistol Upgrade";
+		}
 		if(!info.isEmpty())
 		{
 			p_77624_3_.add(info);

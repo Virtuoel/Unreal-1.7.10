@@ -14,6 +14,7 @@ import com.virtuoel.unreal.item.ItemArmorSlime;
 import com.virtuoel.unreal.item.ItemArmorToxinSuit;
 import com.virtuoel.unreal.item.ItemArmorUnrealBase;
 import com.virtuoel.unreal.item.ItemAxeUnreal;
+import com.virtuoel.unreal.item.ItemBlockPlacerDamagable;
 import com.virtuoel.unreal.item.ItemBucketUnreal;
 import com.virtuoel.unreal.item.ItemDustUnreal;
 import com.virtuoel.unreal.item.ItemHoeUnreal;
@@ -343,7 +344,7 @@ public class ModItems
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item forceField = 
-			new /*ItemForceField()*/ItemUnreal()
+			new ItemBlockPlacerDamagable()
 			.setUnlocalizedName(Names.Items.FORCE_FIELD)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
@@ -704,7 +705,13 @@ public class ModItems
 		
 		//tools
 		GameRegistry.registerItem(debugTool, Names.Items.DEBUG_TOOL);
+		
+		((ItemBlockPlacerDamagable)forceField).setMaxDamage(100+1);
+		((ItemBlockPlacerDamagable)forceField).setDamagePerPlace(100);
+		((ItemBlockPlacerDamagable)forceField).setPlaceBlock(ModBlocks.blockForceField);
+		((ItemBlockPlacerDamagable)forceField).setPlaceMeta(0);
 		GameRegistry.registerItem(forceField, Names.Items.FORCE_FIELD);
+		
 		GameRegistry.registerItem(voiceBox, Names.Items.VOICE_BOX);
 		GameRegistry.registerItem(universalTranslator, Names.Items.UNIVERSAL_TRANSLATOR);
 		GameRegistry.registerItem(swordTitanium, Names.Items.SWORD_TITANIUM);

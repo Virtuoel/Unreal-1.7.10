@@ -14,7 +14,7 @@ import com.virtuoel.unreal.item.ItemArmorSlime;
 import com.virtuoel.unreal.item.ItemArmorToxinSuit;
 import com.virtuoel.unreal.item.ItemArmorUnrealBase;
 import com.virtuoel.unreal.item.ItemAxeUnreal;
-import com.virtuoel.unreal.item.ItemBlockPlacerDamagable;
+import com.virtuoel.unreal.item.ItemBlockPlacerDamageable;
 import com.virtuoel.unreal.item.ItemBucketUnreal;
 import com.virtuoel.unreal.item.ItemDustUnreal;
 import com.virtuoel.unreal.item.ItemHoeUnreal;
@@ -23,7 +23,7 @@ import com.virtuoel.unreal.item.ItemRecordUnreal;
 import com.virtuoel.unreal.item.ItemShovelUnreal;
 import com.virtuoel.unreal.item.ItemSwordUnreal;
 import com.virtuoel.unreal.item.ItemUnreal;
-import com.virtuoel.unreal.item.ItemUnrealDamagable;
+import com.virtuoel.unreal.item.ItemUnrealDamageable;
 import com.virtuoel.unreal.item.ItemVoiceBox;
 import com.virtuoel.unreal.item.ItemWeaponBase;
 import com.virtuoel.unreal.reference.Materials;
@@ -212,7 +212,7 @@ public class ModItems
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item tarydPowerBasic = 
-			new ItemUnrealDamagable().setDamageOnCraft(1)
+			new ItemUnrealDamageable().setDamageOnCraft(1)
 			.setUnlocalizedName(Names.Items.TARYDIUM_POWER)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
@@ -345,7 +345,7 @@ public class ModItems
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item forceField = 
-			new ItemBlockPlacerDamagable()
+			new ItemBlockPlacerDamageable()
 			.setDamagePerPlace(100)
 			.setPlaceBlock(ModBlocks.blockForceField).setPlaceMeta(0)
 			.setMaxDamage((1*100)+1)

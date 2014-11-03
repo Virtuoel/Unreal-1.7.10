@@ -1,6 +1,6 @@
 Versions:
 
-Current: 0.1.0.41
+Current: 0.1.0.42
 
 Features:(Weapons Currently NYI)
 
@@ -54,6 +54,11 @@ Syntax List
 [LAN]
 
 Changelog:
+
+0.1.0.42
+---
+[Change][Bugfix] Tweaks and fixes to all damageable items and their recipes
+[Change] Tarydium Energy Crystal now has durability
 
 0.1.0.41
 ---

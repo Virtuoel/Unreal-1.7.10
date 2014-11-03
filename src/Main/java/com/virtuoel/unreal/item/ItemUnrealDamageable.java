@@ -9,11 +9,11 @@ import net.minecraft.item.ItemStack;
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 
 
-public class ItemUnrealDamagable extends ItemUnreal
+public class ItemUnrealDamageable extends ItemUnreal
 {
 	private int damageOnCraft = 0;
 	
-	public ItemUnrealDamagable()
+	public ItemUnrealDamageable()
 	{
 		super();
 		this.setNoRepair()
@@ -21,7 +21,7 @@ public class ItemUnrealDamagable extends ItemUnreal
 		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
 	
-	public ItemUnrealDamagable setDamageOnCraft(int dmg)
+	public ItemUnrealDamageable setDamageOnCraft(int dmg)
 	{
 		this.damageOnCraft = dmg <= 0 ? 0 : dmg;
 		return this;
@@ -35,14 +35,14 @@ public class ItemUnrealDamagable extends ItemUnreal
 	@Override
 	public void getSubItems(Item par1item, CreativeTabs par2CreativeTabs, List par3List)
 	{
-		if(((ItemUnrealDamagable)par1item).getDamageOnCraft() != 0)
+		if(((ItemUnrealDamageable)par1item).getDamageOnCraft() != 0)
 		{
 			par3List.add(new ItemStack(par1item, 1, 1));
 			par3List.add(new ItemStack(par1item, 1, par1item.getMaxDamage()));
 		}
-		if(((ItemUnrealDamagable)par1item).getDamageOnCraft() != 1 && ((ItemUnrealDamagable)par1item).getDamageOnCraft() != par1item.getMaxDamage())
+		if(((ItemUnrealDamageable)par1item).getDamageOnCraft() != 1 && ((ItemUnrealDamageable)par1item).getDamageOnCraft() != par1item.getMaxDamage())
 		{
-			par3List.add(new ItemStack(par1item, 1, ((ItemUnrealDamagable)par1item).getDamageOnCraft()));
+			par3List.add(new ItemStack(par1item, 1, ((ItemUnrealDamageable)par1item).getDamageOnCraft()));
 		}
 	}
 	

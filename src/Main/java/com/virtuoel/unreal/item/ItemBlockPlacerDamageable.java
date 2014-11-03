@@ -14,12 +14,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 
-public class ItemBlockPlacerDamagable extends ItemBlockPlacer
+public class ItemBlockPlacerDamageable extends ItemBlockPlacer
 {
 	private int damagePerPlace = 0;
 	private int damageOnCraft = 1;
 	
-	public ItemBlockPlacerDamagable()
+	public ItemBlockPlacerDamageable()
 	{
 		super();
 		this.setNoRepair()
@@ -27,7 +27,7 @@ public class ItemBlockPlacerDamagable extends ItemBlockPlacer
 		.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
 	
-	public ItemBlockPlacerDamagable setDamageOnCraft(int dmg)
+	public ItemBlockPlacerDamageable setDamageOnCraft(int dmg)
 	{
 		this.damageOnCraft = dmg <= 0 ? 0 : dmg;
 		return this;
@@ -38,7 +38,7 @@ public class ItemBlockPlacerDamagable extends ItemBlockPlacer
 		return damageOnCraft;
 	}
 	
-	public ItemBlockPlacerDamagable setDamagePerPlace(int dmg)
+	public ItemBlockPlacerDamageable setDamagePerPlace(int dmg)
 	{
 		this.damagePerPlace = dmg <= 0 ? 0 : dmg;
 		return this;
@@ -52,14 +52,14 @@ public class ItemBlockPlacerDamagable extends ItemBlockPlacer
 	@Override
 	public void getSubItems(Item par1item, CreativeTabs par2CreativeTabs, List par3List)
 	{
-		if(((ItemBlockPlacerDamagable)par1item).getDamageOnCraft() != 0)
+		if(((ItemBlockPlacerDamageable)par1item).getDamageOnCraft() != 0)
 		{
 			par3List.add(new ItemStack(par1item, 1, 1));
 			par3List.add(new ItemStack(par1item, 1, par1item.getMaxDamage()));
 		}
-		if(((ItemBlockPlacerDamagable)par1item).getDamageOnCraft() != 1 && ((ItemBlockPlacerDamagable)par1item).getDamageOnCraft() != par1item.getMaxDamage())
+		if(((ItemBlockPlacerDamageable)par1item).getDamageOnCraft() != 1 && ((ItemBlockPlacerDamageable)par1item).getDamageOnCraft() != par1item.getMaxDamage())
 		{
-			par3List.add(new ItemStack(par1item, 1, ((ItemBlockPlacerDamagable)par1item).getDamageOnCraft()));
+			par3List.add(new ItemStack(par1item, 1, ((ItemBlockPlacerDamageable)par1item).getDamageOnCraft()));
 		}
 	}
 	

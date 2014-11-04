@@ -5,10 +5,8 @@
 /gradlew
 /gradlew.bat
 
-
 ## ForgeGradle
 /run
-
 
 ## eclipse
 /eclipse
@@ -18,3 +16,6 @@
 /.project
 /bin
 /lib
+
+## compile
+/compile.bat

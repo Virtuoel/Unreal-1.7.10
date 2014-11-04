@@ -17,5 +17,7 @@
 /bin
 /lib
 
-## compile
+## misc
 /compile.bat
+/clean.bat
+/src - Copy

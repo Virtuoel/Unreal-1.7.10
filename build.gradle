@@ -19,13 +19,19 @@ apply plugin: 'forge'
 
 version = "1.7.10-0.1.0.42"
 group= "com.virtuoel.unreal" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Unreal"
+archivesBaseName = "unreal"
 
 minecraft {
     version = "1.7.10-10.13.0.1208"
 }
 
 dependencies {
+	compile files {
+		"lib/1.7.10/CodeChickenLib-1.7.10-1.1.1.98-dev.jar",
+		"lib/CodeChickenCore-1.7.10-1.0.3.23-universal.jar",
+		"lib/NotEnoughItems-1.7.10-1.0.3.46-universal.jar"
+	}
+	
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"

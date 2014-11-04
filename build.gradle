@@ -26,12 +26,12 @@ minecraft {
 }
 
 dependencies {
-	compile files {
-		"lib/1.7.10/CodeChickenLib-1.7.10-1.1.1.98-dev.jar",
-		"lib/CodeChickenCore-1.7.10-1.0.3.23-universal.jar",
-		"lib/NotEnoughItems-1.7.10-1.0.3.46-universal.jar"
-	}
-	
+    compile files (
+        "lib/CodeChickenLib-1.7.10-1.1.1.98-dev.jar",
+        "lib/CodeChickenCore-1.7.10-1.0.3.23-universal.jar",
+        "lib/NotEnoughItems-1.7.10-1.0.3.46-universal.jar"
+    )
+    
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"

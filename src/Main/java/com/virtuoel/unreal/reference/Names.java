@@ -50,6 +50,11 @@ public final class Names
 		public static final String BLOCK_NETHER_WART = "blockNetherWart";
 		public static final String BLOCK_COCOA = "blockCocoa";
 		public static final String BLOCK_FORCE_FIELD = "blockForceField";
+		public static final String BLOCK_TARYDIUM_FIELD_COLLECTOR = "blockTarydiumFieldCollector";
+		public static final String BLOCK_TARYDIUM_FIELD_EMITTER = "blockTarydiumFieldEmitter";
+		public static final String BLOCK_TARYDIUM_FIELD_RELAY = "blockTarydiumFieldRelay";
+		public static final String BLOCK_TARYDIUM_FIELD_STASIS = "blockTarydiumFieldStasis";
+		public static final String BLOCK_TARYDIUM_CRYSTAL = "blockTarydiumCrystal";
 		
 	}
 	

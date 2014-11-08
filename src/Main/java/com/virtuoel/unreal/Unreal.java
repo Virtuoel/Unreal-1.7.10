@@ -45,8 +45,10 @@ public class Unreal
 	{
 		LogHelper.info("Pre Initilization Started.");
 		
+		
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+		LogHelper.info("Configuration File Loaded.");
 		
 		proxy.registerKeyBindings();
 		LogHelper.info("Key Binding Registration Completed.");

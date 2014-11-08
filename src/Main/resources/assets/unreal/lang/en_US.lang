@@ -186,6 +186,11 @@ tile.unreal:blockGhastTear.name=Crystalline Tear Block
 tile.unreal:blockNetherWart.name=Compacted Nether Wart Block
 tile.unreal:blockCocoa.name=Cocoa Block
 tile.unreal:blockForceField.name=Force Field
+tile.unreal:blockTarydiumFieldCollector.name=Tarydium Field Accumulator
+tile.unreal:blockTarydiumFieldEmitter.name=Tarydium Field Distributor
+tile.unreal:blockTarydiumFieldRelay.name=Tarydium Field Relayer
+tile.unreal:blockTarydiumFieldStasis.name=Tarydium Field Stasis
+tile.unreal:blockTarydiumCrystal.name=Tarydium Crystal
 
 # Fluids
 fluid.mercury=Mercury

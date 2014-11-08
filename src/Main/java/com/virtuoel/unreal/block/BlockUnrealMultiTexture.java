@@ -26,6 +26,7 @@ public class BlockUnrealMultiTexture extends BlockUnreal
 	@Override
 	public void registerBlockIcons(IIconRegister iconRegister)
 	{
+		blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
 		for (int i = 0; i < 6; i ++)
 		{
 			this.blockIcons[i] = iconRegister.registerIcon(String.format("%s_%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName()), Reference.Blocks.Faces.FACE_ARRAY[i]));

@@ -386,6 +386,46 @@ public class ModBlocks
 			.setLightLevel(0.5F)
 			.setCreativeTab(null);
 	
+	public static Block blockTarydiumFieldCollector = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_COLLECTOR)
+			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_COLLECTOR)
+			.setHardness(5.0F).setResistance(10.0F)
+			.setStepSound(Block.soundTypeMetal)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static Block blockTarydiumFieldEmitter = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_EMITTER)
+			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_EMITTER)
+			.setHardness(5.0F).setResistance(10.0F)
+			.setStepSound(Block.soundTypeMetal)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static Block blockTarydiumFieldRelay = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_RELAY)
+			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_RELAY)
+			.setHardness(3.0F).setResistance(15.0F)
+			.setStepSound(Block.soundTypeMetal)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static Block blockTarydiumFieldStasis = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_STASIS)
+			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_STASIS)
+			.setHardness(10.0F).setResistance(25.0F)
+			.setStepSound(Block.soundTypeGlass)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static Block blockTarydiumCrystal = 
+			new BlockUnreal(Material.iron)
+			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_CRYSTAL)
+			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_CRYSTAL)
+			.setHardness(6.0F).setResistance(1000.0F)
+			.setStepSound(Block.soundTypeGlass)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
 	public static void init()
 	{
 		
@@ -494,6 +534,23 @@ public class ModBlocks
 		Blocks.fire.setFireInfo(blockCocoa, 5, 20);
 		
 		GameRegistry.registerBlock(blockForceField, Names.Blocks.BLOCK_FORCE_FIELD);
+		
+
+		blockTarydiumFieldCollector.setHarvestLevel("pickaxe", 2);
+		GameRegistry.registerBlock(blockTarydiumFieldCollector, Names.Blocks.BLOCK_TARYDIUM_FIELD_COLLECTOR);
+		
+		blockTarydiumFieldEmitter.setHarvestLevel("pickaxe", 2);
+		GameRegistry.registerBlock(blockTarydiumFieldEmitter, Names.Blocks.BLOCK_TARYDIUM_FIELD_EMITTER);
+		
+		blockTarydiumFieldRelay.setHarvestLevel("pickaxe", 3);
+		GameRegistry.registerBlock(blockTarydiumFieldRelay, Names.Blocks.BLOCK_TARYDIUM_FIELD_RELAY);
+		
+		blockTarydiumFieldStasis.setHarvestLevel("pickaxe", 3);
+		GameRegistry.registerBlock(blockTarydiumFieldStasis, Names.Blocks.BLOCK_TARYDIUM_FIELD_STASIS);
+		
+		blockTarydiumCrystal.setHarvestLevel("pickaxe", 3);
+		GameRegistry.registerBlock(blockTarydiumCrystal, Names.Blocks.BLOCK_TARYDIUM_CRYSTAL);
+		
 		
 	}
 }

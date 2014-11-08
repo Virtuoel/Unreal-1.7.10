@@ -557,6 +557,7 @@ public class ModRecipes
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.dustAsbestos,9), new Object[]{
 			"C",'C',"blockAsbestos",
 			}));
+		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockCharcoal,1), new Object[]{
 			"TTT","TTT","TTT",'T',"charcoal",
 			}));
@@ -630,7 +631,19 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tarydPowerBasic,1,((ItemUnrealDamageable)ModItems.tarydPowerBasic).getDamageOnCraft()), new Object[]{
-			"NTN","NCN","NTN",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,
+			"NTN","NCN","TLT",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tarydPowerBasic,1,((ItemUnrealDamageable)ModItems.tarydPowerBasic).getDamageOnCraft()), new Object[]{
+			"TLT","NCN","NTN",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tarydPowerBasic,1,((ItemUnrealDamageable)ModItems.tarydPowerBasic).getDamageOnCraft()), new Object[]{
+			"TTN","LCN","TTN",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tarydPowerBasic,1,((ItemUnrealDamageable)ModItems.tarydPowerBasic).getDamageOnCraft()), new Object[]{
+			"NTT","NCL","NTT",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.ammoEightball,4), new Object[]{
@@ -1146,6 +1159,30 @@ public class ModRecipes
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.nuggetBedrockium,1), new Object[]{
 			"CDC","DGD","CDC",'C',"compressedCobblestone2x",'D',"compressedCobblestone3x",'G',"gemDiamond"
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.lensTarydium,1), new Object[]{
+			"STS","TGT","STS",'T',"rodTitanium",'S',"gemTarydium",'G',"blockGlass",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockTarydiumCrystal,1), new Object[]{
+			"NIN","IBI","BDB",'N',"shardTarydium",'I',"gemTarydium",'B',"blockTarydium",'D',"gemDiamond"
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockTarydiumFieldStasis,1), new Object[]{
+			"RLR","LCL","RLR",'R',"rodTitanium",'L',ModItems.lensTarydium,'C',ModBlocks.blockTarydiumCrystal,
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockTarydiumFieldCollector,1), new Object[]{
+			"NLN","IRI","BTB",'B',"blockGold",'I',"ingotGold",'N',"nuggetGold",'T',"blockTitanium",'L',ModItems.lensTarydium,'R',"rodTitanium",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockTarydiumFieldEmitter,1), new Object[]{
+			"NLN","IRI","BLB",'B',"blockTitanium",'I',"ingotGold",'N',"nuggetGold",'T',"blockTitanium",'L',ModItems.lensTarydium,'R',"rodIron",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockTarydiumFieldRelay,1), new Object[]{
+			"RLR","ITI","NIN",'I',"ingotGold",'N',"nuggetGold",'T',"rodTitanium",'L',ModItems.lensTarydium,'R',"rodIron",
 			}));
 		
 	}

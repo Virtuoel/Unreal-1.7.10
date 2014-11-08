@@ -331,6 +331,12 @@ public class ModItems
 			.setMaxStackSize(64).setFull3D()
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
+	public static Item lensTarydium = 
+			new ItemUnreal()
+			.setUnlocalizedName(Names.Items.LENS_TARYDIUM)
+			.setMaxStackSize(16)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
 	//fluid containers
 	public static Item bucketMercury;
 	public static Item bucketTarydiumSludge;
@@ -688,6 +694,7 @@ public class ModItems
 		GameRegistry.registerItem(rodTarydiumAlloyRefined, Names.Items.ROD_TARYDIUM_ALLOY_REFINED);
 		GameRegistry.registerItem(rodIron, Names.Items.ROD_IRON);
 		GameRegistry.registerItem(rodTitanium, Names.Items.ROD_TITANIUM);
+		GameRegistry.registerItem(lensTarydium, Names.Items.LENS_TARYDIUM);
 		
 		//fluid containers
 		bucketMercury = new ItemBucketUnreal(ModFluids.fluidBlockMercury)

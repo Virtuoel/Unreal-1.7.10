@@ -58,6 +58,7 @@ Changelog:
 0.1.0.43
 ---
 [Addition] Started work on placeholder blocks for energy transfer and storage system
+[Addition] Component items and recipes for energy manipulation blocks
 
 0.1.0.42
 ---

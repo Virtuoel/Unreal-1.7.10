@@ -12,6 +12,8 @@ import com.virtuoel.unreal.block.BlockIronLadder;
 import com.virtuoel.unreal.block.BlockOreUnreal;
 import com.virtuoel.unreal.block.BlockSlime;
 import com.virtuoel.unreal.block.BlockUnreal;
+import com.virtuoel.unreal.block.BlockUnrealMultiTexture;
+import com.virtuoel.unreal.block.material.MaterialUnreal;
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.reference.Materials;
 import com.virtuoel.unreal.reference.Names;
@@ -387,7 +389,7 @@ public class ModBlocks
 			.setCreativeTab(null);
 	
 	public static Block blockTarydiumFieldCollector = 
-			new BlockUnreal(Material.iron)
+			new BlockUnrealMultiTexture(Material.iron)
 			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_COLLECTOR)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_COLLECTOR)
 			.setHardness(5.0F).setResistance(10.0F)
@@ -395,7 +397,7 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Block blockTarydiumFieldEmitter = 
-			new BlockUnreal(Material.iron)
+			new BlockUnrealMultiTexture(Material.iron)
 			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_EMITTER)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_EMITTER)
 			.setHardness(5.0F).setResistance(10.0F)
@@ -403,27 +405,30 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Block blockTarydiumFieldRelay = 
-			new BlockUnreal(Material.iron)
+			new BlockUnrealMultiTexture(Material.iron)
 			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_RELAY)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_RELAY)
 			.setHardness(3.0F).setResistance(15.0F)
 			.setStepSound(Block.soundTypeMetal)
+			.setLightLevel(1.0F)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Block blockTarydiumFieldStasis = 
-			new BlockUnreal(Material.iron)
+			new BlockUnrealMultiTexture(Materials.Blocks.tarydium)
 			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_STASIS)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_STASIS)
 			.setHardness(10.0F).setResistance(25.0F)
 			.setStepSound(Block.soundTypeGlass)
+			.setLightLevel(1.0F)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Block blockTarydiumCrystal = 
-			new BlockUnreal(Material.iron)
+			new BlockUnrealMultiTexture(Materials.Blocks.tarydium)
 			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_CRYSTAL)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_CRYSTAL)
-			.setHardness(6.0F).setResistance(1000.0F)
+			.setHardness(10.0F).setResistance(1000.0F)
 			.setStepSound(Block.soundTypeGlass)
+			.setLightLevel(1.0F)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static void init()

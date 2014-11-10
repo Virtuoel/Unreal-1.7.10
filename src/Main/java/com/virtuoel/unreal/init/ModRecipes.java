@@ -639,11 +639,11 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tarydPowerBasic,1,((ItemUnrealDamageable)ModItems.tarydPowerBasic).getDamageOnCraft()), new Object[]{
-			"TTN","LCN","TTN",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
+			"TSN","LCT","TSN",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tarydPowerBasic,1,((ItemUnrealDamageable)ModItems.tarydPowerBasic).getDamageOnCraft()), new Object[]{
-			"NTT","NCL","NTT",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
+			"NST","TCL","NST",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.ammoEightball,4), new Object[]{
@@ -1150,11 +1150,15 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodIron,4), new Object[]{
-			"IFI","ICI","IFI",'I',"dustIron",'F',"blockFlint",'C',"blockCoal",
+			"ICI","IFI","ICI",'I',"dustIron",'F',"blockFlint",'C',"blockCoal",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodTitanium,4), new Object[]{
 			"IFI","ICI","IFI",'I',"dustTitanium",'F',"blockIron",'C',"obsidian",
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodGold,4), new Object[]{
+			"IFI","ICI","IFI",'I',"dustGold",'F',"blockLapis",'C',"blockRedstone",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.nuggetBedrockium,1), new Object[]{
@@ -1170,7 +1174,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockTarydiumFieldStasis,1), new Object[]{
-			"RLR","LCL","RLR",'R',"rodTitanium",'L',ModItems.lensTarydium,'C',ModBlocks.blockTarydiumCrystal,
+			"RLR","LCL","RLR",'R',"rodGold",'L',ModItems.lensTarydium,'C',ModBlocks.blockTarydiumCrystal,
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockTarydiumFieldCollector,1), new Object[]{
@@ -1182,7 +1186,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockTarydiumFieldRelay,1), new Object[]{
-			"RLR","ITI","NIN",'I',"ingotGold",'N',"nuggetGold",'T',"rodTitanium",'L',ModItems.lensTarydium,'R',"rodIron",
+			"RLR","ITI","NGN",'I',"ingotGold",'N',"nuggetGold",'T',"rodTitanium",'L',ModItems.lensTarydium,'R',"rodIron",'G',"rodGold",
 			}));
 		
 	}
@@ -1261,6 +1265,9 @@ public class ModRecipes
 		GameRegistry.addSmelting(ModItems.rodTitanium, 
 				new ItemStack(ModItems.ingotTitanium,1), 0.1F);
 		
+		GameRegistry.addSmelting(ModItems.rodGold, 
+				new ItemStack(Items.gold_ingot,1), 0.1F);
+		
 	}
 	
 	public static void initOreDict()
@@ -1337,6 +1344,7 @@ public class ModRecipes
 		OreDictionary.registerOre("rodTarydiumAlloyRefined", ModItems.rodTarydiumAlloyRefined);
 		OreDictionary.registerOre("rodIron", ModItems.rodIron);
 		OreDictionary.registerOre("rodTitanium", ModItems.rodTitanium);
+		OreDictionary.registerOre("rodGold", ModItems.rodGold);
 		OreDictionary.registerOre("blockBlaze", ModBlocks.blockBlaze);
 		OreDictionary.registerOre("blockTear", ModBlocks.blockGhastTear);
 		OreDictionary.registerOre("blockBlazeRod", ModBlocks.blockBlaze);

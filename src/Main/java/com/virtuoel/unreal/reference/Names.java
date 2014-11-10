@@ -125,6 +125,7 @@ public final class Names
 		public static final String ROD_TARYDIUM_ALLOY_REFINED = "rodTarydiumAlloyRefined";
 		public static final String ROD_IRON = "rodIron";
 		public static final String ROD_TITANIUM = "rodTitanium";
+		public static final String ROD_GOLD = "rodGold";
 		public static final String LENS_TARYDIUM = "lensTarydium";
 		
 		//fluid containers

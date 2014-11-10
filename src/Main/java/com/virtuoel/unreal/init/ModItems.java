@@ -331,6 +331,12 @@ public class ModItems
 			.setMaxStackSize(64).setFull3D()
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
+	public static Item rodGold = 
+			new ItemUnreal()
+			.setUnlocalizedName(Names.Items.ROD_GOLD)
+			.setMaxStackSize(64).setFull3D()
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
 	public static Item lensTarydium = 
 			new ItemUnreal()
 			.setUnlocalizedName(Names.Items.LENS_TARYDIUM)
@@ -694,6 +700,7 @@ public class ModItems
 		GameRegistry.registerItem(rodTarydiumAlloyRefined, Names.Items.ROD_TARYDIUM_ALLOY_REFINED);
 		GameRegistry.registerItem(rodIron, Names.Items.ROD_IRON);
 		GameRegistry.registerItem(rodTitanium, Names.Items.ROD_TITANIUM);
+		GameRegistry.registerItem(rodGold, Names.Items.ROD_GOLD);
 		GameRegistry.registerItem(lensTarydium, Names.Items.LENS_TARYDIUM);
 		
 		//fluid containers

@@ -55,6 +55,11 @@ Syntax List
 
 Changelog:
 
+0.1.0.44
+---
+[Addition] Gold Rod crafting component
+[Change] Recipe tweaks
+
 0.1.0.43
 ---
 [Addition] Started work on placeholder blocks for energy transfer and storage system

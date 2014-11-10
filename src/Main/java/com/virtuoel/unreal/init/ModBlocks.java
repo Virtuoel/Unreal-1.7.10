@@ -389,7 +389,7 @@ public class ModBlocks
 			.setCreativeTab(null);
 	
 	public static Block blockTarydiumFieldCollector = 
-			new BlockUnrealMultiTexture(Material.iron)
+			new BlockUnreal/*MultiTexture*/(Material.iron)
 			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_COLLECTOR)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_COLLECTOR)
 			.setHardness(5.0F).setResistance(10.0F)
@@ -397,7 +397,7 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Block blockTarydiumFieldEmitter = 
-			new BlockUnrealMultiTexture(Material.iron)
+			new BlockUnreal/*MultiTexture*/(Material.iron)
 			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_EMITTER)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_EMITTER)
 			.setHardness(5.0F).setResistance(10.0F)
@@ -405,7 +405,7 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Block blockTarydiumFieldRelay = 
-			new BlockUnrealMultiTexture(Material.iron)
+			new BlockUnreal/*MultiTexture*/(Material.iron)
 			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_RELAY)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_RELAY)
 			.setHardness(3.0F).setResistance(15.0F)
@@ -414,7 +414,7 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Block blockTarydiumFieldStasis = 
-			new BlockUnrealMultiTexture(Materials.Blocks.tarydium)
+			new BlockUnreal/*MultiTexture*/(Materials.Blocks.tarydium)
 			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_FIELD_STASIS)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_FIELD_STASIS)
 			.setHardness(10.0F).setResistance(25.0F)
@@ -423,7 +423,7 @@ public class ModBlocks
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Block blockTarydiumCrystal = 
-			new BlockUnrealMultiTexture(Materials.Blocks.tarydium)
+			new BlockUnreal/*MultiTexture*/(Materials.Blocks.tarydium)
 			.setBlockName(Names.Blocks.BLOCK_TARYDIUM_CRYSTAL)
 			.setBlockTextureName(Names.Blocks.BLOCK_TARYDIUM_CRYSTAL)
 			.setHardness(10.0F).setResistance(1000.0F)

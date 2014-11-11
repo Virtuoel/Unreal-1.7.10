@@ -55,6 +55,13 @@ Syntax List
 
 Changelog:
 
+0.1.0.45
+---
+[Addition] Debug config setting to print texture names
+[Bugfix] Fixed some recipes
+[Bugfix] Fixed Tarydium Energy Crystal not having visible durability
+[Addition] Temporary textures for energy blocks
+
 0.1.0.44
 ---
 [Addition] Gold Rod crafting component

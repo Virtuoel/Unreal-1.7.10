@@ -44,6 +44,7 @@ public class ConfigurationHandler
 		
 		Settings.Debug.printDebugOreDictionaryValues = configuration.getBoolean("printDebugOreDictionaryValues", Reference.ConfigCategory.DEBUG, false, "True to print Ore Dictionary entries");
 		Settings.Debug.printDebugKeyBindingValues = configuration.getBoolean("printDebugKeyBindingValues", Reference.ConfigCategory.DEBUG, false, "True to print keybindings");
+		Settings.Debug.printDebugTextureNames = configuration.getBoolean("printDebugTextureNames", Reference.ConfigCategory.DEBUG, false, "True to print texture names");
 		Settings.Debug.debugClearItems = configuration.getBoolean("debugClearItems", Reference.ConfigCategory.DEBUG, false, "True to remove all items and blocks from this mod");
 		Settings.Debug.debugWorldGenerator = configuration.getBoolean("debugWorldGenerator", Reference.ConfigCategory.DEBUG, false, "True to have a debug overlay of ore locations in the sky");
 		

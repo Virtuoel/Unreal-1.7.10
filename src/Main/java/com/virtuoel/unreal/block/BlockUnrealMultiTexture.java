@@ -6,6 +6,7 @@ import net.minecraft.util.IIcon;
 
 import com.virtuoel.unreal.creativetab.CreativeTabUnreal;
 import com.virtuoel.unreal.reference.Reference;
+import com.virtuoel.unreal.reference.Settings;
 import com.virtuoel.unreal.utility.LogHelper;
 
 public class BlockUnrealMultiTexture extends BlockUnreal
@@ -28,11 +29,11 @@ public class BlockUnrealMultiTexture extends BlockUnreal
 	public void registerBlockIcons(IIconRegister iconRegister)
 	{
 		blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
-		LogHelper.info(blockIcon.getIconName());
+		if(Settings.Debug.printDebugTextureNames)LogHelper.info(blockIcon.getIconName());
 		for (int i = 0; i < 6; i ++)
 		{
 			this.blockIcons[i] = iconRegister.registerIcon(String.format("%s_%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName()), Reference.Blocks.Faces.FACE_ARRAY[i]));
-			LogHelper.info(blockIcons[i].getIconName());
+			if(Settings.Debug.printDebugTextureNames)LogHelper.info(blockIcons[i].getIconName());
 		}
 	}
 }

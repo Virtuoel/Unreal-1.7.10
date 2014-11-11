@@ -639,11 +639,11 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tarydPowerBasic,1,((ItemUnrealDamageable)ModItems.tarydPowerBasic).getDamageOnCraft()), new Object[]{
-			"TSN","LCT","TSN",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
+			"TNN","LCT","TNN",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tarydPowerBasic,1,((ItemUnrealDamageable)ModItems.tarydPowerBasic).getDamageOnCraft()), new Object[]{
-			"NST","TCL","NST",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
+			"NNT","TCL","NNT",'T',"gemTarydium",'N',"shardTarydium",'C',ModItems.caseTitanium,'L',ModItems.lensTarydium,
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.ammoEightball,4), new Object[]{
@@ -1142,7 +1142,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.forceField,1,((ItemBlockPlacerDamageable)ModItems.forceField).getDamageOnCraft()), new Object[]{
-			"RTP","GBT","RTP",'R',"rodTitanium",'T',"blockTitanium",'B',ModItems.dispersionUpgrade,'G',"blockGlassPurple",'P',new ItemStack(ModItems.tarydPowerBasic,1,OreDictionary.WILDCARD_VALUE),
+			"PTR","GBT","PTR",'R',"rodTitanium",'T',"blockTitanium",'B',ModItems.dispersionUpgrade,'G',"blockGlassPurple",'P',new ItemStack(ModItems.tarydPowerBasic,1,OreDictionary.WILDCARD_VALUE),
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.universalTranslator,1), new Object[]{
@@ -1185,7 +1185,7 @@ public class ModRecipes
 			"NLN","IRI","BLB",'B',"blockTitanium",'I',"ingotGold",'N',"nuggetGold",'T',"blockTitanium",'L',ModItems.lensTarydium,'R',"rodIron",
 			}));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockTarydiumFieldRelay,1), new Object[]{
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockTarydiumFieldRelay,2), new Object[]{
 			"RLR","ITI","NGN",'I',"ingotGold",'N',"nuggetGold",'T',"rodTitanium",'L',ModItems.lensTarydium,'R',"rodIron",'G',"rodGold",
 			}));
 		

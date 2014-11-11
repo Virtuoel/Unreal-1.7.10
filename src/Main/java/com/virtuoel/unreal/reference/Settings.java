@@ -35,6 +35,7 @@ public class Settings
 	{
 		public static boolean printDebugOreDictionaryValues;
 		public static boolean printDebugKeyBindingValues;
+		public static boolean printDebugTextureNames;
 		public static boolean debugClearItems;
 		public static boolean debugWorldGenerator;
 	}

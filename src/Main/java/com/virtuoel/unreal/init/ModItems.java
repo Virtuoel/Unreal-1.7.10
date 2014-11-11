@@ -212,7 +212,8 @@ public class ModItems
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
 	public static Item tarydPowerBasic = 
-			new ItemUnrealDamageable().setDamageOnCraft(1)
+			new ItemUnrealDamageable()
+			.setDamageOnCraft(1).setMaxDamage(101)
 			.setUnlocalizedName(Names.Items.TARYDIUM_POWER)
 			.setMaxStackSize(1)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);

@@ -1189,6 +1189,14 @@ public class ModRecipes
 			"RLR","ITI","NGN",'I',"ingotGold",'N',"nuggetGold",'T',"rodTitanium",'L',ModItems.lensTarydium,'R',"rodIron",'G',"rodGold",
 			}));
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockGoldCorrugated,4), new Object[]{
+			"CBC","BTB","CBC",'B',"blockGold",'C',"cobblestone",'T',ModBlocks.stonePolished,
+			}));
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.blockDiamondCorrugated,4), new Object[]{
+			"CBC","BTB","CBC",'B',"blockDiamond",'C',"cobblestone",'T',ModBlocks.stonePolished,
+			}));
+		
 	}
 	
 	public static void initSmelting()
@@ -1374,6 +1382,8 @@ public class ModRecipes
 		OreDictionary.registerOre("blockCocoa", ModBlocks.blockCocoa);
 		OreDictionary.registerOre("obsidian", ModBlocks.obsidianNether);
 		OreDictionary.registerOre("netherobsidian", ModBlocks.obsidianNether);
+		OreDictionary.registerOre("blockGold", ModBlocks.blockGoldCorrugated);
+		OreDictionary.registerOre("blockDiamond", ModBlocks.blockDiamondCorrugated);
 		
 		//buckets & fluids (temp)
 		OreDictionary.registerOre("fluidWater", Items.water_bucket);

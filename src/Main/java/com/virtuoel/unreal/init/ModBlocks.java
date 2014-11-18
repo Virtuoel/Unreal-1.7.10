@@ -1,6 +1,7 @@
 package com.virtuoel.unreal.init;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 
@@ -431,6 +432,22 @@ public class ModBlocks
 			.setLightLevel(1.0F)
 			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	
+	public static Block blockGoldCorrugated = 
+			new BlockUnreal(Material.iron).setMapColor(MapColor.goldColor)
+			.setBlockName(Names.Blocks.BLOCK_GOLD_CORRUGATED)
+			.setBlockTextureName(Names.Blocks.BLOCK_GOLD_CORRUGATED)
+			.setHardness(3.0F).setResistance(10.0F)
+			.setStepSound(Block.soundTypeMetal)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
+	public static Block blockDiamondCorrugated = 
+			new BlockUnreal(Material.iron).setMapColor(MapColor.diamondColor)
+			.setBlockName(Names.Blocks.BLOCK_DIAMOND_CORRUGATED)
+			.setBlockTextureName(Names.Blocks.BLOCK_DIAMOND_CORRUGATED)
+			.setHardness(5.0F).setResistance(10.0F)
+			.setStepSound(Block.soundTypeMetal)
+			.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
+	
 	public static void init()
 	{
 		
@@ -552,9 +569,15 @@ public class ModBlocks
 		
 		blockTarydiumFieldStasis.setHarvestLevel("pickaxe", 3);
 		GameRegistry.registerBlock(blockTarydiumFieldStasis, Names.Blocks.BLOCK_TARYDIUM_FIELD_STASIS);
-		
+
 		blockTarydiumCrystal.setHarvestLevel("pickaxe", 3);
 		GameRegistry.registerBlock(blockTarydiumCrystal, Names.Blocks.BLOCK_TARYDIUM_CRYSTAL);
+
+		blockGoldCorrugated.setHarvestLevel("pickaxe", 2);
+		GameRegistry.registerBlock(blockGoldCorrugated, Names.Blocks.BLOCK_GOLD_CORRUGATED);
+		
+		blockDiamondCorrugated.setHarvestLevel("pickaxe", 2);
+		GameRegistry.registerBlock(blockDiamondCorrugated, Names.Blocks.BLOCK_DIAMOND_CORRUGATED);
 		
 		
 	}

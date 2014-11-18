@@ -1,6 +1,7 @@
 package com.virtuoel.unreal.block;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 
@@ -12,13 +13,25 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockUnreal extends Block
 {
-	
+	private MapColor materialColorOverride;
 	public BlockUnreal(Material material)
 	{
 		super(material);
 		this.setCreativeTab(CreativeTabUnreal.UNREAL_TAB);
 	}
-
+	
+	@Override
+	public MapColor getMapColor(int p_149728_1_)
+    {
+		return this.materialColorOverride==null?this.getMaterial().getMaterialMapColor():this.materialColorOverride;
+    }
+	
+	public Block setMapColor(MapColor par1MapColor)
+	{
+		materialColorOverride = par1MapColor;
+		return this;
+	}
+	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public int getRenderBlockPass()

@@ -55,6 +55,8 @@ public final class Names
 		public static final String BLOCK_TARYDIUM_FIELD_RELAY = "blockTarydiumFieldRelay";
 		public static final String BLOCK_TARYDIUM_FIELD_STASIS = "blockTarydiumFieldStasis";
 		public static final String BLOCK_TARYDIUM_CRYSTAL = "blockTarydiumCrystal";
+		public static final String BLOCK_GOLD_CORRUGATED = "blockGoldCorrugated";
+		public static final String BLOCK_DIAMOND_CORRUGATED = "blockDiamondCorrugated";
 		
 	}
 	

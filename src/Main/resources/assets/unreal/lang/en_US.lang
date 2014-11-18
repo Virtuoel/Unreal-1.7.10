@@ -193,6 +193,8 @@ tile.unreal:blockTarydiumFieldEmitter.name=Tarydium Field Distributor
 tile.unreal:blockTarydiumFieldRelay.name=Tarydium Field Relayer
 tile.unreal:blockTarydiumFieldStasis.name=Tarydium Field Stasis
 tile.unreal:blockTarydiumCrystal.name=Tarydium Crystal
+tile.unreal:blockGoldCorrugated.name=Corrugated Block of Gold
+tile.unreal:blockDiamondCorrugated.name=Corrugated Block of Diamond
 
 # Fluids
 fluid.mercury=Mercury

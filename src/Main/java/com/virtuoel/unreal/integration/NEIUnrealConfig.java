@@ -7,6 +7,7 @@ import codechicken.nei.api.IConfigureNEI;
 import com.virtuoel.unreal.init.ModBlocks;
 import com.virtuoel.unreal.init.ModItems;
 import com.virtuoel.unreal.reference.Reference;
+import com.virtuoel.unreal.utility.LogHelper;
 
 public class NEIUnrealConfig implements IConfigureNEI
 {
@@ -37,6 +38,8 @@ public class NEIUnrealConfig implements IConfigureNEI
 		API.hideItem(new ItemStack(ModItems.dustTarydiumAlloyUnrefined));
 		API.hideItem(new ItemStack(ModItems.ingotBedrockium));
 		API.hideItem(new ItemStack(ModItems.nuggetBedrockium));
+		
+		LogHelper.info("NEI Compatibility Completed.");
 	}
 	
 	@Override

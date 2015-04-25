@@ -86,7 +86,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,13), new Object[]{
-			"virtuoel.unreal.debug","fluidLava",
+			"virtuoel.unreal.debug","listAllLava",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.debugTool,11), new Object[]{
@@ -239,7 +239,7 @@ public class ModRecipes
 			"virtuoel.unreal.debug","oreRedstone","oreRedstone","oreRedstone","oreRedstone",
 			}));
 		
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.crystalCinnabar,1), new Object[]{
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.crystalCinnabar,2), new Object[]{
 			"virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","virtuoel.unreal.debug","oreCinnabar",
 			}));
 		
@@ -248,7 +248,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.nuggetTarydiumAlloyRefined,9), new Object[]{
-			"ingotTarydiumAlloyUnrefined","virtuoel.unreal.debug","fluidMercury",
+			"ingotTarydiumAlloyUnrefined","virtuoel.unreal.debug","listAllMercury",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.gravel,1), new Object[]{
@@ -268,7 +268,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.rodTarydiumAlloyRefined,1), new Object[]{
-			"fluidMercury","virtuoel.unreal.debug","fluidMercury","rodTarydiumAlloyUnrefined",
+			"listAllMercury","virtuoel.unreal.debug","listAllMercury","rodTarydiumAlloyUnrefined",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.SCUBATankOxygen,1), new Object[]{
@@ -324,19 +324,19 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.obsidian,1), new Object[]{
-			"fluidWater","fluidLava","virtuoel.unreal.debug",
+			"listAllWater","listAllLava","virtuoel.unreal.debug",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.obsidian,2), new Object[]{
-			"fluidWater","fluidLava","fluidWater","fluidLava","virtuoel.unreal.debug",
+			"listAllWater","listAllLava","listAllWater","listAllLava","virtuoel.unreal.debug",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.obsidian,3), new Object[]{
-			"fluidWater","fluidLava","fluidWater","fluidLava","fluidWater","fluidLava","virtuoel.unreal.debug",
+			"listAllWater","listAllLava","listAllWater","listAllLava","listAllWater","listAllLava","virtuoel.unreal.debug",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.obsidian,4), new Object[]{
-			"fluidWater","fluidLava","fluidWater","fluidLava","fluidWater","fluidLava","fluidWater","fluidLava","virtuoel.unreal.debug",
+			"listAllWater","listAllLava","listAllWater","listAllLava","listAllWater","listAllLava","listAllWater","listAllLava","virtuoel.unreal.debug",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.crystalCinnabar,1), new Object[]{
@@ -344,7 +344,7 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.nuggetBedrockium,1), new Object[]{
-			"fluidMercury","virtuoel.unreal.debug","fluidMercury","fluidMercury","oreBedrockium","fluidMercury","fluidMercury","fluidMercury","fluidMercury",
+			"listAllMercury","virtuoel.unreal.debug","listAllMercury","listAllMercury","oreBedrockium","listAllMercury","listAllMercury","listAllMercury","listAllMercury",
 			}));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.dragon_egg,2), new Object[]{
@@ -1030,11 +1030,11 @@ public class ModRecipes
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorAsbestosSuit,1), new Object[]{
-			"OMO","TCT","OGO",'O',"blockAsbestos",'M',"fluidMercury",'C',new ItemStack(ModItems.armorToxinSuit,1,OreDictionary.WILDCARD_VALUE),'G',"blockMagnesium",'T',"blockTitanium",
+			"OMO","TCT","OGO",'O',"blockAsbestos",'M',"listAllMercury",'C',new ItemStack(ModItems.armorToxinSuit,1,OreDictionary.WILDCARD_VALUE),'G',"blockMagnesium",'T',"blockTitanium",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.armorToxinSuit,1), new Object[]{
-			"MGM","TKT","ARA",'M',"fluidMilk",'G',Items.speckled_melon,'T',"blockTitanium",'K',new ItemStack(Items.chainmail_chestplate,1,OreDictionary.WILDCARD_VALUE),'A',"blockAsbestos",'R',"blockRutile",
+			"MGM","TKT","ARA",'M',"listAllMilk",'G',Items.speckled_melon,'T',"blockTitanium",'K',new ItemStack(Items.chainmail_chestplate,1,OreDictionary.WILDCARD_VALUE),'A',"blockAsbestos",'R',"blockRutile",
 			}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rodTarydiumAlloyRefined,4), new Object[]{
@@ -1386,9 +1386,9 @@ public class ModRecipes
 		OreDictionary.registerOre("blockDiamond", ModBlocks.blockDiamondCorrugated);
 		
 		//buckets & fluids (temp)
-		OreDictionary.registerOre("fluidWater", Items.water_bucket);
-		OreDictionary.registerOre("fluidLava", Items.lava_bucket);
-		OreDictionary.registerOre("fluidMilk", Items.milk_bucket);
-		OreDictionary.registerOre("fluidMercury", ModItems.bucketMercury);
+		OreDictionary.registerOre("listAllWater", Items.water_bucket);
+		OreDictionary.registerOre("listAllLava", Items.lava_bucket);
+		OreDictionary.registerOre("listAllMilk", Items.milk_bucket);
+		OreDictionary.registerOre("listAllMercury", ModItems.bucketMercury);
 	}
 }

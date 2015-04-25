@@ -9,6 +9,7 @@ import net.minecraftforge.oredict.OreDictionary;
 
 import com.virtuoel.unreal.client.handler.KeyInputEventHandler;
 import com.virtuoel.unreal.handler.ConfigurationHandler;
+import com.virtuoel.unreal.handler.UnrealBlockBreakHandler;
 import com.virtuoel.unreal.handler.UnrealBucketHandler;
 import com.virtuoel.unreal.handler.UnrealFuelHandler;
 import com.virtuoel.unreal.init.ModBlocks;
@@ -80,6 +81,9 @@ public class Unreal
 			UnrealBucketHandler.INSTANCE.buckets.put(ModFluids.fluidBlockNanoblack, ModItems.bucketNanoblack);
 			MinecraftForge.EVENT_BUS.register(UnrealBucketHandler.INSTANCE);
 			LogHelper.info("Bucket Handler Registered.");
+			
+			MinecraftForge.EVENT_BUS.register(UnrealBlockBreakHandler.INSTANCE);
+			LogHelper.info("Block Breaking Handler Registered.");
 			
 		}
 		else
